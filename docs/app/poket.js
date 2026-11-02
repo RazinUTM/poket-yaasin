@@ -2,7 +2,7 @@
    Data: window.PY_DATA daripada docs/data/kandungan.js (dijana oleh tools/bina.py; JANGAN edit terus).
    Storan telefon: localStorage berawalan "poket-" (tetapan, bintang, doa-saya, majlis-saya, arwah, terakhir). */
 'use strict';
-const APP_VERSION='2026-11-03a';
+const APP_VERSION='2026-11-03b';
 const REPO = 'RazinUTM/poket-yaasin';   // butang "Lapor" membuka GitHub Issues repo ini
 const D = window.PY_DATA || {doa: [], ayat: {}, surah: {}, susunan: [], majlis: [], kalendar: [], nota: [], kat: {}, templat: {}, hijri: {}};
 
@@ -3505,9 +3505,11 @@ async function mulaPasang() {
   kemasPasang();
 }
 const langkahPasang = () => perantiIOS()
-  ? h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Safari. Jika dibuka dari WhatsApp, tekan "Buka dalam Safari" dahulu.'),
+  ? frag(h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Safari. Jika dibuka dari WhatsApp, tekan "Buka dalam Safari" dahulu.'),
       h('li', null, 'Tekan butang Kongsi ', h('span', {class: 'ik-kongsi', html: ikon('kongsiIos')}), ' di bawah skrin (di atas pada iPad).'),
-      h('li', null, 'Pilih "Tambah ke Skrin Utama" (Add to Home Screen), kemudian "Tambah".'))
+      h('li', null, 'Pilih "Tambah ke Skrin Utama" (Add to Home Screen), kemudian "Tambah".')),
+    // WebKit: app di skrin utama ada storan sendiri, tidak dikongsi dengan Safari (bugs.webkit.org/show_bug.cgi?id=181849)
+    h('p', {class: 'kecil nota-pasang'}, 'Di iPhone, app di skrin utama menyimpan rekod berasingan daripada Safari. Pasang dahulu, kemudian import pek watak dan isi rekod dalam app itu. Sudah ada rekod dalam Safari? Simpan sandaran (di bawah), kemudian pulihkan dalam app.'))
   : h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Chrome. Jika dibuka dari WhatsApp, pilih "Buka dalam Chrome" dahulu.'),
       h('li', null, 'Tekan menu ⋮ di penjuru kanan atas.'), h('li', null, 'Pilih "Pasang aplikasi" atau "Tambah ke skrin utama".'));
 function kadPasang() {

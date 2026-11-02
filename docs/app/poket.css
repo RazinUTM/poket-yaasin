@@ -851,6 +851,7 @@ body[data-skrin="utama"] .roti,body[data-skrin="utama"] .kemaskini{bottom:calc(1
 .kad-pasang .btn{margin-top:14px}
 .langkah-pasang{margin:12px 0 2px;padding-left:22px;font-size:15px;line-height:1.5}
 .langkah-pasang li{margin:4px 0}
+.nota-pasang{margin:10px 0 0;padding:10px 12px;border-radius:10px;background:var(--hijau-lembut);color:var(--dakwat);line-height:1.45}
 .ik-kongsi{display:inline-flex;vertical-align:-4px;color:var(--hijau)}
 .ik-kongsi svg{width:20px;height:20px}
 .pasang-rumah{display:flex;align-items:center;gap:10px;margin:-10px 0 22px;padding:8px 6px 8px 10px;border-radius:18px;background:var(--muka);color:var(--dakwat);box-shadow:0 6px 18px rgba(0,0,0,.18)}
