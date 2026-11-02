@@ -188,6 +188,20 @@ const semak = (ok, msg) => { if (ok) console.log('  ok  ', msg); else { gagal++;
         semak(sb.data.bunyi && sb.data.bunyi.awal && sb.data.bunyi.masuk && /^data:audio\//.test(sb.data.bunyi.awal.data), 'Sandaran: klip bunyi peringatan ikut serta');
         await pg.evaluate(() => { SIMPAN.buang('bunyi'); BUNYI = null; T.bunyi = false; simpanT(); SIMPAN.buang(`waktu-WLY01-${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}`); MEM_WAKTU.clear(); dahIngat = null; });
       }
+      // pasang app (PWA): kad di atas Tetapan yang dikemas kini apabila beforeinstallprompt tiba; cadangan boleh tutup di Utama
+      if (skema === 'light') {
+        const acara = hasil => pg.evaluate(o => { const e = new Event('beforeinstallprompt', {cancelable: true}); e.prompt = () => { window.__pasang = (window.__pasang || 0) + 1; }; e.userChoice = Promise.resolve({outcome: o, platform: 'web'}); window.dispatchEvent(e); }, hasil);
+        await pg.evaluate(() => { pasangAcara = null; window.__pasang = 0; SIMPAN.buang('pasang-nanti'); location.hash = '#/tetapan'; }); await pg.waitForTimeout(250);
+        const awal = await pg.evaluate(() => { const k = document.querySelector('.kad-pasang'), s = document.querySelector('h2.sek'); return !!k && !!s && !!(k.compareDocumentPosition(s) & Node.DOCUMENT_POSITION_FOLLOWING) && !!k.querySelector('.langkah-pasang') && !k.querySelector('button'); });
+        await acara('accepted'); await pg.waitForTimeout(100);
+        await pg.click('.kad-pasang button:has-text("Pasang app")'); await pg.waitForTimeout(150);
+        semak(awal && await pg.evaluate(() => window.__pasang === 1 && pasangAcara === null), 'Pasang app: kad di atas Tetapan; butang Pasang muncul sebaik pelayar bersedia, tanpa buka semula skrin');
+        await acara('dismissed'); await pg.evaluate(() => { location.hash = '#/'; }); await pg.waitForTimeout(300);
+        const adaCadangan = await pg.isVisible('.pasang-rumah button:has-text("Pasang")');
+        await pg.click('.pasang-rumah .ib'); await pg.evaluate(() => { location.hash = '#/tetapan'; }); await pg.waitForTimeout(150); await pg.evaluate(() => { location.hash = '#/'; }); await pg.waitForTimeout(300);
+        semak(adaCadangan && await pg.locator('.pasang-rumah').count() === 0, 'Pasang app: cadangan di skrin Utama, tidak muncul lagi selepas ditutup');
+        await pg.evaluate(() => { pasangAcara = null; SIMPAN.buang('pasang-nanti'); });
+      }
       // fail kalendar .ics
       await pg.evaluate(() => { SIMPAN.buang(`waktu-WLY01-${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}`); MEM_WAKTU.clear(); location.hash = '#/solat'; }); await pg.waitForTimeout(500);
       const [muat] = await Promise.all([pg.waitForEvent('download'), pg.click('text=Tambah ke kalendar telefon')]);
