@@ -1,0 +1,131 @@
+# Kamus carian pintar: setiap baris ialah satu kumpulan istilah yang dianggap sama maksud semasa mencari.
+# Istilah pertama ialah label yang dipaparkan ("Carian merangkumi: ..."). Frasa (lebih daripada satu perkataan) dipadankan
+# sebagai frasa penuh. Ditulis dengan bantuan AI (Claude) berdasarkan tag doa, nota dan bahasa harian, kemudian disemak;
+# tambah istilah baharu di sini, bukan dalam kod. bina.py menormalkan ejaan (huruf kecil, tanpa baris, tanpa ').
+#
+# Padanan sinonim diberi markah lebih rendah daripada padanan tepat, jadi kumpulan yang luas tidak menenggelamkan
+# hasil yang tepat. Elakkan perkataan umum (malam, hari, baca) dalam kumpulan.
+
+# --- kesihatan, emosi, keluarga
+- [sakit, demam, selsema, batuk, pening, migrain, penyakit, pesakit, uzur, hospital, wad, klinik, ubat, rawatan, sembuh, penyembuhan, kanser, pembedahan, sakit kepala, sakit perut]
+- [sihat, kesihatan, afiat, sejahtera badan]
+- [risau, bimbang, cemas, gelisah, resah, takut, gementar, panik, anxiety, stres, stress, tekanan, runsing, serabut, susah hati]
+- [sedih, dukacita, murung, kemurungan, depresi, kecewa, putus asa, patah hati, menangis, kesunyian, sunyi]
+- [marah, geram, panas baran, emosi, bengang]
+- [sabar, kesabaran, ujian, dugaan, cubaan]
+- [anak, anak-anak, budak, kanak-kanak, bayi, baby, cahaya mata, anak kecil, zuriat]
+- [hamil, mengandung, kehamilan, bersalin, kelahiran, kesuburan, subur]
+- [ibu bapa, mak ayah, emak, ayah, abah, ummi, ibu, bapa, orang tua, walidain]
+- [kahwin, nikah, perkahwinan, pengantin, walimah, jodoh, suami isteri, pasangan, rumah tangga]
+- [keluarga, famili, family, ahli keluarga, adik beradik]
+- [anak soleh, zuriat soleh, anak nakal, anak degil, didik anak, mendidik anak, keluarga bahagia]
+- [warga emas, usia emas, lanjut usia, tua]
+
+# --- ilmu, kerja, rezeki, urusan
+- [peperiksaan, exam, periksa, ujian bertulis, spm, stpm, upsr, pt3, ulangkaji, study, tesis, viva]
+- [belajar, pelajar, murid, sekolah, universiti, kuliah, kelas, ilmu, faham, ingatan]
+- [kerja, pekerjaan, jawatan, kerjaya, temuduga, interview, naik pangkat, majikan, pejabat]
+- [rezeki, gaji, duit, wang, kewangan, bisnes, perniagaan, niaga, berniaga, jualan, untung, pendapatan]
+- [hutang, pinjaman, loan, ansuran, ptptn, bayar hutang]
+- [mudah, kemudahan, urusan, dipermudahkan, lancar, urusan sukar]
+- [keputusan, buat keputusan, membuat keputusan, pilihan, keliru, minta petunjuk]
+- [syukur, bersyukur, terima kasih, nikmat, kejayaan, berjaya]
+
+# --- perjalanan, rumah, harian
+- [musafir, perjalanan, travel, jalan jauh, balik kampung, bercuti, cuti]
+- [kenderaan, kereta, memandu, drive, motosikal, motor, kapal terbang, flight, bas, kereta api, lrt, mrt, feri, bot]
+- [rumah, pindah rumah, rumah baru, rumah baharu, masuk rumah, keluar rumah, hotel, asrama]
+- [tidur, nak tidur, mimpi, mimpi buruk, igau, insomnia, tak boleh tidur]
+- [makan, minum, makanan, sarapan, makan malam, jamuan]
+- [selepas, lepas, sesudah, usai]
+- [sebelum, sblm]
+- [selepas solat, lepas solat, zikir selepas solat, wirid selepas solat, lepas sembahyang, selepas sembahyang]
+- [tandas, bilik air, toilet, jamban]
+- [pakaian, baju, baju baru, baju raya]
+- [masjid, surau, musolla]
+- [wuduk, wudhu, wudu, berwuduk, ambil air sembahyang, air sembahyang]
+- [siwak, bersiwak, sugi, kayu sugi, gosok gigi, berus gigi]
+- [salam, beri salam, memberi salam, assalamualaikum]
+- [qailulah, qailullah, tidur tengah hari, tidur siang]
+
+# --- alam dan semasa
+- [hujan, hujan lebat, ribut, angin kencang, monsun, tengkujuh, cuaca]
+- [banjir, air naik, bah]
+- [petir, guruh, kilat]
+- [kemarau, panas terik, jerebu, asap, kering]
+- [bencana, gempa, gempa bumi, tsunami, tanah runtuh, kebakaran]
+- [palestin, gaza, al-aqsa, aqsa, baitulmaqdis, zionis, mangsa perang, pelarian, rohingya, tertindas]
+- [negara, malaysia, pemimpin, kerajaan, merdeka, hari kebangsaan, keamanan]
+
+# --- kematian
+- [kematian, mati, meninggal, meninggal dunia, arwah, si mati, jenazah, takziah]
+- [kubur, ziarah kubur, pusara, makam]
+- [husnul khatimah, mati dalam iman, khatimah, sakaratul maut]
+
+# --- ibadah: solat
+- [solat, sembahyang, salat, shalat, sholat, solah]
+- [solat sunat, sembahyang sunat, solat sunnah, sunat]
+- [tahajjud, tahajud, qiyamullail, qiamullail, qiyam, solat malam, bangun malam, sepertiga malam]
+- [solat dhuha, solat duha, sembahyang dhuha, dhuha]
+- [witir, witr, solat witir]
+- [rawatib, qabliah, qabliyah, qobliyah, badiah, badiyah, sunat sebelum solat, sunat selepas solat]
+- [istikharah, istikarah, istiharah, solat istikharah]
+- [hajat, solat hajat, berhajat, hajat besar]
+- [taubat, bertaubat, solat taubat, dosa, ampun, keampunan, maaf, istighfar, astaghfirullah]
+- [solat tasbih, sembahyang tasbih]
+- [tahiyyatul masjid, tahiyatul masjid, solat masuk masjid]
+- [tarawih, terawih, terawikh, qiyam ramadan]
+- [waktu solat, waktu sembahyang, jadual solat, jadual waktu, masa solat, azan]
+- [subuh, suboh, fajar, fajr]
+- [zohor, zuhur, zuhr, lohor, dhuhur]
+- [asar, ashar]
+- [maghrib, magrib]
+- [isyak, isya, isha]
+- [qunut, qunut subuh, qunut nazilah]
+
+# --- ibadah: zikir, selawat, al-Quran
+- [selawat, salawat, shalawat, sholawat, solawat, berselawat, selawat nabi, selawat ke atas nabi]
+- [tafrijiyah, tafrijiah, tafrijiyyah, nariyah, nariah, nariyyah, selawat tafrijiyah, selawat nariyah]
+- [syifa, syifaa, selawat syifa, tibbil qulub, ubat hati]
+- [ibrahimiyah, ibrahimiah, selawat ibrahimiyah, selawat tahiyat]
+- [zikir, wirid, berzikir, tasbih, tahmid, takbir, subhanallah, alhamdulillah, allahu akbar, hauqalah]
+- [pagi petang, zikir pagi, zikir petang, mathurat, al-mathurat, wirid pagi, wirid petang]
+- [pendinding, pelindung, perlindungan, ain, sihir, santau, gangguan, jin, syaitan, was-was, ruqyah]
+- [iman, istiqamah, hidayah, petunjuk, takwa]
+- [al-quran, quran, mengaji, tadarus, khatam, baca quran, membaca quran]
+- [hafal, hafalan, menghafal, murajaah, hifz, tahfiz]
+- [yaasin, yasin, yassin, ya sin, surah yasin]
+- [al-mulk, mulk, tabarak, surah mulk]
+- [al-kahfi, kahfi, kahf, surah kahfi]
+- [ar-rahman, rahman, surah rahman]
+- [al-waqiah, waqiah, surah waqiah]
+- [as-sajdah, sajdah, alif lam mim sajdah]
+- [ayat kursi, ayatul kursi, kursi]
+- [tiga qul, 3 qul, muawwizatain, al-ikhlas, al-falaq, an-nas]
+- [al-fatihah, fatihah, ummul kitab]
+
+# --- puasa dan musim
+- [puasa, berpuasa, saum, siyam]
+- [puasa sunat, isnin khamis, puasa isnin khamis, ayyamul bidh, hari putih, puasa putih, puasa arafah, asyura, tasua, puasa syawal, puasa enam, puasa daud]
+- [ganti puasa, qada, qadha, puasa ganti, hutang puasa]
+- [ramadan, ramadhan, bulan puasa, berbuka, sahur, lailatul qadar, malam qadar]
+- [raya, hari raya, aidilfitri, lebaran, aidiladha, raya haji, korban]
+- [haji, umrah, mekah, makkah, madinah, tanah suci, ihram]
+- [jumaat, jumat, jumuah, hari jumaat, malam jumaat]
+- [nisfu syaaban, nisfu syaban, malam nisfu, syaaban, syaban]
+- [puasa nabi, puasa rasulullah, cara nabi berpuasa, puasa sunnah, amalan puasa nabi]
+- [tiga hari sebulan, puasa tiga hari, tiga hari setiap bulan]
+- [niat puasa, berniat puasa, lafaz niat puasa, lupa niat]
+- [izin suami, kebenaran suami]
+- [bunyi peringatan, bunyi azan, nada azan, azan pendek, nada dering, ringtone, bunyi selawat, rakam suara]
+- [rejab, rajab]
+- [anak bulan, hilal, rukyah, melihat anak bulan]
+- [awal tahun, akhir tahun, maal hijrah, tahun baru islam, muharram, muharam]
+- [hijri, hijriah, tarikh hijri, tarikh islam, takwim, kalendar islam]
+
+# --- amalan dan majlis
+- [amalan nabi, sunnah nabi, sunnah, sunah, amalan harian, adab, cara nabi, rutin harian]
+- [tahlil, kenduri arwah, tahlil arwah, majlis tahlil]
+- [kenduri, majlis, rumah terbuka, doa selamat, kesyukuran]
+- [aqiqah, akikah, cukur jambul]
+- [hukum, fatwa, mufti, boleh ke, harus, haram, makruh, wajib, bidaah, khilaf, dalil]

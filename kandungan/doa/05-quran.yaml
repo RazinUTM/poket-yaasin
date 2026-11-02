@@ -1,0 +1,341 @@
+# Doa daripada al-Quran. Teks Arab, makna perkata dan rujukan diambil terus daripada data Quran (tidak ditaip semula).
+# "quran" boleh satu atau beberapa petikan dipisah koma: "3:191#13-, 3:192-194".
+# Tiada Rumi untuk ayat al-Quran (Muzakarah Fatwa Kebangsaan ke-24, 1989). Gunakan butang audio untuk sebutan.
+
+- id: q-rabbana-atina
+  tajuk: Doa kebaikan dunia dan akhirat
+  kat: [quran, harian]
+  tag: [dunia akhirat, kebaikan, doa sapu jagat, rabbana]
+  quran: "2:201#4-"
+  makna: "Wahai Tuhan kami, berilah kami kebaikan di dunia dan kebaikan di akhirat, dan peliharalah kami daripada azab neraka."
+  nota: "Doa yang paling banyak dibaca oleh Rasulullah ﷺ (Sahih al-Bukhari, no. 6389)."
+
+- id: q-rabbana-taqabbal
+  tajuk: Memohon amalan diterima
+  kat: [quran, majlis]
+  tag: [amal diterima, penutup, rabbana, nabi ibrahim]
+  quran: "2:127#8-"
+  makna: "Wahai Tuhan kami, terimalah (amalan) daripada kami; sesungguhnya Engkaulah Yang Maha Mendengar lagi Maha Mengetahui."
+
+- id: q-rabbana-muslimain
+  tajuk: Doa Nabi Ibrahim untuk diri dan zuriat
+  kat: [quran, keluarga]
+  tag: [zuriat, taubat, ibadah, rabbana]
+  quran: "2:128"
+  makna: "Wahai Tuhan kami, jadikanlah kami orang yang berserah diri kepada-Mu, dan jadikanlah daripada keturunan kami umat yang berserah diri kepada-Mu; tunjukkanlah kepada kami cara ibadat kami dan terimalah taubat kami. Sesungguhnya Engkau Maha Penerima taubat lagi Maha Mengasihani."
+
+- id: q-istirja
+  tajuk: Istirja' (ketika musibah)
+  kat: [quran, kematian, jiwa]
+  tag: [musibah, kematian, sabar]
+  quran: "2:156#6-"
+  makna: "Sesungguhnya kami milik Allah dan kepada-Nya kami kembali."
+
+- id: q-sabar-menang
+  tajuk: Memohon kesabaran dan kemenangan
+  kat: [quran, ummah, jiwa]
+  tag: [sabar, kemenangan, palestin, gaza, musuh, rabbana]
+  quran: "2:250#6-"
+  makna: "Wahai Tuhan kami, curahkanlah kesabaran ke atas kami, teguhkanlah pendirian kami, dan menangkanlah kami terhadap kaum yang kafir."
+
+- id: q-la-tuakhidzna
+  tajuk: Jangan Engkau hukum kami jika terlupa
+  kat: [quran, jiwa]
+  tag: [lupa, tersalah, beban, keampunan, rabbana]
+  quran: "2:286#13-"
+  makna: "Wahai Tuhan kami, janganlah Engkau hukum kami jika kami lupa atau tersalah; janganlah Engkau bebankan kami seperti yang Engkau bebankan kepada orang terdahulu, dan janganlah Engkau pikulkan apa yang kami tidak terdaya. Maafkanlah, ampunilah dan rahmatilah kami; Engkaulah Pelindung kami, maka menangkanlah kami terhadap kaum yang kafir."
+  nota: "Dua ayat terakhir al-Baqarah (285–286) mencukupi bagi sesiapa yang membacanya pada waktu malam (Sahih al-Bukhari, no. 5009)."
+
+- id: q-la-tuzigh
+  tajuk: Tetapkan hati selepas mendapat petunjuk
+  kat: [quran, jiwa]
+  tag: [iman, hati, istiqamah, remaja, rabbana]
+  quran: "3:8"
+  makna: "Wahai Tuhan kami, janganlah Engkau pesongkan hati kami setelah Engkau beri petunjuk, dan kurniakanlah kami rahmat dari sisi-Mu; sesungguhnya Engkau Maha Pemberi."
+
+- id: q-innana-amanna
+  tajuk: Kami telah beriman, ampunilah kami
+  kat: [quran, jiwa]
+  tag: [iman, keampunan, neraka, rabbana]
+  quran: "3:16#3-"
+  makna: "Wahai Tuhan kami, sesungguhnya kami telah beriman, maka ampunkanlah dosa kami dan peliharalah kami daripada azab neraka."
+
+- id: q-zuriat-zakariya
+  tajuk: Doa Nabi Zakaria memohon zuriat
+  kat: [quran, keluarga]
+  tag: [zuriat, anak, hamil, kesuburan]
+  quran: "3:38#6-"
+  makna: "Wahai Tuhanku, kurniakanlah kepadaku dari sisi-Mu zuriat yang baik; sesungguhnya Engkau Maha Mendengar doa."
+
+- id: q-israfana
+  tajuk: Ampunkan keterlanjuran kami
+  kat: [quran, ummah, jiwa]
+  tag: [keampunan, kemenangan, palestin, rabbana]
+  quran: "3:147#7-"
+  makna: "Wahai Tuhan kami, ampunkanlah dosa kami dan keterlanjuran kami dalam urusan kami, teguhkanlah pendirian kami dan menangkanlah kami terhadap kaum yang kafir."
+
+- id: q-hasbunallah
+  tajuk: Hasbunallah wa ni'mal wakil
+  kat: [quran, jiwa]
+  tag: [tawakal, takut, ancaman, cemas]
+  quran: "3:173#14-"
+  makna: "Cukuplah Allah bagi kami, dan Dialah sebaik-baik tempat berserah."
+  nota: "Diucapkan oleh Nabi Ibrahim ketika dicampak ke dalam api dan oleh Nabi Muhammad ﷺ ketika diancam (Sahih al-Bukhari, no. 4563)."
+
+- id: q-ulul-albab
+  tajuk: Doa Ulul Albab
+  kat: [quran, jiwa]
+  tag: [renungan, alam, keampunan, husnul khatimah, rabbana, qiamullail]
+  quran: "3:191#13-, 3:192-194"
+  makna: "Wahai Tuhan kami, tidaklah Engkau ciptakan semua ini dengan sia-sia; Maha Suci Engkau, peliharalah kami daripada azab neraka. … Ampunkanlah dosa kami, hapuskanlah kesalahan kami dan wafatkanlah kami bersama orang-orang yang berbakti; berikanlah apa yang Engkau janjikan melalui rasul-rasul-Mu, dan janganlah Engkau hinakan kami pada hari kiamat. Sesungguhnya Engkau tidak memungkiri janji."
+  nota: "Rasulullah ﷺ membaca ayat-ayat akhir Ali 'Imran ketika bangun malam (Sahih al-Bukhari, no. 4569)."
+
+- id: q-zalamna
+  tajuk: Doa taubat Nabi Adam
+  kat: [quran, jiwa]
+  tag: [taubat, istighfar, dosa, rabbana]
+  quran: "7:23#2-"
+  makna: "Wahai Tuhan kami, kami telah menzalimi diri kami sendiri; jika Engkau tidak mengampunkan dan merahmati kami, nescaya kami tergolong dalam orang-orang yang rugi."
+
+- id: q-afrigh-musliman
+  tajuk: Kesabaran dan mati dalam Islam
+  kat: [quran, jiwa]
+  tag: [sabar, husnul khatimah, ujian, rabbana]
+  quran: "7:126#11-"
+  makna: "Wahai Tuhan kami, limpahkanlah kesabaran kepada kami dan wafatkanlah kami dalam keadaan berserah diri (Islam)."
+
+- id: q-hasbiyallah
+  tajuk: Hasbiyallah (tawakal)
+  kat: [quran, jiwa, pagi-petang]
+  tag: [tawakal, pagi, petang, kebimbangan]
+  quran: "9:129#4-"
+  makna: "Cukuplah Allah bagiku; tiada tuhan melainkan Dia. Kepada-Nya aku bertawakal, dan Dialah Tuhan yang memiliki Arasy yang agung."
+  nota: "Amalan membacanya 7 kali pagi dan petang datang daripada riwayat Abu Dawud no. 5081 (mauquf pada Abu ad-Darda'), yang dinilai palsu (maudhu') oleh al-Albani. Ayat ini tetap doa al-Quran yang boleh dibaca bila-bila masa tanpa mengaitkan bilangan dengan janji khusus."
+
+- id: q-la-taj-alna-fitnah
+  tajuk: Jangan jadikan kami mangsa orang zalim
+  kat: [quran, ummah]
+  tag: [palestin, gaza, kezaliman, penindasan, rabbana]
+  quran: "10:85#5-, 10:86"
+  makna: "Wahai Tuhan kami, janganlah Engkau jadikan kami sasaran fitnah bagi kaum yang zalim, dan selamatkanlah kami dengan rahmat-Mu daripada kaum yang kafir."
+
+- id: q-majreha
+  tajuk: Menaiki kapal / bot
+  kat: [quran, musafir]
+  tag: [kapal, bot, feri, banjir, pemindahan, kenderaan]
+  quran: "11:41#4-"
+  makna: "Dengan nama Allah ia bergerak dan berlabuh; sesungguhnya Tuhanku Maha Pengampun lagi Maha Mengasihani."
+
+- id: q-khairun-hafizan
+  tajuk: Allah sebaik-baik penjaga
+  kat: [quran, keluarga, musafir]
+  tag: [anak, penjagaan, musafir, asrama, perpisahan]
+  quran: "12:64#12-"
+  makna: "Maka Allah jualah sebaik-baik penjaga, dan Dialah Yang Paling Mengasihani di antara yang mengasihani."
+
+- id: q-tawaffani-musliman
+  tajuk: "Doa Nabi Yusuf: husnul khatimah"
+  kat: [quran, jiwa]
+  tag: [husnul khatimah, syukur, kematian]
+  quran: "12:101"
+  makna: "Wahai Tuhanku, Engkau telah mengurniakan kepadaku sebahagian kekuasaan dan mengajarku tafsiran mimpi. Wahai Pencipta langit dan bumi, Engkaulah Pelindungku di dunia dan akhirat; wafatkanlah aku dalam keadaan Islam dan hubungkanlah aku dengan orang-orang yang soleh."
+
+- id: q-negara-aman
+  tajuk: Doa untuk negara aman dan makmur
+  kat: [quran, ummah]
+  tag: [negara, keamanan, ekonomi, rezeki, hari kebangsaan, malaysia]
+  quran: "2:126#4-18, 14:35#4-"
+  makna: "Wahai Tuhanku, jadikanlah negeri ini negeri yang aman, dan kurniakanlah rezeki buah-buahan kepada penduduknya yang beriman kepada Allah dan hari akhirat. … Wahai Tuhanku, jadikanlah negeri ini aman, dan jauhkanlah aku serta anak-anakku daripada menyembah berhala."
+
+- id: q-muqimas-solah
+  tajuk: Zuriat yang mendirikan solat; ampunan untuk ibu bapa
+  kat: [quran, keluarga, solat]
+  tag: [zuriat, anak, ibu bapa, solat, rabbana]
+  quran: "14:40-41"
+  makna: "Wahai Tuhanku, jadikanlah aku dan zuriatku orang yang mendirikan solat; wahai Tuhan kami, terimalah doaku. Wahai Tuhan kami, ampunkanlah aku, kedua ibu bapaku dan orang-orang mukmin pada hari berlakunya hisab."
+
+- id: q-ibu-bapa
+  tajuk: Doa untuk ibu bapa
+  kat: [quran, keluarga]
+  tag: [ibu bapa, arwah ibu bapa, birrul walidain]
+  quran: "17:24#8-"
+  makna: "Wahai Tuhanku, kasihanilah mereka berdua sebagaimana mereka telah mendidikku sewaktu kecil."
+
+- id: q-mudkhala-sidqin
+  tajuk: Masuk dan keluar dengan cara yang benar
+  kat: [quran, rezeki, ilmu]
+  tag: [kerja baharu, sekolah baharu, pindah, temuduga, jawatan, kerjaya]
+  quran: "17:80#2-"
+  makna: "Wahai Tuhanku, masukkanlah aku dengan cara masuk yang benar, keluarkanlah aku dengan cara keluar yang benar, dan berikanlah aku dari sisi-Mu kekuasaan (hujah) yang menolong."
+
+- id: q-ashabul-kahfi
+  tajuk: "Doa Ashabul Kahfi: rahmat dan petunjuk urusan"
+  kat: [quran, jiwa, ilmu]
+  tag: [petunjuk, urusan, keputusan, pelajar, kerjaya, rabbana]
+  quran: "18:10#7-"
+  makna: "Wahai Tuhan kami, kurniakanlah kami rahmat dari sisi-Mu dan sempurnakanlah bagi kami petunjuk yang lurus dalam urusan kami."
+
+- id: q-masyaallah
+  tajuk: Masya-Allah, la quwwata illa billah
+  kat: [quran, perlindungan]
+  tag: [ain, kagum, nikmat, syukur, anak]
+  quran: "18:39#6-12"
+  makna: "Apa yang dikehendaki Allah (itulah yang berlaku); tiada kekuatan melainkan dengan pertolongan Allah."
+  nota: "Diucapkan ketika kagum melihat nikmat diri atau orang lain, supaya terhindar daripada lupa diri dan pandangan ain."
+
+- id: q-rabbish-rahli
+  tajuk: "Doa Nabi Musa: lapangkan dada, mudahkan urusan"
+  kat: [quran, ilmu]
+  tag: [peperiksaan, spm, pembentangan, ucapan, temuduga, mengajar, belajar]
+  quran: "20:25#2-, 20:26-28"
+  makna: "Wahai Tuhanku, lapangkanlah dadaku, mudahkanlah urusanku, dan lepaskanlah kekakuan lidahku supaya mereka memahami perkataanku."
+
+- id: q-zidni-ilma
+  tajuk: Tambahkan aku ilmu
+  kat: [quran, ilmu]
+  tag: [ilmu, belajar, pelajar, peperiksaan]
+  quran: "20:114#15-"
+  makna: "Wahai Tuhanku, tambahkanlah aku ilmu."
+
+- id: q-ayyub
+  tajuk: Doa Nabi Ayyub ketika sakit
+  kat: [quran, sakit]
+  tag: [sakit, penyakit kronik, ujian, kanser, pesakit]
+  quran: "21:83#5-"
+  makna: "(Wahai Tuhanku) sesungguhnya aku ditimpa penyakit, dan Engkaulah Yang Paling Mengasihani di antara yang mengasihani."
+
+- id: q-yunus
+  tajuk: Doa Nabi Yunus (zikir dalam kesempitan)
+  kat: [quran, jiwa]
+  tag: [kesusahan, taubat, kesempitan, zikir yunus, terperangkap]
+  quran: "21:87#15-"
+  makna: "Tiada tuhan melainkan Engkau, Maha Suci Engkau; sesungguhnya aku termasuk dalam golongan orang yang zalim."
+  nota: "Tiada seorang muslim pun berdoa dengannya dalam sesuatu urusan melainkan Allah memperkenankannya (Jami' at-Tirmizi, no. 3505)."
+
+- id: q-zuriat-tidak-bersendirian
+  tajuk: Jangan biarkan aku seorang diri
+  kat: [quran, keluarga]
+  tag: [zuriat, anak, kesunyian, warga emas]
+  quran: "21:89#5-"
+  makna: "Wahai Tuhanku, janganlah Engkau biarkan aku seorang diri (tanpa zuriat), dan Engkaulah sebaik-baik yang mewarisi."
+
+- id: q-munzalan-mubarakan
+  tajuk: Masuk rumah / tempat baharu
+  kat: [quran, majlis, musafir]
+  tag: [pindah rumah, rumah baharu, hotel, asrama, pejabat baharu]
+  quran: "23:29#2-"
+  makna: "Wahai Tuhanku, tempatkanlah aku di tempat yang diberkati, dan Engkaulah sebaik-baik pemberi tempat."
+
+- id: q-hamazatisy-syayatin
+  tajuk: Berlindung daripada hasutan syaitan
+  kat: [quran, perlindungan]
+  tag: [syaitan, was-was, gangguan, perlindungan]
+  quran: "23:97#2-, 23:98"
+  makna: "Wahai Tuhanku, aku berlindung kepada-Mu daripada hasutan syaitan-syaitan, dan aku berlindung kepada-Mu, wahai Tuhanku, daripada kehadiran mereka kepadaku."
+
+- id: q-ighfir-warham
+  tajuk: Ampunilah dan rahmatilah
+  kat: [quran, jiwa]
+  tag: [keampunan, rahmat]
+  quran: "23:118#2-"
+  makna: "Wahai Tuhanku, ampunilah dan rahmatilah; Engkaulah sebaik-baik pemberi rahmat."
+
+- id: q-qurrata-ayun
+  tajuk: Pasangan dan zuriat penyejuk mata
+  kat: [quran, keluarga]
+  tag: [suami isteri, perkahwinan, anak, keluarga bahagia, rabbana]
+  quran: "25:74#3-"
+  makna: "Wahai Tuhan kami, kurniakanlah kepada kami pasangan dan zuriat yang menyejukkan mata, dan jadikanlah kami ikutan bagi orang-orang yang bertakwa."
+
+- id: q-awzi-ni-sulaiman
+  tajuk: "Doa Nabi Sulaiman: ilham untuk bersyukur"
+  kat: [quran, jiwa]
+  tag: [syukur, kejayaan, ibu bapa, amal soleh]
+  quran: "27:19#6-"
+  makna: "Wahai Tuhanku, ilhamkanlah aku untuk mensyukuri nikmat-Mu yang Engkau kurniakan kepadaku dan kedua ibu bapaku, dan untuk mengerjakan amal soleh yang Engkau redai; dan masukkanlah aku dengan rahmat-Mu ke dalam golongan hamba-hamba-Mu yang soleh."
+
+- id: q-lima-anzalta
+  tajuk: "Doa Nabi Musa: berhajat kepada kebaikan"
+  kat: [quran, rezeki]
+  tag: [rezeki, kerja, jodoh, perniagaan, hajat]
+  quran: "28:24#8-"
+  makna: "Wahai Tuhanku, sesungguhnya aku sangat berhajat kepada apa jua kebaikan yang Engkau turunkan kepadaku."
+
+- id: q-hab-li-salihin
+  tajuk: Kurniakan zuriat yang soleh
+  kat: [quran, keluarga]
+  tag: [zuriat, anak, hamil]
+  quran: "37:100"
+  makna: "Wahai Tuhanku, kurniakanlah kepadaku (anak) dari kalangan orang-orang yang soleh."
+
+- id: q-ufawwidu
+  tajuk: Menyerahkan urusan kepada Allah
+  kat: [quran, jiwa]
+  tag: [tawakal, keputusan, kezaliman, tekanan kerja]
+  quran: "40:44#5-"
+  makna: "Dan aku serahkan urusanku kepada Allah; sesungguhnya Allah Maha Melihat akan hamba-hamba-Nya."
+
+- id: q-kenderaan
+  tajuk: Menaiki kenderaan
+  kat: [quran, musafir, harian]
+  tag: [kenderaan, kereta, motosikal, kapal terbang, bas, kereta api]
+  quran: "43:13#12-, 43:14"
+  makna: "Maha Suci (Allah) yang telah menundukkan kenderaan ini bagi kami, sedangkan kami tidak mampu menguasainya; dan sesungguhnya kepada Tuhan kamilah kami akan kembali."
+  nota: "Sunnah: baca \"Bismillaah\" ketika meletak kaki, \"Alhamdulillaah\" ketika duduk, kemudian ayat ini (Sunan Abi Dawud, no. 2602 — disahihkan al-Albani; Sahih Muslim, no. 1342)."
+
+- id: q-umur-40
+  tajuk: Doa usia 40 tahun
+  kat: [quran, keluarga]
+  tag: [umur 40, ibu bapa, zuriat, taubat, syukur]
+  quran: "46:15#22-"
+  makna: "Wahai Tuhanku, ilhamkanlah aku untuk mensyukuri nikmat-Mu yang Engkau kurniakan kepadaku dan kedua ibu bapaku, dan untuk mengerjakan amal soleh yang Engkau redai; perbaikilah zuriat keturunanku. Sesungguhnya aku bertaubat kepada-Mu dan aku termasuk orang yang berserah diri."
+
+- id: q-lil-ikhwan
+  tajuk: Untuk saudara seiman yang telah pergi
+  kat: [quran, kematian, ummah]
+  tag: [arwah, si mati, ukhuwah, perpaduan, dendam, rabbana]
+  quran: "59:10#6-"
+  makna: "Wahai Tuhan kami, ampunkanlah kami dan saudara-saudara kami yang telah mendahului kami dalam iman, dan janganlah Engkau jadikan dalam hati kami perasaan dendam terhadap orang-orang yang beriman. Wahai Tuhan kami, sesungguhnya Engkau Amat Belas Kasihan lagi Maha Mengasihani."
+
+- id: q-alaika-tawakkalna
+  tajuk: Kepada-Mu kami bertawakal
+  kat: [quran, jiwa]
+  tag: [tawakal, taubat, rabbana]
+  quran: "60:4#46-"
+  makna: "Wahai Tuhan kami, kepada-Mu kami bertawakal, kepada-Mu kami kembali bertaubat, dan kepada-Mu tempat kembali."
+
+- id: q-atmim-nurana
+  tajuk: Sempurnakanlah cahaya kami
+  kat: [quran, jiwa]
+  tag: [taubat, cahaya, akhirat, rabbana]
+  quran: "66:8#35-"
+  makna: "Wahai Tuhan kami, sempurnakanlah cahaya kami dan ampunkanlah kami; sesungguhnya Engkau Maha Berkuasa atas segala sesuatu."
+
+- id: q-nuh
+  tajuk: Doa Nabi Nuh untuk ibu bapa dan mukmin
+  kat: [quran, keluarga]
+  tag: [ibu bapa, rumah, mukmin, keampunan]
+  quran: "71:28"
+  makna: "Wahai Tuhanku, ampunkanlah aku, kedua ibu bapaku, sesiapa yang masuk ke rumahku dengan beriman, serta orang-orang mukmin lelaki dan perempuan; dan janganlah Engkau tambahkan orang-orang zalim melainkan kebinasaan."
+
+- id: q-mustadhafin
+  tajuk: Doa golongan yang tertindas
+  kat: [quran, ummah]
+  tag: [palestin, gaza, pelarian, mangsa perang, tertindas, rohingya]
+  quran: "4:75#15-"
+  makna: "Wahai Tuhan kami, keluarkanlah kami dari negeri yang penduduknya zalim ini, dan berikanlah kami pelindung serta penolong dari sisi-Mu."
+
+- id: q-ayat-kursi
+  tajuk: Ayat Kursi (pendinding)
+  kat: [quran, perlindungan]
+  tag: [pendinding, tidur, selepas solat, gangguan]
+  quran: "2:255"
+  nota: "Sesiapa membacanya ketika hendak tidur, sentiasa ada penjaga daripada Allah dan syaitan tidak akan mendekatinya hingga pagi (Sahih al-Bukhari, no. 2311)."
+
+- id: q-tiga-qul
+  tajuk: Tiga Qul (al-Ikhlas, al-Falaq, an-Nas)
+  kat: [quran, perlindungan, pagi-petang]
+  tag: [pendinding, pagi, petang, tidur, ruqyah]
+  ulang: 3
+  quran: "112:1-4, 113:1-5, 114:1-6"
+  nota: "Dibaca 3 kali pagi dan petang, ia mencukupi daripada segala sesuatu (Sunan Abi Dawud, no. 5082 — hasan menurut al-Albani). Rasulullah ﷺ juga membacanya sebelum tidur lalu menghembus ke tapak tangan dan menyapu badan (Sahih al-Bukhari, no. 5017)."

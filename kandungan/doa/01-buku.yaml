@@ -1,0 +1,505 @@
+# Doa & zikir daripada buku "Surah Yaasiin, Tahlil & Doa" (ISBN 983-046-278-1).
+# Teks Arab ditranskripsi daripada imbasan buku dan disemak dengan teks lazim.
+# Format: rujuk kandungan/BACA-SAYA.md. Tanda " | " memisahkan frasa (Arab) dan maknanya (BM): bilangan mesti sama.
+# Rumi TIDAK diberi untuk petikan ayat al-Quran (Muzakarah Fatwa Kebangsaan ke-24, 1989); petikan ayat ditulis sebagai "- quran: s:a".
+
+- id: istighfar-3
+  tajuk: Istighfar (pembuka)
+  kat: [tahlil]
+  tag: [istighfar, yaasin, pembuka]
+  ulang: 3
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 2 (Kaifiat, langkah 5)", darjat: amalan}
+  teks: "أَسْتَغْفِرُ اللّٰهَ الْعَظِيْمَ"
+  frasa: "Aku memohon ampun kepada Allah Yang Maha Agung"
+  rumi: "Astaghfirullaahal 'aziim."
+  makna: "Aku memohon ampun kepada Allah Yang Maha Agung."
+
+- id: fatihah-hadiah
+  tajuk: Fatihah memulakan Yaasin & Tahlil
+  subtajuk: Hadiah bacaan kepada roh ibu bapa dan muslimin
+  kat: [tahlil]
+  tag: [hadiah, fatihah, yaasin, tahlil, arwah, pembuka]
+  lihat: [tahlil, fadhilat-yaasin]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 5–6", darjat: ulama}
+  nota: "Jika nama arwah diisi, baris \"khususnya kepada roh…\" dimasukkan secara automatik (ms 5). Tanpa nama, ia menjadi versi \"Yaasin sahaja\" (ms 6)."
+  bahagian:
+    - teks: "اَلْفَاتِحَةَ وَيٰسٓ | إِلَى أَرْوَاحِ وَالِدِيْنَا وَوَالِدِيْكُمْ | وَإِلَى أَرْوَاحِ الْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ | كَافَّةً عَامَّةً"
+      frasa: "(Kami hadiahkan) al-Fatihah dan Yaasin | kepada roh ibu bapa kami dan ibu bapa kamu | dan kepada roh sekalian muslimin dan muslimat | seluruhnya secara umum"
+      rumi: "Al-Faatihata wa Yaasiin, ilaa arwaahi waalidiinaa wa waalidiikum, wa ilaa arwaahil muslimiina wal muslimaati kaaffatan 'aammah."
+      makna: "(Kami hadiahkan bacaan) al-Fatihah dan Yaasin kepada roh ibu bapa kami dan ibu bapa kamu, dan kepada roh sekalian muslimin dan muslimat seluruhnya."
+    - arwah: khusus-fatihah
+    - teks: "وَإِلَى حَضْرَةِ النَّبِيِّ الْمُصْطَفَى | رَسُوْلِ اللّٰهِ صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ | وَآلِهِ وَأَصْحَابِهِ الْكِرَامِ | اَلْفَاتِحَةْ"
+      frasa: "Dan kepada hadrat Nabi yang terpilih | Rasulullah, semoga Allah melimpahkan selawat dan salam ke atasnya | serta keluarga dan para sahabatnya yang mulia | al-Fatihah"
+      rumi: "Wa ilaa hadhratin nabiyyil mustafaa, rasuulillaahi sallallaahu 'alaihi wa sallam, wa aalihii wa ash-haabihil kiraam. Al-Faatihah."
+      makna: "Dan kepada hadrat Nabi yang terpilih, Rasulullah ﷺ, serta keluarga dan para sahabat baginda yang mulia. Al-Fatihah."
+
+- id: selawat-11
+  tajuk: Selawat sebelum Yaasin
+  kat: [tahlil, selawat]
+  tag: [selawat, yaasin]
+  ulang: 11
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 7", darjat: amalan}
+  teks: "اَللّٰهُمَّ صَلِّ | عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ | وَسَلِّمْ"
+  frasa: "Ya Allah, limpahkanlah selawat | ke atas penghulu kami Muhammad | dan ke atas keluarga serta sahabatnya | dan kurniakanlah kesejahteraan"
+  rumi: "Allaahumma salli 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallim."
+  makna: "Ya Allah, limpahkanlah selawat ke atas penghulu kami Muhammad, serta keluarga dan sahabat baginda, dan kurniakanlah kesejahteraan."
+
+- id: doa-selepas-yaasin
+  tajuk: Doa Selepas Membaca Yaasin
+  kat: [tahlil]
+  tag: [yaasin, doa yaasin, hajat, kesusahan, hutang]
+  lihat: [fadhilat-yaasin]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 30–32", darjat: ulama, nota: "Doa susunan ulama yang lazim dibaca di Nusantara selepas Yaasin; bukan lafaz hadis. Mengandungi tawassul (\"bi haqqi\"), amalan yang diterima dalam mazhab Syafi'i arus perdana."}
+  bahagian:
+    - tajuk: Pujian dan selawat
+      teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | حَمْدًا يُوَافِيْ نِعَمَهُ | وَيُكَافِئُ مَزِيْدَهُ | يَا رَبَّنَا لَكَ الْحَمْدُ | كَمَا يَنْبَغِيْ لِجَلَالِ وَجْهِكَ | وَعَظِيْمِ سُلْطَانِكَ | اَللّٰهُمَّ صَلِّ وَسَلِّمْ | عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | pujian yang menyamai nikmat-nikmat-Nya | dan membalas tambahan kurniaan-Nya | Wahai Tuhan kami, bagi-Mu segala puji | sebagaimana yang layak bagi keagungan wajah-Mu | dan kebesaran kekuasaan-Mu | Ya Allah, limpahkanlah selawat dan salam | ke atas penghulu kami Muhammad | dan ke atas keluarga serta sahabatnya sekalian"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, hamdan yuwaafii ni'amahuu wa yukaafi'u maziidah. Yaa rabbanaa lakal hamdu kamaa yanbaghii lijalaali wajhika wa 'aziimi sultaanik. Allaahumma salli wa sallim 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii ajma'iin."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam, pujian yang menyamai nikmat-nikmat-Nya dan membalas tambahan kurniaan-Nya. Wahai Tuhan kami, bagi-Mu segala puji sebagaimana yang layak bagi keagungan wajah-Mu dan kebesaran kekuasaan-Mu. Ya Allah, limpahkanlah selawat dan salam ke atas penghulu kami Muhammad serta keluarga dan sahabat baginda sekalian."
+    - tajuk: Tawassul
+      teks: "اَللّٰهُمَّ بِحَقِّ يٰسٓ وَالْقُرْآنِ الْحَكِيْمِ | وَبِمَنِ اخْتَرْتَهُ بِالرِّسَالَةِ وَالنُّبُوَّةِ | وَالْوِلَايَةِ وَالْهِدَايَةِ إِلَى صِرَاطِكَ الْمُسْتَقِيْمِ | وَبِجَمِيْعِ مَا جَاءَ بِهِ مِنْكَ جِبْرِيْلُ | تَنْزِيْلَ الْعَزِيْزِ الرَّحِيْمِ | وَبِخَوَاصِّ الْحُرُوْفِ وَالْأَسْمَاءِ التَّامَّاتِ | وَبِمَا أَظْهَرْتَ فِي الْوُجُوْدِ لِكُلِّ مَوْجُوْدٍ | مِنَ الْآيَاتِ الْبَيِّنَاتِ | وَبِخَفِيِّ لُطْفِكَ الْمُفَرِّجِ عَنْ كُلِّ مَهْمُوْمٍ | الْمُخَلِّصِ لِكُلِّ مَدْيُوْنٍ | يَا مُجْرِيَ الْبِحَارِ وَالْعُيُوْنِ | يَا مَنْ خَزَائِنُهُ بَيْنَ الْكَافِ وَالنُّوْنِ | وَعَلِمَ بِمَا كَانَ قَبْلَ أَنْ يَكُوْنَ"
+      frasa: "Ya Allah, dengan kemuliaan Yaasin dan al-Quran yang penuh hikmah | dan dengan (kemuliaan) insan yang Engkau pilih dengan risalah dan kenabian | dan kewalian serta hidayah ke jalan-Mu yang lurus | dan dengan segala yang dibawa oleh Jibril daripada-Mu | (iaitu) wahyu daripada Yang Maha Perkasa lagi Maha Mengasihani | dan dengan keistimewaan huruf-huruf dan nama-nama-Mu yang sempurna | dan dengan apa yang Engkau zahirkan dalam kewujudan bagi setiap yang wujud | daripada tanda-tanda yang nyata | dan dengan kelembutan-Mu yang tersembunyi, yang melapangkan setiap yang runsing | yang melepaskan setiap orang yang berhutang | Wahai Tuhan yang mengalirkan lautan dan mata air | Wahai Tuhan yang perbendaharaan-Nya antara kaf dan nun (\"Kun\") | dan mengetahui apa yang ada sebelum ia berlaku"
+      rumi: "Allaahumma bihaqqi ⟨36:1-2⟩, wa biman ikhtartahuu birrisaalati wan nubuwwati wal wilaayati wal hidaayati ilaa siraatikal mustaqiim, wa bijamii'i maa jaa'a bihii minka jibriilu ⟨36:5⟩, wa bikhawaassil huruufi wal asmaa'it taammaat, wa bimaa azhartaa fil wujuudi likulli maujuudin minal aayaatil bayyinaat, wa bikhafiyyi lutfikal mufarriji 'an kulli mahmuum, al-mukhallisi likulli madyuun. Yaa mujriyal bihaari wal 'uyuun, yaa man khazaa'inuhuu bainal kaafi wan nuun, wa 'alima bimaa kaana qabla an yakuun."
+      makna: "Ya Allah, dengan kemuliaan Yaasin dan al-Quran yang penuh hikmah, dan dengan insan yang Engkau pilih dengan risalah, kenabian, kewalian dan hidayah ke jalan-Mu yang lurus, dan dengan segala yang dibawa oleh Jibril daripada-Mu, wahyu daripada Yang Maha Perkasa lagi Maha Mengasihani; dengan keistimewaan huruf-huruf dan nama-nama-Mu yang sempurna; dengan tanda-tanda nyata yang Engkau zahirkan bagi setiap yang wujud; dan dengan kelembutan-Mu yang tersembunyi yang melapangkan setiap yang runsing dan melepaskan setiap yang berhutang. Wahai Tuhan yang mengalirkan lautan dan mata air, wahai Tuhan yang perbendaharaan-Nya antara kaf dan nun, yang mengetahui sesuatu sebelum ia berlaku."
+    - tajuk: Permohonan
+      teks: "وَنَسْأَلُكَ اللّٰهُمَّ أَنْ تَسْلُكَ بِنَا جَادَّةَ رِضَاكَ | وَأَنْ تَجْعَلَنَا أَهْلًا وَمَحَلًّا لِسَعَادَتِكَ وَغِنَاكَ | وَأَنْ تُيَسِّرَ لَنَا جَمِيْعَ الْمُرَادَاتِ وَالْمَطَالِبِ | وَأَنْ تَجْعَلَ رِضَاكَ عَنَّا خَيْرَ مُصَاحِبٍ لَنَا وَرَفِيْقٍ | وَأَنْ تُتْحِفَنَا بِالْجَلَالَةِ وَالْمَهَابَةِ | وَأَنْ تَمُنَّ عَلَيْنَا بِسُرْعَةِ الْإِجَابَةِ | اِسْتَجِبِ اللّٰهُمَّ دُعَاءَنَا | وَحَقِّقْ فِيْكَ رَجَاءَنَا | وَأَدْخِلْنَا فِيْ حِرْزِ لُطْفِكَ الْمَصُوْنِ | بِسِرِّ قَوْلِكَ"
+      frasa: "Dan kami memohon kepada-Mu, ya Allah, agar Engkau bawa kami menyusuri jalan keredaan-Mu | dan agar Engkau jadikan kami ahli dan tempat bagi kebahagiaan dan kekayaan kurniaan-Mu | dan agar Engkau mudahkan bagi kami segala hajat dan permintaan | dan agar Engkau jadikan keredaan-Mu terhadap kami sebaik-baik teman dan sahabat kami | dan agar Engkau hadiahkan kami kemuliaan dan kewibawaan | dan agar Engkau kurniakan doa kami dimakbulkan dengan segera | Perkenankanlah, ya Allah, doa kami | dan tunaikanlah harapan kami kepada-Mu | dan masukkanlah kami ke dalam benteng kelembutan-Mu yang terpelihara | dengan rahsia firman-Mu"
+      rumi: "Wa nas'alukallaahumma an tasluka binaa jaaddata ridhaak, wa an taj'alanaa ahlan wa mahallan lisa'aadatika wa ghinaak, wa an tuyassira lanaa jamii'al muraadaati wal mataalib, wa an taj'ala ridhaaka 'annaa khaira musaahibin lanaa wa rafiiq, wa an tutfanaa bil jalaalati wal mahaabah, wa an tamunna 'alainaa bisur'atil ijaabah. Istajibillaahumma du'aa'anaa, wa haqqiq fiika rajaa'anaa, wa adkhilnaa fii hirzi lutfikal masuun, bisirri qaulik:"
+      makna: "Kami memohon kepada-Mu, ya Allah, agar Engkau bawa kami menyusuri jalan keredaan-Mu, jadikan kami layak menerima kebahagiaan dan kekayaan kurniaan-Mu, mudahkan segala hajat dan permintaan kami, jadikan keredaan-Mu sebaik-baik teman kami, kurniakan kami kemuliaan dan kewibawaan, dan makbulkan doa kami dengan segera. Perkenankanlah, ya Allah, doa kami, tunaikanlah harapan kami kepada-Mu, dan masukkanlah kami ke dalam benteng kelembutan-Mu yang terpelihara, dengan rahsia firman-Mu:"
+    - quran: "36:82-83"
+    - tajuk: Penutup
+      teks: "سُبْحَانَ الْمُنَفِّسِ عَنْ كُلِّ مَهْمُوْمٍ | سُبْحَانَ الْمُنَفِّسِ عَنْ كُلِّ مَغْمُوْمٍ | سُبْحَانَ الْمُنَفِّسِ عَنْ كُلِّ مَدْيُوْنٍ | سُبْحَانَ مَنْ أَمْرُهُ إِذَا أَرَادَ شَيْئًا أَنْ يَقُوْلَ لَهُ كُنْ فَيَكُوْنُ | يَا مُفَرِّجَ الْهُمُوْمِ | يَا مُفَرِّجُ فَرِّجْ، يَا مُفَرِّجُ فَرِّجْ | فَرِّجْ عَنَّا هُمُوْمَنَا | يَا حَيُّ يَا قَيُّوْمُ | يَا ذَا الْجَلَالِ وَالْإِكْرَامِ | وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Maha Suci (Allah) yang melapangkan setiap yang runsing | Maha Suci (Allah) yang melapangkan setiap yang berduka | Maha Suci (Allah) yang melapangkan setiap yang berhutang | Maha Suci (Allah) yang urusan-Nya, apabila Dia menghendaki sesuatu, Dia hanya berfirman \"Jadilah\", maka jadilah ia | Wahai Tuhan yang melapangkan segala kerunsingan | Wahai Yang Melapangkan, lapangkanlah (2 kali) | lapangkanlah kerunsingan kami | Wahai Yang Maha Hidup, wahai Yang Maha Berdiri Sendiri | Wahai Tuhan yang memiliki keagungan dan kemuliaan | Dan semoga Allah melimpahkan selawat ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kesejahteraan | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Subhaanal munaffisi 'an kulli mahmuum, subhaanal munaffisi 'an kulli maghmuum, subhaanal munaffisi 'an kulli madyuun, subhaana man ⟨36:82⟩. Yaa mufarrijal humuum, yaa mufarriju farrij, yaa mufarriju farrij, farrij 'annaa humuumanaa, yaa hayyu yaa qayyuum, yaa dzal jalaali wal ikraam. Wa sallallaahu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallam, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Maha Suci Allah yang melapangkan setiap yang runsing, yang berduka dan yang berhutang; Maha Suci Dia yang apabila menghendaki sesuatu, Dia hanya berfirman \"Jadilah!\" maka jadilah ia. Wahai Tuhan yang melapangkan segala kerunsingan, lapangkanlah kerunsingan kami, wahai Yang Maha Hidup lagi Maha Berdiri Sendiri, wahai Tuhan yang memiliki keagungan dan kemuliaan. Selawat dan salam ke atas penghulu kami Muhammad, keluarga dan sahabat baginda; segala puji bagi Allah, Tuhan sekalian alam."
+
+- id: doa-nisfu-syaaban
+  tajuk: Doa Yaasin Malam Nisfu Syaaban
+  kat: [tahlil, musim]
+  tag: [nisfu syaaban, syaaban, yaasin, rezeki, umur]
+  lihat: [nisfu-syaaban]
+  bila: "Malam 15 Syaaban, selepas setiap kali bacaan Yaasin (buku: selepas Maghrib)"
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 33–34", darjat: ulama, nota: "Lafaz doa ini berasal daripada kata-kata sahabat dan salaf, bukan hadis Nabi ﷺ; perenggan penutup (\"Ilaahii bit tajalliyil a'zam…\") ialah tambahan Syeikh Ma' al-'Ainain al-Syanqiti (Dar al-Ifta' Mesir, Fatwa 3009). Bacaan Yaasin 3 kali tiada nas khusus; boleh diamalkan sebagai doa umum tanpa menganggapnya sunnah warid."}
+  nota: "Ayat {{44:3-4}} (\"dibezakan setiap urusan yang penuh hikmah\") merujuk kepada malam al-Qadar dalam Ramadan menurut Ibn Kathir dan jumhur mufassirin; pandangan yang mengaitkannya dengan Nisfu Syaaban (diriwayatkan daripada 'Ikrimah) ditolak oleh Ibn Kathir. [[nisfu-syaaban|Baca nota hukum]]"
+  bahagian:
+    - tajuk: Pembuka
+      teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | وَالصَّلَاةُ وَالسَّلَامُ عَلَى سَيِّدِنَا مُحَمَّدٍ أَشْرَفِ الْمُرْسَلِيْنَ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | Selawat dan salam ke atas penghulu kami Muhammad, semulia-mulia para rasul | dan ke atas keluarga serta sahabatnya sekalian"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, wassalaatu wassalaamu 'alaa sayyidinaa Muhammadin asyrafil mursaliin, wa 'alaa aalihii wa sahbihii ajma'iin."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Selawat dan salam ke atas penghulu kami Muhammad, semulia-mulia rasul, serta keluarga dan sahabat baginda sekalian."
+    - tajuk: Doa
+      teks: "اَللّٰهُمَّ يَا ذَا الْمَنِّ وَلَا يُمَنُّ عَلَيْهِ | يَا ذَا الْجَلَالِ وَالْإِكْرَامِ | يَا ذَا الطَّوْلِ وَالْإِنْعَامِ | لَا إِلٰهَ إِلَّا أَنْتَ | ظَهْرَ اللَّاجِيْنَ | وَجَارَ الْمُسْتَجِيْرِيْنَ | وَأَمَانَ الْخَائِفِيْنَ | اَللّٰهُمَّ إِنْ كُنْتَ كَتَبْتَنِيْ عِنْدَكَ فِيْ أُمِّ الْكِتَابِ | شَقِيًّا أَوْ مَحْرُوْمًا | أَوْ مَطْرُوْدًا أَوْ مُقَتَّرًا عَلَيَّ فِي الرِّزْقِ | فَامْحُ اللّٰهُمَّ بِفَضْلِكَ | شَقَاوَتِيْ وَحِرْمَانِيْ | وَطَرْدِيْ وَاقْتِتَارَ رِزْقِيْ | وَأَثْبِتْنِيْ عِنْدَكَ فِيْ أُمِّ الْكِتَابِ | سَعِيْدًا مَرْزُوْقًا | مُوَفَّقًا لِلْخَيْرَاتِ | فَإِنَّكَ قُلْتَ وَقَوْلُكَ الْحَقُّ | فِيْ كِتَابِكَ الْمُنْزَلِ | عَلَى لِسَانِ نَبِيِّكَ الْمُرْسَلِ"
+      frasa: "Ya Allah, wahai Tuhan yang sentiasa memberi kurnia dan tidak menerima kurnia | Wahai Tuhan yang memiliki keagungan dan kemuliaan | Wahai Tuhan yang memiliki keluasan pemberian dan nikmat | Tiada tuhan melainkan Engkau | (Engkaulah) tempat bersandar orang yang memohon perlindungan | dan pelindung orang yang meminta perlindungan | dan tempat aman orang yang ketakutan | Ya Allah, jika Engkau telah menulis aku di sisi-Mu dalam Ummul Kitab | sebagai orang yang celaka atau terhalang (daripada kebaikan) | atau tersisih, atau disempitkan rezekiku | maka hapuskanlah, ya Allah, dengan kurnia-Mu | kecelakaanku dan keterhalanganku | dan ketersisihanku serta kesempitan rezekiku | dan tetapkanlah aku di sisi-Mu dalam Ummul Kitab | sebagai orang yang bahagia, dimurahkan rezeki | dan diberi taufik kepada segala kebaikan | Kerana sesungguhnya Engkau telah berfirman, dan firman-Mu adalah benar | dalam kitab-Mu yang diturunkan | melalui lisan Nabi-Mu yang diutus"
+      rumi: "Allaahumma yaa dzal manni wa laa yumannu 'alaih, yaa dzal jalaali wal ikraam, yaa dzat tauli wal in'aam, laa ilaaha illaa anta zahral laajiin, wa jaaral mustajiiriin, wa amaanal khaa'ifiin. Allaahumma in kunta katabtanii 'indaka fii ummil kitaabi syaqiyyan au mahruuman au matruudan au muqattaran 'alayya fir rizqi, famhullaahumma bifadhlika syaqaawatii wa hirmaanii wa tardii waqtitaara rizqii, wa atsbitnii 'indaka fii ummil kitaabi sa'iidan marzuuqan muwaffaqan lil khairaat, fa innaka qulta wa qaulukal haqqu fii kitaabikal munzali 'alaa lisaani nabiyyikal mursal:"
+      makna: "Ya Allah, wahai Tuhan yang sentiasa memberi kurnia namun tidak menerima kurnia, yang memiliki keagungan, kemuliaan, keluasan pemberian dan nikmat; tiada tuhan melainkan Engkau, tempat bersandar orang yang memohon perlindungan, pelindung yang diminta perlindungan, dan tempat aman orang yang ketakutan. Ya Allah, jika Engkau telah menulis aku di sisi-Mu dalam Ummul Kitab sebagai orang yang celaka, terhalang, tersisih atau sempit rezeki, maka hapuskanlah semua itu dengan kurnia-Mu, dan tetapkanlah aku di sisi-Mu sebagai orang yang bahagia, dimurahkan rezeki dan diberi taufik kepada kebaikan. Kerana Engkau telah berfirman, dan firman-Mu benar, dalam kitab-Mu yang diturunkan kepada Nabi-Mu:"
+    - quran: "13:39"
+    - tajuk: Penutup (tambahan Syeikh Ma' al-'Ainain)
+      teks: "إِلٰهِيْ بِالتَّجَلِّي الْأَعْظَمِ | فِيْ لَيْلَةِ النِّصْفِ مِنْ شَهْرِ شَعْبَانَ الْمُكَرَّمِ | الَّتِيْ يُفْرَقُ فِيْهَا كُلُّ أَمْرٍ حَكِيْمٍ وَيُبْرَمُ | أَنْ تَكْشِفَ عَنَّا مِنَ الْبَلَاءِ | مَا نَعْلَمُ وَمَا لَا نَعْلَمُ | وَمَا أَنْتَ بِهِ أَعْلَمُ | إِنَّكَ أَنْتَ الْأَعَزُّ الْأَكْرَمُ | وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Wahai Tuhanku, dengan tajalli-Mu yang teragung | pada malam pertengahan bulan Syaaban yang dimuliakan | yang padanya dipisahkan dan diputuskan setiap urusan yang penuh hikmah | (kami memohon) agar Engkau hindarkan daripada kami bala | yang kami ketahui dan yang tidak kami ketahui | dan yang Engkau lebih mengetahuinya | Sesungguhnya Engkau Maha Perkasa lagi Maha Pemurah | Semoga Allah melimpahkan selawat ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kesejahteraan | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Ilaahii bit tajalliyil a'zami fii lailatin nisfi min syahri sya'baanal mukarram, allatii ⟨44:4⟩ wa yubram, an taksyifa 'annaa minal balaa'i maa na'lamu wa maa laa na'lamu wa maa anta bihii a'lam, innaka antal a'azzul akram. Wa sallallaahu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallam, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Wahai Tuhanku, dengan tajalli-Mu yang teragung pada malam pertengahan Syaaban yang dimuliakan, kami memohon agar Engkau hindarkan daripada kami bala yang kami ketahui, yang tidak kami ketahui dan yang Engkau lebih mengetahuinya. Sesungguhnya Engkau Maha Perkasa lagi Maha Pemurah. Selawat dan salam ke atas penghulu kami Muhammad, keluarga dan sahabat baginda; segala puji bagi Allah, Tuhan sekalian alam."
+
+- id: tahlil-pembuka
+  tajuk: Hadiah Fatihah pembuka Tahlil
+  kat: [tahlil]
+  tag: [tahlil, hadiah, arwah, pembuka]
+  lihat: [tahlil]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 35", darjat: ulama}
+  bahagian:
+    - teks: "إِلَى حَضْرَةِ سَيِّدِنَا وَحَبِيْبِنَا وَشَفِيْعِنَا مُحَمَّدٍ | صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ | وَإِلَى أَرْوَاحِ آبَائِهِ وَإِخْوَانِهِ مِنَ الْأَنْبِيَاءِ وَالْمُرْسَلِيْنَ | صَلَوَاتُ اللّٰهِ وَسَلَامُهُ عَلَيْهِ وَعَلَيْهِمْ أَجْمَعِيْنَ | وَعَلَى آلِ كُلٍّ وَالصَّحَابَةِ وَالْقَرَابَةِ وَالتَّابِعِيْنَ | وَتَابِعِ التَّابِعِيْنَ بِإِحْسَانٍ إِلَى يَوْمِ الدِّيْنِ | وَإِلَى أَرْوَاحِ وَالِدِيْنَا وَمُعَلِّمِيْنَا | وَذَوِي الْحُقُوْقِ عَلَيْنَا أَجْمَعِيْنَ"
+      frasa: "Kepada hadrat penghulu kami, kekasih kami dan pemberi syafaat kami, Muhammad | semoga Allah melimpahkan selawat dan salam ke atasnya | dan kepada roh bapa-bapa dan saudara-saudaranya dari kalangan para nabi dan rasul | selawat dan salam Allah ke atas baginda dan ke atas mereka sekalian | dan ke atas keluarga setiap mereka, para sahabat, kaum kerabat dan tabi'in | dan pengikut tabi'in dengan kebaikan hingga hari pembalasan | dan kepada roh ibu bapa kami dan guru-guru kami | dan orang-orang yang mempunyai hak ke atas kami sekalian"
+      rumi: "Ilaa hadhrati sayyidinaa wa habiibinaa wa syafii'inaa Muhammadin sallallaahu 'alaihi wa sallam, wa ilaa arwaahi aabaa'ihii wa ikhwaanihii minal anbiyaa'i wal mursaliin, salawaatullaahi wa salaamuhuu 'alaihi wa 'alaihim ajma'iin, wa 'alaa aali kullin was sahaabati wal qaraabati wat taabi'iin, wa taabi'it taabi'iina bi ihsaanin ilaa yaumid diin, wa ilaa arwaahi waalidiinaa wa mu'allimiinaa wa dzawil huquuqi 'alainaa ajma'iin."
+      makna: "Kepada hadrat penghulu, kekasih dan pemberi syafaat kami, Muhammad ﷺ, dan kepada roh bapa-bapa dan saudara-saudara baginda dari kalangan para nabi dan rasul — selawat dan salam Allah ke atas baginda dan mereka sekalian — serta keluarga mereka, para sahabat, kaum kerabat, tabi'in dan pengikut tabi'in hingga hari kiamat; dan kepada roh ibu bapa kami, guru-guru kami dan sesiapa yang mempunyai hak ke atas kami sekalian."
+    - arwah: khusus-fatihah
+      pilihan: true
+    - teks: "اَلْفَاتِحَةْ"
+      frasa: "al-Fatihah"
+      rumi: "Al-Faatihah."
+      makna: "(Bacalah) al-Fatihah."
+
+- id: zikir-tahlil-takbir
+  tajuk: Tahlil dan takbir
+  kat: [tahlil, zikir]
+  tag: [tahlil, takbir]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 37–38 (selepas al-Ikhlas, al-Falaq, an-Nas)", darjat: amalan}
+  teks: "لَا إِلٰهَ إِلَّا اللّٰهُ | وَاللّٰهُ أَكْبَرُ"
+  frasa: "Tiada tuhan (yang disembah) melainkan Allah | dan Allah Maha Besar"
+  rumi: "Laa ilaaha illallaahu wallaahu akbar."
+  makna: "Tiada tuhan yang disembah melainkan Allah, dan Allah Maha Besar."
+
+- id: zikir-irhamna
+  tajuk: Memohon rahmat
+  kat: [tahlil, zikir]
+  tag: [tahlil, rahmat]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 42", darjat: amalan}
+  teks: "بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِيْنَ ارْحَمْنَا | يَا أَرْحَمَ الرَّاحِمِيْنَ ارْحَمْنَا | يَا أَرْحَمَ الرَّاحِمِيْنَ ارْحَمْنَا"
+  frasa: "Dengan rahmat-Mu, wahai Yang Paling Mengasihani, rahmatilah kami | Wahai Yang Paling Mengasihani, rahmatilah kami | Wahai Yang Paling Mengasihani, rahmatilah kami"
+  rumi: "Birahmatika yaa arhamar raahimiinarhamnaa, yaa arhamar raahimiinarhamnaa, yaa arhamar raahimiinarhamnaa."
+  makna: "Dengan rahmat-Mu, wahai Tuhan Yang Paling Mengasihani di antara yang mengasihani, rahmatilah kami (3 kali)."
+
+- id: selawat-tahlil
+  tajuk: Selawat Tahlil (tiga rangkap)
+  kat: [tahlil, selawat]
+  tag: [selawat, tahlil]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 43–44", darjat: ulama}
+  bahagian:
+    - teks: "اَللّٰهُمَّ صَلِّ أَفْضَلَ صَلَاةٍ | عَلَى أَسْعَدِ مَخْلُوْقَاتِكَ حَبِيْبِ اللّٰهِ | سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ | عَدَدَ مَعْلُوْمَاتِكَ وَمِدَادَ كَلِمَاتِكَ | كُلَّمَا ذَكَرَكَ الذَّاكِرُوْنَ | وَغَفَلَ عَنْ ذِكْرِكَ الْغَافِلُوْنَ"
+      frasa: "Ya Allah, limpahkanlah selawat yang paling utama | ke atas makhluk-Mu yang paling bahagia, kekasih Allah | penghulu kami Muhammad, serta keluarga dan sahabatnya, dan kurniakanlah kesejahteraan | sebanyak bilangan yang Engkau ketahui dan sebanyak dakwat kalimah-kalimah-Mu | setiap kali orang-orang yang berzikir mengingati-Mu | dan setiap kali orang-orang yang lalai lupa daripada mengingati-Mu"
+      rumi: "Allaahumma salli afdhala salaatin 'alaa as'adi makhluuqaatika habiibillaah, sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallim, 'adada ma'luumaatika wa midaada kalimaatik, kullamaa dzakarakadz dzaakiruun, wa ghafala 'an dzikrikal ghaafiluun."
+      makna: "Ya Allah, limpahkanlah selawat yang paling utama ke atas makhluk-Mu yang paling bahagia, kekasih Allah, penghulu kami Muhammad, serta keluarga dan sahabat baginda, dan kurniakanlah kesejahteraan — sebanyak segala yang Engkau ketahui dan sebanyak dakwat kalimah-Mu, setiap kali Engkau diingati oleh orang yang berzikir dan dilupakan oleh orang yang lalai."
+    - teks: "اَللّٰهُمَّ صَلِّ أَفْضَلَ صَلَاةٍ | عَلَى أَسْعَدِ مَخْلُوْقَاتِكَ شَمْسِ الضُّحَى | سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ | عَدَدَ مَعْلُوْمَاتِكَ وَمِدَادَ كَلِمَاتِكَ | كُلَّمَا ذَكَرَكَ الذَّاكِرُوْنَ | وَغَفَلَ عَنْ ذِكْرِكَ الْغَافِلُوْنَ"
+      frasa: "Ya Allah, limpahkanlah selawat yang paling utama | ke atas makhluk-Mu yang paling bahagia, matahari waktu dhuha | penghulu kami Muhammad, serta keluarga dan sahabatnya, dan kurniakanlah kesejahteraan | sebanyak bilangan yang Engkau ketahui dan sebanyak dakwat kalimah-kalimah-Mu | setiap kali orang-orang yang berzikir mengingati-Mu | dan setiap kali orang-orang yang lalai lupa daripada mengingati-Mu"
+      rumi: "Allaahumma salli afdhala salaatin 'alaa as'adi makhluuqaatika syamsidh dhuhaa, sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallim, 'adada ma'luumaatika wa midaada kalimaatik, kullamaa dzakarakadz dzaakiruun, wa ghafala 'an dzikrikal ghaafiluun."
+      makna: "Ya Allah, limpahkanlah selawat yang paling utama ke atas makhluk-Mu yang paling bahagia, matahari waktu dhuha, penghulu kami Muhammad, serta keluarga dan sahabat baginda, dan kurniakanlah kesejahteraan — sebanyak segala yang Engkau ketahui dan sebanyak dakwat kalimah-Mu, setiap kali Engkau diingati oleh orang yang berzikir dan dilupakan oleh orang yang lalai."
+    - teks: "اَللّٰهُمَّ صَلِّ أَفْضَلَ صَلَاةٍ | عَلَى أَسْعَدِ مَخْلُوْقَاتِكَ بَدْرِ الدُّجَى | سَيِّدِنَا مُحَمَّدٍ وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ | عَدَدَ مَعْلُوْمَاتِكَ وَمِدَادَ كَلِمَاتِكَ | كُلَّمَا ذَكَرَكَ الذَّاكِرُوْنَ | وَغَفَلَ عَنْ ذِكْرِكَ الْغَافِلُوْنَ"
+      frasa: "Ya Allah, limpahkanlah selawat yang paling utama | ke atas makhluk-Mu yang paling bahagia, bulan purnama di kegelapan malam | penghulu kami Muhammad, serta keluarga dan sahabatnya, dan kurniakanlah kesejahteraan | sebanyak bilangan yang Engkau ketahui dan sebanyak dakwat kalimah-kalimah-Mu | setiap kali orang-orang yang berzikir mengingati-Mu | dan setiap kali orang-orang yang lalai lupa daripada mengingati-Mu"
+      rumi: "Allaahumma salli afdhala salaatin 'alaa as'adi makhluuqaatika badrid dujaa, sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallim, 'adada ma'luumaatika wa midaada kalimaatik, kullamaa dzakarakadz dzaakiruun, wa ghafala 'an dzikrikal ghaafiluun."
+      makna: "Ya Allah, limpahkanlah selawat yang paling utama ke atas makhluk-Mu yang paling bahagia, bulan purnama di kegelapan malam, penghulu kami Muhammad, serta keluarga dan sahabat baginda, dan kurniakanlah kesejahteraan — sebanyak segala yang Engkau ketahui dan sebanyak dakwat kalimah-Mu, setiap kali Engkau diingati oleh orang yang berzikir dan dilupakan oleh orang yang lalai."
+    - teks: "وَسَلِّمْ | وَرَضِيَ اللّٰهُ تَبَارَكَ وَتَعَالَى | عَنْ سَادَاتِنَا أَصْحَابِ رَسُوْلِ اللّٰهِ أَجْمَعِيْنَ"
+      frasa: "Dan kurniakanlah kesejahteraan | Dan semoga Allah Yang Maha Berkat lagi Maha Tinggi meredai | para pemimpin kami, sahabat-sahabat Rasulullah sekalian"
+      rumi: "Wa sallim, wa radhiyallaahu tabaaraka wa ta'aalaa 'an saadaatinaa ash-haabi rasuulillaahi ajma'iin."
+      makna: "Dan kurniakanlah kesejahteraan; semoga Allah Yang Maha Berkat lagi Maha Tinggi meredai para sahabat Rasulullah sekalian."
+
+- id: zikir-hasbunallah
+  tajuk: Hasbunallah dan hauqalah
+  kat: [tahlil, zikir]
+  tag: [tawakal, hasbunallah, tahlil]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 44; lafaz hasbunallah daripada {{3:173}}", darjat: amalan}
+  teks: "وَحَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ | وَلَا حَوْلَ وَلَا قُوَّةَ | إِلَّا بِاللّٰهِ الْعَلِيِّ الْعَظِيْمِ"
+  frasa: "Dan cukuplah Allah bagi kami, dan Dialah sebaik-baik tempat berserah | Tiada daya (menolak keburukan) dan tiada kekuatan (melakukan kebaikan) | melainkan dengan (pertolongan) Allah Yang Maha Tinggi lagi Maha Agung"
+  rumi: "Wa hasbunallaahu wa ni'mal wakiil, wa laa haula wa laa quwwata illaa billaahil 'aliyyil 'aziim."
+  makna: "Cukuplah Allah bagi kami, dan Dialah sebaik-baik tempat berserah. Tiada daya dan tiada kekuatan melainkan dengan pertolongan Allah Yang Maha Tinggi lagi Maha Agung."
+
+- id: zikir-istighfar-azim
+  tajuk: Istighfar
+  kat: [tahlil, zikir]
+  tag: [istighfar, tahlil]
+  ulang: 3
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 44", darjat: amalan}
+  teks: "أَسْتَغْفِرُ اللّٰهَ الْعَظِيْمَ"
+  frasa: "Aku memohon ampun kepada Allah Yang Maha Agung"
+  rumi: "Astaghfirullaahal 'aziim."
+  makna: "Aku memohon ampun kepada Allah Yang Maha Agung."
+
+- id: zikir-afdhal
+  tajuk: Sebaik-baik zikir
+  kat: [tahlil, zikir]
+  tag: [tahlil, kalimah tauhid]
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 3383 (lafaz asal: \"Afdhaluz zikri laa ilaaha illallaah\")", darjat: Hasan, url: "https://sunnah.com/tirmidhi:3383", nota: "Buku ms 44 memendekkan; ms 55 memakai lafaz penuh di bawah. Frasa فَاعْلَمْ أَنَّهُ ialah tambahan lazim dalam tahlil, dipetik daripada {{47:19}}.", semak_kecuali: ["فَاعْلَمْ أَنَّهُ"]}
+  teks: "أَفْضَلُ الذِّكْرِ | فَاعْلَمْ أَنَّهُ | لَا إِلٰهَ إِلَّا اللّٰهُ"
+  frasa: "Sebaik-baik zikir | maka ketahuilah bahawa ia (ialah) | tiada tuhan melainkan Allah"
+  rumi: "Afdhaludz dzikri ⟨47:19⟩."
+  makna: "Sebaik-baik zikir — ketahuilah — ialah: Laa ilaaha illallaah (tiada tuhan melainkan Allah)."
+
+- id: zikir-tahlil
+  tajuk: Laa ilaaha illallaah
+  kat: [tahlil, zikir]
+  tag: [tahlil, kalimah tauhid, zikir]
+  ulang: 100
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 45 (100 kali); Tahlil Ringkas ms 55 (33 kali)", darjat: amalan}
+  teks: "لَا إِلٰهَ إِلَّا اللّٰهُ"
+  frasa: "Tiada tuhan (yang disembah) melainkan Allah"
+  rumi: "Laa ilaaha illallaah."
+  makna: "Tiada tuhan yang disembah melainkan Allah."
+
+- id: zikir-tahlil-penutup
+  tajuk: Penutup tahlil
+  kat: [tahlil, zikir]
+  tag: [tahlil, syahadah]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 45 & 55", darjat: amalan}
+  bahagian:
+    - teks: "لَا إِلٰهَ إِلَّا اللّٰهُ | لَا إِلٰهَ إِلَّا اللّٰهُ"
+      frasa: "Tiada tuhan melainkan Allah | tiada tuhan melainkan Allah"
+      rumi: "Laa ilaaha illallaah, laa ilaaha illallaah."
+      makna: "Tiada tuhan melainkan Allah, tiada tuhan melainkan Allah."
+    - teks: "لَا إِلٰهَ إِلَّا اللّٰهُ | مُحَمَّدٌ رَسُوْلُ اللّٰهِ"
+      frasa: "Tiada tuhan melainkan Allah | Muhammad pesuruh Allah"
+      rumi: "Laa ilaaha illallaah, Muhammadur rasuulullaah."
+      makna: "Tiada tuhan melainkan Allah, Muhammad pesuruh Allah."
+    - teks: "لَا إِلٰهَ إِلَّا اللّٰهُ | مُحَمَّدٌ حَبِيْبُ اللّٰهِ"
+      frasa: "Tiada tuhan melainkan Allah | Muhammad kekasih Allah"
+      rumi: "Laa ilaaha illallaah, Muhammadun habiibullaah."
+      makna: "Tiada tuhan melainkan Allah, Muhammad kekasih Allah."
+    - teks: "لَا إِلٰهَ إِلَّا اللّٰهُ | عَلَى النَّبِيِّ سَلَامُ اللّٰهِ"
+      frasa: "Tiada tuhan melainkan Allah | ke atas Nabi, kesejahteraan daripada Allah"
+      rumi: "Laa ilaaha illallaah, 'alan nabiyyi salaamullaah."
+      makna: "Tiada tuhan melainkan Allah; semoga kesejahteraan Allah ke atas Nabi."
+      pilihan: arwah
+
+- id: selawat-pendek
+  tajuk: Selawat ringkas
+  kat: [tahlil, selawat]
+  tag: [selawat, tahlil]
+  ulang: 2
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 45 & 55", darjat: amalan}
+  teks: "اَللّٰهُمَّ صَلِّ عَلَى مُحَمَّدٍ | اَللّٰهُمَّ صَلِّ عَلَيْهِ وَسَلِّمْ"
+  frasa: "Ya Allah, limpahkanlah selawat ke atas Muhammad | Ya Allah, limpahkanlah selawat dan salam ke atasnya"
+  rumi: "Allaahumma salli 'alaa Muhammad, Allaahumma salli 'alaihi wa sallim."
+  makna: "Ya Allah, limpahkanlah selawat ke atas Muhammad; ya Allah, limpahkanlah selawat dan salam ke atas baginda."
+
+- id: selawat-ya-rabb
+  tajuk: Selawat "Yaa Rabbi"
+  kat: [tahlil, selawat]
+  tag: [selawat, tahlil]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 45 & 56", darjat: amalan}
+  teks: "اَللّٰهُمَّ صَلِّ عَلَى مُحَمَّدٍ | يَا رَبِّ صَلِّ عَلَيْهِ وَسَلِّمْ"
+  frasa: "Ya Allah, limpahkanlah selawat ke atas Muhammad | wahai Tuhanku, limpahkanlah selawat dan salam ke atasnya"
+  rumi: "Allaahumma salli 'alaa Muhammad, yaa rabbi salli 'alaihi wa sallim."
+  makna: "Ya Allah, limpahkanlah selawat ke atas Muhammad; wahai Tuhanku, limpahkanlah selawat dan salam ke atas baginda."
+
+- id: zikir-tasbih-tahmid
+  tajuk: Subhaanallaahi wa bihamdih
+  kat: [tahlil, zikir]
+  tag: [tasbih, tahmid, zikir]
+  ulang: 33
+  sumber: {jenis: hadis, ruj: "Lafaz zikir daripada Sahih al-Bukhari, no. 6405 (100 kali sehari menghapuskan dosa); bilangan 33 mengikut buku ms 46", darjat: Sahih, url: "https://sunnah.com/bukhari:6405"}
+  teks: "سُبْحَانَ اللّٰهِ | وَبِحَمْدِهِ"
+  frasa: "Maha Suci Allah | dan dengan memuji-Nya"
+  rumi: "Subhaanallaahi wa bihamdih."
+  makna: "Maha Suci Allah dan segala puji bagi-Nya."
+
+- id: zikir-ya-allah
+  tajuk: Yaa Allaah
+  kat: [tahlil, zikir]
+  tag: [zikir, tahlil]
+  ulang: 33
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 46 & 56", darjat: amalan}
+  teks: "يَا اَللّٰهُ"
+  frasa: "Wahai Allah"
+  rumi: "Yaa Allaah."
+  makna: "Wahai Allah."
+
+- id: zikir-istighfar
+  tajuk: Astaghfirullaah
+  kat: [tahlil, zikir]
+  tag: [istighfar, zikir]
+  ulang: 10
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 46 & 56", darjat: amalan}
+  teks: "أَسْتَغْفِرُ اللّٰهَ"
+  frasa: "Aku memohon ampun kepada Allah"
+  rumi: "Astaghfirullaah."
+  makna: "Aku memohon ampun kepada Allah."
+
+- id: zikir-istighfar-tawwabun
+  tajuk: Istighfar dan taubat
+  kat: [tahlil, zikir]
+  tag: [istighfar, taubat]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 46 & 56", darjat: amalan}
+  teks: "أَسْتَغْفِرُ اللّٰهَ الْعَظِيْمَ | تَائِبُوْنَ إِلَى اللّٰهِ"
+  frasa: "Aku memohon ampun kepada Allah Yang Maha Agung | kami bertaubat kepada Allah"
+  rumi: "Astaghfirullaahal 'aziim, taa'ibuuna ilallaah."
+  makna: "Aku memohon ampun kepada Allah Yang Maha Agung; kami bertaubat kepada Allah."
+
+- id: selawat-habib
+  tajuk: Selawat kepada kekasih Allah
+  kat: [tahlil, selawat]
+  tag: [selawat, tahlil]
+  ulang: 2
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 46", darjat: amalan}
+  teks: "اَللّٰهُمَّ صَلِّ عَلَى حَبِيْبِكَ | سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ"
+  frasa: "Ya Allah, limpahkanlah selawat ke atas kekasih-Mu | penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kurniakanlah kesejahteraan"
+  rumi: "Allaahumma salli 'alaa habiibika sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallim."
+  makna: "Ya Allah, limpahkanlah selawat ke atas kekasih-Mu, penghulu kami Muhammad, serta keluarga dan sahabat baginda, dan kurniakanlah kesejahteraan."
+
+- id: selawat-habib-rasul
+  tajuk: Selawat penutup zikir
+  kat: [tahlil, selawat]
+  tag: [selawat, tahlil]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 46", darjat: amalan}
+  teks: "اَللّٰهُمَّ صَلِّ عَلَى حَبِيْبِكَ وَرَسُوْلِكَ | سَيِّدِنَا وَمَوْلَانَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ | وَبَارِكْ وَسَلِّمْ"
+  frasa: "Ya Allah, limpahkanlah selawat ke atas kekasih-Mu dan rasul-Mu | penghulu dan pemimpin kami Muhammad | serta keluarga dan sahabatnya | dan limpahkanlah keberkatan dan kesejahteraan"
+  rumi: "Allaahumma salli 'alaa habiibika wa rasuulika sayyidinaa wa maulaanaa Muhammadin wa 'alaa aalihii wa sahbihii wa baarik wa sallim."
+  makna: "Ya Allah, limpahkanlah selawat ke atas kekasih dan rasul-Mu, penghulu dan pemimpin kami Muhammad, serta keluarga dan sahabat baginda, dan limpahkanlah keberkatan dan kesejahteraan."
+
+- id: fatihah-hadirin
+  tajuk: Fatihah untuk arwah yang dihimpunkan majlis
+  kat: [tahlil]
+  tag: [hadiah, arwah, fatihah]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 46", darjat: ulama}
+  bahagian:
+    - teks: "إِلَى أَرْوَاحِ مَنِ اجْتَمَعْنَا هٰهُنَا بِسَبَبِهِمْ"
+      frasa: "Kepada roh-roh mereka yang menjadi sebab kami berhimpun di sini"
+      rumi: "Ilaa arwaahi manijtama'naa haahunaa bisababihim."
+      makna: "Kepada roh-roh mereka yang menjadi sebab kami berhimpun di sini."
+    - arwah: khusus-fatihah
+      pilihan: true
+    - teks: "اَلْفَاتِحَةْ"
+      frasa: "al-Fatihah"
+      rumi: "Al-Faatihah."
+      makna: "(Bacalah) al-Fatihah."
+
+- id: fatihah-nabi
+  tajuk: Fatihah kepada Nabi ﷺ (Tahlil Ringkas)
+  kat: [tahlil]
+  tag: [fatihah, hadiah, tahlil ringkas]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 55", darjat: ulama}
+  teks: "لِلنَّبِيِّ الْكَرِيْمِ | وَآلِهِ وَأَصْحَابِهِ الْكِرَامِ | اَلْفَاتِحَةْ"
+  frasa: "Kepada Nabi yang mulia | serta keluarga dan para sahabatnya yang mulia | al-Fatihah"
+  rumi: "Linnabiyyil kariim, wa aalihii wa ash-haabihil kiraam. Al-Faatihah."
+  makna: "Kepada Nabi yang mulia, serta keluarga dan para sahabat baginda yang mulia: al-Fatihah."
+
+- id: doa-arwah
+  tajuk: Doa Arwah (Doa Tahlil)
+  kat: [tahlil, kematian]
+  tag: [arwah, tahlil, kenduri arwah, si mati, hadiah pahala]
+  lihat: [tahlil]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 48–53", darjat: ulama, nota: "Doa susunan ulama Nusantara; bukan lafaz hadis. Bahagian \"Allaahummaghfir lahu warhamhu wa 'aafihi wa'fu 'anhu\" berasal daripada doa jenazah dalam Sahih Muslim no. 963."}
+  nota: "Isi nama arwah di butang Arwah. Lafaz lahu/lahaa/lahumaa/lahum dipilih secara automatik mengikut jantina dan bilangan."
+  bahagian:
+    - tajuk: Pujian
+      teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | حَمْدًا يُوَافِيْ نِعَمَهُ وَيُكَافِئُ مَزِيْدَهُ | يَا رَبَّنَا لَكَ الْحَمْدُ | كَمَا يَنْبَغِيْ لِجَلَالِ وَجْهِكَ وَعَظِيْمِ سُلْطَانِكَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | pujian yang menyamai nikmat-nikmat-Nya dan membalas tambahan kurniaan-Nya | Wahai Tuhan kami, bagi-Mu segala puji | sebagaimana yang layak bagi keagungan wajah-Mu dan kebesaran kekuasaan-Mu"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, hamdan yuwaafii ni'amahuu wa yukaafi'u maziidah. Yaa rabbanaa lakal hamdu kamaa yanbaghii lijalaali wajhika wa 'aziimi sultaanik."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam, pujian yang menyamai nikmat-nikmat-Nya dan membalas tambahan kurniaan-Nya. Wahai Tuhan kami, bagi-Mu segala puji sebagaimana yang layak bagi keagungan wajah-Mu dan kebesaran kekuasaan-Mu."
+    - tajuk: Selawat Munjiyat
+      teks: "اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ | صَلَاةً تُنْجِيْنَا بِهَا مِنْ جَمِيْعِ الْأَهْوَالِ وَالْآفَاتِ | وَتَقْضِيْ لَنَا بِهَا مِنْ جَمِيْعِ الْحَاجَاتِ | وَتُطَهِّرُنَا بِهَا مِنْ جَمِيْعِ السَّيِّئَاتِ | وَتَرْفَعُنَا بِهَا عِنْدَكَ أَعْلَى الدَّرَجَاتِ | وَتُبَلِّغُنَا بِهَا أَقْصَى الْغَايَاتِ | مِنْ جَمِيْعِ الْخَيْرَاتِ فِي الْحَيَاةِ وَبَعْدَ الْمَمَاتِ | سُبْحَانَكَ لَا نُحْصِيْ ثَنَاءً عَلَيْكَ | كَمَا أَثْنَيْتَ عَلَى نَفْسِكَ | فَلَكَ الْحَمْدُ حَتَّى تَرْضَى | وَلَكَ الْحَمْدُ إِذَا رَضِيْتَ | وَلَكَ الْحَمْدُ بَعْدَ الرِّضَى"
+      frasa: "Ya Allah, limpahkanlah selawat ke atas penghulu kami Muhammad | selawat yang dengannya Engkau selamatkan kami daripada segala ketakutan dan bencana | dan dengannya Engkau tunaikan bagi kami segala hajat | dan dengannya Engkau sucikan kami daripada segala kejahatan | dan dengannya Engkau angkat kami di sisi-Mu ke darjat yang paling tinggi | dan dengannya Engkau sampaikan kami ke matlamat yang paling jauh | daripada segala kebaikan semasa hidup dan sesudah mati | Maha Suci Engkau, kami tidak mampu menghitung pujian ke atas-Mu | sebagaimana Engkau memuji diri-Mu sendiri | Maka bagi-Mu segala puji hingga Engkau reda | dan bagi-Mu segala puji apabila Engkau telah reda | dan bagi-Mu segala puji sesudah Engkau reda"
+      rumi: "Allaahumma salli 'alaa sayyidinaa Muhammadin salaatan tunjiinaa bihaa min jamii'il ahwaali wal aafaat, wa taqdhii lanaa bihaa min jamii'il haajaat, wa tutahhirunaa bihaa min jamii'is sayyi'aat, wa tarfa'unaa bihaa 'indaka a'lad darajaat, wa tuballighunaa bihaa aqshal ghaayaati min jamii'il khairaati fil hayaati wa ba'dal mamaat. Subhaanaka laa nuhshii tsanaa'an 'alaika kamaa atsnaita 'alaa nafsik, falakal hamdu hattaa tardhaa, wa lakal hamdu idzaa radhiita, wa lakal hamdu ba'dar ridhaa."
+      makna: "Ya Allah, limpahkanlah selawat ke atas penghulu kami Muhammad, selawat yang dengannya Engkau selamatkan kami daripada segala ketakutan dan bencana, tunaikan segala hajat kami, sucikan kami daripada segala kejahatan, angkat kami ke darjat tertinggi di sisi-Mu, dan sampaikan kami ke puncak segala kebaikan semasa hidup dan sesudah mati. Maha Suci Engkau, kami tidak mampu menghitung pujian ke atas-Mu sebagaimana Engkau memuji diri-Mu; bagi-Mu segala puji hingga Engkau reda, ketika Engkau reda dan sesudah Engkau reda."
+    - tajuk: Selawat kepada Nabi sepanjang zaman
+      teks: "اَللّٰهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الْأَوَّلِيْنَ | وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الْآخِرِيْنَ | وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ فِي الْمَلَإِ الْأَعْلَى إِلَى يَوْمِ الدِّيْنِ | وَصَلِّ وَسَلِّمْ عَلَى سَيِّدِنَا مُحَمَّدٍ | حَتَّى تَرِثَ الْأَرْضَ وَمَنْ عَلَيْهَا | وَأَنْتَ خَيْرُ الْوَارِثِيْنَ"
+      frasa: "Ya Allah, limpahkanlah selawat ke atas penghulu kami Muhammad di kalangan umat terdahulu | dan limpahkanlah selawat dan salam ke atas penghulu kami Muhammad di kalangan umat terkemudian | dan limpahkanlah selawat dan salam ke atasnya di kalangan malaikat tertinggi hingga hari pembalasan | dan limpahkanlah selawat dan salam ke atas penghulu kami Muhammad | hingga Engkau mewarisi bumi dan segala yang ada di atasnya | dan Engkaulah sebaik-baik yang mewarisi"
+      rumi: "Allaahumma salli 'alaa sayyidinaa Muhammadin fil awwaliin, wa salli wa sallim 'alaa sayyidinaa Muhammadin fil aakhiriin, wa salli wa sallim 'alaa sayyidinaa Muhammadin fil mala'il a'laa ilaa yaumid diin, wa salli wa sallim 'alaa sayyidinaa Muhammadin hattaa taritsal ardha wa man 'alaihaa wa anta khairul waaritsiin."
+      makna: "Ya Allah, limpahkanlah selawat dan salam ke atas penghulu kami Muhammad di kalangan umat terdahulu dan terkemudian, di kalangan malaikat tertinggi hingga hari kiamat, dan hingga Engkau mewarisi bumi dan segala isinya — dan Engkaulah sebaik-baik pewaris."
+    - tajuk: Hadiah pahala
+      teks: "اَللّٰهُمَّ اجْعَلْ وَأَوْصِلْ وَتَقَبَّلْ | ثَوَابَ مَا قَرَأْنَاهُ مِنَ الْقُرْآنِ الْعَظِيْمِ | وَمَا هَلَّلْنَاهُ مِنْ لَا إِلٰهَ إِلَّا اللّٰهُ | وَمَا اسْتَغْفَرْنَاهُ | وَمَا قُلْنَاهُ مِنْ يَا اَللّٰهُ | وَمَا صَلَّيْنَاهُ عَلَى النَّبِيِّ مُحَمَّدٍ صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ | فِيْ هٰذِهِ السَّاعَةِ الْمُبَارَكَةِ | هَدِيَّةً مِنَّا وَاصِلَةً | وَرَحْمَةً مِنْكَ نَازِلَةً | وَبَرَكَةً شَامِلَةً | نُقَدِّمُهَا وَنُهْدِيْهَا | إِلَى حَضْرَةِ سَيِّدِنَا مُحَمَّدٍ رَسُوْلِ اللّٰهِ صَلَّى اللّٰهُ عَلَيْهِ وَسَلَّمَ | ثُمَّ إِلَى أَرْوَاحِ أَزْوَاجِهِ وَذُرِّيَّاتِهِ | وَأَصْحَابِهِ وَالتَّابِعِيْنَ | وَتَابِعِي التَّابِعِيْنَ لَهُمْ بِإِحْسَانٍ إِلَى يَوْمِ الدِّيْنِ"
+      frasa: "Ya Allah, jadikanlah, sampaikanlah dan terimalah | pahala al-Quran yang agung yang telah kami baca | dan tahlil \"laa ilaaha illallaah\" yang kami ucapkan | dan istighfar yang kami lafazkan | dan \"Yaa Allah\" yang kami sebut | dan selawat yang kami ucapkan ke atas Nabi Muhammad ﷺ | pada saat yang diberkati ini | sebagai hadiah daripada kami yang sampai | dan rahmat daripada-Mu yang turun | dan keberkatan yang meliputi | Kami persembahkan dan hadiahkan ia | kepada hadrat penghulu kami Muhammad, Rasulullah ﷺ | kemudian kepada roh isteri-isteri dan zuriat baginda | serta para sahabat dan tabi'in | dan pengikut tabi'in yang mengikut mereka dengan kebaikan hingga hari pembalasan"
+      rumi: "Allaahummaj'al wa ausil wa taqabbal tsawaaba maa qara'naahu minal qur'aanil 'aziim, wa maa hallalnaahu min laa ilaaha illallaah, wa mastaghfarnaah, wa maa qulnaahu min yaa Allaah, wa maa sallainaahu 'alan nabiyyi Muhammadin sallallaahu 'alaihi wa sallam, fii haadzihis saa'atil mubaarakah, hadiyyatan minnaa waasilah, wa rahmatan minka naazilah, wa barakatan syaamilah, nuqaddimuhaa wa nuhdiihaa ilaa hadhrati sayyidinaa Muhammadin rasuulillaahi sallallaahu 'alaihi wa sallam, tsumma ilaa arwaahi azwaajihii wa dzurriyyaatihii wa ash-haabihii wat taabi'iin, wa taabi'it taabi'iina lahum bi ihsaanin ilaa yaumid diin."
+      makna: "Ya Allah, jadikanlah, sampaikanlah dan terimalah pahala al-Quran yang kami baca, tahlil, istighfar, sebutan \"Yaa Allah\" dan selawat kami ke atas Nabi ﷺ pada saat yang diberkati ini, sebagai hadiah daripada kami yang sampai, rahmat daripada-Mu yang turun dan keberkatan yang meliputi. Kami persembahkan dan hadiahkan ia kepada Rasulullah ﷺ, kemudian kepada roh isteri-isteri dan zuriat baginda, para sahabat, tabi'in dan pengikut mereka dengan kebaikan hingga hari kiamat."
+    - tajuk: Untuk arwah yang dihimpunkan majlis
+      teks: "اَللّٰهُمَّ ثَوَابًا مِثْلَ ثَوَابِ ذٰلِكَ | مَعَ مَزِيْدِ بِرِّكَ وَإِحْسَانِكَ | إِلَى أَرْوَاحِ مَنِ اجْتَمَعْنَا هٰهُنَا بِسَبَبِهِمْ"
+      frasa: "Ya Allah, (sampaikanlah) pahala seumpama pahala itu | berserta tambahan kebajikan dan ihsan-Mu | kepada roh-roh mereka yang menjadi sebab kami berhimpun di sini"
+      rumi: "Allaahumma tsawaaban mitsla tsawaabi dzaalika ma'a maziidi birrika wa ihsaanik, ilaa arwaahi manijtama'naa haahunaa bisababihim."
+      makna: "Ya Allah, sampaikanlah pahala seumpama itu, berserta tambahan kebajikan dan ihsan-Mu, kepada roh mereka yang menjadi sebab kami berhimpun di sini."
+    - arwah: khusus-doa
+    - teks: "أَوْصِلِ اللّٰهُمَّ ثَوَابَ ذٰلِكَ مِنَّا إِلَيْهِمْ | وَاجْعَلْهُ نُوْرًا يَسْعَى وَيَتَلَأْلَأُ بَيْنَ أَيْدِيْهِمْ | وَضَاعِفِ اللّٰهُمَّ رَحْمَتَكَ وَرِضْوَانَكَ عَلَيْنَا وَعَلَيْهِمْ | اَللّٰهُمَّ اجْعَلْهُ فَكَاكًا لَهُمْ مِنَ النَّارِ | وَنَجَاةً لَهُمْ مِنَ النَّارِ | وَسِتْرًا لَهُمْ مِنَ النَّارِ | وَفِدَاءً لَهُمْ مِنَ النَّارِ"
+      frasa: "Sampaikanlah, ya Allah, pahala itu daripada kami kepada mereka | dan jadikanlah ia cahaya yang bergerak dan bergemerlapan di hadapan mereka | dan gandakanlah, ya Allah, rahmat dan keredaan-Mu ke atas kami dan ke atas mereka | Ya Allah, jadikanlah ia pembebas bagi mereka daripada neraka | dan penyelamat bagi mereka daripada neraka | dan pendinding bagi mereka daripada neraka | dan tebusan bagi mereka daripada neraka"
+      rumi: "Ausilillaahumma tsawaaba dzaalika minnaa ilaihim, waj'alhu nuuran yas'aa wa yatala'la'u baina aidiihim, wa dhaa'ifillaahumma rahmataka wa ridhwaanaka 'alainaa wa 'alaihim. Allaahummaj'alhu fakaakan lahum minan naar, wa najaatan lahum minan naar, wa sitran lahum minan naar, wa fidaa'an lahum minan naar."
+      makna: "Sampaikanlah, ya Allah, pahala itu daripada kami kepada mereka; jadikanlah ia cahaya yang bergemerlapan di hadapan mereka, dan gandakanlah rahmat serta keredaan-Mu ke atas kami dan mereka. Ya Allah, jadikanlah ia pembebas, penyelamat, pendinding dan tebusan bagi mereka daripada api neraka."
+    - varian: arwah-ampun
+      ulang: 3
+    - tajuk: Untuk ibu bapa, guru dan seluruh muslimin
+      teks: "ثُمَّ ثَوَابًا مِثْلَ ثَوَابِ ذٰلِكَ | إِلَى أَرْوَاحِ وَالِدِيْنَا وَمَشَائِخِنَا | وَوَالِدِيْهِمْ وَمَشَائِخِهِمْ | وَجَمِيْعِ الْمُسْلِمِيْنَ مِنْ مَشَارِقِ الْأَرْضِ وَمَغَارِبِهَا | اَللّٰهُمَّ اجْعَلْ فِيْ صَحَائِفِنَا | وَصَحَائِفِ وَالِدِيْنَا وَالسَّادَاتِ الْحَاضِرِيْنَ وَوَالِدِيْهِمْ | عُمَّ الْجَمِيْعَ بِالرَّحْمَةِ وَالرِّضْوَانِ | وَأَدْخِلْنَا وَإِيَّاهُمْ فِيْ فَسِيْحِ الْجِنَانِ | يَا حَنَّانُ يَا مَنَّانُ | يَا بَدِيْعَ السَّمٰوَاتِ وَالْأَرْضِ | يَا ذَا الْجَلَالِ وَالْإِكْرَامِ"
+      frasa: "Kemudian (sampaikanlah) pahala seumpama pahala itu | kepada roh ibu bapa kami dan guru-guru kami | serta ibu bapa dan guru-guru mereka | dan sekalian muslimin dari timur dan barat bumi | Ya Allah, jadikanlah (pahala ini) dalam lembaran amalan kami | dan lembaran amalan ibu bapa kami, para hadirin yang mulia dan ibu bapa mereka | liputilah semuanya dengan rahmat dan keredaan | dan masukkanlah kami dan mereka ke dalam syurga yang luas | Wahai Tuhan Yang Maha Belas Kasihan, wahai Tuhan Yang Maha Pemberi | Wahai Pencipta langit dan bumi | Wahai Tuhan yang memiliki keagungan dan kemuliaan"
+      rumi: "Tsumma tsawaaban mitsla tsawaabi dzaalika ilaa arwaahi waalidiinaa wa masyaa'ikhinaa wa waalidiihim wa masyaa'ikhihim wa jamii'il muslimiina min masyaariqil ardhi wa maghaaribihaa. Allaahummaj'al fii sahaa'ifinaa wa sahaa'ifi waalidiinaa wassaadaatil haadhiriina wa waalidiihim, 'ummal jamii'a birrahmati war ridhwaan, wa adkhilnaa wa iyyaahum fii fasiihil jinaan, yaa hannaanu yaa mannaan, yaa badii'as samaawaati wal ardh, yaa dzal jalaali wal ikraam."
+      makna: "Kemudian sampaikanlah pahala seumpama itu kepada roh ibu bapa dan guru-guru kami, ibu bapa dan guru-guru mereka, serta sekalian muslimin di timur dan barat bumi. Ya Allah, catatkanlah ia dalam lembaran amalan kami, ibu bapa kami, para hadirin dan ibu bapa mereka; liputilah semuanya dengan rahmat dan keredaan, dan masukkanlah kami dan mereka ke dalam syurga yang luas. Wahai Tuhan Yang Maha Belas Kasihan lagi Maha Pemberi, Pencipta langit dan bumi, yang memiliki keagungan dan kemuliaan."
+    - tajuk: Doa untuk penghuni kubur
+      teks: "اَللّٰهُمَّ انْقُلْهُمْ مِنْ ضِيْقِ الْقَبْرِ وَاللُّحُوْدِ | إِلَى جَنَّتِكَ جَنَّاتِ الْخُلُوْدِ | إِلَى ظِلٍّ مَمْدُوْدٍ | وَمَاءٍ مَسْكُوْبٍ | وَفَاكِهَةٍ كَثِيْرَةٍ | لَا مَقْطُوْعَةٍ وَلَا مَمْنُوْعَةٍ | وَفُرُشٍ مَرْفُوْعَةٍ | مَعَ الَّذِيْنَ أَنْعَمْتَ عَلَيْهِمْ | مِنَ النَّبِيِّيْنَ وَالصِّدِّيْقِيْنَ وَالشُّهَدَاءِ وَالصَّالِحِيْنَ | وَحَسُنَ أُولٰئِكَ رَفِيْقًا | يَا أَرْحَمَ الرَّاحِمِيْنَ"
+      frasa: "Ya Allah, pindahkanlah mereka daripada kesempitan kubur dan liang lahad | ke syurga-Mu, syurga-syurga yang kekal | ke naungan yang terbentang | dan air yang sentiasa mengalir | dan buah-buahan yang banyak | yang tidak putus dan tidak terlarang | dan hamparan yang tinggi | bersama orang-orang yang Engkau kurniakan nikmat | dari kalangan para nabi, orang-orang yang benar, para syuhada dan orang-orang soleh | dan mereka itulah sebaik-baik teman | Wahai Tuhan Yang Paling Mengasihani"
+      rumi: "Allaahummanqulhum min dhiiqil qabri wal luhuud, ilaa jannatika jannaatil khuluud, ilaa ⟨56:30-34⟩, ma'a ⟨4:69,1:7⟩, yaa arhamar raahimiin."
+      makna: "Ya Allah, pindahkanlah mereka daripada kesempitan kubur dan liang lahad ke syurga-Mu yang kekal: ke naungan yang terbentang, air yang sentiasa mengalir, buah-buahan yang banyak yang tidak putus dan tidak terlarang, dan hamparan yang tinggi; bersama para nabi, siddiqin, syuhada dan solihin yang Engkau kurniakan nikmat — dan mereka itulah sebaik-baik teman. Wahai Tuhan Yang Paling Mengasihani."
+    - tajuk: Penutup
+      teks: "وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Dan semoga Allah melimpahkan selawat ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kesejahteraan | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Wa sallallaahu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallam, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Selawat dan salam Allah ke atas penghulu kami Muhammad, keluarga dan sahabat baginda. Segala puji bagi Allah, Tuhan sekalian alam."
+
+- id: doa-penutup
+  tajuk: Doa Penutup Majlis
+  kat: [tahlil, majlis]
+  tag: [penutup, majlis, taubat]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 54; disusun daripada {{2:127}}, {{2:128}} dan {{10:10}}", darjat: ulama}
+  bahagian:
+    - teks: "رَبَّنَا تَقَبَّلْ مِنَّا دُعَاءَنَا | إِنَّكَ أَنْتَ السَّمِيْعُ الْعَلِيْمُ | وَتُبْ عَلَيْنَا يَا مَوْلَانَا | إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيْمُ | وَلَا تُؤَاخِذْنَا بِالْعَظَائِمِ وَالْجَرَائِمِ | يَا كَرِيْمُ"
+      frasa: "Wahai Tuhan kami, terimalah doa kami | sesungguhnya Engkau Maha Mendengar lagi Maha Mengetahui | dan terimalah taubat kami, wahai Pelindung kami | sesungguhnya Engkau Maha Penerima taubat lagi Maha Mengasihani | dan janganlah Engkau hukum kami kerana dosa-dosa besar dan kesalahan | wahai Tuhan Yang Maha Pemurah"
+      rumi: "⟨2:127⟩, ⟨2:128⟩, wa laa tu'aakhidznaa bil 'azaa'imi wal jaraa'imi yaa kariim."
+      makna: "Wahai Tuhan kami, terimalah doa kami; sesungguhnya Engkau Maha Mendengar lagi Maha Mengetahui. Terimalah taubat kami, wahai Pelindung kami; sesungguhnya Engkau Maha Penerima taubat lagi Maha Mengasihani. Janganlah Engkau hukum kami kerana dosa-dosa besar dan kesalahan kami, wahai Tuhan Yang Maha Pemurah."
+    - quran: "10:10"
+
+- id: doa-selamat
+  tajuk: Doa Selamat
+  kat: [majlis]
+  tag: [selamat, kenduri, kesyukuran, pindah rumah, majlis, perlindungan, musafir]
+  lihat: [doa-beramai]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 60–61", darjat: ulama, nota: "Doa susunan ulama yang masyhur di Nusantara; bukan lafaz hadis."}
+  bahagian:
+    - teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | وَالصَّلَاةُ وَالسَّلَامُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | Selawat dan salam ke atas penghulu kami Muhammad | dan ke atas keluarga serta sahabatnya sekalian"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, wassalaatu wassalaamu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii ajma'iin."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Selawat dan salam ke atas penghulu kami Muhammad, keluarga dan sahabat baginda sekalian."
+    - teks: "اَللّٰهُمَّ إِنَّا نَسْتَوْدِعُكَ | أَدْيَانَنَا وَإِيْمَانَنَا | وَأَنْفُسَنَا وَأَمْوَالَنَا | وَأَهْلَنَا وَأَوْلَادَنَا | وَكُلَّ شَيْءٍ أَعْطَيْتَنَا | اَللّٰهُمَّ اجْعَلْنَا وَإِيَّاهُمْ | فِيْ كَنَفِكَ وَأَمَانِكَ وَجِوَارِكَ وَعِيَاذِكَ | مِنْ كُلِّ شَيْطَانٍ مَرِيْدٍ | وَجَبَّارٍ عَنِيْدٍ | وَذِيْ عَيْنٍ وَذِيْ بَغْيٍ | وَمِنْ شَرِّ كُلِّ ذِيْ شَرٍّ | إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ"
+      frasa: "Ya Allah, sesungguhnya kami mengamanahkan kepada-Mu | agama kami dan iman kami | diri kami dan harta kami | keluarga kami dan anak-anak kami | dan segala sesuatu yang telah Engkau kurniakan kepada kami | Ya Allah, jadikanlah kami dan mereka | dalam pemeliharaan-Mu, keamanan-Mu, lindungan-Mu dan perlindungan-Mu | daripada setiap syaitan yang derhaka | dan orang zalim yang keras kepala | dan pemilik mata (hasad) dan pelaku kezaliman | dan daripada kejahatan setiap yang jahat | Sesungguhnya Engkau Maha Berkuasa atas segala sesuatu"
+      rumi: "Allaahumma innaa nastaudi'uka adyaananaa wa iimaananaa wa anfusanaa wa amwaalanaa wa ahlanaa wa aulaadanaa wa kulla syai'in a'taitanaa. Allaahummaj'alnaa wa iyyaahum fii kanafika wa amaanika wa jiwaarika wa 'iyaadzika min kulli syaitaanin mariid, wa jabbaarin 'aniid, wa dzii 'ainin wa dzii baghy, wa min syarri kulli dzii syarr, innaka 'alaa kulli syai'in qadiir."
+      makna: "Ya Allah, kami mengamanahkan kepada-Mu agama, iman, diri, harta, keluarga, anak-anak kami dan segala yang Engkau kurniakan kepada kami. Ya Allah, jadikanlah kami dan mereka dalam pemeliharaan, keamanan, lindungan dan perlindungan-Mu daripada setiap syaitan yang derhaka, orang zalim yang keras kepala, mata yang hasad, pelaku kezaliman dan kejahatan setiap yang jahat. Sesungguhnya Engkau Maha Berkuasa atas segala sesuatu."
+    - teks: "اَللّٰهُمَّ جَمِّلْنَا بِالْعَافِيَةِ وَالسَّلَامَةِ | وَحَقِّقْنَا بِالتَّقْوَى وَالْاِسْتِقَامَةِ | وَأَعِذْنَا مِنْ مُوْجِبَاتِ النَّدَامَةِ | فِي الْحَالِ وَالْمَآلِ | إِنَّكَ سَمِيْعُ الدُّعَاءِ | وَاغْفِرْ لَنَا وَارْحَمْنَا | وَوَالِدِيْنَا وَإِخْوَانَنَا وَأَحْبَابَنَا | وَلِمَنْ أَحَبَّنَا فِيْكَ | وَلِمَنْ أَحْسَنَ إِلَيْنَا | وَلِمَنْ كَانَ حَقٌّ عَلَيْنَا | وَلِجَمِيْعِ الْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ | وَالْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ | بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِيْنَ"
+      frasa: "Ya Allah, hiasilah kami dengan kesihatan dan keselamatan | dan teguhkanlah kami dengan takwa dan istiqamah | dan lindungilah kami daripada perkara yang membawa penyesalan | pada masa kini dan masa akan datang | Sesungguhnya Engkau Maha Mendengar doa | Dan ampunkanlah kami dan rahmatilah kami | serta ibu bapa kami, saudara-saudara dan sahabat-sahabat kami | dan orang yang mengasihi kami kerana-Mu | dan orang yang berbuat baik kepada kami | dan orang yang mempunyai hak ke atas kami | dan sekalian muslimin dan muslimat | serta mukminin dan mukminat | dengan rahmat-Mu, wahai Tuhan Yang Paling Mengasihani"
+      rumi: "Allaahumma jammilnaa bil 'aafiyati was salaamah, wa haqqiqnaa bit taqwaa wal istiqaamah, wa a'idznaa min muujibaatin nadaamati fil haali wal ma'aal, innaka samii'ud du'aa'. Waghfir lanaa warhamnaa wa waalidiinaa wa ikhwaananaa wa ahbaabanaa, wa liman ahabbanaa fiik, wa liman ahsana ilainaa, wa liman kaana haqqun 'alainaa, wa lijamii'il muslimiina wal muslimaati wal mu'miniina wal mu'minaat, birahmatika yaa arhamar raahimiin."
+      makna: "Ya Allah, hiasilah kami dengan kesihatan dan keselamatan, teguhkanlah kami dengan takwa dan istiqamah, dan lindungilah kami daripada perkara yang membawa penyesalan, sekarang dan pada kesudahannya. Sesungguhnya Engkau Maha Mendengar doa. Ampunilah dan rahmatilah kami, ibu bapa, saudara dan sahabat kami, orang yang mengasihi kami kerana-Mu, orang yang berbuat baik kepada kami, orang yang mempunyai hak ke atas kami, serta sekalian muslimin, muslimat, mukminin dan mukminat — dengan rahmat-Mu, wahai Tuhan Yang Paling Mengasihani."
+    - teks: "وَصَلِّ اللّٰهُمَّ بِجَمَالِكَ | عَلَى رَسُوْلِكَ سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ | وَارْزُقْنَا كَمَالَ الْمُتَابَعَةِ لَهُ | ظَاهِرًا وَبَاطِنًا | فِيْ سَلَامَةٍ وَعَافِيَةٍ | بِرَحْمَتِكَ يَا أَرْحَمَ الرَّاحِمِيْنَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Dan limpahkanlah selawat, ya Allah, dengan keindahan-Mu | ke atas rasul-Mu, penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kurniakanlah kesejahteraan | dan kurniakanlah kami kesempurnaan dalam mengikuti baginda | zahir dan batin | dalam keadaan selamat dan sejahtera | dengan rahmat-Mu, wahai Tuhan Yang Paling Mengasihani | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Wa sallillaahumma bijamaalika 'alaa rasuulika sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallim, warzuqnaa kamaalal mutaaba'ati lahuu zaahiran wa baatinan fii salaamatin wa 'aafiyah, birahmatika yaa arhamar raahimiin, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Limpahkanlah selawat, ya Allah, dengan keindahan-Mu ke atas rasul-Mu, penghulu kami Muhammad, keluarga dan sahabat baginda; dan kurniakanlah kami kesempurnaan mengikuti baginda zahir dan batin dalam keadaan selamat dan sejahtera, dengan rahmat-Mu wahai Tuhan Yang Paling Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam."
+
+- id: doa-jamuan
+  tajuk: Doa Ringkas Majlis Jamuan
+  kat: [majlis]
+  tag: [jamuan, kenduri, makan, tuan rumah]
+  lihat: [doa-beramai]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 62–63", darjat: ulama}
+  bahagian:
+    - teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | وَالصَّلَاةُ وَالسَّلَامُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | Selawat dan salam ke atas penghulu kami Muhammad | dan ke atas keluarga serta sahabatnya sekalian"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, wassalaatu wassalaamu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii ajma'iin."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Selawat dan salam ke atas penghulu kami Muhammad, keluarga dan sahabat baginda sekalian."
+    - teks: "اَللّٰهُمَّ اغْفِرْ لِصَاحِبِ هٰذَا الطَّعَامِ | وَارْزُقْهُ مِنَ الْحَلَالِ | وَجَنِّبْهُ عَنِ الْحَرَامِ | وَأَتِمَّ نِيَّتَهُ | وَتَقَبَّلْ ضِيَافَتَهُ | وَاغْفِرْ لَنَا وَلَهُ | وَلِمَوْتَانَا وَمَوْتَاهُ | يَا أَرْحَمَ الرَّاحِمِيْنَ"
+      frasa: "Ya Allah, ampunkanlah tuan punya hidangan ini | dan kurniakanlah dia rezeki yang halal | dan jauhkanlah dia daripada yang haram | dan sempurnakanlah niatnya | dan terimalah jamuannya | dan ampunkanlah kami dan dia | serta orang-orang mati kami dan orang-orang matinya | wahai Tuhan Yang Paling Mengasihani"
+      rumi: "Allaahummaghfir lishaahibi haadzath tha'aam, warzuqhu minal halaal, wa jannibhu 'anil haraam, wa atimma niyyatah, wa taqabbal dhiyaafatah, waghfir lanaa wa lahuu wa limautaanaa wa mautaah, yaa arhamar raahimiin."
+      makna: "Ya Allah, ampunkanlah tuan rumah yang menyediakan hidangan ini, kurniakanlah dia rezeki yang halal dan jauhkanlah dia daripada yang haram, sempurnakanlah niatnya dan terimalah jamuannya. Ampunilah kami dan dia, serta keluarga kami dan keluarganya yang telah meninggal dunia, wahai Tuhan Yang Paling Mengasihani."
+    - teks: "اَللّٰهُمَّ إِنَّا نَسْأَلُكَ | الصِّحَّةَ وَالْعَافِيَةَ وَالْمُعَافَاةَ الدَّائِمَةَ | فِي الدِّيْنِ وَالدُّنْيَا وَالْآخِرَةِ | وَفِي الْأَهْلِ وَالْجَسَدِ وَالْمَالِ وَالْوَلَدِ | وَالْمُسْلِمِيْنَ أَجْمَعِيْنَ | وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Ya Allah, sesungguhnya kami memohon kepada-Mu | kesihatan, keafiatan dan perlindungan yang berkekalan | dalam agama, dunia dan akhirat | dan pada keluarga, tubuh badan, harta dan anak-anak | dan bagi sekalian muslimin | Semoga Allah melimpahkan selawat ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kesejahteraan | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Allaahumma innaa nas'alukash shihhata wal 'aafiyata wal mu'aafaatad daa'imah, fid diini wad dunyaa wal aakhirah, wa fil ahli wal jasadi wal maali wal walad, wal muslimiina ajma'iin. Wa sallallaahu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallam, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Ya Allah, kami memohon kesihatan, keafiatan dan perlindungan yang berkekalan dalam urusan agama, dunia dan akhirat, pada keluarga, tubuh badan, harta dan anak-anak kami, serta bagi sekalian muslimin. Selawat dan salam Allah ke atas penghulu kami Muhammad, keluarga dan sahabat baginda. Segala puji bagi Allah, Tuhan sekalian alam."
+
+- id: doa-perpisahan
+  tajuk: Doa Perpisahan (Penutup Majlis)
+  kat: [majlis]
+  tag: [perpisahan, penutup majlis, mesyuarat, kelas]
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 64", darjat: ulama}
+  bahagian:
+    - teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | وَالصَّلَاةُ وَالسَّلَامُ عَلَى سَيِّدِنَا مُحَمَّدٍ أَشْرَفِ الْمُرْسَلِيْنَ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | Selawat dan salam ke atas penghulu kami Muhammad, semulia-mulia para rasul | dan ke atas keluarga serta sahabatnya sekalian"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, wassalaatu wassalaamu 'alaa sayyidinaa Muhammadin asyrafil mursaliin, wa 'alaa aalihii wa sahbihii ajma'iin."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Selawat dan salam ke atas penghulu kami Muhammad, semulia-mulia rasul, serta keluarga dan sahabat baginda sekalian."
+    - teks: "اَللّٰهُمَّ اجْعَلْ جَمْعَنَا هٰذَا جَمْعًا مَرْحُوْمًا | وَتَفَرُّقَنَا مِنْ بَعْدِهِ تَفَرُّقًا مَعْصُوْمًا | وَلَا تَجْعَلِ اللّٰهُمَّ فِيْنَا وَلَا مَعَنَا | وَلَا مَنْ يَتْبَعُنَا | شَقِيًّا وَلَا مَطْرُوْدًا وَلَا مَحْرُوْمًا | وَهَبْ لَنَا مُسِيْئَنَا لِمُحْسِنِنَا | وَمُقَصِّرَنَا لِعَامِلِنَا | وَهَبْ لَنَا الْكُلَّ بِوَجْهِكَ الْكَرِيْمِ | يَا رَبَّ الْعَالَمِيْنَ | وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Ya Allah, jadikanlah perhimpunan kami ini perhimpunan yang dirahmati | dan perpisahan kami selepasnya perpisahan yang terpelihara | dan janganlah Engkau jadikan, ya Allah, dalam kalangan kami dan bersama kami | dan orang yang mengikuti kami | seorang yang celaka, tersisih atau terhalang (daripada rahmat) | dan ampunkanlah orang yang bersalah di kalangan kami kerana orang yang berbuat baik | dan orang yang lalai kerana orang yang beramal | dan kurniakanlah kepada kami semuanya demi wajah-Mu Yang Maha Mulia | wahai Tuhan sekalian alam | Semoga Allah melimpahkan selawat ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya sekalian | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Allaahummaj'al jam'anaa haadzaa jam'an marhuumaa, wa tafarruqanaa min ba'dihii tafarruqan ma'shuumaa, wa laa taj'alillaahumma fiinaa wa laa ma'anaa wa laa man yatba'unaa syaqiyyan wa laa matruudan wa laa mahruumaa, wa hab lanaa musii'anaa limuhsininaa wa muqassiranaa li'aamilinaa, wa hab lanal kulla biwajhikal kariim, yaa rabbal 'aalamiin. Wa sallallaahu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii ajma'iin, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Ya Allah, jadikanlah perhimpunan kami ini perhimpunan yang dirahmati, dan perpisahan kami selepasnya perpisahan yang terpelihara. Janganlah Engkau jadikan dalam kalangan kami, bersama kami atau pengikut kami seorang pun yang celaka, tersisih atau terhalang. Ampunkanlah yang bersalah di kalangan kami kerana yang berbuat baik, dan yang lalai kerana yang beramal; kurniakanlah semua itu kepada kami demi wajah-Mu Yang Maha Mulia, wahai Tuhan sekalian alam. Selawat dan salam ke atas Nabi Muhammad, keluarga dan sahabat baginda; segala puji bagi Allah, Tuhan sekalian alam."
+
+- id: doa-akhir-tahun
+  tajuk: Doa Akhir Tahun
+  kat: [musim]
+  tag: [akhir tahun, hijrah, zulhijjah, muharram, taubat]
+  lihat: [akhir-awal-tahun]
+  bila: "Hari terakhir Zulhijjah, sebelum masuk Maghrib (akhir waktu Asar)"
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 65–66", darjat: ulama, nota: "Doa susunan ulama; tiada hadis sahih khusus tentang doa akhir/awal tahun. Boleh dibaca sebagai doa umum tanpa i'tiqad kelebihan khusus."}
+  nota: "Buku asal (ms 66) tertinggal perkataan وَدَعَوْتَنَا sebelum \"إِلَى التَّوْبَةِ\" sehingga ayatnya tergantung; dibetulkan mengikut teks lazim."
+  bahagian:
+    - teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | وَالصَّلَاةُ وَالسَّلَامُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | Selawat dan salam ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kesejahteraan"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, wassalaatu wassalaamu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallam."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Selawat dan salam ke atas penghulu kami Muhammad, keluarga dan sahabat baginda."
+    - teks: "اَللّٰهُمَّ مَا عَمِلْنَا فِيْ هٰذِهِ السَّنَةِ | مِمَّا نَهَيْتَنَا عَنْهُ فَلَمْ نَتُبْ مِنْهُ | وَلَمْ تَرْضَهُ وَلَمْ تَنْسَهُ | وَحَلُمْتَ عَلَيْنَا بَعْدَ قُدْرَتِكَ عَلَى عُقُوْبَتِنَا | وَدَعَوْتَنَا إِلَى التَّوْبَةِ مِنْهُ | بَعْدَ جُرْأَتِنَا عَلَى مَعْصِيَتِكَ | فَإِنَّا نَسْتَغْفِرُكَ فَاغْفِرْ لَنَا | وَمَا عَمِلْنَا فِيْهَا مِمَّا تَرْضَاهُ | وَوَعَدْتَنَا عَلَيْهِ الثَّوَابَ | فَنَسْأَلُكَ اللّٰهُمَّ يَا كَرِيْمُ | يَا ذَا الْجَلَالِ وَالْإِكْرَامِ | أَنْ تَتَقَبَّلَهُ مِنَّا | وَلَا تَقْطَعْ رَجَاءَنَا مِنْكَ يَا كَرِيْمُ | وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Ya Allah, apa yang telah kami lakukan pada tahun ini | daripada perkara yang Engkau larang lalu kami belum bertaubat daripadanya | sedangkan Engkau tidak meredainya dan tidak melupakannya | dan Engkau bersabar terhadap kami walaupun Engkau berkuasa menghukum kami | dan Engkau menyeru kami untuk bertaubat daripadanya | setelah kami berani menderhakai-Mu | maka sesungguhnya kami memohon ampun kepada-Mu, ampunkanlah kami | Dan apa yang telah kami lakukan padanya daripada perkara yang Engkau redai | dan Engkau janjikan pahala ke atasnya | maka kami memohon kepada-Mu, ya Allah, wahai Tuhan Yang Maha Pemurah | wahai Tuhan yang memiliki keagungan dan kemuliaan | agar Engkau menerimanya daripada kami | dan janganlah Engkau putuskan harapan kami kepada-Mu, wahai Tuhan Yang Maha Pemurah | Semoga Allah melimpahkan selawat ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya sekalian | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Allaahumma maa 'amilnaa fii haadzihis sanati mimmaa nahaitanaa 'anhu falam natub minh, wa lam tardhahu wa lam tansah, wa halumta 'alainaa ba'da qudratika 'alaa 'uquubatinaa, wa da'autanaa ilat taubati minhu ba'da jur'atinaa 'alaa ma'shiyatik, fa innaa nastaghfiruka faghfir lanaa. Wa maa 'amilnaa fiihaa mimmaa tardhaahu wa wa'adtanaa 'alaihits tsawaab, fanas'alukallaahumma yaa kariimu yaa dzal jalaali wal ikraami an tataqabbalahuu minnaa, wa laa taqtha' rajaa'anaa minka yaa kariim. Wa sallallaahu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii ajma'iin, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Ya Allah, segala yang kami lakukan pada tahun ini daripada perkara yang Engkau larang dan belum kami bertaubat daripadanya — sedangkan Engkau tidak meredainya dan tidak melupakannya, Engkau bersabar terhadap kami walaupun berkuasa menghukum, dan Engkau menyeru kami bertaubat setelah kami berani menderhakai-Mu — kami memohon ampun kepada-Mu, maka ampunkanlah kami. Dan segala yang kami lakukan yang Engkau redai dan Engkau janjikan pahala, kami memohon, wahai Tuhan Yang Maha Pemurah, yang memiliki keagungan dan kemuliaan, agar Engkau menerimanya dan tidak memutuskan harapan kami kepada-Mu. Selawat dan salam ke atas Nabi Muhammad, keluarga dan sahabat baginda; segala puji bagi Allah, Tuhan sekalian alam."
+
+- id: doa-awal-tahun
+  tajuk: Doa Awal Tahun
+  kat: [musim]
+  tag: [awal tahun, hijrah, muharram, maal hijrah]
+  lihat: [akhir-awal-tahun]
+  bila: "Selepas solat Maghrib malam 1 Muharram"
+  sumber: {jenis: buku, ruj: "Buku Yaasiin, ms 67–68", darjat: ulama, nota: "Doa susunan ulama; tiada hadis sahih khusus tentang doa akhir/awal tahun. Boleh dibaca sebagai doa umum."}
+  bahagian:
+    - teks: "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ | اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ | وَالصَّلَاةُ وَالسَّلَامُ عَلَى أَشْرَفِ الْمُرْسَلِيْنَ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ"
+      frasa: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani | Segala puji bagi Allah, Tuhan sekalian alam | Selawat dan salam ke atas semulia-mulia para rasul | dan ke atas keluarga serta sahabatnya sekalian"
+      rumi: "Bismillaahir rahmaanir rahiim. Alhamdu lillaahi rabbil 'aalamiin, wassalaatu wassalaamu 'alaa asyrafil mursaliin, wa 'alaa aalihii wa sahbihii ajma'iin."
+      makna: "Dengan nama Allah Yang Maha Pemurah lagi Maha Mengasihani. Segala puji bagi Allah, Tuhan sekalian alam. Selawat dan salam ke atas semulia-mulia rasul, keluarga dan sahabat baginda sekalian."
+    - teks: "اَللّٰهُمَّ أَنْتَ الْأَبَدِيُّ الْقَدِيْمُ الْأَوَّلُ | وَعَلَى فَضْلِكَ الْعَظِيْمِ وَجُوْدِكَ الْمُعَوَّلُ | وَهٰذَا عَامٌ جَدِيْدٌ قَدْ أَقْبَلَ عَلَيْنَا | نَسْأَلُكَ الْعِصْمَةَ فِيْهِ | مِنَ الشَّيْطَانِ الرَّجِيْمِ وَأَوْلِيَائِهِ وَجُنُوْدِهِ | وَالْعَوْنَ عَلَى هٰذِهِ النَّفْسِ الْأَمَّارَةِ بِالسُّوْءِ | وَالْاِشْتِغَالَ بِمَا يُقَرِّبُنَا إِلَيْكَ زُلْفَى | يَا ذَا الْجَلَالِ وَالْإِكْرَامِ | يَا أَرْحَمَ الرَّاحِمِيْنَ | وَصَلَّى اللّٰهُ وَسَلَّمَ عَلَى سَيِّدِنَا مُحَمَّدٍ النَّبِيِّ الْأُمِّيِّ | وَعَلَى آلِهِ وَصَحْبِهِ أَجْمَعِيْنَ | وَالْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+      frasa: "Ya Allah, Engkaulah Yang Kekal Abadi, Yang Qadim lagi Yang Awal | dan kepada kurnia-Mu yang agung dan kemurahan-Mu (kami) bergantung | Dan inilah tahun baharu yang telah menjelang kami | Kami memohon kepada-Mu pemeliharaan padanya | daripada syaitan yang direjam, para pembantu dan tenteranya | dan pertolongan menghadapi nafsu yang sentiasa menyuruh kepada kejahatan | dan kesibukan dengan amalan yang mendekatkan kami kepada-Mu | wahai Tuhan yang memiliki keagungan dan kemuliaan | wahai Tuhan Yang Paling Mengasihani | Semoga Allah melimpahkan selawat dan salam ke atas penghulu kami Muhammad, Nabi yang ummi | serta keluarga dan sahabatnya sekalian | Dan segala puji bagi Allah, Tuhan sekalian alam"
+      rumi: "Allaahumma antal abadiyyul qadiimul awwal, wa 'alaa fadhlikal 'aziimi wa juudikal mu'awwal, wa haadzaa 'aamun jadiidun qad aqbala 'alainaa, nas'alukal 'ishmata fiihi minasy syaitaanir rajiimi wa auliyaa'ihii wa junuudih, wal 'auna 'alaa haadzihin nafsil ammaarati bis suu', wal isytighaala bimaa yuqarribunaa ilaika zulfaa, yaa dzal jalaali wal ikraam, yaa arhamar raahimiin. Wa sallallaahu wa sallama 'alaa sayyidinaa Muhammadinin nabiyyil ummiyyi wa 'alaa aalihii wa sahbihii ajma'iin, walhamdu lillaahi rabbil 'aalamiin."
+      makna: "Ya Allah, Engkaulah Yang Kekal Abadi, Yang Qadim lagi Yang Awal; kepada kurnia-Mu yang agung dan kemurahan-Mu kami bergantung. Inilah tahun baharu yang telah menjelang; kami memohon pemeliharaan-Mu padanya daripada syaitan yang direjam, para pembantu dan tenteranya, pertolongan menghadapi nafsu yang menyuruh kepada kejahatan, dan kesibukan dengan amalan yang mendekatkan kami kepada-Mu, wahai Tuhan yang memiliki keagungan dan kemuliaan, wahai Tuhan Yang Paling Mengasihani. Selawat dan salam ke atas Nabi Muhammad yang ummi, keluarga dan sahabat baginda; segala puji bagi Allah, Tuhan sekalian alam."
+    - teks: "تَقَبَّلَ اللّٰهُ مِنَّا وَمِنْكُمْ | تَقَبَّلْ يَا كَرِيْمُ"
+      frasa: "Semoga Allah menerima (amalan) daripada kami dan daripada kamu | Terimalah, wahai Tuhan Yang Maha Pemurah"
+      rumi: "Taqabbalallaahu minnaa wa minkum, taqabbal yaa kariim."
+      makna: "Semoga Allah menerima amalan kami dan kamu; terimalah, wahai Tuhan Yang Maha Pemurah."

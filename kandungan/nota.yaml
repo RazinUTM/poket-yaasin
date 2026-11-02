@@ -1,0 +1,676 @@
+# Nota hukum, kaedah dan sumber yang dipaparkan dalam app (menu Nota).
+# Format isi: perenggan dipisah baris kosong; "- " untuk senarai; **tebal**; {{s:a}} pautan ayat; [[id]] atau [[id|label]] pautan nota lain.
+# Setiap nota merumus sumber dengan kata-kata sendiri (bukan petikan panjang). Kemas kini `disemak` apabila sumber disemak semula.
+
+- id: tentang
+  kumpulan: kaedah
+  tajuk: Tentang app ini
+  ringkas: Asal kandungan, apa yang telah disemak dan apa yang masih draf.
+  disemak: 2026-11-01
+  isi: |
+    Poket Yaasin, Tahlil & Doa ialah app web yang berfungsi tanpa internet selepas dibuka sekali. Ia menghimpunkan Surah Yaasin, susunan tahlil arwah dan doa harian, hajat serta doa semasa, bersama makna setiap frasa dan sumber setiap doa.
+
+    **Asas kandungan** ialah buku *Surah Yaasiin, Tahlil & Doa* (ISBN 983-046-278-1). Susunan tahlil dan doa majlis mengikut buku itu. Di tempat lafaz buku berbeza daripada lafaz lazim, perbezaan itu dinyatakan dalam nota doa berkenaan.
+
+    **Yang telah disemak secara automatik setiap kali app dibina:**
+    - Teks ayat: Mushaf Madinah (KFGQPC, riwayat Hafs 'an 'Asim) disemak silang huruf demi huruf dengan salinan KFGQPC kedua. Hasil: 6,236 ayat, 0 berbeza.
+    - Lafaz doa daripada hadis: setiap frasa disemak wujud dalam teks hadis bernombor yang dirujuk (pangkalan data sunnah.com).
+    - Rumi: tiada Rumi untuk ayat, dan frasa doa yang memetik ayat dikesan secara automatik. Lihat [[rumi]].
+
+    **Yang masih draf:** makna setiap perkataan (per word) dalam Bahasa Melayu bagi ayat disediakan sebagai draf dan perlu disemak oleh guru yang bertauliah. Makna ayat penuh ialah terjemahan Abdullah Muhammad Basmeih.
+
+    Nota hukum dalam app ini meringkaskan pandangan pihak berautoriti, terutamanya Pejabat Mufti Wilayah Persekutuan, dan menyatakan pandangan berbeza secara adil. Untuk soalan peribadi, rujuk Jabatan Mufti negeri anda.
+
+    **Carian pintar** berjalan dalam telefon, tanpa internet dan tanpa model AI dalam talian. Ia memahami perkataan harian dan ejaan berbeza melalui kamus sinonim (disediakan dengan bantuan AI, kemudian disemak), membetulkan salah ejaan, dan memberi jawapan pantas yang dikira daripada data app (waktu solat, puasa sunat, tarikh Hijri). Carian tidak menjana teks doa, ayat atau hadis; setiap hasil ialah kandungan app yang sama seperti di skrin lain. Butang "Cari dalam laman rasmi" membuka carian Google yang terhad kepada laman mufti, dan hanya ketika itu pertanyaan dihantar ke internet.
+
+    Jumpa kesilapan? Gunakan butang "Lapor" pada doa atau ayat berkenaan. Lihat juga [[akta-326]] dan [[sumber-lesen]].
+
+- id: darjat
+  kumpulan: kaedah
+  tajuk: Maksud label sumber
+  ringkas: Al-Quran, Sahih, Hasan, Diperselisihkan, Dha'if, Athar, Susunan ulama, Amalan.
+  disemak: 2026-11-01
+  isi: |
+    Setiap doa memaparkan label sumber. Gred hadis ialah penilaian **yang dicatat oleh sumber rujukan** (contohnya penilaian dalam Sahih al-Bukhari dan Sahih Muslim, atau penilaian al-Albani dan Darussalam dalam pangkalan data sunnah.com), bukan penilaian app ini.
+
+    - **Al-Quran**: lafaz ayat. Dipaparkan dalam tulisan Arab sahaja, dengan audio qari.
+    - **Sahih / Hasan**: hadis yang diterima sebagai hujah.
+    - **Diperselisihkan**: penilai hadis berbeza pendapat tentang darjatnya.
+    - **Dha'if**: sanadnya lemah. Doa yang baik maknanya boleh dibaca sebagai doa umum, tetapi tidak boleh disandarkan secara pasti kepada Nabi ﷺ. Contohnya doa Rejab, lihat [[rejab]].
+    - **Athar**: kata-kata atau amalan sahabat dan salaf.
+    - **Susunan ulama**: doa yang disusun oleh ulama, bukan lafaz hadis. Boleh diamalkan tanpa meyakini ia sunnah yang warid daripada Nabi ﷺ atau mempunyai fadhilat khusus.
+    - **Amalan**: zikir dan bacaan lazim dalam susunan tahlil yang diwarisi di Nusantara.
+
+    Berdoa dengan lafaz sendiri yang baik maknanya juga dibenarkan; yang dilarang ialah menyandarkan lafaz itu kepada Nabi ﷺ jika ia tidak warid (Pejabat Mufti WP, Irsyad al-Hadith Siri 488). Ruang "Doa Saya" dalam app disediakan untuk tujuan ini.
+  sumber:
+    - {t: "Irsyad al-Hadith Siri ke-488: Adakah boleh berdoa untuk tolak bala selain doa yang warid daripada Nabi SAW?", p: "Pejabat Mufti WP, 23 Mac 2020", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/4364-irsyad-al-hadith-siri-ke-488-adakah-boleh-berdoa-untuk-tolak-bala-selain-doa-yang-warid-daripada-nabi-saw"}
+    - {t: "Sunnah.com — teks, nombor dan gred hadis", p: "sunnah.com", u: "https://sunnah.com"}
+
+- id: rumi
+  kumpulan: kaedah
+  tajuk: Kenapa ayat tiada Rumi?
+  ringkas: Fatwa Kebangsaan 1989, syarat yang diharuskan, dan dasar app.
+  disemak: 2026-11-01
+  isi: |
+    **Muzakarah Jawatankuasa Fatwa Majlis Kebangsaan kali ke-24 (5–6 Jun 1989)** memutuskan haram menulis atau menggunakan mana-mana bahagian ayat al-Quran dengan tulisan selain huruf Arab.
+
+    Pejabat Mufti WP (Irsyad al-Fatwa Siri 172) menegaskan hukum asalnya haram, namun mengharuskannya dengan syarat, merujuk keputusan Jawatankuasa Fatwa Negeri Sembilan (2016): teks Arab mesti disertakan, kaedah transliterasi diterima ahli akademik, ia hanya alat pembelajaran yang bersifat sementara bagi pemula, dan terbitan itu tidak dianggap mushaf. Jawatankuasa Fatwa Perlis (2020) pula menyatakan hukum asalnya haram kecuali bagi yang terdesak untuk menunaikan fardu ain, seperti mualaf. Garis panduan KDN bagi perakuan teks al-Quran tidak membenarkan ayat ditulis dalam Rumi.
+
+    **Dasar app ini:**
+    - Ayat al-Quran tidak diberi Rumi. Dengar audio qari dan ikut teks Arab.
+    - Doa dan zikir yang bukan ayat diberi Rumi sebagai bantuan sebutan, sentiasa bersama teks Arab.
+    - Jika sesuatu doa memetik ayat, Rumi bagi frasa itu disembunyikan dan diganti dengan tanda ayat (contohnya "ayat 36:82"). Sentuh tanda itu untuk melihat dan mendengar ayat berkenaan.
+    - Petikan ini dikesan secara automatik: setiap frasa doa yang sama dengan kira-kira 3–4 perkataan berturut-turut daripada mana-mana ayat mesti diputuskan sebelum app boleh dibina.
+
+    **Pengecualian (keputusan editorial, perlu disahkan guru):** zikir yang diperintahkan oleh hadis untuk diucapkan, seperti istirja' ("innaa lillaahi…", Sahih Muslim 918a), "hasbunallaahu wa ni'mal wakiil" (Jami' at-Tirmizi 2431, hasan) dan "lahul mulku wa lahul hamdu…" (Sahih al-Bukhari 6403), serta ungkapan doa lazim yang kebetulan sama dengan dua hingga empat perkataan ayat, Rumi-nya dikekalkan. Asasnya: lafaz itu dibaca dengan niat zikir atau doa, bukan tilawah. Ini tafsiran app sahaja: keputusan Muzakarah 1989 dan garis panduan KDN tidak menyebut sebarang pengecualian. Senarai penuh disediakan untuk semakan.
+
+    Rumi hanyalah bantuan sementara. Belajarlah membaca teks Arab dengan guru.
+  sumber:
+    - {t: "Irsyad al-Fatwa Siri 172: Hukum Menulis Al-Quran Menggunakan Abjad Roman/Latin (memetik keputusan Muzakarah ke-24, 1989)", p: "Pejabat Mufti WP, 15 Feb 2017", u: "https://muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/1028-irsyad-al-fatwa-172-hukum-menulis-al-quran-menggunakan-abjad-roman-latin"}
+    - {t: "Garis Panduan Permohonan Perakuan Betul Pruf Akhir Teks Al-Qur'an (perkara 4(d))", p: "KDN / LPPPQ", u: "https://admin.moha.gov.my/images/Agensi/PK/GP_Permohonan_Perakuan_Betul_Pruf_Akhir_2024-latest_update_2024.pdf"}
+    - {t: "The Ruling on the Use of the Qur'an in Rumi Script… (Mesyuarat ke-45, 2020)", p: "Jabatan Mufti Negeri Perlis", u: "https://muftiperlis.gov.my/index.php/fatwa-insights/worship/1547-the-ruling-on-the-use-of-the-qur-an-in-rumi-script-and-others-for-obligatory-individual-duties"}
+
+- id: fadhilat-yaasin
+  kumpulan: hukum
+  tajuk: Status hadis kelebihan Yaasin
+  ringkas: Kebanyakan hadis fadhilat Yaasin lemah atau palsu; membacanya tetap digalakkan.
+  disemak: 2026-11-01
+  isi: |
+    Pejabat Mufti WP merumuskan bahawa **kebanyakan hadis tentang kelebihan khusus Surah Yaasin adalah dha'if atau palsu**. Namun membaca al-Quran, termasuk Yaasin, tetap sangat digalakkan berdasarkan dalil umum, tanpa terikat dengan masa atau tempat tertentu.
+
+    - **"Setiap sesuatu ada hati, dan hati al-Quran ialah Yaasin"** (riwayat al-Tirmizi, no. 2887 dalam penomboran sunnah.com): dinilai gharib oleh al-Tirmizi, dan seorang perawinya tidak dikenali. Kajian Journal of Hadith Studies (2026) mendapati dua riwayat al-Bazzar bagi lafaz ini masing-masing maudhu' dan dha'if.
+    - **"Bacalah Yaasin kepada orang yang hampir mati"** (riwayat Abu Daud): dha'if, tetapi mempunyai riwayat sokongan. Pejabat Mufti WP memilih maksud "orang yang sedang nazak", dan menyatakan amalan membacanya sunat bagi yang beramal dengannya.
+    - **Hadis panjang tentang pahala Yaasin seperti khatam al-Quran berkali-kali**: palsu menurut al-Albani.
+    - **Mengulang ayat {{36:58}}**: dibolehkan bahkan sunat untuk tadabbur. Bilangan tiga atau tujuh kali ialah adat setempat, bukan nas (Al-Kafi #1998).
+
+    Kesimpulan: bacalah Yaasin sebagai bacaan al-Quran dan zikir, tanpa menyandarkan fadhilat yang tidak sahih kepada Nabi ﷺ. Lihat juga [[yaasin-jumaat]].
+  sumber:
+    - {t: "Irsyad al-Hadith Siri ke-58: Kelebihan membaca surah Yasin", p: "Pejabat Mufti WP, 5 Mei 2016", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/1150-irsyad-al-hadith-siri-ke-58-kelebihan-membaca-dan-surah"}
+    - {t: "Irsyad al-Hadith Siri ke-117: Status hadith 'Bacalah Yasin kepada orang yang mati'", p: "Pejabat Mufti WP, 28 Sep 2016", u: "https://muftiwp.gov.my/artikel/irsyad-al-hadith/1096-irsyad-al-hadith-siri-ke-117-status-hadith-bacalah-yasin-kepada-orang-yang-mati"}
+    - {t: "Al-Kafi #1998: Mengulang ayat 58 Surah Yasin", p: "Pejabat Mufti WP, 8 Ogos 2024", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/5974"}
+    - {t: "Hadis 'Yasin Jantung Al-Qur'an' dalam Musnad al-Bazzar (Journal of Hadith Studies 11(1))", p: "USIM, Jun 2026", u: "https://journalofhadith.usim.edu.my/index.php/johs/article/view/447"}
+
+- id: tahlil
+  kumpulan: hukum
+  tajuk: Majlis tahlil dan menghadiahkan pahala
+  ringkas: Khilafiah yang harus; doa dan sedekah disepakati sampai; pandangan Perlis berbeza pada bentuk majlis.
+  disemak: 2026-11-01
+  isi: |
+    **Kedudukan arus perdana (Pejabat Mufti WP, mazhab Syafi'i):** bacaan Yaasin, tahlil dan kenduri arwah ialah perkara khilafiah yang harus, dan tidak wajar dipertikaikan secara meluas.
+
+    - Pahala **doa dan sedekah** untuk si mati disepakati sampai. Antara dalilnya, hadis tiga amalan yang tidak terputus selepas mati (Sahih Muslim 1631) dan hadis sedekah untuk ibu yang meninggal dunia secara mengejut (Sunan Ibn Majah 2717).
+    - Pahala **bacaan al-Quran** diperselisihkan. Pandangan masyhur mazhab Syafi'i: tidak sampai. Sebahagian ulama Syafi'i, mazhab Hanafi dan Hanbali: sampai. Pejabat Mufti WP cenderung kepada pandangan yang mengharuskan.
+    - Imam al-Nawawi menganjurkan pembaca berdoa selepas membaca supaya pahala disampaikan kepada si mati. Sebab itu doa tahlil dalam app ini berbentuk permohonan: "Ya Allah, sampaikanlah…".
+    - Jangan meyakini pahala itu pasti sampai, kerana ia bergantung kepada penerimaan doa. Pahala boleh dihadiahkan kepada ramai orang sekali gus (Al-Kafi #1742).
+    - Penganjur tidak boleh menetapkan bayaran bagi setiap nama arwah (Al-Kafi #1288).
+
+    **Pandangan berbeza (Perlis):** Mufti Perlis, Datuk Dr. Mohd Asri Zainul Abidin, menulis bahawa pandangan pahala bacaan sampai kepada si mati ialah pandangan yang kuat, dengan syarat bacaan ikhlas dan bukan kerana upah. Perbezaan Perlis terletak pada bentuk majlis: Jawatankuasa Fatwa Perlis (2018) menyatakan berhimpun di rumah si mati dan menjamu makan selepas pengebumian tidak disukai, manakala jiran memberi makan keluarga si mati adalah sunnah. Garis panduan masjid dan surau Perlis (2020) tidak membenarkan majlis tahlil arwah di masjid dan surau negeri itu.
+
+    Hormati amalan setempat, dan ikut garis panduan negeri anda.
+  sumber:
+    - {t: "Al-Kafi #719: Mayat Mendapat Manfaat Sedekah Orang Hidup", p: "Pejabat Mufti WP, 12 Mac 2018", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/2340-al-kafi-719-mayat-mendapat-manfaat-sedekah-orang-hidup"}
+    - {t: "Bayan Linnas Siri ke-13: Adab Islam Bagi Menghadapi Kematian", p: "Pejabat Mufti WP, 22 Feb 2015", u: "https://muftiwp.gov.my/ms/artikel/bayan-linnas/2588-bayan-linnas-siri-ke-13-adab-islam-bagi-menghadapi-kematian"}
+    - {t: "Al-Kafi #1288: Hukum Memberi Sumbangan Untuk Majlis Tahlil Arwah", p: "Pejabat Mufti WP, 11 Jun 2019", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/3477-al-kafi-1288-hukum-memberi-sumbangan-untuk-majlis-tahlil-arwah"}
+    - {t: "Al-Kafi #1742: Hukum Menyedekahkan Bacaan Al-Quran Kepada Lebih Daripada Seorang", p: "Pejabat Mufti WP, 9 Jul 2020", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/4572-al-kafi-1742-hukum-menyedekahkan-bacaan-al-quran-kepada-lebih-daripada-seorang"}
+    - {t: "Tanya Mufti: Pendapat pahala sampai kepada si mati kuat (Datuk Dr. Mohd Asri Zainul Abidin)", p: "Kosmo, 11 Feb 2022", u: "https://www.kosmo.com.my/?p=234830"}
+    - {t: "Commemorative Feast for the Deceased (JK Fatwa ke-36, 2018)", p: "Jabatan Mufti Negeri Perlis", u: "https://muftiperlis.gov.my/index.php/fatwa-insights/waqf-mosque-dan-funeral-management/1494-commemorative-feast-for-the-deceased"}
+    - {t: "Guidelines for the Management of Mosques and Prayer Halls throughout the State of Perlis (Amendment 2020)", p: "Jabatan Mufti Negeri Perlis", u: "https://muftiperlis.gov.my/index.php/fatwa-insights/waqf-mosque-dan-funeral-management/1564-guidelines-for-the-management-of-mosques-and-prayer-halls-throughout-the-state-of-perlis-amendment-year-2020"}
+
+- id: yaasin-jumaat
+  kumpulan: hukum
+  tajuk: Yaasin malam Jumaat
+  ringkas: Harus berdasarkan dalil umum, bukan sunnah khusus.
+  disemak: 2026-11-01
+  isi: |
+    Pejabat Mufti WP menyatakan membaca Yaasin pada malam Jumaat adalah **harus**. Nabi ﷺ tidak mengkhususkannya, tetapi ada dalil umum tentang galakan membaca al-Quran dan berhimpun untuk membacanya.
+
+    Menjadualkan majlis Yaasin dan tahlil juga harus dengan tiga syarat: ia menjadi wasilah kepada amalan yang sabit (doa, zikir dan bacaan al-Quran), ia tidak diwajibkan, dan orang yang tidak hadir tidak dicela.
+
+    - Hadis khusus tentang kelebihan Yaasin pada malam Jumaat sangat lemah, jadi jangan didakwa sebagai sunnah khusus (Journal of Fatwa and Falak Selangor, 2024).
+    - Amalan hari Jumaat yang sabit termasuk mencari saat doa mustajab (Sahih al-Bukhari 935). Lihat [[waktu-mustajab]].
+    - Bacaan di tempat kerja tidak boleh mengabaikan tugas: boleh bergilir dan dihadkan masanya (Al-Kafi Soalan 170).
+
+    **Pandangan berbeza:** garis panduan masjid dan surau Perlis (2020) tidak membenarkan bacaan khusus pada waktu khusus tanpa dalil, termasuk Yaasin berjemaah malam Jumaat, di masjid dan surau negeri itu.
+  sumber:
+    - {t: "Irsyad Usul Fiqh Siri ke-78: Benarkah Asal Perkara Berkaitan Ibadah Adalah Haram?", p: "Pejabat Mufti WP, 5 Mei 2025", u: "https://muftiwp.gov.my/ms/artikel/irsyad-usul-fiqh/6228-irsyad-usul-fiqh-siri-ke-78-benarkah-asal-perkara-berkaitan-ibadah-adalah-haram"}
+    - {t: "Bayan Linnas Siri ke-94: Hukum Penganjuran Program Kempen Quran Hour", p: "Pejabat Mufti WP, 30 Mei 2017", u: "https://muftiwp.gov.my/ms/artikel/bayan-linnas/818-bayan-linnas-siri-ke-94-hukum-penganjuran-program-kempen-quran-hour"}
+    - {t: "Adat Bacaan Surah Yasin Malam Jumaat di Malaysia (makalah jurnal, bukan fatwa)", p: "Journal of Fatwa and Falak Selangor 1(1), 2024", u: "https://juffas.muftiselangor.gov.my/index.php/jurnal/article/download/16/9"}
+    - {t: "Al-Kafi li al-Fatawi Soalan 170: Pengisian Rohani, Jangan Sampai Kerja Terabai", p: "Pejabat Mufti WP, 29 Jan 2016", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/1732-pengisian-rohani-jangan-sampai-kerja-terabai"}
+
+- id: nisfu-syaaban
+  kumpulan: hukum
+  tajuk: Malam Nisfu Syaaban
+  ringkas: Kelebihannya sabit; tiada amalan khusus; asal-usul doa "Allaahumma yaa dzal mann".
+  disemak: 2026-11-01
+  isi: |
+    **Kelebihan malam Nisfu Syaaban** diriwayatkan melalui beberapa jalan yang saling menguatkan, antaranya hadis keampunan Allah kepada hamba-Nya pada malam itu. Pejabat Mufti WP cenderung menerimanya, tetapi menegaskan **tiada amalan khusus** yang sabit pada malam itu selain amalan umum: zikir, istighfar, doa, solat sunat dan sedekah.
+
+    - Solat khusus Nisfu Syaaban (seperti solat 100 rakaat) dan Solat Raghaib adalah palsu dan bid'ah menurut ulama yang dipetik dalam Irsyad al-Hadith Siri 70.
+    - Membaca Yaasin tiga kali selepas Maghrib dengan doa ialah amalan lazim di Malaysia. Satu fatwa dalam portal e-SMAF JAKIM (dilaporkan oleh SAYS; jawatankuasa pengeluarnya tidak dinyatakan) menyatakan menghidupkan malam itu dengan ibadah bukan bid'ah, bahkan mustahab. Mufti Selangor menyatakan amalan malam Nisfu Syaaban khilafiah dan tidak boleh dihukum bid'ah. Niat khusus bagi setiap bacaan (seperti dalam buku: umur dalam ketaatan, iman, rezeki halal) tidak mempunyai nas khusus.
+    - Pejabat Mufti WP (Irsyad Hukum Siri 29) menasihatkan agar amalan tidak dihadkan kepada malam tertentu tanpa nas sahih, atau nas dha'if yang bukan palsu.
+
+    **Doa "Allaahumma yaa dzal manni…"** dalam app ini: menurut Dar al-Ifta' Mesir (Fatwa 3009), lafaznya berasal daripada kata-kata sahabat dan salaf, bukan hadis Nabi ﷺ. Perenggan akhirnya ("Ilaahii bit tajalliyil a'zam…") ialah **tambahan ulama terkemudian**, Syeikh Ma' al-'Ainain al-Syanqiti. Membacanya baik dan tiada larangan.
+
+    Ayat {{44:3-4}} yang disebut dalam doa ini merujuk kepada malam al-Qadar dalam bulan Ramadan menurut Ibn Kathir dan jumhur mufassirin. Ibn Kathir menolak pandangan yang diriwayatkan daripada 'Ikrimah bahawa ia malam Nisfu Syaaban, kerana nas al-Quran menyatakan al-Quran diturunkan pada bulan Ramadan.
+  sumber:
+    - {t: "Irsyad al-Hadith Siri ke-70: Kelebihan Malam Nisfu Sya'ban", p: "Pejabat Mufti WP, 20 Mei 2016", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/1121-irsyad-al-hadith-siri-ke-70-kelebihan-malam-nisfu-sya-ban"}
+    - {t: "Irsyad Hukum ke-29: Bulan Sya'ban: Keistimewaannya Mengikut Neraca Nas", p: "Pejabat Mufti WP, 27 Mei 2015", u: "https://muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/2068-29"}
+    - {t: "e-Musykil: Apakah amalan malam nisfu syaban itu bidah atau sebaliknya", p: "Jabatan Mufti Negeri Selangor, 2020", u: "https://emusykil.muftiselangor.gov.my/index.php/site/jawapan?id=1971"}
+    - {t: "Amalan Pada Malam Nisfu Syaaban Bidaah Atau Tidak? (memetik e-SMAF JAKIM; sumber sekunder)", p: "SAYS, 13 Feb 2025", u: "https://says.com/my/seismik/amalan-pada-malam-nisfu-syaaban-bidaah-atau-tidak-ini-apa-yang-anda-perlu-tahu"}
+    - {t: "Fatwa 3009: دعاء ليلة النصف من شعبان", p: "Dar al-Ifta' al-Misriyyah, 30 Jun 2015", u: "https://www.dar-alifta.org/ar/fatwa/details/12857/%d8%af%d8%b9%d8%a7%d8%a1-%d9%84%d9%8a%d9%84%d8%a9-%d8%a7%d9%84%d9%86%d8%b5%d9%81-%d9%85%d9%86-%d8%b4%d8%b9%d8%a8%d8%a7%d9%86"}
+    - {t: "Tafsir Ibn Kathir, ad-Dukhan 44:3", p: "Quran.com", u: "https://quran.com/44:3/tafsirs/ar-tafsir-ibn-kathir"}
+
+- id: rejab
+  kumpulan: hukum
+  tajuk: Doa Rejab, Syaaban dan Ramadan
+  ringkas: Sanadnya sangat lemah, tetapi teksnya boleh dibaca sebagai doa umum.
+  disemak: 2026-11-01
+  isi: |
+    Doa "Allaahumma baarik lanaa fii Rajaba wa Sya'baana wa ballighnaa Ramadhaan" diriwayatkan daripada Anas bin Malik oleh Ahmad, al-Baihaqi dan lain-lain. Pejabat Mufti WP menilai **sanadnya teramat lemah** kerana dua perawinya bermasalah, jadi ia **tidak boleh disandarkan kepada Nabi ﷺ**.
+
+    Namun maknanya baik dan tidak bercanggah dengan syarak, jadi ia **boleh dibaca sebagai doa umum** asalkan tidak dilabel sebagai hadis sahih. Imam al-Nawawi dan Ibn Rajab turut melemahkan sanadnya.
+  sumber:
+    - {t: "Irsyad al-Hadith Siri ke-41: Status doa berkenaan Rejab, Syaaban dan Ramadan", p: "Pejabat Mufti WP, 11 Apr 2016", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/1526-irsyad-al-hadith-siri-ke-41-status-doa-berkenaan-rejab-syaaban-dan-ramadan"}
+
+- id: akhir-awal-tahun
+  kumpulan: hukum
+  tajuk: Doa akhir dan awal tahun Hijrah
+  ringkas: Doa susunan ulama; boleh diamalkan tanpa i'tiqad sunnah khusus.
+  disemak: 2026-11-01
+  isi: |
+    Tiada hadis khusus tentang doa akhir tahun dan doa awal tahun. Sumber rasmi Malaysia memperlakukannya sebagai **doa susunan ulama yang boleh diamalkan** berdasarkan galakan umum berdoa:
+
+    - Khutbah JHEAINS Sabah (1 Muharam 1447H) menyatakan ia boleh diamalkan pada setiap pergantian tahun walaupun tiada dalil khusus.
+    - Jabatan Mufti Negeri Sembilan menerbitkan risalah doa awal dan akhir tahun untuk dibaca bersama.
+    - Pejabat Mufti WP tiada artikel khusus tentang doa ini. Al-Kafi #410, tentang amalan Muharam secara umum, menyatakan amalan yang mungkin berasal daripada ulama tidak menjadi masalah selagi tidak disandarkan kepada Nabi ﷺ.
+
+    Buku Surah Yaasiin menyarankan doa akhir tahun dibaca pada hari terakhir Zulhijjah sebelum Maghrib, dan doa awal tahun selepas Maghrib malam 1 Muharam. Amalkannya tanpa meyakini ia sunnah warid atau mempunyai fadhilat khusus.
+  sumber:
+    - {t: "Khutbah Jumaat: Awal Muharam: Muhasabah untuk Memantapkan Amal Soleh", p: "JHEAINS Sabah, 27 Jun 2025", u: "https://jheains.sabah.gov.my/sites/default/files/uploads/khutbah/2025-06/khutbah%2006272025.pdf"}
+    - {t: "Risalah Do'a Awal dan Akhir Tahun Hijriyyah 1442H/2020M", p: "Jabatan Mufti Kerajaan Negeri Sembilan, 2020", u: "https://muftins.gov.my/wp-content/uploads/2020/08/Risalah-hijriyyah.pdf"}
+    - {t: "Al-Kafi #410: Amalan-amalan dalam Bulan Muharam", p: "Pejabat Mufti WP, 24 Okt 2016", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/1265-al-kafi-410-amalan-amalan-dalam-bulan-muharam"}
+
+- id: qunut-nazilah
+  kumpulan: hukum
+  tajuk: Qunut Nazilah untuk Palestin
+  ringkas: Dibaca ketika musibah besar menimpa umat; tiada had tempoh; tidak terhadap sesama Muslim.
+  disemak: 2026-11-01
+  isi: |
+    Qunut Nazilah dibaca apabila umat Islam ditimpa musibah besar, dalam semua solat fardu menurut pandangan Imam al-Nawawi. Asasnya: Nabi ﷺ berqunut sebulan dalam solat Subuh terhadap kabilah yang membunuh tujuh puluh qurra' di Bi'r Ma'unah (Sahih al-Bukhari 4090), dan berdoa dalam rakaat akhir solat Isyak untuk orang beriman yang tertindas (Sahih al-Bukhari 6393).
+
+    - **Tiada had tempoh**: ia sunat dibaca selagi musibah belum berakhir (Irsyad Hukum Siri 813). Selepas Israel melanggar gencatan senjata, Pejabat Mufti WP menyeru qunut nazilah diteruskan (Bayan Linnas Siri 310, April 2025).
+    - **Tidak boleh** dibaca ke atas sesama Muslim, termasuk kerana pertikaian politik (Al-Kafi #1993).
+    - JAKIM menganjurkan solat hajat dan bacaan qunut nazilah di masjid utama pada 1 Mac 2026 (Kenyataan Media Bil. 04/2026). Pada Oktober 2026, seruan solat hajat dibuat untuk perlindungan Masjid al-Aqsa dan keselamatan negara daripada jerebu; qunut nazilah tidak disebut dalam seruan itu.
+
+    Lafaz dalam app ini menggabungkan Qunut Umar (diberi sebagai contoh teks dalam Al-Kafi #969, bukan lafaz yang diwajibkan), doa ayat {{2:250}} dan dua doa Nabi ﷺ ketika berhadapan musuh (Sahih al-Bukhari 2933; Sunan Abi Dawud 1537).
+  sumber:
+    - {t: "Al-Kafi #969: Hukum Membaca Qunut Nazilah", p: "Pejabat Mufti WP, 19 Dis 2018", u: "https://www.muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/2895-al-kafi-969-hukum-membaca-qunut-nazilah"}
+    - {t: "Irsyad al-Fatwa Siri ke-813: Tempoh Membaca Qunut Nazilah", p: "Pejabat Mufti WP, 12 Dis 2023", u: "https://www.muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/5802-irsyad-al-fatwa-siri-ke-813-tempoh-membaca-qunut-nazilah"}
+    - {t: "Bayan Linnas Siri ke-310: Israel langgar gencatan senjata, masyarakat diseru terus bersolidariti dengan Palestin", p: "Pejabat Mufti WP, 7 Apr 2025", u: "https://muftiwp.gov.my/en/artikel/bayan-linnas/6210-bayan-linnas-siri-ke-310-israel-langgar-gencatan-senjata-masyarakat-diseru-terus-bersolidariti-dengan-palestin-melalui-doa-dan-menyumbang-dalam-pelbagai-bentuk"}
+    - {t: "Al-Kafi #1993: Hukum Membaca Doa Qunut Nazilah ke atas Sesama Orang Islam", p: "Pejabat Mufti WP, 20 Jul 2024", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/5959-al-kafi-1993-hukum-membaca-doa-qunut-nazilah-ke-atas-sesama-orang-islam"}
+    - {t: "Kenyataan Media Bil. 04/2026: Solat Hajat dan Qunut Nazilah di Masjid-masjid Utama JAKIM", p: "JAKIM, 1 Mac 2026", u: "https://www.islam.gov.my/en/media-statement/4982-kenyataan-media-jabatan-kemajuan-islam-malaysia-jakim-berkenaan-pelaksanaan-solat-hajat-dan-bacaan-qunut-nazilah-di-masjid-masjid-utama-jakim"}
+
+- id: puasa-sunat
+  kumpulan: hukum
+  tajuk: Puasa sunat dan hari yang dilarang berpuasa
+  ringkas: Isnin dan Khamis, 13 hingga 15 Hijri, Arafah, Tasu'a dan Asyura, enam hari Syawal; Hari Raya dan Tasyrik.
+  disemak: 2026-11-02
+  isi: |
+    Diari dalam app menanda hari-hari ini pada kalendar. Tarikh Hijri ikut takwim JAKIM apabila data waktu solat ada; jika tidak, tarikh Hijri ialah anggaran dan perlu disahkan dengan pengumuman rasmi.
+
+    - **Isnin dan Khamis**: Nabi ﷺ berusaha berpuasa pada dua hari ini (Jami' at-Tirmizi 745, sahih menurut Darussalam), dan amalan dibentangkan pada hari Isnin dan Khamis (Jami' at-Tirmizi 747, hasan). Pejabat Mufti WP menghuraikan hadis ini dalam Irsyad al-Hadith Siri ke-231.
+    - **13, 14 dan 15 setiap bulan Hijri (Ayyamul Bidh)**: Jami' at-Tirmizi 761 dan Sunan an-Nasa'i 2424 (hasan menurut Darussalam).
+    - **Hari Arafah (9 Zulhijjah)**: menghapuskan dosa setahun sebelum dan setahun selepasnya; **Asyura (10 Muharam)**: menghapuskan dosa setahun sebelumnya (Sahih Muslim 1162a).
+    - **Tasu'a (9 Muharam)**: Nabi ﷺ berazam untuk turut berpuasa pada hari kesembilan (Sahih Muslim 1134b). Pejabat Mufti WP menerangkan cara berpuasa Asyura dalam Irsyad al-Fatwa ke-135.
+    - **Enam hari dalam bulan Syawal**: bersama Ramadan, pahalanya seperti berpuasa setahun (Sahih Muslim 1164a).
+    - **Bulan Muharam**: puasa yang paling afdal selepas Ramadan (Sahih Muslim 1163a).
+    - **Puasa Daud**, sehari berpuasa dan sehari berbuka: puasa yang paling disukai Allah (Sahih al-Bukhari 1131).
+
+    **Dilarang berpuasa** pada Hari Raya Aidilfitri dan Aidiladha (Sahih al-Bukhari 1990; Sahih Muslim 1138) dan pada hari-hari Tasyrik, 11 hingga 13 Zulhijjah (Sahih Muslim 1141a). Kalendar app menanda hari-hari ini.
+
+    **Hari Jumaat**: jangan berpuasa pada hari Jumaat sahaja tanpa sehari sebelum atau selepasnya (Sahih al-Bukhari 1985); Jumaat ialah hari raya mingguan (lihat [[puasa-nabi]]). **Hari Sabtu atau Ahad sahaja**: makruh dalam mazhab Syafi'i kecuali disambung dengan hari sebelum atau selepasnya, atau bertepatan dengan puasa yang ada sebab (Pejabat Mufti WP, Al-Kafi #563). **Separuh kedua Syaaban**: Jabatan Mufti Pahang mengingatkan puasa sunat selepas pertengahan Syaaban makruh, kecuali bagi yang sudah mula berpuasa pada separuh awal bulan itu.
+
+    Diari juga boleh merekod puasa ganti (qada) dan puasa Ramadan. Cara Nabi ﷺ berpuasa sepanjang minggu dan bulan, termasuk hari Jumaat dan Sabtu: [[puasa-nabi]]. Niat, berbuka dan keutamaan antara qada dengan puasa enam: [[puasa-adab]]. Untuk soal hukum peribadi, rujuk Jabatan Mufti negeri anda. Lihat juga [[kalendar]].
+  sumber:
+    - {t: "Irsyad al-Hadith Siri ke-231: Amalan Diangkat pada Isnin dan Khamis", p: "Pejabat Mufti WP, 10 Jan 2018", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/2228-irsyad-al-hadith-siri-ke-231-amalan-diangkat-pada-isnin-dan-khamis"}
+    - {t: "Irsyad al-Fatwa ke-135: Adakah puasa 10 Muharram perlu disertai dengan hari selepasnya?", p: "Pejabat Mufti WP", u: "https://www.muftiwp.gov.my/artikel/irsyad-fatwa/irsyad-fatwa-umum/1225-irsyad-al-fatwa-ke-135-adakah-puasa-10-muharram-perlu-disertai-dengan-hari-selepasnya"}
+    - {t: "Khutbah Jumaat 31 Januari 2025 (puasa sunat dan Syaaban)", p: "Jabatan Mufti Negeri Pahang, 31 Jan 2025", u: "https://mufti.pahang.gov.my/images/ekhutbah/jumaat/2025/RUMI/31.1.2025_rumi.pdf"}
+    - {t: "Jami' at-Tirmizi 745", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:745"}
+    - {t: "Jami' at-Tirmizi 747", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:747"}
+    - {t: "Jami' at-Tirmizi 761", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:761"}
+    - {t: "Sunan an-Nasa'i 2424", p: "sunnah.com", u: "https://sunnah.com/nasai:2424"}
+    - {t: "Sahih Muslim 1162a", p: "sunnah.com", u: "https://sunnah.com/muslim:1162a"}
+    - {t: "Sahih Muslim 1134b", p: "sunnah.com", u: "https://sunnah.com/muslim:1134b"}
+    - {t: "Sahih Muslim 1164a", p: "sunnah.com", u: "https://sunnah.com/muslim:1164a"}
+    - {t: "Sahih Muslim 1163a", p: "sunnah.com", u: "https://sunnah.com/muslim:1163a"}
+    - {t: "Sahih al-Bukhari 1131", p: "sunnah.com", u: "https://sunnah.com/bukhari:1131"}
+    - {t: "Sahih al-Bukhari 1990", p: "sunnah.com", u: "https://sunnah.com/bukhari:1990"}
+    - {t: "Sahih Muslim 1138", p: "sunnah.com", u: "https://sunnah.com/muslim:1138"}
+    - {t: "Sahih Muslim 1141a", p: "sunnah.com", u: "https://sunnah.com/muslim:1141a"}
+    - {t: "Sahih al-Bukhari 1985", p: "sunnah.com", u: "https://sunnah.com/bukhari:1985"}
+
+- id: puasa-nabi
+  kumpulan: amalan
+  tajuk: "Cara Nabi ﷺ berpuasa sunat: setiap minggu, setiap bulan dan bermusim"
+  ringkas: Isnin dan Khamis, tiga hari sebulan, corak Sabtu hingga Khamis, Jumaat sebagai hari raya mingguan, hari Sabtu, puasa Daud, Syaaban dan awal Zulhijjah.
+  kata: [puasa nabi, puasa sunnah, cara nabi berpuasa, puasa isnin, puasa khamis, puasa jumaat, puasa sabtu, puasa ahad, puasa selasa, puasa rabu, tiga hari sebulan, ayyamul bidh, puasa daud, puasa syaaban, puasa zulhijjah, puasa sepanjang tahun, hari raya mingguan, kelebihan puasa]
+  disemak: 2026-11-02
+  isi: |-
+    Nabi ﷺ tidak berpuasa sunat mengikut satu jadual yang tetap. Ada masanya baginda berpuasa berturut-turut sehingga sahabat menyangka baginda tidak akan berbuka, dan ada masanya sebaliknya; baginda tidak pernah berpuasa sebulan penuh selain Ramadan (Sahih al-Bukhari 1969; Sahih Muslim 1156e). Yang tetap ialah beberapa kebiasaan di bawah. Darjat hadis sunan mengikut penilaian yang dipaparkan sunnah.com. Senarai hari sunat dan hari dilarang ada dalam [[puasa-sunat]]; niat, berbuka dan soalan lazim dalam [[puasa-adab]].
+
+    **Setiap minggu: Isnin dan Khamis**
+    - Nabi ﷺ berusaha berpuasa pada hari Isnin dan Khamis (Jami' at-Tirmizi 745, sahih). Amalan dibentangkan kepada Allah pada dua hari ini, dan baginda suka amalannya dibentangkan ketika baginda berpuasa (Jami' at-Tirmizi 747, hasan).
+    - Apabila ditanya tentang puasa hari Isnin, baginda menjawab bahawa itulah hari baginda dilahirkan dan hari wahyu mula diturunkan kepada baginda (Sahih Muslim 1162b).
+
+    **Setiap bulan: tiga hari**
+    - Abu Hurairah diwasiatkan tiga perkara oleh Nabi ﷺ: puasa tiga hari setiap bulan, dua rakaat Dhuha, dan witir sebelum tidur (Sahih al-Bukhari 1981).
+    - Setiap kebaikan dibalas sepuluh kali ganda, jadi puasa tiga hari sebulan menyamai puasa sepanjang tahun (Sahih al-Bukhari 1975; Sahih Muslim 1162a).
+    - Aisyah ditanya pada hari apa Nabi ﷺ berpuasa tiga hari itu. Jawabnya, baginda tidak menetapkan hari tertentu dalam bulan (Sahih Muslim 1160). Riwayat lain menyebut cara yang berbeza: tiga hari pada awal bulan (Jami' at-Tirmizi 742, hasan); Isnin pertama dalam bulan dan hari Khamis (Sunan Abi Dawud 2437, sahih menurut al-Albani); dan 13, 14 dan 15 haribulan Hijri, iaitu Ayyamul Bidh (Jami' at-Tirmizi 761). Semuanya cara memenuhi tiga hari sebulan.
+
+    **Corak Sabtu hingga Khamis.** Aisyah meriwayatkan bahawa dalam satu bulan Nabi ﷺ berpuasa pada hari Sabtu, Ahad dan Isnin, dan pada bulan berikutnya pada hari Selasa, Rabu dan Khamis (Jami' at-Tirmizi 746). Darussalam menilai riwayat ini da'if. Perhatikan susunannya: Sabtu, Ahad, Isnin, kemudian Selasa, Rabu, Khamis; bukan Ahad, Isnin, Selasa. Dalam dua bulan, corak ini meliputi semua hari dalam seminggu kecuali Jumaat. Mengamalkannya tetap termasuk dalam puasa tiga hari sebulan yang sabit dalam hadis sahih di atas, tetapi jangan menganggapnya sunnah khusus yang sabit kuat.
+
+    **Jumaat: hari raya mingguan**
+    - Nabi ﷺ menyebut hari Jumaat sebagai hari raya yang Allah jadikan untuk umat Islam, lalu menganjurkan mandi, memakai wangian dan bersugi (Sunan Ibn Majah 1098, hasan).
+    - Jangan berpuasa pada hari Jumaat sahaja; berpuasalah sehari sebelum atau selepasnya (Sahih al-Bukhari 1985; Sahih Muslim 1144a). Jangan juga mengkhususkan malam Jumaat untuk qiyam dan siangnya untuk puasa, kecuali jika ia jatuh dalam puasa yang biasa dilakukan (Sahih Muslim 1144b), contohnya hari Arafah atau Asyura yang jatuh pada hari Jumaat.
+    - Juwairiyah pernah berpuasa pada hari Jumaat. Nabi ﷺ bertanya sama ada dia berpuasa semalam atau berniat berpuasa esok; apabila dia menjawab tidak, baginda menyuruhnya berbuka (Sahih al-Bukhari 1986). Soalan itu juga menunjukkan bahawa puasa Jumaat yang disambung dengan Sabtu dibenarkan.
+    - Ibn Mas'ud melaporkan bahawa Nabi ﷺ jarang tidak berpuasa pada hari Jumaat (Jami' at-Tirmizi 742, hasan). Jadi yang dilarang ialah mengkhususkan Jumaat seorang diri, bukan berpuasa pada hari Jumaat. Jika mahu berpuasa pada hari Jumaat, sertakan hari Khamis atau Sabtu.
+
+    **Sabtu: ada perbezaan pendapat**
+    - Ada hadis yang melarang berpuasa pada hari Sabtu kecuali puasa yang difardukan (Jami' at-Tirmizi 744, hasan; Sunan Abi Dawud 2421, sahih menurut al-Albani; Sunan Ibn Majah 1726, hasan). Ulama berbeza pendapat tentang maksud dan kekuatan hadis ini.
+    - Pejabat Mufti WP (Al-Kafi #563): dalam mazhab Syafi'i, makruh berpuasa sunat pada hari Sabtu sahaja atau Ahad sahaja, kerana hari itu dibesarkan oleh Yahudi dan Nasrani; begitu juga hari Jumaat sahaja. Hukum makruh itu tidak terpakai jika puasa disambung dengan hari sebelum atau selepasnya, atau jika ia bertepatan dengan kebiasaan, hari yang disunatkan seperti Arafah dan Asyura, puasa Daud, qada atau nazar. Berpuasa Sabtu dan Ahad bersama-sama pula tidak makruh, kerana tiada golongan yang membesarkan kedua-dua hari itu serentak (Irsyad Fatwa Edisi Khas Ramadhan, Soalan 44).
+    - Hadis Juwairiyah di atas menunjukkan bahawa Nabi ﷺ membenarkan puasa hari Sabtu yang disambung dengan hari Jumaat.
+
+    **Puasa Daud, dan berpuasa setiap hari**
+    - Puasa yang paling disukai Allah ialah puasa Nabi Daud: sehari berpuasa dan sehari berbuka (Sahih al-Bukhari 1131). Pejabat Mufti WP (Irsyad Hukum Siri 887): sunat bagi yang mampu tanpa mengabaikan tanggungjawab. Jika giliran berpuasa jatuh pada hari Jumaat, teruskan kerana ia rutin, bukan mengkhususkan Jumaat; jika jatuh pada Hari Raya atau hari Tasyrik, wajib berbuka.
+    - Abdullah bin Amr berazam untuk berpuasa setiap hari dan bersolat sepanjang malam. Nabi ﷺ melarangnya: badan, isteri dan tetamunya masing-masing ada hak ke atasnya, dan tiga hari sebulan sudah mencukupi. Apabila tua, Abdullah berharap dia menerima keringanan itu (Sahih al-Bukhari 1975). Tentang orang yang berpuasa sepanjang masa, baginda bersabda dia tidak berpuasa dan tidak pula berbuka (Sahih Muslim 1162a). Dalam mazhab Syafi'i, berpuasa setiap hari selain hari yang dilarang tidak makruh bagi yang mampu, tetapi makruh jika memudaratkan diri atau mengabaikan tanggungjawab; puasa Daud tetap lebih afdal (Irsyad Hukum Siri 887).
+    - Nabi ﷺ berpesan supaya beramal sekadar yang mampu, kerana Allah tidak jemu memberi ganjaran sehingga kita sendiri yang jemu; solat yang paling baginda sukai ialah yang dikekalkan walaupun sedikit (Sahih al-Bukhari 1970).
+
+    **Bermusim**
+    - **Syaaban**: bulan Nabi ﷺ paling banyak berpuasa sunat (Sahih al-Bukhari 1969 dan 1970). Baginda menjelaskan bahawa Syaaban ialah bulan yang dilalaikan manusia antara Rejab dan Ramadan, ketika amalan diangkat kepada Allah, dan baginda suka amalannya diangkat ketika berpuasa (Sunan an-Nasa'i 2357, hasan). Tentang separuh kedua Syaaban, lihat [[puasa-sunat]].
+    - **Awal Zulhijjah**: tiada amal soleh yang lebih disukai Allah daripada amal pada sepuluh hari pertama Zulhijjah (Sahih al-Bukhari 969). Salah seorang isteri Nabi ﷺ melaporkan baginda berpuasa pada sembilan hari pertamanya (Sunan Abi Dawud 2437), dan Hafsah menyebutnya antara empat amalan yang tidak ditinggalkan baginda (Sunan an-Nasa'i 2416, hasan). Aisyah pula berkata dia tidak pernah melihat baginda berpuasa pada hari-hari itu (Sahih Muslim 1176a). Menurut al-Nawawi, yang dinukil Pejabat Mufti WP, kata-kata Aisyah tidak menafikan baginda berpuasa pada hari-hari itu, dan seseorang boleh berpuasa pada semua atau sebahagian daripadanya. Hadis yang menjanjikan ganjaran khusus bagi puasa setiap hari dari 1 hingga 9 Zulhijjah pula palsu; yang sabit ialah kelebihan hari Arafah (Irsyad al-Hadith Siri 401). 10 Zulhijjah ialah Hari Raya, dilarang berpuasa.
+    - **Muharam, Asyura, Arafah dan enam hari Syawal**: lihat [[puasa-sunat]].
+
+    **Kelebihan berpuasa**
+    - Puasa ialah perisai (Sahih al-Bukhari 1894).
+    - Di syurga ada pintu bernama ar-Rayyan, khusus untuk orang yang berpuasa (Sahih al-Bukhari 1896).
+    - Sesiapa berpuasa sehari pada jalan Allah, Allah menjauhkan wajahnya dari neraka sejauh perjalanan tujuh puluh tahun (Sahih al-Bukhari 2840).
+    - Orang yang berpuasa mendapat dua kegembiraan: ketika berbuka, dan ketika bertemu Tuhannya (Sahih al-Bukhari 1904).
+    - Doa orang yang berpuasa hingga dia berbuka antara doa yang tidak ditolak. Lihat [[waktu-mustajab]].
+  sumber:
+    - {t: "Jami' at-Tirmizi 746 (puasa Sabtu hingga Khamis)", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:746"}
+    - {t: "Sahih Muslim 1160 (tiga hari sebulan, tanpa hari tertentu)", p: "sunnah.com", u: "https://sunnah.com/muslim:1160"}
+    - {t: "Sunan Ibn Majah 1098 (Jumaat hari raya)", p: "sunnah.com", u: "https://sunnah.com/ibnmajah:1098"}
+    - {t: "Sahih al-Bukhari 1985 dan 1986 (puasa hari Jumaat)", p: "sunnah.com", u: "https://sunnah.com/bukhari:1985"}
+    - {t: "Jami' at-Tirmizi 744 (puasa hari Sabtu)", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:744"}
+    - {t: "Sahih al-Bukhari 1975 (puasa Daud dan hak badan)", p: "sunnah.com", u: "https://sunnah.com/bukhari:1975"}
+    - {t: "Irsyad al-Hadith Siri ke-231: Amalan Diangkat pada Isnin dan Khamis", p: "Pejabat Mufti WP, 10 Jan 2018", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/2228-irsyad-al-hadith-siri-ke-231-amalan-diangkat-pada-isnin-dan-khamis"}
+    - {t: "Al-Kafi #563: Hukum Berpuasa Sunat pada Hari Sabtu dan Ahad", p: "Pejabat Mufti WP, 6 Mac 2017", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/968-al-kafi-563-hukum-berpuasa-sunat-pada-hari-sabtu-dan-ahad"}
+    - {t: "Puasa Sunat pada Hari Ahad (Irsyad Fatwa Edisi Khas Ramadhan)", p: "Pejabat Mufti WP, 29 Jun 2015", u: "https://www.muftiwp.gov.my/ms/artikel/irsyad-hukum/edisi-ramadhan/1964-puasa-sunat-pada-hari-ahad"}
+    - {t: "Irsyad Hukum Siri ke-887: Puasa Nabi Daud", p: "Pejabat Mufti WP, 19 Feb 2025", u: "https://www.muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/6133-irsyad-hukum-siri-ke-887-puasa-nabi-daud"}
+    - {t: "Irsyad Hukum ke-29: Bulan Sya'ban: Keistimewaannya Mengikut Neraca Nas", p: "Pejabat Mufti WP, 27 Mei 2015", u: "https://www.muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/2068-29"}
+    - {t: "Irsyad Hukum Haji dan Korban Siri ke-59: Adakah boleh berpuasa pada hari Arafah jika tidak berpuasa bermula dari 1 Zulhijah?", p: "Pejabat Mufti WP, 8 Jul 2022", u: "https://www.muftiwp.gov.my/ms/artikel/irsyad-hukum/edisi-haji-korban/5325-irsyad-al-fatwa-haji-dan-korban-siri-ke-59-adakah-boleh-berpuasa-pada-hari-arafah-jika-tidak-berpuasa-bermula-dari-1-zulhijah"}
+    - {t: "Irsyad al-Hadith Siri ke-401: Hadith Palsu Kelebihan Berpuasa 10 Hari Awal Bulan Zulhijjah", p: "Pejabat Mufti WP, 2 Ogos 2019", u: "https://www.muftiwp.gov.my/ms/artikel/irsyad-al-hadith/3614-irsyad-al-hadith-siri-ke-401-hadith-palsu-kelebihan-berpuasa-10-hari-awal-bulan-zulhijjah"}
+
+- id: puasa-adab
+  kumpulan: hukum
+  tajuk: "Puasa sunat: niat, berbuka, izin suami dan gabungan niat"
+  ringkas: Niat pada siang hari, membatalkan puasa sunat, sahur, jemputan makan, isteri dan izin suami, serta qada dan puasa enam Syawal.
+  kata: [niat puasa sunat, lupa niat, niat siang, batal puasa sunat, berbuka puasa sunat, izin suami, isteri puasa sunat, sahur, puasa ganti dan puasa enam, gabung niat, qada dahulu, jemputan makan]
+  disemak: 2026-11-02
+  isi: |-
+    Ringkasan ini mengikut mazhab Syafi'i seperti yang dihuraikan Pejabat Mufti WP. Untuk soalan peribadi, rujuk Jabatan Mufti negeri anda. Lihat juga [[puasa-nabi]] dan [[puasa-sunat]].
+
+    - **Niat**: puasa wajib (Ramadan, qada dan nazar) perlu diniatkan pada malam hari sebelum Subuh (Sunan Abi Dawud 2454, sahih menurut al-Albani). Puasa sunat pula boleh diniatkan pada siang hari jika belum makan, minum atau melakukan perkara yang membatalkan puasa sejak Subuh. Nabi ﷺ pernah bertanya kepada Aisyah sama ada ada makanan; apabila tiada, baginda berkata "kalau begitu aku berpuasa" (Sahih Muslim 1154b). Pejabat Mufti WP (Al-Kafi #1298): niat siang itu sah sebelum tergelincir matahari (masuk waktu Zohor). Niat mesti putus; niat yang digantung pada syarat, contohnya "saya berpuasa jika tiada jemputan makan", tidak sah.
+    - **Sahur**: bersahurlah, kerana pada sahur ada keberkatan (Sahih al-Bukhari 1923).
+    - **Berbuka di tengah hari**: pada hari lain, Nabi ﷺ dihadiahkan makanan ketika baginda berpuasa sunat, lalu baginda memakannya (Sahih Muslim 1154b). Pejabat Mufti WP: membatalkan puasa sunat dengan sengaja tanpa sebab adalah makruh dan tidak wajib diqada (Al-Kafi #1315); menggantinya pada hari lain disunatkan (Al-Kafi #1198).
+    - **Jemputan makan**: jika dijemput makan ketika berpuasa, beritahu tuan rumah bahawa anda berpuasa (Sahih Muslim 1150) dan doakan mereka. Jika puasa anda memberatkan tuan rumah, contohnya makanan khas sudah disediakan, berbuka lebih baik (Al-Kafi #1315).
+    - **Isteri**: isteri tidak berpuasa sunat ketika suami berada di rumah kecuali dengan izinnya (Sahih al-Bukhari 5195; Sahih Muslim 1026). Puasa Ramadan tidak memerlukan izin (Jami' at-Tirmizi 782, sahih). Pejabat Mufti WP (Al-Kafi #1748): dalam mazhab Syafi'i larangan ini membawa hukum haram; puasa tanpa izin tetap sah tetapi berdosa. Jika suami tiada di rumah, isteri boleh berpuasa, walaupun lebih baik memaklumkannya. Puasa qada yang tempohnya masih panjang juga memerlukan izin.
+    - **Qada dahulu atau puasa enam?** Pejabat Mufti WP (Al-Kafi #1275): pandangan muktamad mazhab Syafi'i ialah lebih afdal berpuasa qada berasingan daripada puasa enam Syawal. Pandangan yang mengharuskan gabungan niat, antaranya fatwa Imam al-Ramli, turut dinukil, tetapi sebahagian ulama Syafi'i menyatakan pahala puasa enam tidak sempurna dengan cara itu. Sesiapa yang meninggalkan puasa Ramadan tanpa uzur perlu menyegerakan qada dan tidak boleh mendahulukan puasa enam; yang meninggalkannya kerana uzur boleh mendahulukan puasa enam kerana waktu qada luas.
+    - **Hari dilarang berpuasa**: Hari Raya Aidilfitri, Hari Raya Aidiladha dan hari Tasyrik. Lihat [[puasa-sunat]].
+  sumber:
+    - {t: "Al-Kafi #1275: Bolehkah Niat Puasa Enam dan Puasa Ganti Secara Serentak?", p: "Pejabat Mufti WP, 3 Jun 2019", u: "https://www.muftiwp.gov.my/artikel/al-kafi-li-al-fatawi/3458-al-kafi-1275-bolehkah-niat-puasa-enam-dan-puasa-ganti-secara-serentak"}
+    - {t: "Hukum Gabung Puasa Ganti dan Puasa Enam (e-brosur)", p: "Pejabat Mufti WP", u: "https://muftiwp.gov.my/images/pdf/penerbitan/ebrosur/Hukum_Gabung_Puasa_Ganti_dan_Puasa_Enam.pdf"}
+    - {t: "Al-Kafi #1298: Niat untuk Puasa Enam Syawal Jika Tiada Open House", p: "Pejabat Mufti WP, 20 Jun 2019", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/3502-al-kafi-1298-niat-untuk-puasa-enam-syawal-jika-tiada-open-house"}
+    - {t: "Al-Kafi #1315: Manakah yang lebih afdhal di antara puasa enam atau berbuka sekiranya dijemput ke jamuan raya", p: "Pejabat Mufti WP, 4 Jul 2019", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/3543-al-kafi-1315-manakah-yang-lebih-afdhal-di-antara-puasa-enam-atau-berbuka-sekiranya-dijemput-ke-jamuan-raya"}
+    - {t: "Al-Kafi #1198: Mengganti Puasa Sunat yang Dibatalkan", p: "Pejabat Mufti WP, 7 Apr 2019", u: "https://www.muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/3276-al-kafi-1198-mengganti-puasa-sunat-yang-dibatalkan"}
+    - {t: "Al-Kafi #1748: Perlukah Isteri Mendapat Keizinan Suami untuk Qadha' Puasa", p: "Pejabat Mufti WP, 13 Ogos 2020", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/4595-al-kafi-1748-perlukah-isteri-mendapat-keizinan-suami-untuk-qadha-puasa"}
+    - {t: "Sahih Muslim 1154b (niat siang dan berbuka puasa sunat)", p: "sunnah.com", u: "https://sunnah.com/muslim:1154b"}
+
+- id: banjir-hujan
+  kumpulan: hukum
+  tajuk: Hujan lebat, banjir dan "tolak hujan"
+  ringkas: Doa hawalaina; upacara tolak hujan ialah khurafat.
+  disemak: 2026-11-01
+  isi: |
+    Ketika hujan lebat yang memudaratkan, Nabi ﷺ berdoa "Allaahumma hawaalainaa wa laa 'alainaa" (Ya Allah, turunkanlah di sekeliling kami, bukan menimpa kami), riwayat Anas bin Malik dalam Sahih al-Bukhari. Ketika hujan turun, baca "Allaahumma shayyiban naafi'aa".
+
+    - Berdoa supaya hujan yang memudaratkan beralih adalah harus. **Upacara fizikal "tolak hujan"** (contohnya menegakkan batang penyapu) ialah khurafat dan haram (Al-Kafi #1467).
+    - Ayat Hud 44 ialah perintah Allah kepada langit dan bumi pada zaman Nabi Nuh, bukan lafaz doa. Ia boleh dibaca secara tawassul atau tabarruk, tetapi doa daripada al-Quran dan hadis sahih lebih utama (Al-Kafi #680).
+    - Bersabar, bantu-membantu, sediakan dokumen penting dan peti kecemasan, dan patuhi amaran rasmi (Khutbah JAKIM, 6 Dis 2024).
+
+    MetMalaysia menjangka Monsun Timur Laut 2026/2027 berlangsung dari 27 Okt 2026 hingga Mac 2027, dengan beberapa episod hujan lebat berterusan antara November dan Januari.
+  sumber:
+    - {t: "Irsyad al-Fatwa Siri ke-383: Hukum Hakam Berkaitan Hujan", p: "Pejabat Mufti WP, 29 Jan 2020", u: "https://www.muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/4075-irsyad-al-fatwa-siri-ke-383-hukum-hakam-berkaitan-hujan"}
+    - {t: "Al-Kafi #1467: Hukum Melakukan Upacara Tolak Hujan", p: "Pejabat Mufti WP, 9 Dis 2019", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/3867-al-kafi-1467-hukum-melakukan-upacara-tolak-hujan"}
+    - {t: "Al-Kafi #680: Hukum Berdoa dengan Ayat 44 Surah Hud untuk Memulihkan Banjir", p: "Pejabat Mufti WP, 10 Jan 2018", u: "https://www.muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/2202-al-kafi-680-hukum-berdoa-dengan-ayat-44-surah-hud-untuk-memulihkan-banjir"}
+    - {t: "Teks Khutbah Jumaat: Ujian Ditempuh, Kebersamaan Diperteguh", p: "JAKIM, 6 Dis 2024", u: "https://www.islam.gov.my/images/Teks_Khutbah_Jumaat_6_Disember_2024_-_Ujian_Ditempuh_Kebersamaan_Diperteguh.pdf"}
+    - {t: "Kenyataan Media Permulaan Fasa Monsun Timur Laut 2026/2027", p: "MetMalaysia, 23 Okt 2026", u: "https://www.met.gov.my/assets/content/siaran_media/default/23%20Oktober%202026%20-%20Kenyataan%20Media%20Permulaan%20Fasa%20Monsun%20Timur%20Laut%202026_2027.pdf"}
+
+- id: waktu-mustajab
+  kumpulan: adab
+  tajuk: Waktu dan keadaan doa mustajab
+  ringkas: Sepertiga malam, sujud, antara azan dan iqamah, saat Jumaat, ketika berbuka dan lain-lain.
+  disemak: 2026-11-01
+  isi: |
+    Senarai ini dihimpun daripada artikel Pejabat Mufti WP dan disemak dengan teks hadis. Gred ialah seperti yang dicatat sumber.
+
+    - **Sepertiga akhir malam**: Allah turun ke langit dunia dan memperkenankan doa (Sahih al-Bukhari 1145). Ada satu saat setiap malam yang doa dikabulkan (Sahih Muslim 757a).
+    - **Ketika sujud**: saat hamba paling dekat dengan Tuhannya (Sahih Muslim 482).
+    - **Antara azan dan iqamah**: doa tidak ditolak (Jami' at-Tirmizi 212, sahih menurut Darussalam).
+    - **Saat mustajab hari Jumaat** (Sahih al-Bukhari 935). Riwayat Sahih Muslim 853 menyebut antara imam duduk di atas mimbar hingga selesai solat; Pejabat Mufti WP cenderung kepada akhir waktu selepas Asar.
+    - **Orang berpuasa hingga dia berbuka, dan ketika berbuka**, pemimpin yang adil dan orang yang dizalimi (Jami' at-Tirmizi 3598; Sunan Ibn Majah 1752–1753; hasan menurut Darussalam).
+    - **Doa ibu bapa untuk anaknya, doa musafir, doa orang yang dizalimi** (Sunan Ibn Majah 3862: hasan menurut Darussalam, hasan li ghairihi menurut Syu'aib al-Arna'ut). Hadis tular "doa ibu seperti doa Nabi kepada umatnya" pula palsu (Irsyad al-Hadith Siri 414).
+    - **Ketika azan dan ketika berhadapan musuh** (Sunan Abi Dawud 2540). Tambahan "dan ketika hujan turun" dalam riwayat ini dinilai lemah oleh al-Albani; Pejabat Mufti WP memetik riwayat lain (al-Hakim) tentang doa ketika hujan.
+    - **Mendoakan saudara tanpa pengetahuannya**: malaikat mendoakan perkara yang sama untuk kita (Sahih Muslim 2732a).
+    - **Akhir malam dan penghujung solat fardu** (Jami' at-Tirmizi 3499: hasan menurut al-Tirmizi, dha'if menurut Darussalam).
+
+    Lihat juga [[adab-doa]].
+  sumber:
+    - {t: "Irsyad al-Hadith Siri ke-393: Waktu Mustajab Pada Waktu Malam", p: "Pejabat Mufti WP, 16 Jul 2019", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/3573-irsyad-al-hadith-siri-ke-393-waktu-mustajab-pada-waktu-malam"}
+    - {t: "Irsyad al-Hadith Siri ke-126: Waktu Mustajab Pada Hari Jumaat", p: "Pejabat Mufti WP, 23 Nov 2016", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/1456-irsyad-al-hadith-siri-ke-126-waktu-mustajab-pada-hari-jumaat"}
+    - {t: "Irsyad al-Hadith Siri ke-196: Doa Orang Berpuasa Mustajab", p: "Pejabat Mufti WP, 30 Mei 2017", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/819-irsyad-al-hadith-siri-ke-196-doa-orang-berpuasa-mustajab"}
+    - {t: "Irsyad al-Hadith Siri ke-243: Doa Ketika Turunnya Hujan", p: "Pejabat Mufti WP, 25 Jan 2018", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/2272-irsyad-al-hadith-siri-ke-243-doa-ketika-turunnya-hujan"}
+    - {t: "Irsyad al-Hadith Siri ke-414: Doa Ibu Kepada Anak Seperti Doa Nabi Kepada Umat", p: "Pejabat Mufti WP, 11 Sep 2019", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/3679-irsyad-al-hadith-siri-ke-414-doa-ibu-kepada-anak-seperti-doa-nabi-kepada-umat"}
+    - {t: "Irsyad al-Hadith Siri ke-108: Doa Seorang Sahabat Kepada Sahabatnya", p: "Pejabat Mufti WP, 8 Ogos 2016", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/1125-irsyad-al-hadith-siri-ke-108-doa-seorang-sahabat-kepada-sahabatnya"}
+    - {t: "Sahih al-Bukhari 1145", p: "sunnah.com", u: "https://sunnah.com/bukhari:1145"}
+    - {t: "Jami' at-Tirmizi 212", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:212"}
+    - {t: "Sunan Abi Dawud 2540", p: "sunnah.com", u: "https://sunnah.com/abudawud:2540"}
+
+- id: adab-doa
+  kumpulan: adab
+  tajuk: Adab berdoa
+  ringkas: Ikhlas, yakin, mulakan dengan pujian dan selawat, jangan tergesa-gesa.
+  disemak: 2026-11-01
+  isi: |
+    Pejabat Mufti WP menyenaraikan adab berdoa berikut:
+
+    - Ikhlas dan bersungguh-sungguh, kerana doa itu ibadah.
+    - Tidak meminta perkara dosa atau memutuskan silaturahim.
+    - Yakin doa akan dikabulkan dan berdoa dengan tenang.
+    - Mulakan dan akhiri dengan pujian kepada Allah serta selawat ke atas Nabi ﷺ. Contohnya susunan al-Fatihah: pujian dahulu, kemudian permohonan.
+    - Menjauhi yang haram dan istiqamah dalam ketaatan.
+    - Tidak tergesa-gesa atau berputus asa.
+    - Jangan berdoa secara bersyarat seperti "ampunilah aku jika Engkau mahu" (Sahih al-Bukhari 6339; Sahih Muslim 2679a).
+    - Mengangkat tangan dan menyapu muka selepas berdoa termasuk adab, tidak wajib (Irsyad al-Hadith Siri 303). Hadisnya (Jami' at-Tirmizi 3386) dinilai gharib oleh al-Tirmizi dan hasan dengan sokongan riwayat lain oleh al-San'ani.
+    - Banyakkan berdoa ketika senang supaya doa dikabulkan ketika susah (Al-Kafi #1015).
+
+    Doa yang ikhlas tidak sia-sia: ia sama ada dikabulkan segera, disimpan sebagai ganjaran di akhirat, atau menjadi sebab dijauhkan keburukan yang setara (Irsyad al-Hadith Siri 349).
+  sumber:
+    - {t: "Himpunan Doa Menghadapi Dugaan dan Musibah (e-buku)", p: "Pejabat Mufti WP, 2021", u: "https://www.muftiwp.gov.my/images/pdf/penerbitan/ebook/himpunandoa/himpunandoahadapidugaandanmusibah.pdf"}
+    - {t: "Al-Kafi #1015: Bagaimana Mendapatkan Doa Mustajab", p: "Pejabat Mufti WP, 31 Dis 2018", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/2968-al-kafi-1015-bagaimana-mendapatkan-doa-mustajab"}
+    - {t: "Irsyad al-Hadith Siri ke-394: Larangan Ketika Berdoa", p: "Pejabat Mufti WP, 18 Jul 2019", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/3583-irsyad-al-hadith-siri-ke-394-larangan-ketika-berdoa"}
+    - {t: "Irsyad al-Hadith Siri ke-303: Menyapu Muka Selepas Berdoa", p: "Pejabat Mufti WP, 22 Nov 2018", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/2792-irsyad-al-hadith-siri-ke-303-menyapu-muka-selepas-berdoa"}
+    - {t: "Irsyad al-Hadith Siri ke-349: Cara Penerimaan Doa", p: "Pejabat Mufti WP, 6 Mac 2019", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/3174-irsyad-al-hadith-siri-ke-349-cara-penerimaan-doa"}
+
+- id: selawat
+  kumpulan: hukum
+  tajuk: Selawat ke atas Nabi ﷺ dan selawat susunan ulama
+  ringkas: Sekali selawat dibalas sepuluh; perbanyak pada hari Jumaat; Selawat Ibrahimiyah paling utama; status Tafrijiyah dan Syifa'.
+  kata: [selawat, selawat nabi, tafrijiyah, nariyah, selawat syifa, tibbil qulub, ibrahimiyah, "4444 kali", selawat jumaat, kelebihan selawat]
+  disemak: 2026-11-02
+  isi: |-
+    **Kelebihan berselawat** (semua hadis di bawah sahih):
+    - Sesiapa berselawat ke atas Nabi ﷺ sekali, Allah berselawat ke atasnya sepuluh kali (Sahih Muslim 408); dihapuskan sepuluh kesalahan dan diangkat sepuluh darjat (Sunan an-Nasa'i 1297, sahih menurut Darussalam).
+    - Perbanyakkan selawat pada hari Jumaat kerana selawat umat dibentangkan kepada baginda (Sunan Abi Dawud 1047, sahih menurut al-Albani). Sebab itu kad khat di skrin Utama sentiasa memaparkan selawat pada hari Jumaat.
+    - Selawat sampai kepada baginda di mana sahaja kita berada (Sunan Abi Dawud 2042, sahih menurut al-Albani).
+    - Selepas menjawab azan, berselawatlah ke atas Nabi ﷺ (Sahih Muslim 384a).
+
+    **Selawat yang paling utama** ialah lafaz yang diajar sendiri oleh Nabi ﷺ apabila para sahabat bertanya cara berselawat, iaitu Selawat Ibrahimiyah (Sahih al-Bukhari 3370; Sahih Muslim 406a). Pejabat Mufti WP menyebutnya selawat yang afdal (dalam huraian solat jenazah), dan menggalakkan selawat serta zikir ajaran Nabi ﷺ diutamakan.
+
+    **Selawat susunan ulama** (bukan lafaz hadis) harus dibaca selagi maknanya tidak bercanggah dengan syarak. Status dua yang popular:
+    - **Selawat Tafrijiyah (Nariyah)**: Pejabat Mufti WP (Tashih al-Mafahim #20, 2021) menyatakan selawat ini tiada unsur syirik dan harus diamalkan, dengan keyakinan bahawa pemberi kesan yang hakiki hanyalah Allah. Perkataan "bihi" dalam "tanhallu bihil 'uqad" bermaksud dengan sebab Nabi ﷺ. Jabatan Mufti Negeri Selangor (e-Musykil) juga mengharuskannya dengan kefahaman yang betul. Penyusun asalnya diperselisihkan.
+    - **Selawat Syifa' (Tibbil Qulub)**: Jawatankuasa Syariah Negeri Perlis (29 Januari 2007, tidak diwartakan) memutuskan selawat ini tidak bersumberkan al-Quran dan Sunnah, dan kandungannya bercanggah dengan prinsip akidah kerana memberi sifat ketuhanan kepada Rasulullah ﷺ. Tiada keputusan Pejabat Mufti WP atau jabatan mufti negeri lain mengenainya ditemui ketika nota ini disemak. Sebahagian masyarakat mengamalkannya sebagai doa memohon kesembuhan.
+
+    **Bilangan khusus** seperti membaca Selawat Tafrijiyah 4444 kali tidak bersandarkan ayat atau hadis. Jika diamalkan, ia amalan sebahagian ulama, bukan sunnah Nabi ﷺ.
+
+    **Hadis popular yang lemah:** hadis Ubay bin Ka'ab tentang menjadikan seluruh doa sebagai selawat (Jami' at-Tirmizi 2457) bergred dha'if menurut Darussalam. Lihat juga [[darjat]] dan [[adab-doa]].
+  sumber:
+    - {t: "Tashih al-Mafahim #20: Benarkah terdapat unsur syirik dalam Selawat Tafrijiyyah?", p: "Pejabat Mufti WP, 29 Okt 2021", u: "https://muftiwp.gov.my/ms/artikel/tashih-al-mafahim/5033-tashih-al-mafahim-20-benarkah-terdapat-unsur-syirik-dalam-selawat-tafrijiyyah"}
+    - {t: "Al-Kafi #968: Kaifiat solat jenazah ghaib (selawat yang afdal)", p: "Pejabat Mufti WP, 19 Dis 2018", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/2891-al-kafi-968-kaifiat-solat-jenazah-ghaib"}
+    - {t: "e-Musykil: Selawat Tafrijiyyah (soalan 1933)", p: "Jabatan Mufti Negeri Selangor, 2020", u: "https://emusykil.muftiselangor.gov.my/index.php/site/jawapan?id=1933"}
+    - {t: "Hukum Selawat Syifa", p: "Jawatankuasa Syariah Negeri Perlis, 29 Jan 2007, melalui e-SMAF JAKIM", u: "http://e-smaf.islam.gov.my/e-smaf/index.php/main/mainv1/fatwa/pr/11103"}
+    - {t: "Sahih Muslim 408", p: "sunnah.com", u: "https://sunnah.com/muslim:408"}
+    - {t: "Sunan an-Nasa'i 1297", p: "sunnah.com", u: "https://sunnah.com/nasai:1297"}
+    - {t: "Sunan Abi Dawud 1047", p: "sunnah.com", u: "https://sunnah.com/abudawud:1047"}
+    - {t: "Sunan Abi Dawud 2042", p: "sunnah.com", u: "https://sunnah.com/abudawud:2042"}
+    - {t: "Sahih Muslim 384a", p: "sunnah.com", u: "https://sunnah.com/muslim:384a"}
+    - {t: "Sahih al-Bukhari 3370", p: "sunnah.com", u: "https://sunnah.com/bukhari:3370"}
+    - {t: "Jami' at-Tirmizi 2457", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:2457"}
+
+- id: solat-sunat
+  kumpulan: amalan
+  tajuk: "Solat sunat: rawatib, Dhuha, tahajjud, witir dan lain-lain"
+  ringkas: Rawatib 10 atau 12 rakaat, Dhuha 2 hingga 8 rakaat, tahajjud dan witir, istikharah, taubat, hajat, tasbih, tahiyyatul masjid, sunat wuduk dan tarawih.
+  kata: [solat sunat, sembahyang sunat, rawatib, qabliah, badiah, solat dhuha, tahajjud, qiyamullail, solat malam, witir, istikharah, solat taubat, solat hajat, solat tasbih, tahiyyatul masjid, sunat wuduk, tarawih]
+  disemak: 2026-11-02
+  isi: |-
+    Ringkasan dalil dan pandangan Pejabat Mufti WP bagi solat sunat yang lazim. Darjat hadis sunan mengikut penilaian yang dipaparkan sunnah.com.
+
+    - **Rawatib** (sunat yang mengiringi solat fardu): dalam mazhab Syafi'i, yang muakkad 10 rakaat, iaitu 2 sebelum Subuh, 2 sebelum dan 2 selepas Zohor, 2 selepas Maghrib dan 2 selepas Isyak (Sahih al-Bukhari 1180). Riwayat 12 rakaat mengira 4 rakaat sebelum Zohor; sesiapa menjaga 12 rakaat sehari semalam, dibina untuknya rumah di syurga (Sahih Muslim 728a; Jami' at-Tirmizi 415, sahih menurut Darussalam).
+    - **Dhuha**: waktunya selepas matahari naik (selepas syuruk) hingga sebelum tergelincir matahari, dan yang terbaik ketika matahari semakin panas (Sahih Muslim 748a). Dua rakaat Dhuha mencukupi sebagai sedekah bagi setiap sendi tubuh (Sahih Muslim 720). Nabi ﷺ solat 4 rakaat dan kadangkala lebih (Sahih Muslim 719a), dan 8 rakaat pada hari pembukaan Makkah (Sahih al-Bukhari 1176). Pejabat Mufti WP: sekurang-kurangnya 2, paling afdal 8, dan paling banyak 12 rakaat menurut al-Nawawi. Waktu Dhuha harian JAKIM ada dalam skrin Waktu Solat.
+    - **Tahajjud atau qiyamullail**: solat yang paling afdal selepas solat fardu ialah solat malam (Sahih Muslim 1163b). Allah turun ke langit dunia ketika tinggal sepertiga malam terakhir dan menyeru hamba-Nya yang berdoa dan memohon ampun (Sahih al-Bukhari 1145). Pejabat Mufti WP menghuraikan tahajjud sebagai solat malam selepas bangun tidur dan sebelum masuk waktu Subuh, dan mencatat beberapa cara yang diamalkan.
+    - **Witir**: jadikan witir solat terakhir pada waktu malam (Sahih al-Bukhari 998); sekurang-kurangnya 1 rakaat (Sahih al-Bukhari 990) dan yang paling sempurna 11 rakaat. Pejabat Mufti WP: 3 rakaat dengan dua salam lebih afdal.
+    - **Istikharah**: solat 2 rakaat sunat diikuti doa istikharah untuk memohon petunjuk dalam sesuatu urusan, seperti yang Nabi ﷺ ajarkan (Sahih al-Bukhari 1166). Doa istikharah ada dalam senarai doa app ini.
+    - **Taubat**: sesiapa yang berdosa, lalu berwuduk dengan baik, solat 2 rakaat dan memohon ampun, Allah mengampunkannya (Sunan Abi Dawud 1521, sahih menurut al-Albani). Pejabat Mufti WP menyatakan nama "solat taubat" tidak disebut dalam hadis, tetapi amalannya berdasarkan hadis ini.
+    - **Hajat**: hadisnya (Jami' at-Tirmizi 479; Sunan Ibn Majah 1384) dha'if menurut Darussalam. Pejabat Mufti WP cenderung kepada pandangan jumhur fuqaha yang mengharuskannya sebagai fadhail amal, dan boleh berjemaah sekali-sekala.
+    - **Tasbih**: 4 rakaat dengan 75 kali tasbih dalam setiap rakaat. Status hadisnya diperselisihkan: ada ulama yang melemahkannya dan ada yang menilainya hasan; Sunan Abi Dawud 1297 sahih menurut al-Albani. Pejabat Mufti WP menyatakan jumhur ulama berpendapat ia sunat.
+    - **Tahiyyatul masjid**: 2 rakaat apabila masuk masjid sebelum duduk (Sahih al-Bukhari 444; Sahih Muslim 714a). Pejabat Mufti WP: masih boleh dilakukan jika baru duduk sebentar.
+    - **Sunat wuduk**: 2 rakaat selepas berwuduk, seperti amalan Bilal yang tapak kakinya didengar Nabi ﷺ di syurga (Sahih al-Bukhari 1149). Pejabat Mufti WP: sunat, dan afdalnya sebaik sahaja selesai berwuduk.
+    - **Tarawih**: sesiapa mendirikan malam Ramadan kerana iman dan mengharap pahala, diampunkan dosanya yang lalu (Sahih al-Bukhari 37). Bilangan rakaat diperselisihkan: mazhab Syafi'i dan jumhur 20 rakaat, manakala Aisyah meriwayatkan Nabi ﷺ tidak melebihi 11 rakaat (Sahih al-Bukhari 2013). Pejabat Mufti WP: yang solat kurang daripada 20 rakaat tetap mendapat pahala mengikut kadarnya. Jawatankuasa Fatwa Negeri Perlis: tiada ketetapan bilangan khusus.
+
+    Untuk soalan khusus (niat, qada solat sunat, waktu yang dilarang), rujuk laman mufti melalui skrin Cari. Lihat juga [[waktu-mustajab]].
+  sumber:
+    - {t: "Al-Kafi #1029: Solat sunat rawatib yang mu'akkad dan tidak mu'akkad", p: "Pejabat Mufti WP, 7 Jan 2019", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/2993-al-kafi-1029-solat-sunat-rawatib-yang-mu-akkad-dan-tidak-mu-akkad"}
+    - {t: "Al-Kafi #1641: Isu solat Dhuha 8 rakaat secara terpisah", p: "Pejabat Mufti WP, 4 Mac 2020", u: "https://muftiwp.gov.my/artikel/al-kafi-li-al-fatawi/4278-al-kafi-1641-isu-solat-dhuha-8-rakaat-secara-terpisah"}
+    - {t: "Al-Kafi #1255: Waktu sebenar solat sunat Isyraq (waktu Dhuha)", p: "Pejabat Mufti WP, 10 Mei 2019", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/3384"}
+    - {t: "Al-Kafi #251: Pembahagian malam dan qiamullail", p: "Pejabat Mufti WP, 19 Apr 2016", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/1376-al-kafi-251-pembahagian-malam-dan-qiamullail"}
+    - {t: "Al-Kafi #793: Maksud tahajjud dan cara melakukannya", p: "Pejabat Mufti WP, 6 Ogos 2018", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/2543-al-kafi-793-maksud-tahajjud-dan-cara-melakukannya"}
+    - {t: "Al-Kafi #1393: Tatacara solat witir yang afdhal", p: "Pejabat Mufti WP, 11 Okt 2019", u: "https://muftiwp.gov.my/artikel/al-kafi-li-al-fatawi/3734-al-kafi-1393-tatacara-solat-witir-yang-afdhal"}
+    - {t: "Al-Kafi #829: Apa itu istikharah?", p: "Pejabat Mufti WP, 4 Okt 2018", u: "https://muftiwp.gov.my/artikel/al-kafi-li-al-fatawi/2638-al-kafi-829-apa-itu-istikharah"}
+    - {t: "Al-Kafi #651: Tatacara solat sunat taubat", p: "Pejabat Mufti WP, 9 Ogos 2017", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/725-al-kafi-651-tatacara-solat-sunat-taubat"}
+    - {t: "Al-Kafi #656: Solat hajat secara berjamaah", p: "Pejabat Mufti WP, 29 Ogos 2017", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/681-al-kafi-656-solat-hajat-secara-berjamaah"}
+    - {t: "Al-Kafi #723: Hukum solat tasbih", p: "Pejabat Mufti WP, 3 Apr 2018", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/2356-al-kafi-723-hukum-solat-tasbih"}
+    - {t: "Al-Kafi #1485: Hukum solat tahiyatul masjid sesudah duduk sebentar", p: "Pejabat Mufti WP, 19 Dis 2019", u: "https://www.muftiwp.gov.my/artikel/al-kafi-li-al-fatawi/3903-al-kafi-1485-hukum-mendirikan-solat-tahiyatul-masjid-sesudah-duduk-sebentar"}
+    - {t: "Al-Kafi #1560: Hukum mengerjakan solat sunat wuduk", p: "Pejabat Mufti WP, 24 Jan 2020", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/4058"}
+    - {t: "Irsyad Fatwa Ramadhan #219: Pahala tarawih kurang daripada 20 rakaat", p: "Pejabat Mufti WP, 31 Mac 2023", u: "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-khas-ramadhan-cat/5579-irsyad-fatwa-edisi-khas-ramadhan-siri-ke-219-benarkah-luput-pahala-tarawih-bagi-sesiapa-yang-tidak-melengkapkan-solat-tarawih-sebanyak-dua-puluh-rakaat"}
+    - {t: "Fatwa bilangan rakaat solat tarawih", p: "Jawatankuasa Fatwa Negeri Perlis, 2018", u: "https://muftiperlis.gov.my/index.php/fatwa-insights/worship/1441-fatwa-on-the-number-of-rak-ahs-in-tarawi-prayer"}
+    - {t: "Sahih Muslim 728a", p: "sunnah.com", u: "https://sunnah.com/muslim:728a"}
+    - {t: "Sahih Muslim 720", p: "sunnah.com", u: "https://sunnah.com/muslim:720"}
+    - {t: "Sahih Muslim 1163b", p: "sunnah.com", u: "https://sunnah.com/muslim:1163b"}
+    - {t: "Sunan Abi Dawud 1521", p: "sunnah.com", u: "https://sunnah.com/abudawud:1521"}
+    - {t: "Jami' at-Tirmizi 479", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:479"}
+    - {t: "Sunan Abi Dawud 1297", p: "sunnah.com", u: "https://sunnah.com/abudawud:1297"}
+
+- id: amalan-harian
+  kumpulan: amalan
+  tajuk: Amalan harian Nabi ﷺ
+  ringkas: Al-Mulk dan as-Sajdah sebelum tidur, al-Kahfi hari Jumaat, adab tidur dan makan, bersiwak, menyebarkan salam dan qailulah.
+  kata: [amalan nabi, sunnah nabi, amalan harian, amalan jumaat, al mulk, sebelum tidur, al kahfi, adab tidur, adab makan, tangan kanan, siwak, salam, qailulah]
+  disemak: 2026-11-02
+  isi: |-
+    Sunnah harian yang mudah diamalkan bersama keluarga. Darjat hadis sunan mengikut penilaian yang dipaparkan sunnah.com.
+
+    - **Al-Mulk dan as-Sajdah sebelum tidur**: ada satu surah 30 ayat yang memberi syafaat kepada pembacanya sehingga dia diampunkan, iaitu Tabarak (Jami' at-Tirmizi 2891, hasan menurut Darussalam; Sunan Abi Dawud 1400, hasan menurut al-Albani). Jabir meriwayatkan Nabi ﷺ tidak tidur sehingga membaca as-Sajdah dan al-Mulk (Jami' at-Tirmizi 3404, hasan menurut Darussalam). Riwayat al-Mulk sebagai penyelamat daripada azab kubur (Jami' at-Tirmizi 2890) dha'if menurut Darussalam. Hafalan al-Mulk boleh dijejak dalam skrin Hafalan.
+    - **Al-Kahfi pada hari Jumaat**: sesiapa membacanya pada hari Jumaat, cahaya menyinarinya hingga Jumaat berikutnya (Mishkat al-Masabih 2175, hasan menurut al-Albani). Pejabat Mufti WP menyenaraikannya antara amalan sunat hari Jumaat. Jawatankuasa Fatwa Negeri Perlis menyatakan ada khilaf tentang riwayat yang mengkhususkan hari Jumaat. Menghafal 10 ayat pertama al-Kahfi melindungi daripada Dajjal (Sahih Muslim 809a).
+    - **Selawat pada hari Jumaat**: lihat [[selawat]].
+    - **Adab tidur**: berwuduk seperti untuk solat, berbaring di lambung kanan dan membaca doa tidur (Sahih al-Bukhari 247; Sahih Muslim 2710a). Pejabat Mufti WP: berwuduk sebelum tidur hukumnya sunat.
+    - **Adab makan**: sebut nama Allah, makan dengan tangan kanan dan ambil makanan yang dekat (Sahih al-Bukhari 5376); syaitan makan dan minum dengan tangan kiri (Sahih Muslim 2020a). Jika terlupa di awal, sebut "Bismillaahi awwalahuu wa aakhirah" (Sunan Abi Dawud 3767, sahih menurut al-Albani). Pejabat Mufti WP: tangan kanan sunat dan tangan kiri makruh, manakala sebahagian ulama berpandangan lebih tegas.
+    - **Bersiwak**: jika tidak memberatkan umatnya, Nabi ﷺ akan menyuruh bersiwak setiap kali solat (Sahih al-Bukhari 887); baginda bersiwak apabila bangun malam (Sahih al-Bukhari 245). Pejabat Mufti WP: memberus gigi menepati sunnah bersiwak.
+    - **Menyebarkan salam**: kamu tidak beriman sehingga saling mengasihi, dan sebarkanlah salam (Sahih Muslim 54a); berilah salam kepada orang yang dikenali dan yang tidak dikenali (Sahih al-Bukhari 12). Yang berkenderaan memberi salam kepada yang berjalan, yang berjalan kepada yang duduk, yang sedikit kepada yang ramai (Sahih al-Bukhari 6232). Memulakan salam sunat dan menjawabnya wajib.
+    - **Qailulah** (rehat atau tidur sebentar tengah hari): para sahabat qailulah selepas solat Jumaat (Sahih al-Bukhari 939), dan Nabi ﷺ pernah tidur tengah hari di rumah Ummu Sulaim (Sahih al-Bukhari 6281). Pejabat Mufti WP: sunat menurut jumhur, dan cenderung kepada waktu sebelum tergelincir matahari.
+    - **Puasa sunat**: lihat [[puasa-sunat]]. **Solat sunat**: lihat [[solat-sunat]].
+  sumber:
+    - {t: "Al-Kafi #990: Baca surah al-Mulk untuk si mati", p: "Pejabat Mufti WP, 25 Dis 2018", u: "https://muftiwp.gov.my/en/artikel/al-kafi-li-al-fatawi/2932-al-kafi-990-baca-surah-al-mulk-untuk-si-mati"}
+    - {t: "Al-Kafi #1673: Amalan sunat hari Jumaat", p: "Pejabat Mufti WP, 21 Mac 2020", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/4360-al-kafi-adakah-masih-disunatkan-amalan-amalan-pada-hari-jumaat-jika-tergugurnya-kewajipan-solat-jumaat-kerana-covid-19"}
+    - {t: "Mengkhususkan bacaan surah al-Kahfi pada hari Jumaat", p: "Jawatankuasa Fatwa Negeri Perlis, 2017", u: "https://muftiperlis.gov.my/index.php/fatwa-insights/worship/1395-specifying-the-recitation-of-surah-al-kahf-on-friday"}
+    - {t: "Al-Kafi #1168: Anjuran berwuduk sebelum tidur", p: "Pejabat Mufti WP, 24 Mac 2019", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/3228"}
+    - {t: "Irsyad Hukum #272: Hukum makan dan minum dengan tangan kiri", p: "Pejabat Mufti WP, 26 Nov 2018", u: "https://muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/2808"}
+    - {t: "Irsyad Hukum #488: Memberus gigi dan tuntutan bersiwak", p: "Pejabat Mufti WP, 8 Apr 2020", u: "https://muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/4421-irsyad-al-fatwa-siri-ke-488-adakah-memberus-gigi-boleh-disamakan-dengan-tuntutan-bersiwak"}
+    - {t: "Irsyad al-Hadith #156: Adab memberi salam", p: "Pejabat Mufti WP, 13 Feb 2017", u: "https://muftiwp.gov.my/ms/artikel/irsyad-al-hadith/1033"}
+    - {t: "Al-Kafi #1032: Qailulah dan waktunya", p: "Pejabat Mufti WP, 9 Jan 2019", u: "https://muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/2998"}
+    - {t: "Jami' at-Tirmizi 2891", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:2891"}
+    - {t: "Jami' at-Tirmizi 3404", p: "sunnah.com", u: "https://sunnah.com/tirmidhi:3404"}
+    - {t: "Mishkat al-Masabih 2175", p: "sunnah.com", u: "https://sunnah.com/mishkat:2175"}
+    - {t: "Sahih al-Bukhari 247", p: "sunnah.com", u: "https://sunnah.com/bukhari:247"}
+    - {t: "Sahih al-Bukhari 5376", p: "sunnah.com", u: "https://sunnah.com/bukhari:5376"}
+    - {t: "Sahih Muslim 54a", p: "sunnah.com", u: "https://sunnah.com/muslim:54a"}
+
+- id: doa-beramai
+  kumpulan: adab
+  tajuk: Berdoa beramai-ramai dan doa majlis rasmi
+  ringkas: Harus dengan syarat; garis panduan JAKIM untuk majlis rasmi.
+  disemak: 2026-11-01
+  isi: |
+    **Selepas solat:** wirid dan doa selepas solat adalah sunat, sebaiknya dengan lafaz yang sabit. Melakukannya secara berjemaah dengan suara kuat tidak diamalkan Nabi ﷺ dan ulama berselisih pendapat; Pejabat Mufti WP cenderung meraikan amalan setempat (Irsyad Hukum Siri 9). Doa berjemaah harus dengan syarat tidak dianggap sunat solat atau mempunyai fadhilat khusus, tidak diwajibkan, dan orang yang tidak turut serta tidak dicela (Bayan Linnas Siri 94).
+
+    **Pandangan Perlis:** Nabi ﷺ lazimnya berdoa selepas solat secara bersendirian tanpa mengangkat tangan, dan tidak berdoa secara berjemaah selepas solat fardu (JK Fatwa Perlis, 2018). Garis panduan masjid Perlis (2020) tidak mengadakan wirid berjemaah selepas solat fardu kecuali untuk mengajar dalam masa terhad. Namun berdoa untuk si mati di kubur, sama ada sendiri atau mengaminkan doa orang lain, adalah sunnah (JK Fatwa Perlis, 2019).
+
+    **Majlis rasmi kerajaan** (Garis Panduan Doa JAKIM):
+    - Pembaca doa ialah seorang Muslim, dan doa dibaca di awal majlis selama kira-kira 2–3 minit.
+    - Dimulakan dengan pujian kepada Allah dan selawat.
+    - Bukan Islam tidak dijemput turut berdoa.
+    - Doa tidak dibaca dalam majlis yang ada arak, judi, muzik atau tarian.
+    - Nama tetamu kenamaan tidak disebut dalam doa.
+  sumber:
+    - {t: "Irsyad Hukum ke-9: Bacaan Wirid dan Doa Selepas Solat", p: "Pejabat Mufti WP, 1 Dis 2014", u: "https://muftiwp.gov.my/ms/artikel/irsyad-hukum/umum/2049-9"}
+    - {t: "Bayan Linnas Siri ke-94: Hukum Penganjuran Program Kempen Quran Hour", p: "Pejabat Mufti WP, 30 Mei 2017", u: "https://muftiwp.gov.my/ms/artikel/bayan-linnas/818-bayan-linnas-siri-ke-94-hukum-penganjuran-program-kempen-quran-hour"}
+    - {t: "Supplicating After Prayer (JK Fatwa ke-36, 2018)", p: "Jabatan Mufti Negeri Perlis", u: "https://muftiperlis.gov.my/index.php/fatwa-insights/worship/1456-supplicating-after-prayer"}
+    - {t: "Fatwa on Quranic Recitation at Burial Grounds (Mesyuarat ke-43, 2019)", p: "Jabatan Mufti Negeri Perlis", u: "https://muftiperlis.gov.my/index.php/fatwa-insights/worship/1472-fatwa-on-quranic-recitation-at-burial-grounds"}
+    - {t: "Garis Panduan dan Himpunan Doa bagi Majlis Rasmi dan Separuh Rasmi Kerajaan (Terbitan 2026)", p: "JAKIM", u: "https://www.islam.gov.my/ms/garis-panduan/4994-panduan-dan-himpunan-doa-2026"}
+
+- id: akta-326
+  kumpulan: kaedah
+  tajuk: Al-Quran digital dan Akta 326
+  ringkas: Kawalan KDN ke atas teks dan bahan al-Quran; status app ini.
+  disemak: 2026-11-01
+  isi: |
+    **Akta Pencetakan Teks Al-Qur'an 1986 (Akta 326)**, dipinda melalui Akta A1696 yang berkuat kuasa 1 Sep 2023, mengawal teks al-Quran dalam apa jua bentuk, termasuk rakaman elektronik.
+
+    - "Teks Al-Qur'an" ialah dokumen yang mengandungi satu juzuk atau lebih; ia memerlukan lesen dan perakuan Lembaga. "Bahan Al-Qur'an" ialah dokumen yang mengandungi ayat tetapi kurang daripada satu juzuk. KDN mengklasifikasikan Surah Yaasin sebagai bahan.
+    - "Dokumen" ditakrif termasuk rakaman bunyi, rakaman elektronik dan pemancaran dari jarak jauh. Jadi **audio bacaan juga dikawal**: KDN pernah menyita jam dinding digital yang mengandungi audio 30 juzuk kerana tiada perakuan, dan memperakui terbitan audio selain mushaf bercetak dan digital.
+    - Seksyen 14 terpakai kepada teks dan bahan: tidak boleh mengandungi kesilapan dan mesti mengikut kaedah penulisan (Rasm Uthmani) yang ditentukan Lembaga. Penalti boleh mencapai RM50,000 atau penjara lima tahun.
+    - Garis panduan KDN bagi penerbitan digital mensyaratkan ayat dipaparkan dalam tulisan Arab, dan terjemahan diluluskan JAKIM (rujukan utama Tafsir Pimpinan ar-Rahman) serta disertakan dengan teks Arab. Dokumen itu tidak jelas sama ada app yang kurang daripada satu juzuk wajib memohon perakuan.
+    - Bagi bahan audio, garis panduan KDN untuk buku asas pembelajaran bacaan al-Quran mensyaratkan nama qari dinyatakan, bacaan jelas dan bertajwid, dan surat kebenaran daripada qari atau penerbit asal.
+
+    **Status app ini:** teks ayat diambil daripada Mushaf Madinah (KFGQPC) dan disemak silang secara automatik, tetapi **belum disemak atau diperakui oleh KDN**. Teks Yaasin, Tahlil dan doa berjumlah kira-kira 0.81 juzuk. Modul Hafalan tidak memuatkan teks surah; setiap surah dipaparkan sebagai butang nombor ayat. Sebelum app atau cetakannya diedarkan secara meluas, dapatkan pengesahan bertulis daripada LPPPQ/KDN.
+
+    **Mod Selamat (aktif):** kerana audio juga "dokumen" di bawah Akta, teks DAN audio al-Quran yang boleh dimainkan dalam app dikira bersama dalam had satu juzuk: kini kira-kira 0.96 juzuk. Audio dihadkan kepada ayat yang teksnya ada dalam app (Yaasin, Tahlil, doa) dan surah lazim Ad-Dhuha hingga An-Nas kecuali Al-'Alaq dan Al-Bayyinah. Surah panjang (Al-Kahfi, As-Sajdah, Ar-Rahman, Al-Waqi'ah, Al-Mulk, Al-Insan), Al-'Alaq, Al-Bayyinah dan surah yang ditambah sendiri **dijejak sahaja** dalam Poket (tanda hafal, murajaah, rekod bacaan); audionya didengar dalam aplikasi Smart Quran yang diperakui KDN dan mempunyai audio qari. Binaan app gagal jika had ini dilepasi.
+
+    **Audio:** app tidak menyimpan audio. Ia memainkan fail bacaan qari daripada pelayan EveryAyah (riwayat Hafs 'an 'Asim; nama qari dipaparkan). Sama ada pemain yang memainkan rakaman daripada pelayan pihak ketiga dikira "menerbitkan" teks rakaman belum jelas; soalan ini dihantar kepada LPPPQ. Audio surah panjang hanya akan dibuka semula dalam Poket jika LPPPQ membenarkannya secara bertulis.
+
+    Terjemahan ayat ialah teks Abdullah Muhammad Basmeih daripada Tanzil.net, dan belum disemak dengan edisi Tafsir Pimpinan ar-Rahman terbitan JAKIM yang dirujuk oleh garis panduan KDN. Makna perkataan ialah draf yang belum disemak.
+
+    **Kegunaan peribadi dan keluarga:** Akta tidak mempunyai pengecualian untuk kegunaan peribadi. Seksyen 5 mensyaratkan lesen untuk mencetak atau menerbitkan teks Al-Qur'an (satu juzuk atau lebih), dan "pencetakan" ditakrif luas, termasuk apa-apa cara menyalin perkataan dalam bentuk nyata; "menerbitkan" pula tidak ditakrif. Bagi bahan Al-Qur'an (kurang daripada satu juzuk) seperti app ini, lesen dan perakuan tidak diwajibkan, tetapi seksyen 14 tetap terpakai apabila ia diterbitkan atau diedarkan. Sama ada salinan peribadi yang melebihi satu juzuk, termasuk audio, memerlukan lesen atau perakuan ialah soalan untuk LPPPQ. Untuk teks surah panjang, KDN menggalakkan aplikasi Smart Quran yang diperakui.
+
+    Untuk majlis, gunakan buku Yaasin bercetak yang mempunyai logo atau hologram perakuan KDN. Akta tidak mengecualikan cetakan peribadi atau cetakan kecil; seksyen 14 tetap terpakai, jadi semak setiap cetakan dengan mushaf yang diperakui.
+  sumber:
+    - {t: "Akta Pencetakan Teks Al-Qur'an 1986 [Akta 326], cetakan semula hingga 1 Sep 2023", p: "KDN", u: "https://admin.moha.gov.my/images/borang/PKK/AKTA_PENCETAKAN_TEKS_AL-QURAN_1986_Muktamad_Akta_326.pdf"}
+    - {t: "Garis Panduan Permohonan Penerbitan Teks Al-Qur'an Secara Digital", p: "KDN / LPPPQ", u: "https://www.moha.gov.my/utama/images/Akta%20Perundangan/GARIS%20PANDUAN%20TEKS%20Al-QURAN/GARIS_PANDUAN_PERMOHONAN_PENERBITAN_TEKS_AL-QURAN_SECARA_DIGITAL_KDN_2024.pdf"}
+    - {t: "KDN pantau aplikasi al-Quran tidak diperakui", p: "Kosmo, 27 Feb 2024", u: "https://www.kosmo.com.my/?p=565050"}
+    - {t: "KDN tidak sekat penerbitan al-Quran, hanya perlu perakuan", p: "Sinar Harian, 15 Ogos 2023", u: "https://www.sinarharian.com.my/article/273942/berita/nasional/kdn-tidak-sekat-penerbitan-al-quran-hanya-perlu-perakuan"}
+    - {t: "KDN rampas jam digital kandung ayat Al-Quran, azan", p: "Sinar Harian", u: "https://www.sinarharian.com.my/article/645178/berita/semasa/kdn-rampas-jam-digital-kandung-ayat-al-quran-azan"}
+    - {t: "KDN lulus 1,050 perakuan teks dan bahan al-Quran untuk edaran", p: "RTM, 7 Mac 2026", u: "https://berita.rtm.gov.my/nasional/senarai-berita-nasional/senarai-artikel/kdn-lulus-1050-perakuan-teks-dan-bahan-al-quran-untuk-edaran/"}
+    - {t: "Garis panduan Buku Asas Pembelajaran Bacaan al-Quran (syarat bahan digital dan audio)", p: "KDN / LPPPQ", u: "https://admin.moha.gov.my/images/borang/BPQ/Buku_Asas_Pembelajaran_Bacaan_al-Quran__1.pdf"}
+
+- id: kalendar
+  kumpulan: kaedah
+  tajuk: Tarikh Hijri dan cadangan ikut masa
+  ringkas: Cara app memilih doa untuk hari ini, dan had ketepatan tarikh Hijri.
+  disemak: 2026-11-01
+  isi: |
+    Halaman Utama mencadangkan doa dan majlis mengikut waktu (pagi, petang, malam), hari (malam dan hari Jumaat, Isnin dan Khamis), tarikh Hijri (Rejab, Nisfu Syaaban, Ramadan, Zulhijjah, pergantian tahun) dan peristiwa semasa.
+
+    - **Tarikh Hijri** dikira dengan kalendar Umm al-Qura pada peranti, kemudian dilaraskan dengan jadual permulaan bulan bagi Malaysia yang disimpan dalam app. Jadual itu berdasarkan khutbah JAKIM (30 Oktober 2026 = 19 Jamadilawal 1448H) dan laporan media tentang cuti umum 2027; takwim rasmi belum disemak, dan tarikh awal Rejab serta Nisfu Syaaban ialah anggaran. Tarikh sebenar awal Ramadan, Syawal dan Zulhijjah bergantung kepada pengisytiharan rasmi. Jika tarikh dalam app berbeza, laraskan ±1 hari dalam Tetapan.
+    - **Peristiwa semasa** seperti musim tengkujuh (MetMalaysia), peperiksaan SPM dan STPM (Lembaga Peperiksaan, Majlis Peperiksaan Malaysia) dan seruan solat hajat (JAKIM) mempunyai tarikh mula dan tamat. Ia dikemas kini setiap kali app diterbitkan semula.
+    - Cadangan hanyalah pintasan. Semua doa boleh dibaca pada bila-bila masa.
+
+- id: sumber-lesen
+  kumpulan: kaedah
+  tajuk: Sumber data dan lesen
+  ringkas: Dari mana teks, terjemahan, audio, hadis dan fon datang.
+  disemak: 2026-11-01
+  isi: |
+    App ini percuma dan bukan untuk tujuan komersial. Setiap sumber kekal milik pemiliknya; semak terma masing-masing sebelum menggunakan semula kandungan ini.
+
+    - **Teks al-Quran**: Mushaf Madinah, Kompleks Raja Fahd (KFGQPC), riwayat Hafs 'an 'Asim, dalam pengekodan Khaled Hosny untuk fon Amiri Quran. Teks tidak diubah.
+    - **Terjemahan ayat**: Abdullah Muhammad Basmeih, teks daripada Tanzil.net (belum disemak dengan edisi Tafsir Pimpinan ar-Rahman terbitan JAKIM). Terma Tanzil mengehadkan terjemahan kepada kegunaan bukan komersial.
+    - **Makna perkataan (BM)**: draf disediakan untuk app ini, dengan gloss English quran.com sebagai rujukan. Perlu disemak guru.
+    - **Audio ayat**: EveryAyah.com (Mishary Rashid Alafasy, Mahmoud Khalil al-Husary, Abdul Basit Abdul Samad, Muhammad Siddiq al-Minshawi). Laman itu tidak menerbitkan lesen menyeluruh bagi rakamannya; hak cipta rakaman kekal milik qari atau penerbitnya, dan audio ini bukan terbitan yang diperakui KDN. **Audio perkataan**: quran.com.
+    - **Hadis**: teks, nombor dan gred daripada sunnah.com.
+    - **Susunan tahlil dan doa majlis**: buku *Surah Yaasiin, Tahlil & Doa* (ISBN 983-046-278-1).
+    - **Fon**: Amiri dan Amiri Quran (Khaled Hosny), Aref Ruqaa (khat Riq'ah pada kad selawat dan zikir harian, Projek Aref Ruqaa) serta Atkinson Hyperlegible Next (Braille Institute), semuanya di bawah SIL Open Font License 1.1. Ayat al-Quran sentiasa dipaparkan dengan Amiri Quran (Rasm Uthmani), tidak dengan fon khat.
+    - **Kod QR**: qrcode-generator oleh Kazuhiko Arase (lesen MIT).
+    - **Sempadan juz dan muka surat Mushaf Madinah** (untuk Diari mengaji): pakej quran-meta oleh Huseyn Guliyev (lesen MIT). Metadata sahaja, tiada teks.
+    - **Waktu solat**: data e-Solat JAKIM melalui waktusolat.app (projek komuniti mptwaktusolat).
+    - **Gambar dan watak keluarga**: diimport sebagai pek peribadi dan disimpan dalam telefon sahaja. Ia tidak berada dalam app yang diterbitkan.
+    - **Bunyi peringatan solat**: app tidak membekalkan rakaman selawat atau azan pihak ketiga. Selain loceng (dijana oleh app), klip ialah rakaman atau fail pengguna sendiri, disimpan dalam telefon. Lihat [[waktu-solat]].
+
+    Audio dimainkan terus daripada pelayan sumbernya dan memerlukan internet. Teks, makna dan nota berfungsi tanpa internet.
+  sumber:
+    - {t: "Tanzil — Quran Navigator & terjemahan", p: "Tanzil.net", u: "https://tanzil.net/trans/"}
+    - {t: "EveryAyah — fail audio setiap ayat", p: "EveryAyah.com", u: "https://everyayah.com"}
+    - {t: "Quran.com", p: "Quran.com", u: "https://quran.com"}
+    - {t: "Sunnah.com", p: "Sunnah.com", u: "https://sunnah.com"}
+    - {t: "Amiri", p: "Khaled Hosny", u: "https://github.com/aliftype/amiri"}
+    - {t: "Atkinson Hyperlegible", p: "Braille Institute", u: "https://www.brailleinstitute.org/freefont/"}
+    - {t: "Aref Ruqaa", p: "Aref Ruqaa Project Authors", u: "https://github.com/aliftype/aref-ruqaa"}
+    - {t: "quran-meta", p: "Huseyn Guliyev (MIT)", u: "https://github.com/quran-center/quran-meta"}
+
+- id: penafian
+  kumpulan: kaedah
+  tajuk: Penafian
+  ringkas: Himpunan peribadi, bukan terbitan rasmi; dari mana setiap kandungan datang.
+  disemak: 2026-11-01
+  isi: |
+    Poket Yaasin ialah himpunan peribadi untuk memudahkan bacaan dan rujukan. Ia **bukan terbitan rasmi** mana-mana jabatan agama, dan tidak diperakui oleh mana-mana pihak berkuasa.
+
+    - **Teks ayat** daripada Mushaf Madinah (Mujamma' Malik Fahd), riwayat Hafs 'an 'Asim, disemak silang secara automatik. Ia belum disemak atau diperakui oleh KDN. Untuk rujukan muktamad, gunakan mushaf bercetak yang mempunyai perakuan KDN. Lihat [[akta-326]].
+    - **Doa daripada hadis** disemak dengan teks hadis bernombor (sunnah.com). Doa susunan ulama dan amalan ditandakan dengan labelnya. Lihat [[darjat]].
+    - **Nota hukum** meringkaskan artikel di laman rasmi mufti, JAKIM dan KDN, dengan pautan ke sumber asal. Untuk keputusan hukum peribadi, rujuk Jabatan Mufti negeri anda.
+    - **Waktu solat** diambil daripada data e-Solat JAKIM melalui perkhidmatan pihak ketiga. Tanpa internet, waktu dikira secara anggaran. Lihat [[waktu-solat]].
+    - **Hafalan** tidak memuatkan teks surah. **Audio qari** dimainkan daripada EveryAyah.com dan bukan rakaman yang diperakui KDN; dalam Mod Selamat, audio surah panjang didengar dalam aplikasi Smart Quran. Semak bacaan dengan mushaf bercetak berlogo KDN atau Smart Quran.
+    - **Diari dan hafalan** disimpan dalam telefon ini sahaja; app tidak menghantarnya ke mana-mana. Buat sandaran sendiri dari skrin Diari.
+    - **Makna perkataan** ialah draf yang sedang disemak oleh guru.
+
+    Penafian ini menerangkan sumber kandungan; ia tidak mengecualikan app daripada undang-undang. Jumpa kesilapan? Gunakan butang "Lapor".
+
+- id: waktu-solat
+  kumpulan: kaedah
+  tajuk: Waktu solat dan peringatan
+  ringkas: Sumber waktu solat, zon JAKIM, kiraan anggaran, bunyi selawat dan takbir, dan had peringatan.
+  kata: [waktu solat, peringatan solat, bunyi azan, nada azan, takbir, selawat peringatan, rakam suara, loceng, notifikasi, kalendar telefon, nada dering]
+  disemak: 2026-11-02
+  isi: |
+    Waktu solat dalam app ini ialah **waktu e-Solat JAKIM** bagi zon yang anda pilih. Data diambil melalui API percuma waktusolat.app (projek komuniti yang tidak berafiliasi dengan JAKIM), kemudian disimpan dalam telefon untuk sebulan supaya boleh dibuka tanpa internet.
+
+    - **Zon:** Malaysia dibahagikan kepada 60 zon waktu solat JAKIM. Pilih zon anda, atau tekan "Kesan lokasi": koordinat dihantar sekali kepada waktusolat.app untuk menentukan zon dan tidak disimpan oleh app.
+    - **Tanpa internet dan tiada simpanan:** app mengira waktu secara astronomi bagi titik tengah zon: Subuh pada altitud matahari 18° di bawah ufuk (parameter yang diguna pakai di seluruh Malaysia sejak keputusan Muzakarah Jawatankuasa Fatwa MKI ke-116, November 2019), Isyak 18°, Asar mengikut mazhab Syafi'i, dengan ihtiyati 1 hingga 2 minit. Waktu ini ditanda **anggaran**. Dalam ujian dengan data JAKIM bagi empat zon, bezanya dalam 2 minit; zon yang luas mungkin berbeza lebih.
+    - **Tarikh Hijri:** apabila data JAKIM bagi hari ini ada, tarikh Hijri di skrin Utama diambil daripadanya.
+
+    **Peringatan** ada tiga cara, dengan had yang berbeza:
+
+    - Dalam app: kad peringatan sebelum waktu dan ketika masuk waktu, dengan bunyi jika dihidupkan, ketika app sedang dibuka.
+    - Notifikasi telefon: dihantar oleh app apabila app terbuka atau baru sahaja ditutup. Telefon boleh menghentikan app di latar belakang, jadi notifikasi tidak dijamin.
+    - Kalendar telefon: muat turun fail kalendar (.ics) waktu solat 30 hari dengan penggera. Kalendar telefon memberi peringatan walaupun app ditutup. Kalendar iPhone mengekalkan penggera dalam fail; sesetengah kalendar Android (contohnya Google Calendar) memakai tetapan peringatan lalai kalendar itu, jadi semak selepas menambah.
+
+    App web tidak boleh membunyikan peringatan tepat pada masanya ketika ditutup tanpa pelayan notifikasi (push). Ia boleh ditambah kemudian jika perlu.
+
+    **Bunyi selawat dan takbir.** Dalam Waktu Solat, hidupkan "Bunyi peringatan", kemudian rakam suara sendiri atau pilih fail audio (maksimum 20 saat) bagi dua slot: selawat ringkas sebelum waktu, dan takbir "Allaahu akbar" dua kali ketika masuk waktu. Takbir hanya dibunyikan dalam tiga minit pertama selepas masuk waktu. Tanpa klip, app membunyikan loceng. App tidak membekalkan rakaman orang lain; rakaman keluarga sendiri boleh dikongsi melalui pek keluarga. Klip hanya berbunyi ketika app dibuka di skrin, kerana notifikasi web tidak boleh membawa bunyi sendiri; notifikasi dan kalendar memakai bunyi telefon. Pada kebanyakan telefon Android, bunyi peringatan app Kalendar boleh ditukar kepada fail audio sendiri dalam tetapan notifikasi telefon.
+
+    **Adab.** Pejabat Mufti WP (Irsyad al-Fatwa Siri 59) menjelaskan bahawa bacaan al-Quran atau azan sebagai nada dering pada asasnya tidak salah jika adab dijaga, berdasarkan keputusan Muzakarah Jawatankuasa Fatwa Kebangsaan kali ke-77 (April 2007) tentang ayat al-Quran: jangan digunakan di tempat yang menghina seperti tandas. Memutuskan bacaan atau azan secara tiba-tiba, contohnya untuk menjawab panggilan, tidak dibenarkan. Klip selawat dan takbir bukan ayat al-Quran, tetapi app tetap memainkannya hingga habis tanpa dipotong; pilih klip yang pendek dan matikan bunyi sebelum masuk ke tandas.
+  sumber:
+    - {t: "Irsyad al-Fatwa Series 59: The ruling of the usage of Quran recitation and adhan as ringtone or screen saver", p: "Pejabat Mufti WP, 31 Jul 2015", u: "https://www.muftiwp.gov.my/en/artikel/irsyad-fatwa/irsyad-fatwa-umum-cat/1901-the-ruling-of-the-usage-of-quran-recitation-and-adhan-as-ringtone-or-screen-saver"}
+    - {t: "e-Solat JAKIM", p: "Jabatan Kemajuan Islam Malaysia", u: "https://www.e-solat.gov.my"}
+    - {t: "Waktu Solat API (waktusolat.app)", p: "Projek komuniti mptwaktusolat, tidak berafiliasi dengan JAKIM", u: "https://github.com/mptwaktusolat/api-waktusolat-x"}
+    - {t: "Penentuan awal waktu solat Subuh di Negeri Kedah (altitud matahari 18°)", p: "Jabatan Mufti Negeri Kedah, 2022", u: "https://ifatwa.kedah.gov.my/wp-content/uploads/2022/08/1-PENENTUAN-AWAL-WAKTU-SOLAT-SUBUH-DI-NEGERI-KEDAH.pdf"}
+    - {t: "Waktu Subuh lewat 8 minit babitkan seluruh negara: JAKIM", p: "Berita Harian, November 2019", u: "https://www.bharian.com.my/amp/berita/nasional/2019/11/633306/bhplus"}

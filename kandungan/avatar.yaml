@@ -1,0 +1,15 @@
+# Pek watak TERBINA (awam). Sengaja KOSONG: imej keluarga (terutama anak-anak) tidak diletakkan dalam repo atau
+# GitHub Pages kerana kedua-duanya awam, dan imej yang pernah di-push kekal dalam sejarah git.
+#
+# Imej keluarga dimasukkan melalui PEK PERIBADI yang diimport dalam telefon (Keluarga > Pek watak keluarga):
+#   1. potong helaian:  python3 tools/avatar.py HELAIAN.png --watak ... (keluaran ke peribadi/avatar/)
+#   2. senaraikan dalam peribadi/pek.yaml, kemudian:  python3 tools/pek.py peribadi/pek.yaml
+#   3. kongsi peribadi/pek-keluarga.json secara peribadi dan import dalam app di setiap telefon.
+# Folder peribadi/ dalam .gitignore.
+#
+# Watak terbina hanya untuk ilustrasi umum (bukan orang sebenar). Format jika diperlukan:
+#   watak: [{id, nama, peranan, muka: fail.webp, pose: {asal|sapa|fikir|syabas|tulis: fail.webp}}]
+#   kumpulan: [{id, fail, konteks: [utama|keluarga|hafalan|diari|musafir], ahli: [id watak]}]
+# Fail dalam docs/avatar/ dan MESTI disenaraikan dalam ASAS docs/sw.js.
+watak: []
+kumpulan: []

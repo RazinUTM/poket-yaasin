@@ -1,0 +1,65 @@
+# Zon waktu solat JAKIM (60 zon). Dijana oleh skrip sekali sahaja daripada data projek mptwaktusolat (waktusolat.app),
+# yang berasaskan e-Solat JAKIM. lat/lon = titik tengah kawasan zon (untuk kiraan anggaran luar talian dan zon terdekat).
+# Zon khas tanpa poligon daerah diberi koordinat anggaran manual (anggaran: true).
+# Projek waktusolat.app tidak berafiliasi dengan JAKIM. Kemas kini jika JAKIM menstruktur semula zon.
+
+- {kod: JHR01, negeri: "Johor", daerah: "Pulau Aur dan Pulau Pemanggil", lat: 2.4986, lon: 104.4494}
+- {kod: JHR02, negeri: "Johor", daerah: "Johor Bahru, Kota Tinggi, Mersing, Kulai", lat: 1.9130, lon: 103.8085}
+- {kod: JHR03, negeri: "Johor", daerah: "Kluang, Pontian", lat: 1.9384, lon: 103.3913}
+- {kod: JHR04, negeri: "Johor", daerah: "Batu Pahat, Muar, Segamat, Gemas Johor, Tangkak", lat: 2.2365, lon: 102.9038}
+- {kod: KDH01, negeri: "Kedah", daerah: "Kota Setar, Kubang Pasu, Pokok Sena (Daerah Kecil)", lat: 6.2641, lon: 100.4119}
+- {kod: KDH02, negeri: "Kedah", daerah: "Kuala Muda, Yan, Pendang", lat: 5.8194, lon: 100.5091}
+- {kod: KDH03, negeri: "Kedah", daerah: "Padang Terap, Sik", lat: 6.1126, lon: 100.7816}
+- {kod: KDH04, negeri: "Kedah", daerah: "Baling", lat: 5.7089, lon: 100.8663}
+- {kod: KDH05, negeri: "Kedah", daerah: "Bandar Baharu, Kulim", lat: 5.3473, lon: 100.6379}
+- {kod: KDH06, negeri: "Kedah", daerah: "Langkawi", lat: 6.3459, lon: 99.7912}
+- {kod: KDH07, negeri: "Kedah", daerah: "Puncak Gunung Jerai", lat: 5.7920, lon: 100.4340, anggaran: true}
+- {kod: KTN01, negeri: "Kelantan", daerah: "Bachok, Kota Bharu, Machang, Pasir Mas, Pasir Puteh, Tanah Merah, Tumpat, Kuala Krai, Mukim Chiku", lat: 5.6959, lon: 102.1790}
+- {kod: KTN02, negeri: "Kelantan", daerah: "Gua Musang (Daerah Galas Dan Bertam), Jeli, Jajahan Kecil Lojing", lat: 5.0400, lon: 101.9403}
+- {kod: MLK01, negeri: "Melaka", daerah: "SELURUH NEGERI MELAKA", lat: 2.3230, lon: 102.3027}
+- {kod: NGS01, negeri: "Negeri Sembilan", daerah: "Tampin, Jempol", lat: 2.7443, lon: 102.4663}
+- {kod: NGS02, negeri: "Negeri Sembilan", daerah: "Jelebu, Kuala Pilah, Rembau", lat: 2.8566, lon: 102.1508}
+- {kod: NGS03, negeri: "Negeri Sembilan", daerah: "Port Dickson, Seremban", lat: 2.6745, lon: 101.9056}
+- {kod: PHG01, negeri: "Pahang", daerah: "Pulau Tioman", lat: 2.7881, lon: 104.1723}
+- {kod: PHG02, negeri: "Pahang", daerah: "Kuantan, Pekan, Muadzam Shah", lat: 3.2723, lon: 103.1299}
+- {kod: PHG03, negeri: "Pahang", daerah: "Jerantut, Temerloh, Maran, Bera, Chenor, Jengka", lat: 3.8804, lon: 102.5215}
+- {kod: PHG04, negeri: "Pahang", daerah: "Bentong, Lipis, Raub", lat: 4.0447, lon: 101.9131}
+- {kod: PHG05, negeri: "Pahang", daerah: "Genting Sempah, Janda Baik, Bukit Tinggi", lat: 3.4050, lon: 101.8330, anggaran: true}
+- {kod: PHG06, negeri: "Pahang", daerah: "Cameron Highlands, Genting Higlands, Bukit Fraser", lat: 4.4731, lon: 101.4766}
+- {kod: PHG07, negeri: "Pahang", daerah: "Zon Khas Daerah Rompin, (Mukim Rompin, Mukim Endau, Mukim Pontian)", lat: 2.7900, lon: 103.4840, anggaran: true}
+- {kod: PRK01, negeri: "Perak", daerah: "Tapah, Slim River, Tanjung Malim", lat: 4.3540, lon: 101.1606}
+- {kod: PRK02, negeri: "Perak", daerah: "Kuala Kangsar, Sg. Siput , Ipoh, Batu Gajah, Kampar", lat: 4.5958, lon: 101.1112}
+- {kod: PRK03, negeri: "Perak", daerah: "Lenggong, Pengkalan Hulu, Grik", lat: 5.3220, lon: 101.0946}
+- {kod: PRK04, negeri: "Perak", daerah: "Temengor, Belum", lat: 5.5211, lon: 101.4628}
+- {kod: PRK05, negeri: "Perak", daerah: "Kg Gajah, Teluk Intan, Bagan Datuk, Seri Iskandar, Beruas, Parit, Lumut, Sitiawan, Pulau Pangkor", lat: 4.1722, lon: 100.8569}
+- {kod: PRK06, negeri: "Perak", daerah: "Selama, Taiping, Bagan Serai, Parit Buntar", lat: 4.9516, lon: 100.7571}
+- {kod: PRK07, negeri: "Perak", daerah: "Bukit Larut", lat: 4.8620, lon: 100.7920, anggaran: true}
+- {kod: PLS01, negeri: "Perlis", daerah: "SELURUH NEGERI PERLIS", lat: 6.5044, lon: 100.2409}
+- {kod: PNG01, negeri: "Pulau Pinang", daerah: "SELURUH NEGERI PULAU PINANG", lat: 5.3661, lon: 100.4014}
+- {kod: SBH01, negeri: "Sabah", daerah: "Bahagian Sandakan (Timur), Bukit Garam, Semawang, Temanggong, Tambisan, Bandar Sandakan, Sukau", lat: 5.7667, lon: 117.9815}
+- {kod: SBH02, negeri: "Sabah", daerah: "Beluran, Telupid, Pinangah, Terusan, Kuamut, Bahagian Sandakan (Barat)", lat: 5.4998, lon: 117.4011}
+- {kod: SBH03, negeri: "Sabah", daerah: "Lahad Datu, Silabukan, Kunak, Sahabat, Semporna, Tungku, Bahagian Tawau (Timur)", lat: 4.9847, lon: 118.3614}
+- {kod: SBH04, negeri: "Sabah", daerah: "Bandar Tawau, Balong, Merotai, Kalabakan, Bahagian Tawau (Barat)", lat: 4.4744, lon: 117.6314}
+- {kod: SBH05, negeri: "Sabah", daerah: "Kudat, Kota Marudu, Pitas, Pulau Banggi, Bahagian Kudat", lat: 6.7022, lon: 116.9447}
+- {kod: SBH06, negeri: "Sabah", daerah: "Gunung Kinabalu", lat: 6.0750, lon: 116.5580, anggaran: true}
+- {kod: SBH07, negeri: "Sabah", daerah: "Kota Kinabalu, Ranau, Kota Belud, Tuaran, Penampang, Papar, Putatan, Bahagian Pantai Barat", lat: 5.9583, lon: 116.4921}
+- {kod: SBH08, negeri: "Sabah", daerah: "Pensiangan, Keningau, Tambunan, Nabawan, Bahagian Pendalaman (Atas)", lat: 4.9582, lon: 116.3776}
+- {kod: SBH09, negeri: "Sabah", daerah: "Beaufort, Kuala Penyu, Sipitang, Tenom, Long Pasia, Membakut, Weston, Bahagian Pendalaman (Bawah)", lat: 4.9381, lon: 115.7625}
+- {kod: SWK01, negeri: "Sarawak", daerah: "Limbang, Lawas, Sundar, Trusan", lat: 4.4024, lon: 115.2746}
+- {kod: SWK02, negeri: "Sarawak", daerah: "Miri, Niah, Bekenu, Sibuti, Marudi", lat: 3.5933, lon: 114.6026}
+- {kod: SWK03, negeri: "Sarawak", daerah: "Pandan, Belaga, Suai, Tatau, Sebauh, Bintulu", lat: 2.3964, lon: 113.8274}
+- {kod: SWK04, negeri: "Sarawak", daerah: "Sibu, Mukah, Dalat, Song, Igan, Oya, Balingian, Kanowit, Kapit", lat: 2.2427, lon: 112.4816}
+- {kod: SWK05, negeri: "Sarawak", daerah: "Sarikei, Matu, Julau, Rajang, Daro, Bintangor, Belawai", lat: 2.1950, lon: 111.6258}
+- {kod: SWK06, negeri: "Sarawak", daerah: "Lubok Antu, Sri Aman, Roban, Debak, Kabong, Lingga, Engkelili, Betong, Spaoh, Pusa, Saratok", lat: 1.4208, lon: 111.5113}
+- {kod: SWK07, negeri: "Sarawak", daerah: "Serian, Simunjan, Samarahan, Sebuyau, Meludam", lat: 1.2406, lon: 110.6838}
+- {kod: SWK08, negeri: "Sarawak", daerah: "Kuching, Bau, Lundu, Sematan", lat: 1.5225, lon: 110.0882}
+- {kod: SWK09, negeri: "Sarawak", daerah: "Zon Khas (Kampung Patarikan)", lat: 4.8200, lon: 115.4000, anggaran: true}
+- {kod: SGR01, negeri: "Selangor", daerah: "Gombak, Petaling, Sepang, Hulu Langat, Hulu Selangor, Shah Alam", lat: 3.2662, lon: 101.6565}
+- {kod: SGR02, negeri: "Selangor", daerah: "Kuala Selangor, Sabak Bernam", lat: 3.5253, lon: 101.2172}
+- {kod: SGR03, negeri: "Selangor", daerah: "Klang, Kuala Langat", lat: 2.9175, lon: 101.4525}
+- {kod: TRG01, negeri: "Terengganu", daerah: "Kuala Terengganu, Marang, Kuala Nerus", lat: 5.2101, lon: 103.1232}
+- {kod: TRG02, negeri: "Terengganu", daerah: "Besut, Setiu", lat: 5.5193, lon: 102.6609}
+- {kod: TRG03, negeri: "Terengganu", daerah: "Hulu Terengganu", lat: 5.0501, lon: 102.7740}
+- {kod: TRG04, negeri: "Terengganu", daerah: "Dungun, Kemaman", lat: 4.4849, lon: 103.1804}
+- {kod: WLY01, negeri: "Wilayah Persekutuan", daerah: "Kuala Lumpur, Putrajaya", lat: 3.1109, lon: 101.6895}
+- {kod: WLY02, negeri: "Wilayah Persekutuan", daerah: "Labuan", lat: 5.3080, lon: 115.2206}

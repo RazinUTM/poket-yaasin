@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0A3F3B">
+<meta name="color-scheme" content="light dark">
+<!-- Kegunaan peribadi dan keluarga: jangan diindeks enjin carian (pautan masih boleh dikongsi). Buang baris ini jika mahu app ditemui melalui carian. -->
+<meta name="robots" content="noindex">
+<meta name="description" content="Surah Yaasin, susunan tahlil arwah dan himpunan doa harian, hajat dan semasa, dengan makna per frasa, makna perkataan dan sumber setiap doa. Berfungsi tanpa internet.">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Poket Yaasin">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="img/favicon-32.png" sizes="32x32">
+<link rel="icon" href="img/icon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="img/icon-180.png">
+<link rel="preload" href="fonts/atkinson-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/amiri-quran.woff2" as="font" type="font/woff2" crossorigin>
+<title>Poket Yaasin, Tahlil & Doa</title>
+<link rel="stylesheet" href="app/poket.css?v=2026-11-02d">
+<script>
+/* Tema dipasang sebelum CSS dilukis supaya tiada kelipan putih pada mod malam. */
+try{var t=JSON.parse(localStorage.getItem('poket-tetapan')||'{}');if(t.tema==='malam'||t.tema==='cerah')document.documentElement.dataset.tema=t.tema;if(t.skala)document.documentElement.style.setProperty('--skala',t.skala)}catch(e){}
+</script>
+</head>
+<body>
+<div class="app" id="app">
+  <header class="bar" id="bar"></header>
+  <main id="skrin" class="skrin" tabindex="-1"></main>
+  <nav class="tab" id="tab" aria-label="Navigasi utama"></nav>
+</div>
+<noscript><p style="padding:20px">App ini memerlukan JavaScript.</p></noscript>
+<script src="data/kandungan.js?v=2026-11-02d"></script>
+<script src="js/vendor/qrcode.js?v=2026-11-02d" defer></script>
+<script src="app/poket.js?v=2026-11-02d"></script>
+</body>
+</html>

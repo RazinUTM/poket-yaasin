@@ -1,0 +1,241 @@
+# Doa semasa: cuaca & bencana, ummah & negara, musim & hari kebesaran, majlis.
+
+- id: hujan-turun
+  tajuk: Ketika hujan turun
+  kat: [alam]
+  tag: [hujan, cuaca, monsun]
+  lihat: [banjir-hujan]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 1032; Sunan Abi Dawud, no. 5099", darjat: Sahih, url: "https://sunnah.com/bukhari:1032"}
+  teks: "اللَّهُمَّ | صَيِّبًا نَافِعًا"
+  frasa: "Ya Allah | (turunkanlah) hujan yang lebat lagi bermanfaat"
+  rumi: "Allaahumma shayyiban naafi'aa."
+  makna: "Ya Allah, jadikanlah ia hujan yang lebat lagi bermanfaat."
+
+- id: hujan-lebat
+  tajuk: Hujan lebat berterusan / risiko banjir
+  kat: [alam]
+  tag: [banjir, hujan lebat, monsun, tengkujuh, ribut]
+  lihat: [banjir-hujan]
+  bila: "Ketika hujan terlalu lebat atau berterusan sehingga dibimbangi mudarat"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 1013", darjat: Sahih, url: "https://sunnah.com/bukhari:1013", nota: "Rasulullah ﷺ mengangkat tangan berdoa ketika para sahabat mengadu harta binasa dan jalan terputus kerana hujan; lalu hujan berhenti."}
+  teks: "اللَّهُمَّ حَوَالَيْنَا وَلاَ عَلَيْنَا | اللَّهُمَّ عَلَى الآكَامِ وَالْجِبَالِ | وَالآجَامِ وَالظِّرَابِ | وَالأَوْدِيَةِ | وَمَنَابِتِ الشَّجَرِ"
+  frasa: "Ya Allah, (turunkanlah hujan) di sekeliling kami dan bukan ke atas kami | Ya Allah, (turunkanlah) ke atas bukit-bukau dan gunung-ganang | dan hutan belukar serta tanah tinggi | dan lembah-lembah | dan tempat tumbuhnya pepohon"
+  rumi: "Allaahumma hawaalainaa wa laa 'alainaa, Allaahumma 'alal aakaami wal jibaal, wal aajaami wazh zhiraab, wal audiyah, wa manaabitisy syajar."
+  makna: "Ya Allah, turunkanlah hujan di sekeliling kami, bukan ke atas kami; ya Allah, turunkanlah ia ke atas bukit-bukau, gunung-ganang, hutan, tanah tinggi, lembah dan tempat tumbuhnya pepohon."
+
+- id: selepas-hujan
+  tajuk: Selepas hujan
+  kat: [alam]
+  tag: [hujan, syukur]
+  lihat: [banjir-hujan]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 846", darjat: Sahih, url: "https://sunnah.com/bukhari:846"}
+  teks: "مُطِرْنَا | بِفَضْلِ اللَّهِ وَرَحْمَتِهِ"
+  frasa: "Kami diturunkan hujan | dengan kurnia Allah dan rahmat-Nya"
+  rumi: "Muthirnaa bifadhlillaahi wa rahmatih."
+  makna: "Kami dikurniakan hujan dengan kurnia dan rahmat Allah."
+
+- id: angin-ribut
+  tajuk: Ketika angin kencang / ribut
+  kat: [alam]
+  tag: [ribut, angin kencang, puting beliung, cuaca]
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 899b", darjat: Sahih, url: "https://sunnah.com/muslim:899b"}
+  teks: "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَهَا | وَخَيْرَ مَا فِيهَا | وَخَيْرَ مَا أُرْسِلَتْ بِهِ | وَأَعُوذُ بِكَ مِنْ شَرِّهَا | وَشَرِّ مَا فِيهَا | وَشَرِّ مَا أُرْسِلَتْ بِهِ"
+  frasa: "Ya Allah, aku memohon kebaikannya | dan kebaikan apa yang ada padanya | dan kebaikan apa yang dibawa bersamanya | dan aku berlindung kepada-Mu daripada keburukannya | dan keburukan apa yang ada padanya | dan keburukan apa yang dibawa bersamanya"
+  rumi: "Allaahumma innii as'aluka khairahaa, wa khaira maa fiihaa, wa khaira maa ursilat bih, wa a'uudzu bika min syarrihaa, wa syarri maa fiihaa, wa syarri maa ursilat bih."
+  makna: "Ya Allah, aku memohon kebaikan angin ini, kebaikan yang ada padanya dan kebaikan yang dibawanya; dan aku berlindung kepada-Mu daripada keburukannya, keburukan yang ada padanya dan keburukan yang dibawanya."
+
+- id: petir
+  tajuk: Ketika mendengar guruh
+  kat: [alam]
+  tag: [guruh, petir, kilat, ribut]
+  sumber: {jenis: athar, ruj: "Al-Adab al-Mufrad, no. 723 (amalan Abdullah bin az-Zubair r.a.); Muwatta' Malik", darjat: "Athar sahih", url: "https://sunnah.com/adab:723", nota: "Sanadnya disahihkan oleh al-Albani (mauquf). Lafaz diambil daripada {{13:13}}."}
+  teks: "سُبْحَانَ الَّذِي | يُسَبِّحُ الرَّعْدُ بِحَمْدِهِ | وَالْمَلاَئِكَةُ مِنْ خِيفَتِهِ"
+  frasa: "Maha Suci (Allah) yang | guruh bertasbih dengan memuji-Nya | dan (demikian juga) para malaikat kerana takut kepada-Nya"
+  rumi: "Subhaanal ladzii ⟨13:13⟩."
+  makna: "Maha Suci Allah yang guruh bertasbih memuji-Nya, demikian juga para malaikat kerana takut kepada-Nya."
+
+- id: istisqa
+  tajuk: Memohon hujan (kemarau / jerebu)
+  kat: [alam]
+  tag: [kemarau, jerebu, istisqa, catuan air, kering]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 1169", darjat: Sahih, url: "https://sunnah.com/abudawud:1169", nota: "Disahihkan oleh al-Albani."}
+  teks: "اللَّهُمَّ اسْقِنَا غَيْثًا مُغِيثًا | مَرِيئًا مَرِيعًا | نَافِعًا غَيْرَ ضَارٍّ | عَاجِلاً غَيْرَ آجِلٍ"
+  frasa: "Ya Allah, turunkanlah kepada kami hujan yang menyelamatkan | yang menyuburkan lagi menghijaukan | yang bermanfaat, tidak memudaratkan | segera, tidak lambat"
+  rumi: "Allaahummasqinaa ghaitsan mughiitsaa, marii'an marii'aa, naafi'an ghaira dhaarr, 'aajilan ghaira aajil."
+  makna: "Ya Allah, turunkanlah hujan yang menyelamatkan, menyuburkan dan menghijaukan, bermanfaat dan tidak memudaratkan, dengan segera dan tidak ditangguhkan."
+
+- id: bencana-umum
+  tajuk: Ketika bencana / gempa / musibah awam
+  kat: [alam, ummah]
+  tag: [gempa bumi, tsunami, tanah runtuh, bencana, banjir, kebakaran]
+  sumber: {jenis: hadis, ruj: "Gabungan: Sahih Muslim no. 918a (istirja'), Sunan Abi Dawud no. 5088, Sahih Muslim no. 2739", darjat: Sahih, nota: "Tiada lafaz doa khusus yang sahih untuk gempa bumi. Ulama menganjurkan istighfar, taubat, sedekah dan doa umum — antaranya himpunan doa sahih ini."}
+  bahagian:
+    - teks: "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ"
+      frasa: "Sesungguhnya kami milik Allah dan kepada-Nya kami kembali"
+      rumi: "Innaa lillaahi wa innaa ilaihi raaji'uun."
+      makna: "Sesungguhnya kami milik Allah dan kepada-Nya kami kembali."
+    - teks: "بِسْمِ اللَّهِ الَّذِي | لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ | فِي الأَرْضِ وَلاَ فِي السَّمَاءِ | وَهُوَ السَّمِيعُ الْعَلِيمُ"
+      frasa: "Dengan nama Allah yang | tidak memudaratkan bersama nama-Nya sesuatu pun | di bumi dan tidak juga di langit | dan Dialah Yang Maha Mendengar lagi Maha Mengetahui"
+      rumi: "Bismillaahil ladzii laa yadhurru ma'asmihii syai'un fil ardhi wa laa fis samaa'i wa huwas samii'ul 'aliim."
+      makna: "Dengan nama Allah, yang bersama nama-Nya tiada sesuatu pun di bumi atau di langit dapat memudaratkan; Dialah Yang Maha Mendengar lagi Maha Mengetahui."
+      ulang: 3
+    - teks: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ زَوَالِ نِعْمَتِكَ | وَتَحَوُّلِ عَافِيَتِكَ | وَفُجَاءَةِ نِقْمَتِكَ | وَجَمِيعِ سَخَطِكَ"
+      frasa: "Ya Allah, aku berlindung kepada-Mu daripada hilangnya nikmat-Mu | dan berubahnya afiat-Mu | dan hukuman-Mu yang datang tiba-tiba | dan segala kemurkaan-Mu"
+      rumi: "Allaahumma innii a'uudzu bika min zawaali ni'matik, wa tahawwuli 'aafiyatik, wa fujaa'ati niqmatik, wa jamii'i sakhatik."
+      makna: "Ya Allah, aku berlindung kepada-Mu daripada hilangnya nikmat-Mu, berubahnya afiat-Mu, hukuman-Mu yang tiba-tiba dan segala kemurkaan-Mu."
+
+- id: doa-ahzab
+  tajuk: Doa Nabi ﷺ menghadapi musuh (Ahzab)
+  kat: [ummah]
+  tag: [palestin, gaza, musuh, kezaliman, qunut nazilah, al-aqsa]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 2933", darjat: Sahih, url: "https://sunnah.com/bukhari:2933", nota: "Doa Rasulullah ﷺ ketika peperangan al-Ahzab."}
+  teks: "اللَّهُمَّ مُنْزِلَ الْكِتَابِ | سَرِيعَ الْحِسَابِ | اللَّهُمَّ اهْزِمِ الأَحْزَابَ | اللَّهُمَّ اهْزِمْهُمْ وَزَلْزِلْهُمْ"
+  frasa: "Ya Allah, Tuhan yang menurunkan al-Kitab | yang amat cepat perhitungan-Nya | Ya Allah, kalahkanlah golongan bersekutu (musuh) | Ya Allah, kalahkanlah mereka dan goncangkanlah mereka"
+  rumi: "Allaahumma munzilal kitaab, sarii'al hisaab, Allaahummahzimil ahzaab, Allaahummahzimhum wa zalzilhum."
+  makna: "Ya Allah, yang menurunkan al-Kitab dan amat cepat perhitungan-Nya, kalahkanlah golongan musuh yang bersekutu; ya Allah, kalahkanlah dan goncangkanlah mereka."
+
+- id: musuh-nuhur
+  tajuk: Ketika bimbang ancaman musuh / orang zalim
+  kat: [ummah, perlindungan]
+  tag: [musuh, kezaliman, palestin, keselamatan, ancaman]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 1537", darjat: Sahih, url: "https://sunnah.com/abudawud:1537", nota: "Disahihkan oleh al-Albani."}
+  teks: "اللَّهُمَّ إِنَّا نَجْعَلُكَ فِي نُحُورِهِمْ | وَنَعُوذُ بِكَ مِنْ شُرُورِهِمْ"
+  frasa: "Ya Allah, sesungguhnya kami jadikan Engkau (penghalang) di hadapan mereka | dan kami berlindung kepada-Mu daripada kejahatan mereka"
+  rumi: "Allaahumma innaa naj'aluka fii nuhuurihim, wa na'uudzu bika min syuruurihim."
+  makna: "Ya Allah, kami jadikan Engkau penghalang di hadapan mereka, dan kami berlindung kepada-Mu daripada kejahatan mereka."
+
+- id: pemimpin
+  tajuk: Doa Nabi ﷺ tentang pemimpin
+  kat: [ummah]
+  tag: [pemimpin, kerajaan, negara, pentadbir, ketua]
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 1828a", darjat: Sahih, url: "https://sunnah.com/muslim:1828a", nota: "Doa ini mengingatkan setiap yang memegang amanah (ketua keluarga, majikan, pentadbir, pemimpin negara) supaya berlembut dengan orang di bawahnya."}
+  teks: "اللَّهُمَّ مَنْ وَلِيَ مِنْ أَمْرِ أُمَّتِي شَيْئًا | فَشَقَّ عَلَيْهِمْ فَاشْقُقْ عَلَيْهِ | وَمَنْ وَلِيَ مِنْ أَمْرِ أُمَّتِي شَيْئًا | فَرَفَقَ بِهِمْ فَارْفُقْ بِهِ"
+  frasa: "Ya Allah, sesiapa yang memegang sesuatu urusan umatku | lalu menyusahkan mereka, maka susahkanlah dia | dan sesiapa yang memegang sesuatu urusan umatku | lalu berlembut dengan mereka, maka berlembutlah dengannya"
+  rumi: "Allaahumma man waliya min amri ummatii syai'an fasyaqqa 'alaihim fasyquq 'alaih, wa man waliya min amri ummatii syai'an farafaqa bihim farfuq bih."
+  makna: "Ya Allah, sesiapa yang memegang urusan umatku lalu menyusahkan mereka, susahkanlah dia; dan sesiapa yang memegang urusan umatku lalu berlembut dengan mereka, berlembutlah dengannya."
+
+- id: lailatul-qadar
+  tajuk: Doa malam al-Qadar
+  kat: [musim]
+  tag: [ramadan, lailatul qadar, 10 malam terakhir, kemaafan]
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 3513", darjat: Sahih, url: "https://sunnah.com/tirmidhi:3513", nota: "Diajar kepada Aisyah r.a. jika bertemu malam al-Qadar. Perkataan كَرِيمٌ tiada dalam sebahagian riwayat lain."}
+  teks: "اللَّهُمَّ إِنَّكَ عَفُوٌّ كَرِيمٌ | تُحِبُّ الْعَفْوَ | فَاعْفُ عَنِّي"
+  frasa: "Ya Allah, sesungguhnya Engkau Maha Pemaaf lagi Maha Pemurah | Engkau suka memaafkan | maka maafkanlah aku"
+  rumi: "Allaahumma innaka 'afuwwun kariimun tuhibbul 'afwa fa'fu 'annii."
+  makna: "Ya Allah, sesungguhnya Engkau Maha Pemaaf lagi Maha Pemurah, Engkau suka memaafkan, maka maafkanlah aku."
+
+- id: berbuka
+  tajuk: Ketika berbuka puasa
+  kat: [musim]
+  tag: [puasa, ramadan, berbuka, puasa sunat, isnin khamis]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 2357", darjat: Hasan, url: "https://sunnah.com/abudawud:2357", nota: "Dinilai hasan oleh al-Albani. Doa \"Allaahumma laka sumtu…\" (Abu Dawud 2358) pula mursal/dha'if."}
+  teks: "ذَهَبَ الظَّمَأُ | وَابْتَلَّتِ الْعُرُوقُ | وَثَبَتَ الأَجْرُ إِنْ شَاءَ اللَّهُ"
+  frasa: "Telah hilang dahaga | dan telah basah urat-urat | dan telah tetap pahala, insya-Allah"
+  rumi: "Dzahabazh zhama'u, wabtallatil 'uruuqu, wa tsabatal ajru in syaa'allaah."
+  makna: "Telah hilang dahaga, telah basah urat-urat, dan telah tetap pahala, insya-Allah."
+
+- id: arafah
+  tajuk: Zikir Hari Arafah
+  kat: [musim]
+  tag: [arafah, zulhijjah, haji, aidiladha]
+  bila: "9 Zulhijjah"
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 3585", darjat: Diperselisihkan, url: "https://sunnah.com/tirmidhi:3585", nota: "Dinilai hasan oleh al-Albani (Sahih at-Tirmizi) dan dha'if oleh Darussalam. Lafaz zikir ini sendiri sahih dalam banyak hadis lain (cth. Bukhari 6403)."}
+  teks: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ | لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ | وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ"
+  frasa: "Tiada tuhan melainkan Allah, Yang Esa, tiada sekutu bagi-Nya | bagi-Nya kerajaan dan bagi-Nya segala puji | dan Dia Maha Berkuasa atas segala sesuatu"
+  rumi: "Laa ilaaha illallaahu wahdahuu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai'in qadiir."
+  makna: "Tiada tuhan melainkan Allah, Yang Esa tiada sekutu bagi-Nya; bagi-Nya kerajaan dan segala puji, dan Dia Maha Berkuasa atas segala sesuatu."
+
+- id: anak-bulan
+  tajuk: Melihat anak bulan
+  kat: [musim]
+  tag: [anak bulan, hilal, awal bulan, ramadan, syawal]
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 3451", darjat: Diperselisihkan, url: "https://sunnah.com/tirmidhi:3451", nota: "Dinilai dha'if oleh Darussalam; dinilai sahih/hasan dengan jalan-jalan sokongan oleh sebahagian ulama (al-Albani). Boleh diamalkan sebagai doa umum."}
+  teks: "اللَّهُمَّ أَهْلِلْهُ عَلَيْنَا | بِالْيُمْنِ وَالإِيمَانِ | وَالسَّلاَمَةِ وَالإِسْلاَمِ | رَبِّي وَرَبُّكَ اللَّهُ"
+  frasa: "Ya Allah, terbitkanlah ia ke atas kami | dengan keberkatan dan keimanan | dengan keselamatan dan keislaman | Tuhanku dan Tuhanmu (wahai bulan) ialah Allah"
+  rumi: "Allaahumma ahlilhu 'alainaa bil yumni wal iimaan, was salaamati wal islaam, rabbii wa rabbukallaah."
+  makna: "Ya Allah, terbitkanlah bulan ini kepada kami dengan keberkatan, keimanan, keselamatan dan keislaman. Tuhanku dan Tuhanmu (wahai bulan) ialah Allah."
+
+- id: rejab-syaaban
+  tajuk: Doa masuk Rejab
+  kat: [musim]
+  tag: [rejab, syaaban, ramadan]
+  lihat: [rejab]
+  sumber: {jenis: hadis, ruj: "Riwayat al-Baihaqi dalam ad-Da'awat al-Kabir; Mishkat al-Masabih no. 1369", darjat: "Dha'if", url: "https://sunnah.com/mishkat:1369", nota: "Dinilai dha'if oleh al-Albani dan ramai ulama hadis. Kandungannya doa yang baik; boleh dibaca sebagai doa umum tanpa menisbahkannya secara pasti kepada Nabi ﷺ."}
+  teks: "اللَّهُمَّ بَارِكْ لَنَا | فِي رَجَبٍ وَشَعْبَانَ | وَبَلِّغْنَا رَمَضَانَ"
+  frasa: "Ya Allah, berkatilah kami | pada bulan Rejab dan Syaaban | dan sampaikanlah kami ke bulan Ramadan"
+  rumi: "Allaahumma baarik lanaa fii rajaba wa sya'baan, wa ballighnaa ramadhaan."
+  makna: "Ya Allah, berkatilah kami pada bulan Rejab dan Syaaban, dan sampaikanlah kami ke bulan Ramadan."
+
+- id: tahniah-raya
+  tajuk: Ucapan Hari Raya
+  kat: [musim, majlis]
+  tag: [aidilfitri, aidiladha, hari raya, ziarah]
+  sumber: {jenis: athar, ruj: "Amalan para sahabat (riwayat Jubair bin Nufair); dinukil oleh Ibn Hajar dalam Fath al-Bari, dengan sanad hasan", darjat: Athar, semak: false}
+  teks: "تَقَبَّلَ اللّٰهُ مِنَّا وَمِنْكَ"
+  frasa: "Semoga Allah menerima (amalan) daripada kami dan daripadamu"
+  rumi: "Taqabbalallaahu minnaa wa mink."
+  makna: "Semoga Allah menerima amalan kami dan amalanmu."
+
+- id: tuan-rumah
+  tajuk: Doa untuk tuan rumah selepas makan
+  kat: [majlis]
+  tag: [kenduri, jamuan, tuan rumah, rumah terbuka]
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 2042a", darjat: Sahih, url: "https://sunnah.com/muslim:2042a"}
+  teks: "اللَّهُمَّ بَارِكْ لَهُمْ | فِي مَا رَزَقْتَهُمْ | وَاغْفِرْ لَهُمْ وَارْحَمْهُمْ"
+  frasa: "Ya Allah, berkatilah mereka | pada rezeki yang Engkau kurniakan kepada mereka | dan ampunilah mereka serta rahmatilah mereka"
+  rumi: "Allaahumma baarik lahum fiimaa razaqtahum, waghfir lahum warhamhum."
+  makna: "Ya Allah, berkatilah rezeki yang Engkau kurniakan kepada mereka, ampunilah dan rahmatilah mereka."
+
+- id: tahniah-kelahiran
+  tajuk: Ucapan tahniah kelahiran anak
+  kat: [keluarga, majlis]
+  tag: [kelahiran, bayi, aqiqah, tahniah]
+  sumber: {jenis: ulama, ruj: "Al-Azkar oleh Imam an-Nawawi (ucapan al-Hasan al-Basri); Hisn al-Muslim no. 145", darjat: Ulama, url: "https://sunnah.com/hisn:145", nota: "Bukan lafaz hadis marfu'; ucapan tabi'in yang dinukil ulama. Irsyad Hukum Mufti WP siri 502 turut menyebutnya."}
+  bahagian:
+    - tajuk: Ucapan kepada ibu bapa
+      teks: "بَارَكَ اللَّهُ لَكَ فِي الْمَوْهُوبِ لَكَ | وَشَكَرْتَ الْوَاهِبَ | وَبَلَغَ أَشُدَّهُ | وَرُزِقْتَ بِرَّهُ"
+      frasa: "Semoga Allah memberkatimu pada anak yang dikurniakan kepadamu | dan semoga engkau bersyukur kepada Yang Memberi | dan semoga dia mencapai usia dewasa | dan engkau dikurniakan baktinya"
+      rumi: "Baarakallaahu laka fil mauhuubi lak, wa syakartal waahib, wa balagha asyuddah, wa ruziqta birrah."
+      makna: "Semoga Allah memberkatimu pada anak yang dikurniakan, semoga engkau mensyukuri Allah Yang Memberi, semoga dia membesar dewasa dan engkau dikurniakan baktinya."
+    - tajuk: Jawapan ibu bapa
+      teks: "بَارَكَ اللَّهُ لَكَ وَبَارَكَ عَلَيْكَ | وَجَزَاكَ اللَّهُ خَيْرًا | وَرَزَقَكَ اللَّهُ مِثْلَهُ | وَأَجْزَلَ ثَوَابَكَ"
+      frasa: "Semoga Allah memberkatimu dan melimpahkan keberkatan ke atasmu | dan semoga Allah membalasmu dengan kebaikan | dan semoga Allah mengurniakanmu sepertinya | dan melimpahkan pahalamu"
+      rumi: "Baarakallaahu laka wa baaraka 'alaik, wa jazaakallaahu khairaa, wa razaqakallaahu mitslah, wa ajzala tsawaabak."
+      makna: "Semoga Allah memberkatimu, membalasmu dengan kebaikan, mengurniakanmu seumpamanya dan melimpahkan pahalamu."
+
+- id: qunut-nazilah
+  tajuk: Qunut Nazilah (Palestin & umat yang dizalimi)
+  subtajuk: Contoh susunan daripada athar dan doa ma'thur
+  kat: [ummah, solat]
+  tag: [qunut nazilah, palestin, gaza, al-aqsa, solat hajat, kezaliman, isu semasa]
+  lihat: [qunut-nazilah]
+  bila: "Iktidal rakaat terakhir solat fardu ketika umat Islam ditimpa musibah besar (pandangan an-Nawawi: semua solat fardu); boleh juga dibaca sebagai doa selepas solat atau dalam majlis solat hajat"
+  sumber: {jenis: ulama, ruj: "Teks contoh Qunut Umar al-Khattab r.a. (riwayat al-Baihaqi, as-Sunan al-Kubra) seperti dinukil Pejabat Mufti WP, Al-Kafi #969; ditambah doa al-Quran {{2:250}} dan hadis sahih (Sahih al-Bukhari no. 2933, Sunan Abi Dawud no. 1537)", darjat: Susunan, url: "https://www.muftiwp.gov.my/ms/artikel/al-kafi-li-al-fatawi/2895-al-kafi-969-hukum-membaca-qunut-nazilah", nota: "Asas amalan qunut nazilah: Sahih al-Bukhari no. 4090 dan 6393. Pejabat Mufti WP: dibaca selagi kezaliman belum berakhir (Irsyad Hukum 813; Bayan Linnas 310) dan TIDAK boleh dibaca ke atas sesama Muslim (Al-Kafi #1993). JAKIM menyeru qunut nazilah pada 1 Mac 2026 (Kenyataan Media Bil. 04/2026)."}
+  nota: "Hajat khusus (cth. keselamatan rakyat Gaza dan Masjid al-Aqsa) boleh disebut dalam bahasa sendiri selepas doa ini. Bahagian laknat dalam riwayat asal Qunut Umar tidak dimasukkan di sini."
+  bahagian:
+    - tajuk: Untuk seluruh mukmin
+      teks: "اَللّٰهُمَّ اغْفِرْ لَنَا وَلِلْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ | وَالْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ | وَأَلِّفْ بَيْنَ قُلُوْبِهِمْ | وَأَصْلِحْ ذَاتَ بَيْنِهِمْ | وَانْصُرْهُمْ عَلَى عَدُوِّكَ وَعَدُوِّهِمْ"
+      frasa: "Ya Allah, ampunilah kami serta orang-orang mukmin lelaki dan perempuan | dan orang-orang muslim lelaki dan perempuan | dan satukanlah hati-hati mereka | dan perbaikilah hubungan sesama mereka | dan menangkanlah mereka terhadap musuh-Mu dan musuh mereka"
+      rumi: "Allaahummaghfir lanaa wa lil mu'miniina wal mu'minaat, wal muslimiina wal muslimaat, wa allif baina quluubihim, wa aslih dzaata bainihim, wansurhum 'alaa 'aduwwika wa 'aduwwihim."
+      makna: "Ya Allah, ampunilah kami dan sekalian mukmin dan muslim lelaki dan perempuan; satukanlah hati mereka, perbaikilah hubungan sesama mereka, dan menangkanlah mereka terhadap musuh-Mu dan musuh mereka."
+    - tajuk: Qunut Umar r.a.
+      teks: "اَللّٰهُمَّ إِنَّا نَسْتَعِيْنُكَ وَنَسْتَغْفِرُكَ | وَنُثْنِيْ عَلَيْكَ وَلَا نَكْفُرُكَ | وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ | اَللّٰهُمَّ إِيَّاكَ نَعْبُدُ | وَلَكَ نُصَلِّيْ وَنَسْجُدُ | وَإِلَيْكَ نَسْعَى وَنَحْفِدُ | نَرْجُوْ رَحْمَتَكَ وَنَخْشَى عَذَابَكَ | إِنَّ عَذَابَكَ الْجِدَّ بِالْكُفَّارِ مُلْحِقٌ"
+      frasa: "Ya Allah, sesungguhnya kami memohon pertolongan-Mu dan memohon ampun kepada-Mu | dan kami memuji-Mu dan tidak mengkufuri-Mu | dan kami melepaskan diri dan meninggalkan sesiapa yang menderhakai-Mu | Ya Allah, hanya kepada-Mu kami beribadah | dan kepada-Mu kami solat dan sujud | dan kepada-Mu kami berusaha dan bersegera | kami mengharapkan rahmat-Mu dan takut akan azab-Mu | sesungguhnya azab-Mu yang sebenar pasti menimpa orang-orang kafir"
+      rumi: "Allaahumma innaa nasta'iinuka wa nastaghfiruk, wa nutsnii 'alaika wa laa nakfuruk, wa nakhla'u wa natruku man yafjuruk. Allaahumma iyyaaka na'bud, wa laka nushallii wa nasjud, wa ilaika nas'aa wa nahfid, narjuu rahmataka wa nakhsyaa 'adzaabak, inna 'adzaabakal jidda bil kuffaari mulhiq."
+      makna: "Ya Allah, kami memohon pertolongan dan keampunan-Mu, kami memuji-Mu dan tidak mengkufuri-Mu, dan kami meninggalkan sesiapa yang menderhakai-Mu. Ya Allah, hanya kepada-Mu kami beribadah, solat dan sujud; kepada-Mu kami berusaha dan bersegera; kami mengharapkan rahmat-Mu dan takut akan azab-Mu — sesungguhnya azab-Mu pasti menimpa orang-orang kafir."
+    - tajuk: Kesabaran dan kemenangan
+      quran: "2:250#6-"
+    - tajuk: Doa Nabi ﷺ terhadap golongan musuh
+      teks: "اللَّهُمَّ مُنْزِلَ الْكِتَابِ | سَرِيعَ الْحِسَابِ | اللَّهُمَّ اهْزِمِ الأَحْزَابَ | اللَّهُمَّ اهْزِمْهُمْ وَزَلْزِلْهُمْ"
+      frasa: "Ya Allah, Tuhan yang menurunkan al-Kitab | yang amat cepat perhitungan-Nya | Ya Allah, kalahkanlah golongan bersekutu (musuh) | Ya Allah, kalahkanlah mereka dan goncangkanlah mereka"
+      rumi: "Allaahumma munzilal kitaab, sarii'al hisaab, Allaahummahzimil ahzaab, Allaahummahzimhum wa zalzilhum."
+      makna: "Ya Allah, yang menurunkan al-Kitab dan amat cepat perhitungan-Nya, kalahkanlah golongan musuh yang bersekutu; kalahkanlah dan goncangkanlah mereka."
+    - teks: "اللَّهُمَّ إِنَّا نَجْعَلُكَ فِي نُحُورِهِمْ | وَنَعُوذُ بِكَ مِنْ شُرُورِهِمْ"
+      frasa: "Ya Allah, sesungguhnya kami jadikan Engkau (penghalang) di hadapan mereka | dan kami berlindung kepada-Mu daripada kejahatan mereka"
+      rumi: "Allaahumma innaa naj'aluka fii nuhuurihim, wa na'uudzu bika min syuruurihim."
+      makna: "Ya Allah, kami jadikan Engkau penghalang di hadapan mereka dan kami berlindung kepada-Mu daripada kejahatan mereka."
+    - tajuk: Penutup
+      teks: "وَصَلَّى اللّٰهُ عَلَى سَيِّدِنَا مُحَمَّدٍ | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلَّمَ"
+      frasa: "Dan semoga Allah melimpahkan selawat ke atas penghulu kami Muhammad | serta keluarga dan sahabatnya, dan kesejahteraan"
+      rumi: "Wa sallallaahu 'alaa sayyidinaa Muhammadin wa 'alaa aalihii wa sahbihii wa sallam."
+      makna: "Selawat dan salam Allah ke atas penghulu kami Muhammad, keluarga dan sahabat baginda."

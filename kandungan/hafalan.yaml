@@ -1,0 +1,46 @@
+# Senarai hafalan: surah pilihan, bacaan asas dan surah lazim (Ad-Dhuha hingga An-Nas).
+# Medan: id (unik), s (nombor surah), dari/hingga (julat ayat; lalai: seluruh surah), tajuk (lalai: nama surah),
+#        kumpulan (pilihan | asas | lazim).
+#
+# Modul Hafalan ialah AUDIO SAHAJA: teks ayat tidak dimuatkan untuk mana-mana surah di sini. Setiap surah dipaparkan
+# sebagai grid butang ayat (1 hingga akhir) untuk didengar, diulang dan ditanda. Semak teks dengan mushaf bercetak
+# berlogo KDN atau aplikasi Smart Quran yang diperakui KDN. Sebab: Akta 326 (lihat nota akta-326). Teks Yaasin,
+# Tahlil dan doa dalam app tidak terjejas; ia kekal di bawah satu juzuk.
+
+# Surah pilihan: surah panjang yang lazim dibaca dan dihafal.
+# audio: false = Mod Selamat (kandungan/dasar.yaml): surah ini dijejak sahaja dalam Poket; audionya dalam Smart Quran.
+# Audio yang dibenarkan + teks dalam app mesti kurang daripada satu juzuk (bina.py menyemak).
+- {id: kahfi, s: 18, kumpulan: pilihan, audio: false}
+- {id: sajdah, s: 32, kumpulan: pilihan, audio: false}
+- {id: yaasin, s: 36, kumpulan: pilihan}
+- {id: rahman, s: 55, kumpulan: pilihan, audio: false}
+- {id: waqiah, s: 56, kumpulan: pilihan, audio: false}
+- {id: mulk, s: 67, kumpulan: pilihan, audio: false}
+- {id: insan, s: 76, kumpulan: pilihan, audio: false}
+
+- {id: fatihah, s: 1, kumpulan: asas}
+- {id: kursi, s: 2, dari: 255, hingga: 255, tajuk: "Ayat al-Kursi", kumpulan: asas}
+- {id: akhir-baqarah, s: 2, dari: 285, hingga: 286, tajuk: "Akhir al-Baqarah", kumpulan: asas}
+
+- {id: nas, s: 114, kumpulan: lazim}
+- {id: falaq, s: 113, kumpulan: lazim}
+- {id: ikhlas, s: 112, kumpulan: lazim}
+- {id: masad, s: 111, kumpulan: lazim}
+- {id: nasr, s: 110, kumpulan: lazim}
+- {id: kafirun, s: 109, kumpulan: lazim}
+- {id: kauthar, s: 108, kumpulan: lazim}
+- {id: maun, s: 107, kumpulan: lazim}
+- {id: quraisy, s: 106, kumpulan: lazim}
+- {id: fil, s: 105, kumpulan: lazim}
+- {id: humazah, s: 104, kumpulan: lazim}
+- {id: asr, s: 103, kumpulan: lazim}
+- {id: takathur, s: 102, kumpulan: lazim}
+- {id: qariah, s: 101, kumpulan: lazim}
+- {id: adiyat, s: 100, kumpulan: lazim}
+- {id: zalzalah, s: 99, kumpulan: lazim}
+- {id: bayyinah, s: 98, kumpulan: lazim, audio: false}
+- {id: qadr, s: 97, kumpulan: lazim}
+- {id: alaq, s: 96, kumpulan: lazim, audio: false}
+- {id: tin, s: 95, kumpulan: lazim}
+- {id: insyirah, s: 94, kumpulan: lazim}
+- {id: dhuha, s: 93, kumpulan: lazim}

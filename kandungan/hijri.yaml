@@ -1,0 +1,11 @@
+# Permulaan bulan Hijri di Malaysia (tarikh Masihi hari pertama). Dikemas kini mengikut takwim rasmi/pengumuman rukyah.
+# Bulan yang tiada di sini dikira dengan kalendar Umm al-Qura (Intl) + pelarasan daripada titik rujukan terdekat.
+# Sumber: khutbah JAKIM 30 Okt 2026 = 19 Jamadilawal 1448; senarai cuti umum 2027 (dilaporkan media) — tanda * tertakluk rukyah.
+"1448-05": "2026-10-12"   # Jamadilawal (30 Okt 2026 = 19 Jamadilawal, JAKIM)
+"1448-07": "2026-12-11"   # Rejab (Israk Mikraj 27 Rejab = 6 Jan 2027)
+"1448-09": "2027-02-08"   # Ramadan*
+"1448-10": "2027-03-10"   # Syawal* (Aidilfitri)
+"1448-12": "2027-05-08"   # Zulhijjah (Arafah 9 Zulhijjah = 16 Mei 2027)
+"1449-01": "2027-06-06"   # Muharram (Awal Muharram 1449)
+"1449-03": "2027-08-04"   # Rabiulawal (Maulidur Rasul 12 Rabiulawal = 15 Ogos 2027)
+"1449-07": "2027-11-30"   # Rejab (Israk Mikraj 27 Rejab = 26 Dis 2027)

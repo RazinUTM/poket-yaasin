@@ -1,0 +1,11 @@
+# Dasar kandungan al-Quran (Akta 326). Dibaca oleh tools/bina.py.
+#
+# mod_selamat: true (lalai)
+#   Teks DAN audio al-Quran yang boleh dimainkan dalam app dikira bersama dalam had satu juzuk ("bahan Al-Qur'an").
+#   Surah dalam hafalan.yaml yang bertanda "audio: false" (surah panjang) hanya dijejak dalam Poket (tanda hafal,
+#   murajaah, rekod bacaan); audionya dibuka dalam aplikasi Smart Quran yang diperakui KDN. Surah yang ditambah
+#   sendiri oleh pengguna juga dijejak sahaja. bina.py GAGAL jika teks + audio >= 1 juzuk.
+#
+# Tukar kepada false HANYA selepas jawapan bertulis LPPPQ/KDN membenarkan audio surah panjang (soalan (h) dalam
+# surat pertanyaan). Teks tetap dihadkan kepada kurang daripada satu juzuk.
+mod_selamat: true

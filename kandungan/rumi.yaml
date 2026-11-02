@@ -1,0 +1,84 @@
+# Dasar Rumi untuk teks doa — rujuk nota "rumi" dalam app (kandungan/nota.yaml).
+#
+# 1. Ayat yang dipetik sebagai ayat ("- quran: s:a") TIDAK pernah diberi Rumi.
+# 2. tools/bina.py mengesan secara automatik setiap frasa doa yang sama dengan sekurang-kurangnya
+#    `ambang` huruf rasm berturut-turut daripada mana-mana ayat (12 huruf ≈ 3–4 perkataan).
+#    Setiap petikan yang dikesan MESTI diputuskan, jika tidak bina gagal:
+#      (a) sembunyikan dalam rumi dengan tanda ⟨s:a⟩ — app memaparkan pautan ke ayat itu, atau
+#      (b) senaraikan lafaz di bawah (kekal) jika ia zikir yang diajar hadis atau ungkapan doa lazim.
+#    Editor boleh menanda ⟨s:a⟩ walaupun tidak dikesan (cth. susunan perkataan ayat diubah, 44:4).
+# 3. Senarai "kekal" ialah KEPUTUSAN EDITORIAL app, bukan fatwa. Ia perlu disahkan oleh guru/ustaz bertauliah.
+#    Laporan penuh setiap petikan dan keputusannya: tools/laporan-petikan-ayat.md (dijana setiap kali bina).
+
+ambang: 12
+
+kekal:
+  - jenis: zikir
+    sebab: "Basmalah dan hamdalah: zikir pembuka dan penutup yang dibaca dengan niat zikir, bukan tilawah."
+    lafaz:
+      - "بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ"
+      - "اَلْحَمْدُ لِلّٰهِ رَبِّ الْعَالَمِيْنَ"
+
+  - jenis: zikir
+    sebab: "Zikir tahlil yang diajar Nabi ﷺ (Sahih al-Bukhari 6403, 844; Sahih Muslim 597a, 2723a)."
+    lafaz:
+      - "لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ"
+
+  - jenis: zikir
+    sebab: "Istirja' ketika musibah, diajar sebagai zikir (Sahih Muslim 918a)."
+    lafaz:
+      - "إِنَّا لِلّٰهِ وَإِنَّا إِلَيْهِ رَاجِعُوْنَ"
+
+  - jenis: zikir
+    sebab: "Zikir tawakal yang diperintahkan Nabi ﷺ untuk diucapkan (Jami' at-Tirmizi 2431, hasan); juga kata-kata Ibn 'Abbas dalam Sahih al-Bukhari 4563. Laporan penyelidikan menandakan lafaz ini untuk semakan: pertimbangkan untuk menyembunyikan Rumi-nya."
+    lafaz:
+      - "حَسْبُنَا اللّٰهُ وَنِعْمَ الْوَكِيْلُ"
+
+  - jenis: zikir
+    sebab: "Isti'azah ketika marah (Sahih al-Bukhari 6115)."
+    lafaz:
+      - "أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ"
+      - "مِنَ الشَّيْطَانِ الرَّجِيْمِ"
+
+  - jenis: zikir
+    sebab: "Istighfar Nabi ﷺ 100 kali dalam satu majlis (Sunan Abi Dawud 1516)."
+    lafaz:
+      - "إِنَّكَ أَنْتَ التَّوَّابُ الرَّحِيْمُ"
+
+  - jenis: zikir
+    sebab: "Zikir perlindungan pagi dan petang (Sunan Abi Dawud 5088; Jami' at-Tirmizi 3388)."
+    lafaz:
+      - "شَيْءٌ فِي الْأَرْضِ وَلَا فِي السَّمَاءِ وَهُوَ السَّمِيْعُ الْعَلِيْمُ"
+
+  - jenis: zikir
+    sebab: "Doa ketika kesusahan (Sahih al-Bukhari 6346)."
+    lafaz:
+      - "رَبُّ السَّمٰوَاتِ وَرَبُّ الْأَرْضِ وَرَبُّ الْعَرْشِ الْكَرِيْمِ"
+
+  - jenis: diksi
+    sebab: "Ungkapan doa lazim untuk umat Islam; sama dengan 2–4 perkataan ayat (cth. 33:35, 71:28) tetapi bukan petikan."
+    lafaz:
+      - "الْمُسْلِمِيْنَ وَالْمُسْلِمَاتِ"
+      - "وَلِلْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ"
+      - "الْمُؤْمِنِيْنَ وَالْمُؤْمِنَاتِ"
+      - "مِنَ الْمُؤْمِنِيْنَ وَالْمُسْلِمِيْنَ"
+
+  - jenis: diksi
+    sebab: "Sebutan sifat dan asma' Allah dalam doa (Badi'us samawati wal ardh, al-Warith, 'ala kulli syai'in qadir)."
+    lafaz:
+      - "بَدِيْعَ السَّمٰوَاتِ وَالْأَرْضِ"
+      - "وَأَنْتَ خَيْرُ الْوَارِثِيْنَ"
+      - "تَرِثَ الْأَرْضَ وَمَنْ عَلَيْهَا"
+      - "إِنَّكَ عَلَى كُلِّ شَيْءٍ قَدِيْرٌ"
+
+  - jenis: diksi
+    sebab: "Ungkapan umum yang kebetulan sama dengan sebahagian ayat (cth. 7:137, 24:14, 12:53)."
+    lafaz:
+      - "مَشَارِقِ الْأَرْضِ وَمَغَارِبِهَا"
+      - "فِي الدُّنْيَا وَالْآخِرَةِ"
+      - "النَّفْسِ الْأَمَّارَةِ بِالسُّوْءِ"
+
+  - jenis: diksi
+    sebab: "Huruf sama tetapi lafaz berbeza: doa Qunut Umar menyebut fi'il amr أَلِّفْ (satukanlah), ayat 8:63 menyebut أَلَّفَ (Dia telah menyatukan)."
+    lafaz:
+      - "وَأَلِّفْ بَيْنَ قُلُوْبِهِمْ"

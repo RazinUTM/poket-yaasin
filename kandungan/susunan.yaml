@@ -1,0 +1,100 @@
+# Susunan bacaan (mengikut buku "Surah Yaasiin, Tahlil & Doa").
+# Setiap langkah: {doa: id} | {quran: "s:a-b", tajuk} | {surah: n}
+# Pilihan langkah: ulang (bilangan), nota, bahagian: [indeks bahagian doa yang dipakai]
+
+- id: yaasin
+  tajuk: Bacaan Yaasin
+  ringkas: "Kaifiat buku: istighfar, Fatihah, selawat 11 kali, Yaasin, enam surah pendek, Doa Yaasin"
+  langkah:
+    - {doa: istighfar-3}
+    - {doa: fatihah-hadiah}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: selawat-11}
+    - {surah: 36}
+    - {quran: "94:1-8", tajuk: "Surah al-Insyirah"}
+    - {quran: "97:1-5", tajuk: "Surah al-Qadr"}
+    - {quran: "105:1-5", tajuk: "Surah al-Fil"}
+    - {quran: "112:1-4", tajuk: "Surah al-Ikhlas"}
+    - {quran: "113:1-5", tajuk: "Surah al-Falaq"}
+    - {quran: "114:1-6", tajuk: "Surah an-Nas"}
+    - {doa: doa-selepas-yaasin}
+
+- id: tahlil-arwah
+  tajuk: Tahlil Arwah (lengkap)
+  ringkas: "Susunan buku ms 35–54"
+  nota: "Majlis tahlil ialah perkara khilafiah yang harus; pahala disampaikan melalui doa. [[tahlil|Status hukum]]"
+  langkah:
+    - {doa: tahlil-pembuka}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {quran: "112:1-4", tajuk: "Surah al-Ikhlas", ulang: 3, nota: "Ulang 3, 7 atau 10 kali"}
+    - {doa: zikir-tahlil-takbir}
+    - {quran: "113:1-5", tajuk: "Surah al-Falaq"}
+    - {doa: zikir-tahlil-takbir}
+    - {quran: "114:1-6", tajuk: "Surah an-Nas"}
+    - {doa: zikir-tahlil-takbir}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {quran: "2:1-5", tajuk: "Al-Baqarah 1–5"}
+    - {quran: "2:163", tajuk: "Al-Baqarah 163"}
+    - {quran: "2:255", tajuk: "Ayat Kursi"}
+    - {quran: "2:284-286", tajuk: "Al-Baqarah 284–286", nota: "Frasa وَٱعۡفُ عَنَّا وَٱغۡفِرۡ لَنَا وَٱرۡحَمۡنَاۤ diulang 3 kali"}
+    - {doa: zikir-irhamna}
+    - {quran: "11:73#6-", tajuk: "Hud 73"}
+    - {quran: "33:33#16-", tajuk: "Al-Ahzab 33"}
+    - {quran: "33:56", tajuk: "Al-Ahzab 56"}
+    - {doa: selawat-tahlil}
+    - {doa: zikir-hasbunallah}
+    - {doa: zikir-istighfar-azim}
+    - {doa: zikir-afdhal}
+    - {doa: zikir-tahlil, ulang: 100}
+    - {doa: zikir-tahlil-penutup}
+    - {doa: selawat-pendek}
+    - {doa: selawat-ya-rabb}
+    - {doa: zikir-tasbih-tahmid}
+    - {doa: zikir-ya-allah}
+    - {doa: zikir-istighfar}
+    - {doa: zikir-istighfar-tawwabun}
+    - {doa: selawat-habib}
+    - {doa: selawat-habib-rasul}
+    - {doa: fatihah-hadirin}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: doa-arwah}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: doa-penutup}
+
+- id: tahlil-ringkas
+  tajuk: Tahlil Ringkas
+  ringkas: "Susunan buku ms 55–58, diikuti Doa Arwah dan Doa Penutup"
+  langkah:
+    - {doa: fatihah-nabi}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: zikir-afdhal}
+    - {doa: zikir-tahlil, ulang: 33}
+    - {doa: zikir-tahlil-penutup, bahagian: [0, 1, 2]}
+    - {doa: selawat-pendek}
+    - {doa: selawat-ya-rabb}
+    - {doa: zikir-tasbih-tahmid}
+    - {doa: zikir-ya-allah}
+    - {doa: zikir-istighfar}
+    - {doa: zikir-istighfar-tawwabun}
+    - {quran: "2:255", tajuk: "Ayat Kursi"}
+    - {quran: "112:1-4", tajuk: "Surah al-Ikhlas", ulang: 3}
+    - {quran: "113:1-5", tajuk: "Surah al-Falaq"}
+    - {quran: "114:1-6", tajuk: "Surah an-Nas"}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: doa-arwah}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: doa-penutup}
+
+- id: nisfu-syaaban
+  tajuk: Yaasin Malam Nisfu Syaaban
+  ringkas: "Buku ms 4: Yaasin 3 kali selepas Maghrib 15 Syaaban, setiap kali diikuti doa"
+  nota: "[[nisfu-syaaban|Baca nota hukum Nisfu Syaaban]] sebelum mengamalkan susunan ini: tiada amalan khusus yang sabit; boleh diamalkan sebagai bacaan dan doa umum."
+  langkah:
+    - {doa: fatihah-hadiah}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {surah: 36, tajuk: "Yaasin (bacaan pertama)", nota: "Niat (dalam hati): memohon dipanjangkan umur dalam ketaatan"}
+    - {doa: doa-nisfu-syaaban}
+    - {surah: 36, tajuk: "Yaasin (bacaan kedua)", nota: "Niat: memohon ditetapkan iman dan mati dalam iman yang sempurna"}
+    - {doa: doa-nisfu-syaaban}
+    - {surah: 36, tajuk: "Yaasin (bacaan ketiga)", nota: "Niat: memohon dimurahkan rezeki yang halal"}
+    - {doa: doa-nisfu-syaaban}

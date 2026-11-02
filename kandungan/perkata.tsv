@@ -1,0 +1,198 @@
+# Makna perkata (BM) untuk teks Quran dalam app. Satu baris = satu ayat.
+# Format: surah:ayat<TAB>makna perkataan 1|makna perkataan 2|...
+# Bilangan makna MESTI sama dengan bilangan perkataan Uthmani (tools/bina.py menyemak).
+# Disusun oleh Claude (AI) berpandukan gloss perkataan quran.com (English) dan terjemahan Abdullah Basmeih.
+# STATUS: DRAF — perlu disemak oleh guru yang mahir bahasa Arab sebelum dikongsi meluas.
+1:1	Dengan nama|Allah|Yang Maha Pemurah|Yang Maha Mengasihani
+36:1	Yaa Siin
+36:2	Demi al-Quran|yang penuh hikmah
+36:3	Sesungguhnya engkau|benar-benar dari kalangan|para rasul
+36:4	di atas|jalan|yang lurus
+36:5	(al-Quran) diturunkan oleh|Yang Maha Perkasa|Yang Maha Mengasihani
+36:6	supaya engkau memberi peringatan|kepada kaum|yang tidak|diberi peringatan|bapa-bapa mereka|maka mereka|lalai
+36:7	Sungguh|telah pasti|ketetapan (azab)|ke atas|kebanyakan mereka|maka mereka|tidak|beriman
+36:8	Sesungguhnya Kami|telah jadikan|pada|leher-leher mereka|belenggu-belenggu|lalu ia|hingga ke|dagu|maka mereka|terdongak kepalanya
+36:9	Dan Kami jadikan|dari|antara|tangan mereka (hadapan mereka)|sekatan|dan dari|belakang mereka|sekatan|lalu Kami tutup (pandangan) mereka|maka mereka|tidak|dapat melihat
+36:10	Dan sama sahaja|bagi mereka|sama ada engkau beri peringatan kepada mereka|atau|tidak|engkau beri peringatan kepada mereka|tidak|mereka beriman
+36:11	Hanyasanya|engkau (berguna) memberi peringatan|kepada orang yang|mengikut|peringatan (al-Quran)|dan takut|kepada Yang Maha Pemurah|walaupun tidak melihat-Nya|maka gembirakanlah dia|dengan keampunan|dan pahala|yang mulia
+36:12	Sesungguhnya Kami|Kamilah|menghidupkan|orang-orang yang mati|dan Kami tulis|apa yang|telah mereka kerjakan|dan kesan-kesan mereka|dan tiap-tiap|sesuatu|Kami hitung ia|di dalam|kitab induk|yang nyata
+36:13	Dan buatlah|bagi mereka|satu perumpamaan|penduduk|negeri|ketika|datang kepadanya|para utusan
+36:14	Ketika|Kami utuskan|kepada mereka|dua (utusan)|lalu mereka dustakan keduanya|maka Kami kuatkan|dengan (utusan) ketiga|lalu mereka berkata|Sesungguhnya kami|kepada kamu|adalah utusan-utusan
+36:15	Mereka berkata|Tidaklah|kamu|melainkan|manusia|seperti kami|dan tidak|menurunkan|Yang Maha Pemurah|sebarang|sesuatu|Tidaklah|kamu|melainkan|berdusta
+36:16	Mereka berkata|Tuhan kami|mengetahui|bahawa sesungguhnya kami|kepada kamu|benar-benar utusan-utusan
+36:17	Dan tiadalah|kewajipan kami|melainkan|menyampaikan|yang nyata (jelas)
+36:18	Mereka berkata|Sesungguhnya kami|merasa sial|kerana kamu|Sungguh jika|tidak|kamu berhenti|nescaya kami rejam kamu|dan pasti akan menimpa kamu|daripada kami|azab|yang pedih
+36:19	Mereka berkata|Kesialan kamu|(adalah) bersama kamu|Patutkah kerana|kamu diberi peringatan|Bahkan|kamu|kaum|yang melampaui batas
+36:20	Dan datang|dari|hujung|kota|seorang lelaki|dengan bergegas|dia berkata|Wahai kaumku|ikutlah|para utusan itu
+36:21	Ikutlah|orang yang|tidak|meminta daripada kamu|sebarang upah|dan mereka|orang yang mendapat petunjuk
+36:22	Dan apakah (alasan)|bagiku|untuk tidak|menyembah|(Tuhan) yang|menciptakan aku|dan kepada-Nya|kamu akan dikembalikan
+36:23	Patutkah aku mengambil|dari|selain-Nya|tuhan-tuhan|Jika|menghendaki untukku|Yang Maha Pemurah|sesuatu bahaya|tidak|berguna|kepadaku|syafaat mereka|sedikit pun|dan tidak|mereka dapat menyelamatkan aku
+36:24	Sesungguhnya aku|jika demikian|benar-benar dalam|kesesatan|yang nyata
+36:25	Sesungguhnya aku|telah beriman|kepada Tuhan kamu|maka dengarlah (pengakuan)ku
+36:26	Dikatakan (kepadanya)|Masuklah|ke dalam syurga|Dia berkata|Alangkah baiknya|kaumku|mengetahui
+36:27	dengan apa (sebab)|telah mengampunkan|bagiku|Tuhanku|dan menjadikan aku|dari kalangan|orang-orang yang dimuliakan
+36:28	Dan tidak|Kami turunkan|ke atas|kaumnya|dari|sesudahnya (kematiannya)|sebarang|tentera|dari|langit|dan tidaklah|Kami|(perlu) menurunkan
+36:29	Tidaklah|(azab) itu|melainkan|satu pekikan|sahaja|maka tiba-tiba|mereka|mati bergelimpangan
+36:30	Alangkah sesalnya|atas|hamba-hamba itu|tidaklah|datang kepada mereka|seorang pun|rasul|melainkan|mereka|terhadapnya|memperolok-olok
+36:31	Tidakkah|mereka melihat|berapa banyak|Kami telah binasakan|sebelum mereka|dari|umat-umat|bahawa mereka|kepada mereka|tidak|akan kembali
+36:32	Dan tidaklah|semuanya|melainkan|(dalam keadaan) berkumpul|di sisi Kami|dihadirkan
+36:33	Dan satu tanda (kekuasaan Kami)|bagi mereka|ialah bumi|yang mati (tandus)|Kami hidupkan ia|dan Kami keluarkan|daripadanya|biji-bijian|maka daripadanya|mereka makan
+36:34	Dan Kami jadikan|padanya (di bumi)|kebun-kebun|dari|pohon-pohon tamar|dan anggur|dan Kami pancarkan|padanya|dari|mata air
+36:35	supaya mereka makan|dari|buahnya|dan bukanlah|yang mengusahakannya|tangan-tangan mereka|maka mengapa tidak|mereka bersyukur
+36:36	Maha Suci|(Allah) yang|menciptakan|pasangan-pasangan|semuanya|dari apa yang|ditumbuhkan oleh|bumi|dan dari|diri mereka sendiri|dan dari apa yang|tidak|mereka ketahui
+36:37	Dan satu tanda|bagi mereka|ialah malam|Kami tanggalkan|daripadanya|siang|maka tiba-tiba|mereka|berada dalam gelap-gelita
+36:38	Dan matahari|beredar|ke tempat ketetapan|baginya|Demikian itu|ketentuan|Yang Maha Perkasa|Yang Maha Mengetahui
+36:39	Dan bulan|Kami tetapkan baginya|tempat-tempat peredaran|sehingga|ia kembali|seperti tandan kering|yang tua
+36:40	Tidaklah|matahari|patut (mungkin)|baginya|untuk|mengejar|bulan|dan tidak pula|malam|mendahului|siang|dan masing-masing|pada|garis edarnya|beredar (terapung)
+36:41	Dan satu tanda|bagi mereka|bahawa Kami|telah membawa|keturunan mereka|dalam|bahtera|yang penuh muatan
+36:42	Dan Kami ciptakan|untuk mereka|dari|yang sepertinya|apa yang|mereka kenderai
+36:43	Dan jika|Kami kehendaki|nescaya Kami tenggelamkan mereka|maka tiada|penolong (yang menyahut jeritan)|bagi mereka|dan tidak|mereka|dapat diselamatkan
+36:44	kecuali|(kerana) rahmat|daripada Kami|dan kesenangan|hingga|suatu ketika
+36:45	Dan apabila|dikatakan|kepada mereka|Takutlah|apa yang|di antara|tangan kamu (di hadapan kamu)|dan apa yang|di belakang kamu|supaya kamu|diberi rahmat
+36:46	Dan tidaklah|datang kepada mereka|sebarang|tanda|dari|tanda-tanda|Tuhan mereka|melainkan|mereka|daripadanya|berpaling
+36:47	Dan apabila|dikatakan|kepada mereka|Belanjakanlah|sebahagian dari apa yang|telah dikurniakan kepada kamu|oleh Allah|berkatalah|orang-orang yang|kafir|kepada orang-orang yang|beriman|Patutkah kami memberi makan|orang yang|jika|menghendaki|Allah|nescaya Dia beri makan kepadanya|Tidaklah|kamu|melainkan|dalam|kesesatan|yang nyata
+36:48	Dan mereka berkata|Bilakah|(berlakunya) ini|janji (hari kiamat)|jika|kamu|orang-orang yang benar
+36:49	Tidaklah|mereka menunggu|melainkan|satu pekikan|sahaja|yang akan membinasakan mereka|ketika mereka|sedang bertengkar
+36:50	Maka tidak|mereka mampu|berwasiat|dan tidak|kepada|keluarga mereka|mereka dapat kembali
+36:51	Dan ditiup|pada|sangkakala|maka tiba-tiba|mereka|dari|kubur-kubur|menuju|Tuhan mereka|segera keluar (berduyun-duyun)
+36:52	Mereka berkata|Aduhai celakanya kami|Siapakah|yang membangkitkan kami|dari|tempat tidur kami|Inilah|apa yang|telah dijanjikan|Yang Maha Pemurah|dan benarlah|para rasul
+36:53	Tidaklah|(tiupan) itu|melainkan|satu pekikan|sahaja|maka tiba-tiba|mereka|semuanya|di hadapan Kami|dihadirkan
+36:54	Maka pada hari itu|tidak|dianiaya|seseorang|sedikit pun|dan tidak|kamu dibalas|melainkan|(dengan) apa yang|kamu telah|kerjakan
+36:55	Sesungguhnya|penghuni-penghuni|syurga|pada hari itu|dalam|kesibukan (yang menggembirakan)|bersenang-senang
+36:56	Mereka|dan pasangan-pasangan mereka|di bawah|naungan|di atas|pelamin-pelamin|bersandar
+36:57	Bagi mereka|di dalamnya|buah-buahan|dan bagi mereka|apa sahaja|yang mereka minta
+36:58	Salam sejahtera|sebagai ucapan|dari|Tuhan|Yang Maha Mengasihani
+36:59	Dan berpisahlah kamu|pada hari ini|wahai|orang-orang yang berdosa
+36:60	Bukankah|Aku telah perintahkan|kepada kamu|wahai anak-anak|Adam|supaya|jangan|kamu menyembah|syaitan|sesungguhnya ia|bagi kamu|musuh|yang nyata
+36:61	Dan hendaklah|kamu menyembah-Ku|inilah|jalan|yang lurus
+36:62	Dan sungguh|ia (syaitan) telah menyesatkan|dari kalangan kamu|golongan|yang ramai|Maka mengapa tidak|kamu|berfikir
+36:63	Inilah|neraka Jahannam|yang|kamu dahulu|diancam (dengannya)
+36:64	Masuklah ke dalamnya|pada hari ini|disebabkan|kamu dahulu|kufur (ingkar)
+36:65	Pada hari ini|Kami tutup (meterai)|atas|mulut-mulut mereka|dan berkata-kata kepada Kami|tangan-tangan mereka|dan menjadi saksi|kaki-kaki mereka|tentang apa yang|mereka telah|usahakan
+36:66	Dan jika|Kami kehendaki|nescaya Kami hapuskan (butakan)|atas|mata-mata mereka|lalu mereka berlumba-lumba (mencari)|jalan|maka bagaimanakah|mereka dapat melihat
+36:67	Dan jika|Kami kehendaki|nescaya Kami ubah bentuk mereka|di|tempat mereka|maka tidak|mereka mampu|berjalan ke hadapan|dan tidak|(mampu) kembali
+36:68	Dan sesiapa|yang Kami panjangkan umurnya|Kami kembalikan dia (kepada kelemahan)|dalam|kejadiannya|Maka mengapa tidak|mereka berfikir
+36:69	Dan tidaklah|Kami ajarkan kepadanya (Muhammad)|syair|dan tidak|patut|baginya|Tidaklah|ia (al-Quran)|melainkan|peringatan|dan al-Quran|yang nyata
+36:70	supaya ia memberi peringatan|kepada orang yang|ada|hidup (hatinya)|dan supaya pasti|ketetapan (azab)|ke atas|orang-orang kafir
+36:71	Tidakkah|mereka melihat|bahawa Kami|telah ciptakan|untuk mereka|dari apa yang|dijadikan oleh|kekuasaan Kami (tangan Kami)|binatang ternak|lalu mereka|ke atasnya|menjadi pemilik
+36:72	Dan Kami jinakkannya|untuk mereka|maka sebahagiannya|menjadi tunggangan mereka|dan sebahagiannya|mereka makan
+36:73	Dan bagi mereka|padanya|berbagai manfaat|dan minuman|Maka mengapa tidak|mereka bersyukur
+36:74	Dan mereka mengambil|dari|selain|Allah|tuhan-tuhan|supaya mereka|mendapat pertolongan
+36:75	Tidak|mereka (berhala) mampu|menolong mereka|sedangkan mereka (penyembah)|bagi (berhala) itu|tentera|yang disiapkan
+36:76	Maka janganlah|menyedihkan engkau|perkataan mereka|Sesungguhnya Kami|mengetahui|apa yang|mereka rahsiakan|dan apa yang|mereka nyatakan
+36:77	Tidakkah|melihat (memikirkan)|manusia|bahawa Kami|telah ciptakan dia|dari|setitis air mani|maka tiba-tiba|dia|pembantah|yang nyata
+36:78	Dan dia membuat|bagi Kami|satu perumpamaan|dan dia lupa|kejadian dirinya|dia berkata|Siapakah|yang dapat menghidupkan|tulang-tulang|sedangkan ia|telah hancur reput
+36:79	Katakanlah|yang akan menghidupkannya|ialah (Allah) yang|telah menciptakannya|pertama|kali|dan Dia|terhadap setiap|makhluk|Maha Mengetahui
+36:80	(Dia) yang|menjadikan|untuk kamu|dari|pohon|yang hijau|api|maka tiba-tiba|kamu|daripadanya|menyalakan (api)
+36:81	Bukankah|(Allah) yang|menciptakan|langit|dan bumi|berkuasa|untuk|bahawa|Dia menciptakan|yang serupa dengan mereka|Ya, benar|dan Dialah|Maha Pencipta|Yang Maha Mengetahui
+36:82	Sesungguhnya|urusan-Nya|apabila|Dia menghendaki|sesuatu|hanyalah|Dia berfirman|kepadanya|Jadilah|maka jadilah ia
+36:83	Maka Maha Suci|(Allah) yang|di tangan-Nya|kekuasaan|setiap|sesuatu|dan kepada-Nya|kamu akan dikembalikan
+1:2	Segala puji|bagi Allah|Tuhan|sekalian alam
+1:3	Yang Maha Pemurah|Yang Maha Mengasihani
+1:4	Yang Menguasai|hari|pembalasan
+1:5	Hanya kepada-Mu|kami sembah|dan hanya kepada-Mu|kami memohon pertolongan
+1:6	Tunjukilah kami|jalan|yang lurus
+1:7	(iaitu) jalan|orang-orang yang|Engkau telah kurniakan nikmat|kepada mereka|bukan (jalan)|orang-orang yang dimurkai|ke atas mereka|dan bukan pula|orang-orang yang sesat
+112:1	Katakanlah|Dialah|Allah|Yang Maha Esa
+112:2	Allah|tempat bergantung segala makhluk
+112:3	Tidak|Dia beranak|dan tidak|Dia diperanakkan
+112:4	Dan tidak|ada|bagi-Nya|setara (sebanding)|seorang pun
+113:1	Katakanlah|Aku berlindung|kepada Tuhan|yang menguasai subuh
+113:2	dari|kejahatan|apa yang|Dia ciptakan
+113:3	dan dari|kejahatan|malam|apabila|ia gelap-gelita
+113:4	dan dari|kejahatan|tukang sihir yang menghembus|pada|simpulan-simpulan
+113:5	dan dari|kejahatan|orang yang dengki|apabila|ia mendengki
+114:1	Katakanlah|Aku berlindung|kepada Tuhan|manusia
+114:2	Raja|manusia
+114:3	Sembahan|manusia
+114:4	dari|kejahatan|pembisik (syaitan)|yang bersembunyi
+114:5	yang|membisikkan (hasutan)|ke dalam|dada-dada|manusia
+114:6	dari (golongan)|jin|dan manusia
+2:1	Alif Laam Miim
+2:2	Itu|Kitab (al-Quran)|tiada|keraguan|padanya|petunjuk|bagi orang-orang yang bertakwa
+2:3	(iaitu) orang-orang yang|beriman|kepada yang ghaib|dan mendirikan|solat|dan sebahagian dari apa yang|Kami rezekikan kepada mereka|mereka belanjakan
+2:4	Dan orang-orang yang|beriman|kepada apa yang|diturunkan|kepadamu|dan apa yang|diturunkan|dari|sebelummu|dan kepada hari akhirat|mereka|yakin
+2:5	Mereka itulah|di atas|petunjuk|dari|Tuhan mereka|dan mereka itulah|mereka|orang-orang yang berjaya
+2:163	Dan Tuhan kamu|ialah Tuhan|Yang Maha Esa|tiada|tuhan (yang disembah)|melainkan|Dia|Yang Maha Pemurah|Yang Maha Mengasihani
+2:255	Allah|tiada|tuhan (yang disembah)|melainkan|Dia|Yang Tetap Hidup|Yang Kekal mentadbir makhluk-Nya|tidak|menimpa-Nya|mengantuk|dan tidak|tidur|Milik-Nyalah|apa yang|di|langit|dan apa yang|di|bumi|Siapakah|gerangan|yang|dapat memberi syafaat|di sisi-Nya|melainkan|dengan izin-Nya|Dia mengetahui|apa yang|di antara|hadapan mereka|dan apa yang|di belakang mereka|dan tidak|mereka meliputi|sesuatu pun|dari|ilmu-Nya|melainkan|dengan apa yang|Dia kehendaki|Meliputi|Kursi-Nya|langit|dan bumi|dan tidak|memberatkan-Nya|memelihara keduanya|dan Dialah|Yang Maha Tinggi|Yang Maha Besar
+2:284	Milik Allah|apa yang|di|langit|dan apa yang|di|bumi|Dan jika|kamu nyatakan|apa yang|ada dalam|hati kamu|atau|kamu sembunyikannya|akan menghitung kamu|tentangnya|Allah|lalu Dia mengampunkan|bagi sesiapa yang|Dia kehendaki|dan Dia menyeksa|sesiapa yang|Dia kehendaki|Dan Allah|atas|tiap-tiap|sesuatu|Maha Berkuasa
+2:285	Telah beriman|Rasul|kepada apa yang|diturunkan|kepadanya|dari|Tuhannya|dan (demikian) orang-orang mukmin|Semuanya|beriman|kepada Allah|dan malaikat-malaikat-Nya|dan kitab-kitab-Nya|dan rasul-rasul-Nya|(kata mereka) Tidak|kami membeza-bezakan|antara|seorang pun|dari|rasul-rasul-Nya|Dan mereka berkata|Kami dengar|dan kami taat|(Kami pohon) keampunan-Mu|wahai Tuhan kami|dan kepada-Mu|tempat kembali
+2:286	Tidak|membebankan|Allah|seseorang|melainkan|sekadar kemampuannya|baginya|(pahala) apa yang|dia usahakan|dan ke atasnya|(dosa) apa yang|dia usahakan|Wahai Tuhan kami|janganlah|Engkau hukum kami|jika|kami lupa|atau|kami tersalah|Wahai Tuhan kami|dan janganlah|Engkau bebankan|ke atas kami|beban yang berat|sebagaimana|Engkau bebankannya|ke atas|orang-orang yang|dari|sebelum kami|Wahai Tuhan kami|dan janganlah|Engkau pikulkan kepada kami|apa yang|tidak|terdaya|bagi kami|memikulnya|Dan maafkanlah|kami|dan ampunkanlah|bagi kami|dan rahmatilah kami|Engkaulah|Penolong kami|maka tolonglah kami|terhadap|kaum|yang kafir
+11:73#6-	rahmat|Allah|dan keberkatan-Nya|ke atas kamu|wahai ahli|rumah (ini)|sesungguhnya Dia|Maha Terpuji|Maha Mulia
+33:33#16-	Sesungguhnya|menghendaki|Allah|untuk menghilangkan|dari kamu|segala kekotoran (dosa)|wahai ahli|rumah (Nabi)|dan membersihkan kamu|sebersih-bersihnya
+33:56	Sesungguhnya|Allah|dan malaikat-malaikat-Nya|berselawat|ke atas|Nabi|Wahai|orang-orang yang|beriman|berselawatlah kamu|ke atasnya|dan ucapkanlah salam|dengan penghormatan yang sempurna
+94:1	Bukankah|Kami telah lapangkan|bagimu|dadamu
+94:2	Dan Kami telah hapuskan|darimu|bebanmu
+94:3	yang|memberatkan|belakangmu
+94:4	Dan Kami tinggikan|bagimu|sebutanmu
+94:5	Maka sesungguhnya|bersama|kesukaran|ada kemudahan
+94:6	Sesungguhnya|bersama|kesukaran|ada kemudahan
+94:7	Maka apabila|engkau telah selesai (sesuatu kerja)|bersungguh-sungguhlah (dengan kerja lain)
+94:8	Dan kepada|Tuhanmu|hendaklah engkau berharap
+97:1	Sesungguhnya Kami|telah menurunkannya (al-Quran)|pada|malam|al-Qadar
+97:2	Dan apakah|yang memberitahumu|apakah|malam|al-Qadar itu
+97:3	Malam|al-Qadar|lebih baik|daripada|seribu|bulan
+97:4	Turun|para malaikat|dan Jibril|padanya|dengan izin|Tuhan mereka|kerana|setiap|urusan
+97:5	Sejahteralah|malam itu|hingga|terbit|fajar
+105:1	Tidakkah|engkau melihat|bagaimana|telah bertindak|Tuhanmu|terhadap tentera|bergajah
+105:2	Bukankah|Dia telah menjadikan|tipu daya mereka|dalam|kesia-siaan
+105:3	Dan Dia hantarkan|ke atas mereka|burung|berpasukan-pasukan
+105:4	yang melempari mereka|dengan batu-batu|dari|tanah yang dibakar
+105:5	lalu Dia jadikan mereka|seperti daun-daun kering|yang dimakan (ulat)
+2:126#4-18	Wahai Tuhanku|jadikanlah|(negeri) ini|negeri|yang aman|dan kurniakanlah rezeki|kepada penduduknya|dari|buah-buahan|(iaitu) sesiapa yang|beriman|di antara mereka|kepada Allah|dan hari|akhirat
+2:127#8-	Wahai Tuhan kami|terimalah|daripada kami|sesungguhnya Engkau|Engkaulah|Yang Maha Mendengar|Yang Maha Mengetahui
+2:128	Wahai Tuhan kami|dan jadikanlah kami|berdua orang yang berserah diri|kepada-Mu|dan dari|keturunan kami|umat|yang berserah diri|kepada-Mu|dan tunjukkanlah kepada kami|cara-cara ibadat kami|dan terimalah taubat|kami|sesungguhnya Engkau|Engkaulah|Maha Penerima taubat|Maha Mengasihani
+2:156#6-	Sesungguhnya kami|milik Allah|dan sesungguhnya kami|kepada-Nya|kami kembali
+2:201#4-	Wahai Tuhan kami|berilah kami|di|dunia|kebaikan|dan di|akhirat|kebaikan|dan peliharalah kami|dari azab|neraka
+2:250#6-	Wahai Tuhan kami|curahkanlah|ke atas kami|kesabaran|dan teguhkanlah|pendirian (tapak kaki) kami|dan menangkanlah kami|terhadap|kaum|yang kafir
+3:8	Wahai Tuhan kami|janganlah|Engkau pesongkan|hati kami|sesudah|(Engkau) telah|memberi petunjuk kepada kami|dan kurniakanlah|kepada kami|dari|sisi-Mu|rahmat|sesungguhnya Engkau|Engkaulah|Maha Pemberi
+3:16#3-	Wahai Tuhan kami|sesungguhnya kami|telah beriman|maka ampunkanlah|bagi kami|dosa-dosa kami|dan peliharalah kami|dari azab|neraka
+3:38#6-	Wahai Tuhanku|kurniakanlah|kepadaku|dari|sisi-Mu|zuriat|yang baik|sesungguhnya Engkau|Maha Mendengar|doa
+3:147#7-	Wahai Tuhan kami|ampunkanlah|bagi kami|dosa-dosa kami|dan perbuatan kami yang melampau|dalam|urusan kami|dan teguhkanlah|pendirian kami|dan menangkanlah kami|terhadap|kaum|yang kafir
+3:173#14-	Cukuplah bagi kami|Allah|dan Dialah sebaik-baik|tempat berserah
+3:191#13-	Wahai Tuhan kami|tidaklah|Engkau ciptakan|ini (semua)|dengan sia-sia|Maha Suci Engkau|maka peliharalah kami|dari azab|neraka
+3:192	Wahai Tuhan kami|sesungguhnya Engkau|sesiapa yang|Engkau masukkan|ke dalam neraka|maka sungguh|Engkau telah menghinakannya|dan tiada|bagi orang-orang zalim|seorang pun|penolong
+3:193	Wahai Tuhan kami|sesungguhnya kami|telah mendengar|seorang penyeru|yang menyeru|kepada iman|(katanya) hendaklah|berimanlah kamu|kepada Tuhan kamu|maka kami pun beriman|Wahai Tuhan kami|maka ampunkanlah|bagi kami|dosa-dosa kami|dan hapuskanlah|dari kami|kesalahan-kesalahan kami|dan wafatkanlah kami|bersama|orang-orang yang berbakti
+3:194	Wahai Tuhan kami|dan berikanlah kami|apa yang|Engkau janjikan kepada kami|melalui|rasul-rasul-Mu|dan janganlah|Engkau hinakan kami|pada hari|kiamat|sesungguhnya Engkau|tidak|memungkiri|janji
+7:23#2-	Wahai Tuhan kami|kami telah menzalimi|diri kami sendiri|dan jika|tidak|Engkau ampunkan|bagi kami|dan Engkau rahmati kami|nescaya kami menjadi|dari kalangan|orang-orang yang rugi
+7:126#11-	Wahai Tuhan kami|limpahkanlah|ke atas kami|kesabaran|dan wafatkanlah kami|dalam keadaan berserah diri (Islam)
+9:129#4-	Cukuplah bagiku|Allah|tiada|tuhan (yang disembah)|melainkan|Dia|kepada-Nya|aku bertawakal|dan Dialah|Tuhan|yang memiliki Arasy|yang agung
+10:85#5-	Wahai Tuhan kami|janganlah|Engkau jadikan kami|sasaran fitnah (ujian)|bagi kaum|yang zalim
+10:86	Dan selamatkanlah kami|dengan rahmat-Mu|dari|kaum|yang kafir
+11:41#4-	Dengan nama|Allah|(bahtera ini) bergerak|dan berlabuhnya|Sesungguhnya|Tuhanku|Maha Pengampun|Maha Mengasihani
+12:64#12-	Maka Allah|sebaik-baik|Penjaga|dan Dialah|Yang Paling Mengasihani|di antara yang mengasihani
+12:101	Wahai Tuhanku|sesungguhnya|Engkau telah kurniakan kepadaku|sebahagian dari|kekuasaan|dan Engkau ajarkan kepadaku|sebahagian dari|tafsiran|mimpi|Wahai Pencipta|langit|dan bumi|Engkaulah|Pelindungku|di|dunia|dan akhirat|wafatkanlah aku|dalam keadaan Islam|dan hubungkanlah aku|dengan orang-orang yang soleh
+14:35#4-	Wahai Tuhanku|jadikanlah|ini|negeri|yang aman|dan jauhkanlah aku|serta anak-anakku|daripada|menyembah|berhala
+14:40	Wahai Tuhanku|jadikanlah aku|orang yang mendirikan|solat|dan (demikian juga) dari|zuriatku|Wahai Tuhan kami|dan terimalah|doaku
+14:41	Wahai Tuhan kami|ampunkanlah|bagiku|dan bagi kedua ibu bapaku|dan bagi orang-orang mukmin|pada hari|berlakunya|hisab
+17:24#8-	Wahai Tuhanku|kasihanilah keduanya|sebagaimana|mereka mendidikku|sewaktu kecil
+17:80#2-	Wahai Tuhanku|masukkanlah aku|(ke tempat) masuk|yang benar|dan keluarkanlah aku|(dari tempat) keluar|yang benar|dan jadikanlah|bagiku|dari|sisi-Mu|kekuasaan (hujah)|yang menolong
+18:10#7-	Wahai Tuhan kami|kurniakanlah kami|dari|sisi-Mu|rahmat|dan sempurnakanlah|bagi kami|dalam|urusan kami|petunjuk (yang lurus)
+20:25#2-	Wahai Tuhanku|lapangkanlah|bagiku|dadaku
+20:26	Dan mudahkanlah|bagiku|urusanku
+20:27	Dan lepaskanlah|simpulan (kekakuan)|dari|lidahku
+20:28	supaya mereka faham|perkataanku
+20:114#15-	Wahai Tuhanku|tambahkanlah aku|ilmu
+21:83#5-	Sesungguhnya aku|telah menimpaku|penyakit (kesusahan)|sedangkan Engkau|Yang Paling Mengasihani|di antara yang mengasihani
+21:87#15-	Tiada|tuhan (yang disembah)|melainkan|Engkau|Maha Suci Engkau|sesungguhnya aku|adalah|dari kalangan|orang-orang yang zalim
+21:89#5-	Wahai Tuhanku|janganlah|Engkau biarkan aku|seorang diri (tanpa zuriat)|dan Engkaulah|sebaik-baik|yang mewarisi
+23:29#2-	Wahai Tuhanku|tempatkanlah aku|di tempat|yang diberkati|dan Engkaulah|sebaik-baik|yang memberi tempat
+23:97#2-	Wahai Tuhanku|aku berlindung|kepada-Mu|dari|hasutan-hasutan|syaitan
+23:98	Dan aku berlindung|kepada-Mu|wahai Tuhanku|daripada|mereka hadir kepadaku
+23:118#2-	Wahai Tuhanku|ampunkanlah|dan rahmatilah|dan Engkaulah|sebaik-baik|yang memberi rahmat
+25:74#3-	Wahai Tuhan kami|kurniakanlah|kepada kami|dari|pasangan-pasangan kami|dan zuriat keturunan kami|penyejuk|mata (hati)|dan jadikanlah kami|bagi orang-orang yang bertakwa|pemimpin (ikutan)
+27:19#6-	Wahai Tuhanku|ilhamkanlah aku|supaya|aku tetap bersyukur|akan nikmat-Mu|yang|Engkau kurniakan|kepadaku|dan kepada|kedua ibu bapaku|dan supaya|aku mengerjakan|amal soleh|yang Engkau redai|dan masukkanlah aku|dengan rahmat-Mu|dalam (golongan)|hamba-hamba-Mu|yang soleh
+28:24#8-	Wahai Tuhanku|sesungguhnya aku|terhadap apa sahaja|yang Engkau turunkan|kepadaku|dari|kebaikan|sangat berhajat
+37:100	Wahai Tuhanku|kurniakanlah|kepadaku|dari kalangan|orang-orang yang soleh
+40:44#5-	Dan aku serahkan|urusanku|kepada|Allah|Sesungguhnya|Allah|Maha Melihat|akan hamba-hamba-Nya
+43:13#12-	Maha Suci|(Allah) yang|telah menundukkan|bagi kami|(kenderaan) ini|sedangkan tidaklah|kami|terhadapnya|mampu menguasainya
+43:14	Dan sesungguhnya kami|kepada|Tuhan kami|pasti kembali
+46:15#22-	Wahai Tuhanku|ilhamkanlah aku|supaya|aku tetap bersyukur|akan nikmat-Mu|yang|Engkau kurniakan|kepadaku|dan kepada|kedua ibu bapaku|dan supaya|aku mengerjakan|amal soleh|yang Engkau redai|dan perbaikilah|bagiku|pada|zuriat keturunanku|sesungguhnya aku|bertaubat|kepada-Mu|dan sesungguhnya aku|dari|orang-orang yang berserah diri (Islam)
+59:10#6-	Wahai Tuhan kami|ampunkanlah|bagi kami|dan bagi saudara-saudara kami|yang|telah mendahului kami|dalam iman|dan janganlah|Engkau jadikan|dalam|hati kami|perasaan dengki (dendam)|terhadap orang-orang yang|beriman|Wahai Tuhan kami|sesungguhnya Engkau|Amat Melimpah belas kasihan-Mu|Maha Mengasihani
+60:4#46-	Wahai Tuhan kami|kepada-Mu|kami bertawakal|dan kepada-Mu|kami kembali (bertaubat)|dan kepada-Mu|tempat kembali
+66:8#35-	Wahai Tuhan kami|sempurnakanlah|bagi kami|cahaya kami|dan ampunkanlah|kami|sesungguhnya Engkau|atas|tiap-tiap|sesuatu|Maha Berkuasa
+71:28	Wahai Tuhanku|ampunkanlah|bagiku|dan bagi kedua ibu bapaku|dan bagi sesiapa yang|masuk|ke rumahku|dengan beriman|dan bagi orang-orang mukmin lelaki|dan perempuan|dan janganlah|Engkau tambahkan|orang-orang yang zalim|melainkan|kebinasaan
+4:75#15-	Wahai Tuhan kami|keluarkanlah kami|dari|ini|negeri|yang zalim|penduduknya|dan jadikanlah|bagi kami|dari|sisi-Mu|pelindung|dan jadikanlah|bagi kami|dari|sisi-Mu|penolong
+13:39	Allah menghapuskan|(oleh) Allah|apa yang|Dia kehendaki|dan Dia tetapkan (apa yang Dia kehendaki)|dan di sisi-Nya|ibu|Kitab (Lauh Mahfuz)
+10:10	Doa mereka|di dalamnya|Maha Suci Engkau|ya Allah|dan ucapan penghormatan mereka|di dalamnya|salam sejahtera|dan akhir|doa mereka|ialah|segala puji|bagi Allah|Tuhan|sekalian alam
+18:39#6-12	Apa yang|dikehendaki|Allah (itulah yang berlaku)|tiada|kekuatan|melainkan|dengan (pertolongan) Allah

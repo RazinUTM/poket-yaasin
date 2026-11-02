@@ -1,0 +1,380 @@
+# Doa rutin harian, solat & masjid, pagi-petang, perjalanan.
+# Teks Arab hadis disalin daripada pangkalan sunnah.com (penomboran sunnah.com) dan disemak oleh tools/semak_hadis.py.
+
+- id: bangun-tidur
+  tajuk: Bangun tidur
+  kat: [harian]
+  tag: [bangun, pagi, tidur]
+  bila: "Sebaik sahaja terjaga daripada tidur"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6312", darjat: Sahih, url: "https://sunnah.com/bukhari:6312"}
+  teks: "الْحَمْدُ لِلَّهِ | الَّذِي أَحْيَانَا | بَعْدَ مَا أَمَاتَنَا | وَإِلَيْهِ النُّشُورُ"
+  frasa: "Segala puji bagi Allah | yang telah menghidupkan kami | sesudah mematikan kami (tidur) | dan kepada-Nya tempat kembali"
+  rumi: "Alhamdu lillaahil ladzii ahyaanaa ba'da maa amaatanaa wa ilaihin nusyuur."
+  makna: "Segala puji bagi Allah yang menghidupkan kami sesudah mematikan kami (menidurkan), dan kepada-Nya kami dibangkitkan."
+
+- id: tidur
+  tajuk: Sebelum tidur
+  kat: [harian]
+  tag: [tidur, malam]
+  bila: "Ketika berbaring untuk tidur"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6324", darjat: Sahih, url: "https://sunnah.com/bukhari:6324"}
+  teks: "بِاسْمِكَ اللَّهُمَّ | أَمُوتُ وَأَحْيَا"
+  frasa: "Dengan nama-Mu, ya Allah | aku mati dan aku hidup"
+  rumi: "Bismikallaahumma amuutu wa ahyaa."
+  makna: "Dengan nama-Mu, ya Allah, aku mati (tidur) dan aku hidup (bangun)."
+
+- id: tidur-aslamtu
+  tajuk: Doa tidur (penyerahan diri)
+  kat: [harian]
+  tag: [tidur, malam, tawakal]
+  bila: "Selepas berwuduk, berbaring di sisi kanan; jadikan ia ucapan terakhir"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6313", darjat: Sahih, url: "https://sunnah.com/bukhari:6313"}
+  nota: "Dalam hadis ini: sesiapa yang membacanya lalu meninggal dunia pada malam itu, dia mati di atas fitrah."
+  teks: "اللَّهُمَّ أَسْلَمْتُ نَفْسِي إِلَيْكَ | وَفَوَّضْتُ أَمْرِي إِلَيْكَ | وَوَجَّهْتُ وَجْهِي إِلَيْكَ | وَأَلْجَأْتُ ظَهْرِي إِلَيْكَ | رَغْبَةً وَرَهْبَةً إِلَيْكَ | لاَ مَلْجَأَ وَلاَ مَنْجَا مِنْكَ إِلاَّ إِلَيْكَ | آمَنْتُ بِكِتَابِكَ الَّذِي أَنْزَلْتَ | وَبِنَبِيِّكَ الَّذِي أَرْسَلْتَ"
+  frasa: "Ya Allah, aku serahkan diriku kepada-Mu | dan aku serahkan urusanku kepada-Mu | dan aku hadapkan wajahku kepada-Mu | dan aku sandarkan belakangku kepada-Mu | dengan penuh harap dan takut kepada-Mu | tiada tempat berlindung dan tempat selamat daripada-Mu melainkan kepada-Mu | Aku beriman dengan kitab-Mu yang Engkau turunkan | dan dengan Nabi-Mu yang Engkau utuskan"
+  rumi: "Allaahumma aslamtu nafsii ilaik, wa fawwadhtu amrii ilaik, wa wajjahtu wajhii ilaik, wa alja'tu zahrii ilaik, raghbatan wa rahbatan ilaik, laa malja'a wa laa manjaa minka illaa ilaik, aamantu bikitaabikal ladzii anzalt, wa binabiyyikal ladzii arsalt."
+  makna: "Ya Allah, aku serahkan diriku, urusanku, wajahku dan sandaranku kepada-Mu, dengan penuh harap dan takut kepada-Mu. Tiada tempat berlindung dan menyelamatkan diri daripada-Mu melainkan kepada-Mu. Aku beriman dengan kitab yang Engkau turunkan dan Nabi yang Engkau utuskan."
+
+- id: tandas-masuk
+  tajuk: Masuk tandas
+  kat: [harian]
+  tag: [tandas, bilik air]
+  bila: "Sebelum melangkah masuk (dengan kaki kiri)"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 142", darjat: Sahih, url: "https://sunnah.com/bukhari:142"}
+  teks: "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ | مِنَ الْخُبُثِ وَالْخَبَائِثِ"
+  frasa: "Ya Allah, sesungguhnya aku berlindung kepada-Mu | daripada syaitan jantan dan syaitan betina"
+  rumi: "Allaahumma innii a'uudzu bika minal khubutsi wal khabaa'its."
+  makna: "Ya Allah, aku berlindung kepada-Mu daripada syaitan jantan dan betina (segala kekotoran dan kejahatan)."
+
+- id: tandas-keluar
+  tajuk: Keluar tandas
+  kat: [harian]
+  tag: [tandas, bilik air]
+  bila: "Selepas keluar (dengan kaki kanan)"
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 30", darjat: Sahih, url: "https://sunnah.com/abudawud:30", nota: "Disahihkan oleh al-Albani."}
+  teks: "غُفْرَانَكَ"
+  frasa: "(Aku memohon) keampunan-Mu"
+  rumi: "Ghufraanak."
+  makna: "Aku memohon keampunan-Mu."
+
+- id: keluar-rumah
+  tajuk: Keluar rumah
+  kat: [harian, musafir]
+  tag: [keluar rumah, kerja, sekolah, perlindungan]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 5095", darjat: Sahih, url: "https://sunnah.com/abudawud:5095", nota: "Disahihkan oleh al-Albani. Dikatakan kepadanya: engkau diberi petunjuk, dicukupkan dan dipelihara."}
+  teks: "بِسْمِ اللَّهِ | تَوَكَّلْتُ عَلَى اللَّهِ | لاَ حَوْلَ وَلاَ قُوَّةَ إِلاَّ بِاللَّهِ"
+  frasa: "Dengan nama Allah | aku bertawakal kepada Allah | tiada daya dan kekuatan melainkan dengan (pertolongan) Allah"
+  rumi: "Bismillaah, tawakkaltu 'alallaah, laa haula wa laa quwwata illaa billaah."
+  makna: "Dengan nama Allah, aku bertawakal kepada Allah; tiada daya dan kekuatan melainkan dengan pertolongan Allah."
+
+- id: masuk-rumah
+  tajuk: Masuk rumah
+  kat: [harian]
+  tag: [masuk rumah, keluarga]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 5096", darjat: "Dha'if", url: "https://sunnah.com/abudawud:5096", nota: "Dinilai dha'if oleh al-Albani. Yang sahih secara umum: menyebut nama Allah ketika masuk rumah (Sahih Muslim, no. 2018) dan memberi salam kepada ahli rumah."}
+  teks: "اللَّهُمَّ إِنِّي أَسْأَلُكَ خَيْرَ الْمَوْلِجِ وَخَيْرَ الْمَخْرَجِ | بِسْمِ اللَّهِ وَلَجْنَا | وَبِسْمِ اللَّهِ خَرَجْنَا | وَعَلَى اللَّهِ رَبِّنَا تَوَكَّلْنَا"
+  frasa: "Ya Allah, aku memohon kebaikan tempat masuk dan kebaikan tempat keluar | dengan nama Allah kami masuk | dan dengan nama Allah kami keluar | dan kepada Allah, Tuhan kami, kami bertawakal"
+  rumi: "Allaahumma innii as'aluka khairal mauliji wa khairal makhraj, bismillaahi walajnaa, wa bismillaahi kharajnaa, wa 'alallaahi rabbinaa tawakkalnaa."
+  makna: "Ya Allah, aku memohon kebaikan ketika masuk dan ketika keluar. Dengan nama Allah kami masuk, dengan nama Allah kami keluar, dan kepada Allah, Tuhan kami, kami bertawakal."
+
+- id: masjid-masuk
+  tajuk: Masuk masjid
+  kat: [solat]
+  tag: [masjid, surau, solat]
+  bila: "Ketika melangkah masuk (kaki kanan)"
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 713a", darjat: Sahih, url: "https://sunnah.com/muslim:713a"}
+  teks: "اللَّهُمَّ افْتَحْ لِي | أَبْوَابَ رَحْمَتِكَ"
+  frasa: "Ya Allah, bukakanlah bagiku | pintu-pintu rahmat-Mu"
+  rumi: "Allaahummaftah lii abwaaba rahmatik."
+  makna: "Ya Allah, bukakanlah bagiku pintu-pintu rahmat-Mu."
+
+- id: masjid-keluar
+  tajuk: Keluar masjid
+  kat: [solat]
+  tag: [masjid, surau, rezeki]
+  bila: "Ketika keluar (kaki kiri)"
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 713a", darjat: Sahih, url: "https://sunnah.com/muslim:713a"}
+  teks: "اللَّهُمَّ إِنِّي أَسْأَلُكَ | مِنْ فَضْلِكَ"
+  frasa: "Ya Allah, sesungguhnya aku memohon kepada-Mu | sebahagian daripada kurnia-Mu"
+  rumi: "Allaahumma innii as'aluka min fadhlik."
+  makna: "Ya Allah, aku memohon kurnia-Mu."
+
+- id: selepas-azan
+  tajuk: Selepas azan
+  kat: [solat]
+  tag: [azan, solat, syafaat]
+  bila: "Selepas menjawab azan dan berselawat"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 614", darjat: Sahih, url: "https://sunnah.com/bukhari:614", nota: "Sesiapa yang membacanya, wajib baginya syafaat Nabi ﷺ pada hari kiamat."}
+  teks: "اللَّهُمَّ رَبَّ هَذِهِ الدَّعْوَةِ التَّامَّةِ | وَالصَّلاَةِ الْقَائِمَةِ | آتِ مُحَمَّدًا الْوَسِيلَةَ وَالْفَضِيلَةَ | وَابْعَثْهُ مَقَامًا مَحْمُودًا | الَّذِي وَعَدْتَهُ"
+  frasa: "Ya Allah, Tuhan bagi seruan yang sempurna ini | dan solat yang akan didirikan | kurniakanlah kepada Muhammad al-wasilah dan keutamaan | dan bangkitkanlah baginda ke kedudukan yang terpuji | yang telah Engkau janjikan kepadanya"
+  rumi: "Allaahumma rabba haadzihid da'watit taammah, was salaatil qaa'imah, aati Muhammadanil wasiilata wal fadhiilah, wab'atshu maqaaman mahmuudanil ladzii wa'adtah."
+  makna: "Ya Allah, Tuhan bagi seruan yang sempurna ini dan solat yang akan didirikan, kurniakanlah kepada Muhammad al-wasilah (kedudukan tertinggi di syurga) dan keutamaan, dan bangkitkanlah baginda ke kedudukan terpuji yang Engkau janjikan."
+
+- id: selepas-wuduk
+  tajuk: Selepas wuduk
+  kat: [solat]
+  tag: [wuduk, solat, taubat]
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 234b; tambahan doa daripada Jami' at-Tirmizi, no. 55", darjat: Sahih, url: "https://sunnah.com/muslim:234b", nota: "Syahadah: Sahih (Muslim). Tambahan doa at-Tirmizi 55: dinilai dha'if oleh Darussalam, disahihkan oleh al-Albani — darjat diperselisihkan."}
+  teks: "أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ | وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ | اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ | وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ"
+  frasa: "Aku bersaksi bahawa tiada tuhan melainkan Allah, Yang Esa, tiada sekutu bagi-Nya | dan aku bersaksi bahawa Muhammad hamba dan pesuruh-Nya | Ya Allah, jadikanlah aku dari kalangan orang yang bertaubat | dan jadikanlah aku dari kalangan orang yang menyucikan diri"
+  rumi: "Asyhadu an laa ilaaha illallaahu wahdahuu laa syariika lah, wa asyhadu anna Muhammadan 'abduhuu wa rasuuluh. Allaahummaj'alnii minat tawwaabiin, waj'alnii minal mutatahhiriin."
+  makna: "Aku bersaksi bahawa tiada tuhan melainkan Allah, Yang Esa tiada sekutu bagi-Nya, dan aku bersaksi bahawa Muhammad hamba dan pesuruh-Nya. Ya Allah, jadikanlah aku dari kalangan orang yang bertaubat dan orang yang menyucikan diri."
+
+- id: makan-sebelum
+  tajuk: Sebelum makan
+  kat: [harian]
+  tag: [makan, minum]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 5376 (\"sebutlah nama Allah\"); jika terlupa: Sunan Abi Dawud, no. 3767", darjat: Sahih, url: "https://sunnah.com/abudawud:3767"}
+  bahagian:
+    - tajuk: Sebelum makan
+      teks: "بِسْمِ اللَّهِ"
+      frasa: "Dengan nama Allah"
+      rumi: "Bismillaah."
+      makna: "Dengan nama Allah."
+    - tajuk: Jika terlupa di awal
+      teks: "بِسْمِ اللَّهِ | أَوَّلَهُ وَآخِرَهُ"
+      frasa: "Dengan nama Allah | pada awalnya dan akhirnya"
+      rumi: "Bismillaahi awwalahuu wa aakhirah."
+      makna: "Dengan nama Allah, pada awal dan akhirnya."
+
+- id: makan-selepas
+  tajuk: Selepas makan
+  kat: [harian]
+  tag: [makan, minum, syukur]
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 3458", darjat: Hasan, url: "https://sunnah.com/tirmidhi:3458", nota: "Dalam hadis: diampunkan dosanya yang telah lalu."}
+  teks: "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنِي هَذَا | وَرَزَقَنِيهِ | مِنْ غَيْرِ حَوْلٍ مِنِّي وَلاَ قُوَّةٍ"
+  frasa: "Segala puji bagi Allah yang memberiku makan makanan ini | dan mengurniakannya kepadaku | tanpa daya dan kekuatan daripadaku"
+  rumi: "Alhamdu lillaahil ladzii at'amanii haadzaa wa razaqaniihi min ghairi haulin minnii wa laa quwwah."
+  makna: "Segala puji bagi Allah yang memberiku makan makanan ini dan merezekikannya kepadaku tanpa daya dan kekuatan daripadaku."
+
+- id: baju-baru
+  tajuk: Memakai pakaian baharu
+  kat: [harian]
+  tag: [pakaian, baju raya, syukur]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 4020", darjat: Sahih, url: "https://sunnah.com/abudawud:4020", nota: "Disahihkan oleh al-Albani."}
+  teks: "اللَّهُمَّ لَكَ الْحَمْدُ | أَنْتَ كَسَوْتَنِيهِ | أَسْأَلُكَ مِنْ خَيْرِهِ وَخَيْرِ مَا صُنِعَ لَهُ | وَأَعُوذُ بِكَ مِنْ شَرِّهِ وَشَرِّ مَا صُنِعَ لَهُ"
+  frasa: "Ya Allah, bagi-Mu segala puji | Engkaulah yang memakaikannya kepadaku | aku memohon kebaikannya dan kebaikan tujuan ia dibuat | dan aku berlindung kepada-Mu daripada keburukannya dan keburukan tujuan ia dibuat"
+  rumi: "Allaahumma lakal hamdu anta kasautaniih, as'aluka min khairihii wa khairi maa shuni'a lah, wa a'uudzu bika min syarrihii wa syarri maa shuni'a lah."
+  makna: "Ya Allah, bagi-Mu segala puji; Engkaulah yang memakaikannya kepadaku. Aku memohon kebaikannya dan kebaikan tujuan ia dibuat, dan berlindung kepada-Mu daripada keburukannya dan keburukan tujuan ia dibuat."
+
+- id: bersin
+  tajuk: Bersin dan menjawabnya
+  kat: [harian]
+  tag: [bersin, adab]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6224", darjat: Sahih, url: "https://sunnah.com/bukhari:6224"}
+  bahagian:
+    - tajuk: Orang yang bersin
+      teks: "الْحَمْدُ لِلَّهِ"
+      frasa: "Segala puji bagi Allah"
+      rumi: "Alhamdu lillaah."
+      makna: "Segala puji bagi Allah."
+    - tajuk: Orang yang mendengar
+      teks: "يَرْحَمُكَ اللَّهُ"
+      frasa: "Semoga Allah merahmatimu"
+      rumi: "Yarhamukallaah."
+      makna: "Semoga Allah merahmatimu."
+    - tajuk: Jawapan orang yang bersin
+      teks: "يَهْدِيكُمُ اللَّهُ | وَيُصْلِحُ بَالَكُمْ"
+      frasa: "Semoga Allah memberi petunjuk kepada kamu | dan memperbaiki keadaan kamu"
+      rumi: "Yahdiikumullaahu wa yuslihu baalakum."
+      makna: "Semoga Allah memberi kamu petunjuk dan memperbaiki keadaan kamu."
+
+- id: musafir
+  tajuk: Doa musafir
+  kat: [musafir]
+  tag: [musafir, perjalanan, balik kampung, umrah, cuti, kenderaan]
+  bila: "Selepas menaiki kenderaan untuk perjalanan jauh (baca takbir 3 kali dahulu)"
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 1342", darjat: Sahih, url: "https://sunnah.com/muslim:1342"}
+  nota: "Bahagian awal hadis ini ialah {{43:13-14}} (lihat doa naik kenderaan). Apabila pulang, tambah: Aayibuuna taa'ibuuna 'aabiduuna lirabbinaa haamiduun."
+  bahagian:
+    - teks: "اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا | الْبِرَّ وَالتَّقْوَى | وَمِنَ الْعَمَلِ مَا تَرْضَى | اللَّهُمَّ هَوِّنْ عَلَيْنَا سَفَرَنَا هَذَا | وَاطْوِ عَنَّا بُعْدَهُ | اللَّهُمَّ أَنْتَ الصَّاحِبُ فِي السَّفَرِ | وَالْخَلِيفَةُ فِي الأَهْلِ | اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ | وَكَآبَةِ الْمَنْظَرِ | وَسُوءِ الْمُنْقَلَبِ فِي الْمَالِ وَالأَهْلِ"
+      frasa: "Ya Allah, kami memohon kepada-Mu dalam perjalanan kami ini | kebaikan dan ketakwaan | dan amalan yang Engkau redai | Ya Allah, mudahkanlah perjalanan kami ini | dan dekatkanlah jaraknya bagi kami | Ya Allah, Engkaulah teman dalam perjalanan | dan pengganti (penjaga) bagi keluarga | Ya Allah, aku berlindung kepada-Mu daripada kesukaran perjalanan | dan pemandangan yang menyedihkan | dan keadaan buruk ketika kembali pada harta dan keluarga"
+      rumi: "Allaahumma innaa nas'aluka fii safarinaa haadzal birra wat taqwaa, wa minal 'amali maa tardhaa. Allaahumma hawwin 'alainaa safaranaa haadzaa watwi 'annaa bu'dah. Allaahumma antas saahibu fis safari wal khaliifatu fil ahl. Allaahumma innii a'uudzu bika min wa'tsaa'is safari wa ka'aabatil manzari wa suu'il munqalabi fil maali wal ahl."
+      makna: "Ya Allah, kami memohon dalam perjalanan ini kebaikan, ketakwaan dan amalan yang Engkau redai. Ya Allah, mudahkanlah perjalanan kami dan dekatkanlah jaraknya. Engkaulah teman dalam perjalanan dan penjaga keluarga yang ditinggalkan. Aku berlindung kepada-Mu daripada kesukaran perjalanan, pemandangan yang menyedihkan dan keadaan buruk ketika pulang pada harta dan keluarga."
+
+- id: lepas-musafir
+  tajuk: Melepaskan orang bermusafir
+  kat: [musafir, keluarga]
+  tag: [musafir, umrah, haji, belajar luar negara, perpisahan]
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 3443", darjat: Hasan, url: "https://sunnah.com/tirmidhi:3443"}
+  teks: "أَسْتَوْدِعُ اللَّهَ دِينَكَ | وَأَمَانَتَكَ | وَخَوَاتِيمَ عَمَلِكَ"
+  frasa: "Aku amanahkan kepada Allah agamamu | dan amanahmu | dan kesudahan amalanmu"
+  rumi: "Astaudi'ullaaha diinaka wa amaanataka wa khawaatiima 'amalik."
+  makna: "Aku amanahkan kepada Allah agamamu, amanahmu dan kesudahan amalanmu."
+
+- id: pagi-petang-amsaina
+  tajuk: Zikir pagi dan petang (al-Mulku lillah)
+  kat: [pagi-petang]
+  tag: [pagi, petang, zikir]
+  bila: "Pagi (selepas Subuh) gantikan أَمْسَيْنَا dengan أَصْبَحْنَا dan هَذِهِ اللَّيْلَةِ dengan هَذَا الْيَوْمِ"
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 2723a", darjat: Sahih, url: "https://sunnah.com/muslim:2723a"}
+  teks: "أَمْسَيْنَا وَأَمْسَى الْمُلْكُ لِلَّهِ | وَالْحَمْدُ لِلَّهِ | لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ | لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ | وَهُوَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ | اللَّهُمَّ أَسْأَلُكَ خَيْرَ هَذِهِ اللَّيْلَةِ | وَأَعُوذُ بِكَ مِنْ شَرِّ هَذِهِ اللَّيْلَةِ وَشَرِّ مَا بَعْدَهَا | اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْكَسَلِ وَسُوءِ الْكِبَرِ | اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابٍ فِي النَّارِ وَعَذَابٍ فِي الْقَبْرِ"
+  frasa: "Kami berada di waktu petang dan kerajaan ini milik Allah | dan segala puji bagi Allah | tiada tuhan melainkan Allah, Yang Esa, tiada sekutu bagi-Nya | bagi-Nya kerajaan dan bagi-Nya segala puji | dan Dia Maha Berkuasa atas segala sesuatu | Ya Allah, aku memohon kebaikan malam ini | dan aku berlindung kepada-Mu daripada keburukan malam ini dan keburukan selepasnya | Ya Allah, aku berlindung kepada-Mu daripada sifat malas dan keburukan usia tua | Ya Allah, aku berlindung kepada-Mu daripada azab neraka dan azab kubur"
+  rumi: "Amsainaa wa amsal mulku lillaah, walhamdu lillaah, laa ilaaha illallaahu wahdahuu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai'in qadiir. Allaahumma as'aluka khaira haadzihil lailah, wa a'uudzu bika min syarri haadzihil lailati wa syarri maa ba'dahaa. Allaahumma innii a'uudzu bika minal kasali wa suu'il kibar. Allaahumma innii a'uudzu bika min 'adzaabin fin naari wa 'adzaabin fil qabr."
+  makna: "Kami memasuki waktu petang dan seluruh kerajaan milik Allah; segala puji bagi Allah. Tiada tuhan melainkan Allah, Yang Esa tiada sekutu bagi-Nya; bagi-Nya kerajaan dan pujian, dan Dia Maha Berkuasa atas segala sesuatu. Ya Allah, aku memohon kebaikan malam ini dan berlindung daripada keburukannya dan keburukan selepasnya; aku berlindung daripada sifat malas, keburukan usia tua, azab neraka dan azab kubur."
+
+- id: pagi-petang-bika
+  tajuk: Zikir pagi dan petang (Bika asbahna)
+  kat: [pagi-petang]
+  tag: [pagi, petang, zikir, tawakal]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 5068; Jami' at-Tirmizi, no. 3391", darjat: Sahih, url: "https://sunnah.com/abudawud:5068"}
+  bahagian:
+    - tajuk: Pagi
+      teks: "اللَّهُمَّ بِكَ أَصْبَحْنَا | وَبِكَ أَمْسَيْنَا | وَبِكَ نَحْيَا وَبِكَ نَمُوتُ | وَإِلَيْكَ النُّشُورُ"
+      frasa: "Ya Allah, dengan-Mu kami berpagi | dan dengan-Mu kami berpetang | dengan-Mu kami hidup dan dengan-Mu kami mati | dan kepada-Mu kebangkitan"
+      rumi: "Allaahumma bika asbahnaa, wa bika amsainaa, wa bika nahyaa wa bika namuutu wa ilaikan nusyuur."
+      makna: "Ya Allah, dengan-Mu kami berada di waktu pagi dan petang, dengan-Mu kami hidup dan mati, dan kepada-Mu kami dibangkitkan."
+    - tajuk: Petang
+      teks: "اللَّهُمَّ بِكَ أَمْسَيْنَا | وَبِكَ أَصْبَحْنَا | وَبِكَ نَحْيَا وَبِكَ نَمُوتُ | وَإِلَيْكَ الْمَصِيرُ"
+      frasa: "Ya Allah, dengan-Mu kami berpetang | dan dengan-Mu kami berpagi | dengan-Mu kami hidup dan dengan-Mu kami mati | dan kepada-Mu tempat kembali"
+      rumi: "Allaahumma bika amsainaa, wa bika asbahnaa, wa bika nahyaa wa bika namuutu wa ilaikal mashiir."
+      makna: "Ya Allah, dengan-Mu kami berada di waktu petang dan pagi, dengan-Mu kami hidup dan mati, dan kepada-Mu tempat kembali."
+
+- id: la-yadurru
+  tajuk: Bismillahilladzi la yadhurru (pendinding)
+  kat: [pagi-petang, perlindungan]
+  tag: [pagi, petang, pendinding, bala, wabak, bencana]
+  ulang: 3
+  bila: "Pagi dan petang, 3 kali"
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 5088; Jami' at-Tirmizi, no. 3388", darjat: Sahih, url: "https://sunnah.com/abudawud:5088", nota: "Disahihkan oleh al-Albani: sesiapa membacanya 3 kali tidak akan ditimpa bala secara mengejut hingga pagi/petang."}
+  teks: "بِسْمِ اللَّهِ الَّذِي | لاَ يَضُرُّ مَعَ اسْمِهِ شَىْءٌ | فِي الأَرْضِ وَلاَ فِي السَّمَاءِ | وَهُوَ السَّمِيعُ الْعَلِيمُ"
+  frasa: "Dengan nama Allah yang | tidak memudaratkan bersama nama-Nya sesuatu pun | di bumi dan tidak juga di langit | dan Dialah Yang Maha Mendengar lagi Maha Mengetahui"
+  rumi: "Bismillaahil ladzii laa yadhurru ma'asmihii syai'un fil ardhi wa laa fis samaa'i wa huwas samii'ul 'aliim."
+  makna: "Dengan nama Allah, yang bersama nama-Nya tiada sesuatu pun di bumi atau di langit dapat memudaratkan; dan Dialah Yang Maha Mendengar lagi Maha Mengetahui."
+
+- id: kalimat-tammat
+  tajuk: A'udzu bikalimatillah at-tammat
+  kat: [perlindungan, pagi-petang]
+  tag: [petang, pindah rumah, singgah, hotel, pendinding, binatang berbisa]
+  ulang: 3
+  bila: "Petang hari, atau ketika singgah/berpindah ke sesuatu tempat"
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 2708b, 2709a", darjat: Sahih, url: "https://sunnah.com/muslim:2708b", nota: "Sesiapa singgah di sesuatu tempat lalu membacanya, tiada sesuatu pun memudaratkannya hingga dia berangkat."}
+  teks: "أَعُوذُ بِكَلِمَاتِ اللَّهِ التَّامَّاتِ | مِنْ شَرِّ مَا خَلَقَ"
+  frasa: "Aku berlindung dengan kalimah-kalimah Allah yang sempurna | daripada kejahatan makhluk yang Dia ciptakan"
+  rumi: "A'uudzu bikalimaatillaahit taammaati min syarri maa khalaq."
+  makna: "Aku berlindung dengan kalimah-kalimah Allah yang sempurna daripada kejahatan segala yang Dia ciptakan."
+
+- id: afwa-afiah
+  tajuk: Memohon kemaafan dan afiat (pagi-petang)
+  kat: [pagi-petang, sakit]
+  tag: [pagi, petang, kesihatan, keselamatan, keluarga]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 5074; Sunan Ibn Majah, no. 3871", darjat: Sahih, url: "https://sunnah.com/abudawud:5074", nota: "Rasulullah ﷺ tidak pernah meninggalkan doa ini pagi dan petang (riwayat Ibn Umar)."}
+  teks: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ | فِي الدُّنْيَا وَالآخِرَةِ | اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ | فِي دِينِي وَدُنْيَاىَ وَأَهْلِي وَمَالِي | اللَّهُمَّ اسْتُرْ عَوْرَاتِي | وَآمِنْ رَوْعَاتِي | وَاحْفَظْنِي مِنْ بَيْنِ يَدَىَّ وَمِنْ خَلْفِي | وَعَنْ يَمِينِي وَعَنْ شِمَالِي وَمِنْ فَوْقِي | وَأَعُوذُ بِكَ أَنْ أُغْتَالَ مِنْ تَحْتِي"
+  frasa: "Ya Allah, aku memohon kemaafan dan afiat | di dunia dan akhirat | Ya Allah, aku memohon kemaafan dan afiat | dalam agamaku, duniaku, keluargaku dan hartaku | Ya Allah, tutuplah keaibanku | dan amankanlah ketakutanku | dan peliharalah aku dari hadapanku dan dari belakangku | dari kananku, dari kiriku dan dari atasku | dan aku berlindung kepada-Mu daripada dibinasakan dari bawahku"
+  rumi: "Allaahumma innii as'alukal 'afwa wal 'aafiyata fid dunyaa wal aakhirah. Allaahumma innii as'alukal 'afwa wal 'aafiyata fii diinii wa dunyaaya wa ahlii wa maalii. Allaahummastur 'auraatii, wa aamin rau'aatii, wahfazhnii min baini yadayya wa min khalfii, wa 'an yamiinii wa 'an syimaalii wa min fauqii, wa a'uudzu bika an ughtaala min tahtii."
+  makna: "Ya Allah, aku memohon kemaafan dan afiat di dunia dan akhirat, dalam agamaku, duniaku, keluargaku dan hartaku. Ya Allah, tutuplah keaibanku dan amankanlah ketakutanku; peliharalah aku dari hadapan, belakang, kanan, kiri dan atasku, dan aku berlindung kepada-Mu daripada dibinasakan dari bawahku."
+
+- id: ya-hayyu
+  tajuk: Yaa Hayyu Yaa Qayyum
+  kat: [pagi-petang, jiwa]
+  tag: [pagi, petang, kesusahan, istighatsah]
+  sumber: {jenis: hadis, ruj: "Al-Hakim 1/545; Hisn al-Muslim no. 88", darjat: Sahih, url: "https://sunnah.com/hisn:88", nota: "Sanadnya sahih menurut al-Hakim; lihat al-Albani, Sahih at-Targhib 1/273."}
+  teks: "يَا حَيُّ يَا قَيُّومُ | بِرَحْمَتِكَ أَسْتَغِيثُ | أَصْلِحْ لِي شَأْنِي كُلَّهُ | وَلاَ تَكِلْنِي إِلَى نَفْسِي طَرْفَةَ عَيْنٍ"
+  frasa: "Wahai Yang Maha Hidup, wahai Yang Maha Berdiri Sendiri | dengan rahmat-Mu aku memohon pertolongan | perbaikilah segala urusanku | dan jangan Engkau serahkan aku kepada diriku walau sekelip mata"
+  rumi: "Yaa hayyu yaa qayyuum, birahmatika astaghiits, aslih lii sya'nii kullah, wa laa takilnii ilaa nafsii tarfata 'ain."
+  makna: "Wahai Yang Maha Hidup lagi Maha Berdiri Sendiri, dengan rahmat-Mu aku memohon pertolongan; perbaikilah segala urusanku dan jangan Engkau serahkan aku kepada diriku sendiri walau sekelip mata."
+
+- id: sayyidul-istighfar
+  tajuk: Sayyidul Istighfar
+  kat: [pagi-petang, jiwa]
+  tag: [istighfar, taubat, pagi, petang, dosa]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6306", darjat: Sahih, url: "https://sunnah.com/bukhari:6306", nota: "Sesiapa membacanya pada siang hari dengan yakin lalu mati sebelum petang, dia ahli syurga; begitu juga pada malam hari."}
+  teks: "اللَّهُمَّ أَنْتَ رَبِّي | لاَ إِلَهَ إِلاَّ أَنْتَ | خَلَقْتَنِي وَأَنَا عَبْدُكَ | وَأَنَا عَلَى عَهْدِكَ وَوَعْدِكَ مَا اسْتَطَعْتُ | أَعُوذُ بِكَ مِنْ شَرِّ مَا صَنَعْتُ | أَبُوءُ لَكَ بِنِعْمَتِكَ عَلَىَّ | وَأَبُوءُ لَكَ بِذَنْبِي | فَاغْفِرْ لِي | فَإِنَّهُ لاَ يَغْفِرُ الذُّنُوبَ إِلاَّ أَنْتَ"
+  frasa: "Ya Allah, Engkaulah Tuhanku | tiada tuhan melainkan Engkau | Engkau ciptakan aku dan aku hamba-Mu | dan aku di atas perjanjian dan janji-Mu sedaya upayaku | aku berlindung kepada-Mu daripada kejahatan yang aku lakukan | aku mengakui nikmat-Mu ke atasku | dan aku mengakui dosaku | maka ampunilah aku | kerana sesungguhnya tiada yang mengampunkan dosa melainkan Engkau"
+  rumi: "Allaahumma anta rabbii, laa ilaaha illaa ant, khalaqtanii wa ana 'abduk, wa ana 'alaa 'ahdika wa wa'dika mastata't, a'uudzu bika min syarri maa shana't, abuu'u laka bini'matika 'alayya, wa abuu'u laka bidzanbii, faghfir lii, fa innahuu laa yaghfirudz dzunuuba illaa ant."
+  makna: "Ya Allah, Engkaulah Tuhanku, tiada tuhan melainkan Engkau. Engkau menciptakanku dan aku hamba-Mu; aku berpegang pada perjanjian dan janji-Mu sedaya upayaku. Aku berlindung kepada-Mu daripada keburukan perbuatanku; aku mengakui nikmat-Mu ke atasku dan mengakui dosaku. Ampunilah aku, kerana tiada yang mengampunkan dosa melainkan Engkau."
+
+- id: selepas-solat-istighfar
+  tajuk: Selepas salam solat fardu
+  kat: [solat]
+  tag: [selepas solat, istighfar, zikir]
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 591", darjat: Sahih, url: "https://sunnah.com/muslim:591"}
+  bahagian:
+    - teks: "أَسْتَغْفِرُ اللَّهَ"
+      frasa: "Aku memohon ampun kepada Allah"
+      rumi: "Astaghfirullaah."
+      makna: "Aku memohon ampun kepada Allah."
+      ulang: 3
+    - teks: "اللَّهُمَّ أَنْتَ السَّلاَمُ | وَمِنْكَ السَّلاَمُ | تَبَارَكْتَ ذَا الْجَلاَلِ وَالإِكْرَامِ"
+      frasa: "Ya Allah, Engkaulah as-Salam (Maha Sejahtera) | dan daripada-Mu kesejahteraan | Maha Berkat Engkau, wahai Tuhan yang memiliki keagungan dan kemuliaan"
+      rumi: "Allaahumma antas salaam, wa minkas salaam, tabaarakta dzal jalaali wal ikraam."
+      makna: "Ya Allah, Engkaulah Maha Sejahtera dan daripada-Mu kesejahteraan; Maha Berkat Engkau, wahai Tuhan yang memiliki keagungan dan kemuliaan."
+
+- id: selepas-solat-tasbih
+  tajuk: Tasbih, tahmid, takbir selepas solat
+  kat: [solat]
+  tag: [selepas solat, tasbih, zikir]
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 597a", darjat: Sahih, url: "https://sunnah.com/muslim:597a", nota: "Diampunkan kesalahannya walaupun sebanyak buih di lautan.", semak_kecuali: ["سُبْحَانَ اللَّهِ", "الْحَمْدُ لِلَّهِ", "اللَّهُ أَكْبَرُ"]}
+  bahagian:
+    - teks: "سُبْحَانَ اللَّهِ"
+      frasa: "Maha Suci Allah"
+      rumi: "Subhaanallaah."
+      makna: "Maha Suci Allah."
+      ulang: 33
+    - teks: "الْحَمْدُ لِلَّهِ"
+      frasa: "Segala puji bagi Allah"
+      rumi: "Alhamdu lillaah."
+      makna: "Segala puji bagi Allah."
+      ulang: 33
+    - teks: "اللَّهُ أَكْبَرُ"
+      frasa: "Allah Maha Besar"
+      rumi: "Allaahu akbar."
+      makna: "Allah Maha Besar."
+      ulang: 33
+    - tajuk: Pelengkap seratus
+      teks: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ | لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ | وَهُوَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ"
+      frasa: "Tiada tuhan melainkan Allah, Yang Esa, tiada sekutu bagi-Nya | bagi-Nya kerajaan dan bagi-Nya segala puji | dan Dia Maha Berkuasa atas segala sesuatu"
+      rumi: "Laa ilaaha illallaahu wahdahuu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai'in qadiir."
+      makna: "Tiada tuhan melainkan Allah, Yang Esa tiada sekutu bagi-Nya; bagi-Nya kerajaan dan segala puji, dan Dia Maha Berkuasa atas segala sesuatu."
+
+- id: selepas-solat-mania
+  tajuk: Laa maani'a lima a'taita
+  kat: [solat]
+  tag: [selepas solat, tauhid, rezeki]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 844", darjat: Sahih, url: "https://sunnah.com/bukhari:844"}
+  teks: "لاَ إِلَهَ إِلاَّ اللَّهُ وَحْدَهُ لاَ شَرِيكَ لَهُ | لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ | وَهْوَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ | اللَّهُمَّ لاَ مَانِعَ لِمَا أَعْطَيْتَ | وَلاَ مُعْطِيَ لِمَا مَنَعْتَ | وَلاَ يَنْفَعُ ذَا الْجَدِّ مِنْكَ الْجَدُّ"
+  frasa: "Tiada tuhan melainkan Allah, Yang Esa, tiada sekutu bagi-Nya | bagi-Nya kerajaan dan bagi-Nya segala puji | dan Dia Maha Berkuasa atas segala sesuatu | Ya Allah, tiada yang dapat menghalang apa yang Engkau berikan | dan tiada yang dapat memberi apa yang Engkau tahan | dan tidak bermanfaat kekayaan orang yang kaya daripada (azab)-Mu"
+  rumi: "Laa ilaaha illallaahu wahdahuu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai'in qadiir. Allaahumma laa maani'a limaa a'tait, wa laa mu'tiya limaa mana't, wa laa yanfa'u dzal jaddi minkal jadd."
+  makna: "Tiada tuhan melainkan Allah, Yang Esa tiada sekutu bagi-Nya; bagi-Nya kerajaan dan pujian, dan Dia Maha Berkuasa atas segala sesuatu. Ya Allah, tiada yang dapat menghalang apa yang Engkau beri, tiada yang dapat memberi apa yang Engkau tahan, dan kekayaan tidak berguna bagi pemiliknya di hadapan-Mu."
+
+- id: selepas-solat-aini
+  tajuk: A'inni 'ala dzikrika (wasiat kepada Mu'az)
+  kat: [solat]
+  tag: [selepas solat, ibadah, syukur]
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 1522", darjat: Sahih, url: "https://sunnah.com/abudawud:1522", nota: "Rasulullah ﷺ berpesan kepada Mu'az: jangan tinggalkan doa ini pada setiap akhir solat."}
+  teks: "اللَّهُمَّ أَعِنِّي | عَلَى ذِكْرِكَ وَشُكْرِكَ | وَحُسْنِ عِبَادَتِكَ"
+  frasa: "Ya Allah, bantulah aku | untuk mengingati-Mu dan bersyukur kepada-Mu | dan memperelok ibadahku kepada-Mu"
+  rumi: "Allaahumma a'innii 'alaa dzikrika wa syukrika wa husni 'ibaadatik."
+  makna: "Ya Allah, bantulah aku untuk mengingati-Mu, bersyukur kepada-Mu dan memperelok ibadah kepada-Mu."
+
+- id: qunut-subuh
+  tajuk: Doa qunut
+  kat: [solat]
+  tag: [qunut, subuh, witir, solat]
+  bila: "Iktidal rakaat kedua solat Subuh (mazhab Syafi'i) dan witir separuh akhir Ramadan"
+  sumber: {jenis: hadis, ruj: "Sunan Abi Dawud, no. 1425 (diajar kepada al-Hasan bin Ali untuk witir)", darjat: Sahih, url: "https://sunnah.com/abudawud:1425", nota: "Dalam solat jemaah, imam boleh menukar dhamir kepada jamak (اهْدِنَا …)."}
+  teks: "اللَّهُمَّ اهْدِنِي فِيمَنْ هَدَيْتَ | وَعَافِنِي فِيمَنْ عَافَيْتَ | وَتَوَلَّنِي فِيمَنْ تَوَلَّيْتَ | وَبَارِكْ لِي فِيمَا أَعْطَيْتَ | وَقِنِي شَرَّ مَا قَضَيْتَ | إِنَّكَ تَقْضِي وَلاَ يُقْضَى عَلَيْكَ | وَإِنَّهُ لاَ يَذِلُّ مَنْ وَالَيْتَ | وَلاَ يَعِزُّ مَنْ عَادَيْتَ | تَبَارَكْتَ رَبَّنَا وَتَعَالَيْتَ"
+  frasa: "Ya Allah, berilah aku petunjuk bersama orang yang Engkau beri petunjuk | dan berilah aku afiat bersama orang yang Engkau beri afiat | dan peliharalah aku bersama orang yang Engkau pelihara | dan berkatilah bagiku apa yang Engkau kurniakan | dan lindungilah aku daripada keburukan apa yang Engkau tetapkan | Sesungguhnya Engkaulah yang menetapkan dan tiada yang menetapkan ke atas-Mu | dan sesungguhnya tidak hina orang yang Engkau lindungi | dan tidak mulia orang yang Engkau musuhi | Maha Berkat Engkau, wahai Tuhan kami, dan Maha Tinggi"
+  rumi: "Allaahummahdinii fiiman hadait, wa 'aafinii fiiman 'aafait, wa tawallanii fiiman tawallait, wa baarik lii fiimaa a'tait, wa qinii syarra maa qadhait, innaka taqdhii wa laa yuqdhaa 'alaik, wa innahuu laa yadzillu man waalait, wa laa ya'izzu man 'aadait, tabaarakta rabbanaa wa ta'aalait."
+  makna: "Ya Allah, berilah aku petunjuk, afiat dan pemeliharaan bersama orang-orang yang Engkau kurniakan semua itu; berkatilah apa yang Engkau berikan kepadaku, dan lindungilah aku daripada keburukan ketentuan-Mu. Engkaulah yang menentukan dan tiada yang menentukan ke atas-Mu; tidak hina orang yang Engkau lindungi dan tidak mulia orang yang Engkau musuhi. Maha Berkat dan Maha Tinggi Engkau, wahai Tuhan kami."
+
+- id: kafarah-majlis
+  tajuk: Kafarah majlis
+  kat: [majlis]
+  tag: [majlis, mesyuarat, kelas, penutup, taubat]
+  bila: "Sebelum bangun meninggalkan sesuatu majlis/perbualan"
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 3433", darjat: Sahih, url: "https://sunnah.com/tirmidhi:3433", nota: "Diampunkan apa yang berlaku dalam majlis itu."}
+  teks: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ | أَشْهَدُ أَنْ لاَ إِلَهَ إِلاَّ أَنْتَ | أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ"
+  frasa: "Maha Suci Engkau, ya Allah, dan dengan memuji-Mu | aku bersaksi bahawa tiada tuhan melainkan Engkau | aku memohon ampun kepada-Mu dan bertaubat kepada-Mu"
+  rumi: "Subhaanakallaahumma wa bihamdik, asyhadu an laa ilaaha illaa ant, astaghfiruka wa atuubu ilaik."
+  makna: "Maha Suci Engkau ya Allah dan segala puji bagi-Mu; aku bersaksi tiada tuhan melainkan Engkau; aku memohon ampun dan bertaubat kepada-Mu."
+
+- id: jazakallah
+  tajuk: Membalas kebaikan orang
+  kat: [majlis, harian]
+  tag: [terima kasih, adab, hadiah]
+  sumber: {jenis: hadis, ruj: "Jami' at-Tirmizi, no. 2035", darjat: Hasan, url: "https://sunnah.com/tirmidhi:2035", nota: "Sesiapa yang diberi kebaikan lalu mengucapkannya, dia telah memberi pujian yang sempurna."}
+  teks: "جَزَاكَ اللَّهُ خَيْرًا"
+  frasa: "Semoga Allah membalasmu dengan kebaikan"
+  rumi: "Jazaakallaahu khairaa."
+  makna: "Semoga Allah membalasmu dengan kebaikan."

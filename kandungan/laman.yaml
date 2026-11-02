@@ -1,0 +1,17 @@
+# Laman rasmi untuk "Cari dalam laman rasmi" pada skrin Cari. App membuka carian Google terhad kepada domain ini (site:),
+# jadi tiada kandungan laman disimpan dalam app. negeri = awalan kod zon waktu solat JAKIM: laman mufti negeri dipilih
+# ikut zon pengguna. Domain disahkan dibuka pada 2 Nov 2026 kecuali yang dinyatakan; Terengganu dan Sarawak belum
+# disahkan (laman tidak dapat dibuka), jadi tidak disenaraikan. Pengguna zon itu mendapat Mufti WP dan e-SMAF.
+- {nama: Pejabat Mufti Wilayah Persekutuan, ringkas: Mufti WP, domain: muftiwp.gov.my, negeri: WLY}
+- {nama: e-SMAF JAKIM (keputusan fatwa kebangsaan dan negeri), ringkas: e-SMAF JAKIM, domain: e-smaf.islam.gov.my}
+- {nama: Jabatan Mufti Johor, ringkas: Mufti Johor, domain: mufti.johor.gov.my, negeri: JHR}
+- {nama: Jabatan Mufti Negeri Kedah, ringkas: Mufti Kedah, domain: mufti.kedah.gov.my, negeri: KDH}
+- {nama: Jabatan Mufti Negeri Kelantan, ringkas: Mufti Kelantan, domain: mufti.kelantan.gov.my, negeri: KTN}
+- {nama: Jabatan Mufti Negeri Melaka, ringkas: Mufti Melaka, domain: muftimelaka.gov.my, negeri: MLK}
+- {nama: Jabatan Mufti Kerajaan Negeri Sembilan, ringkas: Mufti Negeri Sembilan, domain: muftins.gov.my, negeri: NGS}
+- {nama: Jabatan Mufti Negeri Pahang, ringkas: Mufti Pahang, domain: mufti.pahang.gov.my, negeri: PHG}   # laman dalam penyelenggaraan pada 2 Nov 2026
+- {nama: Jabatan Mufti Negeri Perak, ringkas: Mufti Perak, domain: mufti.perak.gov.my, negeri: PRK}
+- {nama: Jabatan Mufti Negeri Perlis, ringkas: Mufti Perlis, domain: muftiperlis.gov.my, negeri: PLS}
+- {nama: Jabatan Mufti Negeri Pulau Pinang, ringkas: Mufti Pulau Pinang, domain: mufti.penang.gov.my, negeri: PNG}
+- {nama: Pejabat Mufti Negeri Sabah, ringkas: Mufti Sabah, domain: mufti.sabah.gov.my, negeri: SBH}
+- {nama: Jabatan Mufti Negeri Selangor, ringkas: Mufti Selangor, domain: muftiselangor.gov.my, negeri: SGR}

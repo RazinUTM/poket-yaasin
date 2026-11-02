@@ -1,0 +1,842 @@
+/* Poket Yaasin · Tahlil · Doa — gaya.
+   Token: kertas sejuk, dakwat hijau-gelap, hijau lazuardi, emas iluminasi (HANYA untuk penanda suci). */
+@font-face{font-family:"Amiri Quran";src:url(../fonts/amiri-quran.woff2) format("woff2");font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+FB50-FDFF,U+FE70-FEFC,U+0020}
+@font-face{font-family:"Amiri Quran";src:url(../fonts/amiri-quran-latin.woff2) format("woff2");font-display:swap;unicode-range:U+2000-206F}
+@font-face{font-family:"Amiri";src:url(../fonts/amiri-400.woff2) format("woff2");font-weight:400;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFC,U+200C-200E}
+@font-face{font-family:"Amiri";src:url(../fonts/amiri-700.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+08A0-08FF,U+FB50-FDFF,U+FE70-FEFC,U+200C-200E}
+@font-face{font-family:"Atkinson";src:url(../fonts/atkinson-400.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Atkinson";src:url(../fonts/atkinson-400i.woff2) format("woff2");font-weight:400;font-style:italic;font-display:swap}
+@font-face{font-family:"Atkinson";src:url(../fonts/atkinson-600.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Atkinson";src:url(../fonts/atkinson-700.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:"Aref Ruqaa";src:url(../fonts/aref-ruqaa-700.woff2) format("woff2");font-weight:700;font-display:swap;unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0897-08E1,U+08E3-08FF,U+200C-200E,U+2010-2011,U+204F,U+2E41,U+FB50-FDFF,U+FE70-FE74,U+FE76-FEFC}
+
+:root{
+  --kertas:#F3F5F1; --muka:#FFFFFF; --muka-2:#E8EEEA; --dakwat:#1C2A27; --kabur:#55655F; --garis:#D6DFDA;
+  --hijau:#0E5E57; --hijau-dalam:#0A3F3B; --hijau-lembut:#DCEBE7; --hijau-dakwat:#FFFFFF;
+  --emas:#B48A2C; --emas-lembut:#F3E8CC; --emas-dakwat:#4A3608;
+  --b-quran:#0E5E57; --b-sahih:#2F6B3C; --b-hasan:#2E5F86; --b-beza:#8A5F0E; --b-dhaif:#8E3B3B; --b-ulama:#5A5786;
+  --bayang:0 1px 2px rgba(20,40,36,.06),0 6px 18px rgba(20,40,36,.07);
+  --ui:"Atkinson",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --quran:"Amiri Quran","Amiri","Noto Naskh Arabic",serif;
+  --arab:"Amiri","Amiri Quran","Noto Naskh Arabic",serif;
+  --skala:1; --sz-q:calc(30px*var(--skala)); --sz-d:calc(27px*var(--skala)); --sz-t:17px;
+  --r:14px; --r-k:10px; --lebar:600px;
+  color-scheme:light;
+}
+:root[data-tema="malam"]{
+  --kertas:#0F1F1D; --muka:#152826; --muka-2:#1C3330; --dakwat:#E6EEEA; --kabur:#9DB1AA; --garis:#27413D;
+  --hijau:#6CC2B5; --hijau-dalam:#9ED9CF; --hijau-lembut:#1A3A36; --hijau-dakwat:#08201D;
+  --emas:#D9B45E; --emas-lembut:#2E2814; --emas-dakwat:#F6E7BF;
+  --b-quran:#6CC2B5; --b-sahih:#86C694; --b-hasan:#8DB7DE; --b-beza:#E0B060; --b-dhaif:#E39B9B; --b-ulama:#B4B1E3;
+  --bayang:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.3);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-tema="cerah"]){
+    --kertas:#0F1F1D; --muka:#152826; --muka-2:#1C3330; --dakwat:#E6EEEA; --kabur:#9DB1AA; --garis:#27413D;
+    --hijau:#6CC2B5; --hijau-dalam:#9ED9CF; --hijau-lembut:#1A3A36; --hijau-dakwat:#08201D;
+    --emas:#D9B45E; --emas-lembut:#2E2814; --emas-dakwat:#F6E7BF;
+    --b-quran:#6CC2B5; --b-sahih:#86C694; --b-hasan:#8DB7DE; --b-beza:#E0B060; --b-dhaif:#E39B9B; --b-ulama:#B4B1E3;
+    --bayang:0 1px 2px rgba(0,0,0,.35),0 8px 22px rgba(0,0,0,.3);
+    color-scheme:dark;
+  }
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{margin:0;background:var(--kertas);color:var(--dakwat);font-family:var(--ui);font-size:var(--sz-t);line-height:1.55;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+button,input,select,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+a{color:var(--hijau)}
+:focus-visible{outline:3px solid var(--emas);outline-offset:2px;border-radius:6px}
+[hidden]{display:none!important}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ------------------------------------------------ kerangka */
+.app{min-height:100dvh;padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+.bar{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--kertas) 92%,transparent);backdrop-filter:saturate(1.4) blur(10px);-webkit-backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--garis);padding-top:env(safe-area-inset-top)}
+.bar-in{max-width:var(--lebar);margin:0 auto;display:flex;align-items:center;gap:6px;padding:8px 10px 8px 16px;min-height:56px}
+.bar h1{font-size:19px;font-weight:700;margin:0;flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:.005em}
+.bar .sub{display:block;font-size:13px;font-weight:400;color:var(--kabur)}
+.ib{width:44px;height:44px;border:0;background:transparent;border-radius:12px;display:grid;place-items:center;color:var(--dakwat);flex:none}
+.ib:hover{background:var(--muka-2)}
+.ib svg{width:23px;height:23px}
+.ib.on{color:var(--hijau);background:var(--hijau-lembut)}
+main.skrin{max-width:var(--lebar);margin:0 auto;padding:14px 14px 28px}
+
+.tab{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--muka);border-top:1px solid var(--garis);padding-bottom:env(safe-area-inset-bottom)}
+.tab-in{max-width:var(--lebar);margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr)}
+.tab a{display:flex;flex-direction:column;align-items:center;gap:2px;padding:9px 0 8px;text-decoration:none;color:var(--kabur);font-size:12.5px;font-weight:600;min-height:60px}
+.tab a svg{width:24px;height:24px}
+.tab a[aria-current="page"]{color:var(--hijau)}
+.tab a[aria-current="page"] svg{stroke-width:2.2}
+
+/* ------------------------------------------------ elemen asas */
+.kad{background:var(--muka);border:1px solid var(--garis);border-radius:var(--r);padding:14px 16px;box-shadow:var(--bayang)}
+.sek{margin:22px 2px 10px;font-size:15px;font-weight:700;color:var(--kabur);display:flex;align-items:baseline;gap:8px}
+.sek .sp{flex:1}
+.sek button{border:0;background:none;color:var(--hijau);font-weight:600;font-size:14px;padding:6px}
+.kecil{font-size:14px;color:var(--kabur)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 18px;border-radius:12px;border:1px solid var(--garis);background:var(--muka);font-weight:600;color:var(--dakwat);text-decoration:none}
+.btn svg{width:20px;height:20px}
+.btn.utama{background:var(--hijau);border-color:var(--hijau);color:var(--hijau-dakwat)}
+.btn.penuh{width:100%}
+.btn.kecil{min-height:38px;padding:0 12px;font-size:14.5px;color:var(--dakwat)}
+.btn:disabled{opacity:.45}
+.baris{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.cip{display:inline-flex;align-items:center;gap:6px;min-height:38px;padding:0 13px;border-radius:999px;border:1px solid var(--garis);background:var(--muka);font-size:14.5px;font-weight:600;color:var(--dakwat);white-space:nowrap}
+.cip[aria-pressed="true"]{background:var(--hijau);border-color:var(--hijau);color:var(--hijau-dakwat)}
+.cip .ik{font-size:15px;opacity:.85}
+.gulung{display:flex;gap:8px;overflow-x:auto;padding:2px 2px 8px;margin:0 -14px;padding-left:14px;padding-right:14px;scrollbar-width:none}
+.gulung::-webkit-scrollbar{display:none}
+.lencana{display:inline-flex;align-items:center;gap:5px;font-size:13px;font-weight:700;padding:2px 9px;border-radius:999px;border:1.5px solid currentColor;line-height:1.5;white-space:nowrap}
+.b-quran{color:var(--b-quran)} .b-sahih{color:var(--b-sahih)} .b-hasan{color:var(--b-hasan)} .b-beza{color:var(--b-beza)} .b-dhaif{color:var(--b-dhaif)} .b-ulama{color:var(--b-ulama)}
+.medan{width:100%;min-height:48px;border:1.5px solid var(--garis);background:var(--muka);border-radius:12px;padding:10px 14px;font-size:16.5px}
+.medan:focus{border-color:var(--hijau);outline:none}
+label.lbl{display:block;font-size:14px;font-weight:600;color:var(--kabur);margin:12px 2px 6px}
+.cari{position:relative}
+.cari svg{position:absolute;left:14px;top:50%;transform:translateY(-50%);width:20px;height:20px;color:var(--kabur);pointer-events:none}
+.cari .medan{padding-left:44px}
+.kosong{text-align:center;color:var(--kabur);padding:30px 10px}
+hr.halus{border:0;border-top:1px solid var(--garis);margin:16px 0}
+
+/* ------------------------------------------------ Utama */
+.tarikh{display:flex;justify-content:space-between;align-items:flex-end;gap:10px;margin:4px 2px 14px}
+.tarikh .h{font-size:22px;font-weight:700;line-height:1.2}
+.tarikh .m{font-size:14.5px;color:var(--kabur)}
+.hero{position:relative;display:block;text-decoration:none;color:var(--hijau-dakwat);background:var(--hijau-dalam);border-radius:20px;padding:18px 18px 16px;overflow:hidden;box-shadow:var(--bayang)}
+:root[data-tema="malam"] .hero{background:#123B37;color:#E6EEEA}
+@media (prefers-color-scheme:dark){:root:not([data-tema="cerah"]) .hero{background:#123B37;color:#E6EEEA}}
+.hero .kal{font-family:var(--quran);font-size:86px;line-height:1.05;color:var(--emas);text-align:right;margin:-6px 0 2px;direction:rtl}
+.hero .t{font-size:20px;font-weight:700}
+.hero .s{font-size:15px;opacity:.86}
+.hero .prog{height:5px;border-radius:5px;background:rgba(255,255,255,.18);margin-top:12px;overflow:hidden}
+.hero .prog i{display:block;height:100%;background:var(--emas)}
+.hero svg.bingkai{position:absolute;left:-28px;top:-28px;width:150px;height:150px;opacity:.16;color:var(--emas)}
+.konteks{display:grid;gap:10px}
+.kt{background:var(--muka);border:1px solid var(--garis);border-radius:var(--r);padding:13px 14px 12px;border-left:5px solid var(--hijau)}
+.kt.semasa{border-left-color:var(--b-beza)}
+.kt.musim{border-left-color:var(--emas)}
+.kt h3{margin:0 0 3px;font-size:16.5px}
+.kt p{margin:0 0 9px;font-size:14.5px;color:var(--kabur);line-height:1.45}
+.kt .baris .cip{min-height:34px;font-size:14px;padding:0 11px}
+.pintas{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pintas a{display:flex;flex-direction:column;gap:2px;padding:13px 14px;border-radius:var(--r);background:var(--muka);border:1px solid var(--garis);text-decoration:none;color:var(--dakwat);min-height:78px}
+.pintas a b{font-size:16px}
+.pintas a span{font-size:13.5px;color:var(--kabur);line-height:1.35}
+.tip{background:var(--hijau-lembut);border-radius:var(--r);padding:12px 14px;font-size:15px}
+.tip b{display:block;margin-bottom:2px}
+
+/* ------------------------------------------------ teks Arab & Quran */
+.ar{font-family:var(--arab);direction:rtl;text-align:right;unicode-bidi:isolate;font-size:var(--sz-d);line-height:2.05;word-spacing:.04em}
+.qr{font-family:var(--quran);direction:rtl;text-align:right;unicode-bidi:isolate;font-size:var(--sz-q);line-height:2.25}
+.qr .w,.ar .fr{border-radius:6px;cursor:pointer;transition:background .15s}
+.qr .w:hover,.ar .fr:hover{background:var(--hijau-lembut)}
+.qr .w.pilih,.ar .fr.pilih{background:var(--emas-lembut);box-shadow:0 0 0 2px var(--emas-lembut)}
+.am{font-family:"Amiri Quran",serif;color:var(--emas);font-size:1.02em;white-space:nowrap;margin:0 .12em}
+.ayat{padding:12px 2px 14px;border-bottom:1px solid var(--garis);scroll-margin-top:80px}
+.ayat:last-child{border-bottom:0}
+.ayat.main{background:linear-gradient(90deg,transparent,var(--emas-lembut) 18%,var(--emas-lembut) 82%,transparent);border-radius:10px}
+.ayat .no{display:flex;align-items:center;gap:6px;margin-bottom:2px}
+.ayat .no .ref{font-size:13px;font-weight:700;color:var(--kabur);flex:1}
+.ayat .no .ib{width:38px;height:38px}
+.ayat .no .ib svg{width:19px;height:19px}
+.terj{font-size:16.5px;line-height:1.6;margin:6px 0 0;color:var(--dakwat)}
+.terj .ms-ref{color:var(--kabur);font-size:13px}
+.perkata{display:flex;flex-wrap:wrap;direction:rtl;gap:4px 6px;margin:2px 0 4px}
+.pk{display:flex;flex-direction:column;align-items:center;padding:6px 7px 6px;border-radius:10px;border:1px solid var(--garis);background:var(--muka);min-width:56px;max-width:46%;cursor:pointer}
+.pk .a{font-family:var(--quran);font-size:calc(var(--sz-q)*.86);line-height:1.75;direction:rtl}
+.pk .g{font-size:13.5px;line-height:1.3;color:var(--kabur);text-align:center;direction:ltr;margin-top:1px}
+.pk.tiada .g{font-style:italic;opacity:.7}
+.pk.am-pk{border:0;background:none;justify-content:center;min-width:0}
+.sarlawh{margin:6px 0 12px;padding:16px 14px 12px;text-align:center;border-radius:16px;background:var(--muka);border:1px solid var(--garis);position:relative;overflow:hidden}
+.sarlawh::before,.sarlawh::after{content:"";position:absolute;left:12px;right:12px;height:0;border-top:1px solid var(--emas);opacity:.6}
+.sarlawh::before{top:7px} .sarlawh::after{bottom:7px}
+.sarlawh .nama-ar{font-family:var(--quran);font-size:44px;line-height:1.75;color:var(--emas);margin-top:-4px}
+.sarlawh .nama-ms{font-weight:700;font-size:16px;margin-top:2px}
+.sarlawh .meta{font-size:13.5px;color:var(--kabur)}
+.basmalah{text-align:center;font-family:var(--quran);font-size:calc(var(--sz-q)*.95);line-height:2.1;direction:rtl;margin:4px 0 6px}
+
+/* ------------------------------------------------ doa */
+.doa-k{display:block;text-decoration:none;color:var(--dakwat);background:var(--muka);border:1px solid var(--garis);border-radius:var(--r);padding:12px 14px;margin-bottom:9px}
+.doa-k .top{display:flex;align-items:flex-start;gap:8px}
+.doa-k .top b{flex:1;font-size:16.5px;line-height:1.35}
+.doa-k .ar1{font-family:var(--arab);direction:rtl;text-align:right;font-size:21px;line-height:1.7;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:var(--kabur)}
+.doa-k .bawah{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-top:6px}
+.bintang{color:var(--emas)}
+.doa-h{margin:6px 2px 12px}
+.doa-h h2{font-size:23px;line-height:1.25;margin:0 0 4px}
+.doa-h .st{color:var(--kabur);font-size:15px;margin:0 0 8px}
+.bila{background:var(--hijau-lembut);border-radius:12px;padding:9px 12px;font-size:15px;margin:8px 0}
+.bila b{font-weight:700}
+.bah{padding:12px 0 14px;border-bottom:1px dashed var(--garis)}
+.bah:last-of-type{border-bottom:0}
+.bah h4{margin:0 0 4px;font-size:14.5px;color:var(--hijau);font-weight:700}
+.bah .ul{display:inline-flex;align-items:center;gap:4px;font-size:13.5px;font-weight:700;color:var(--emas-dakwat);background:var(--emas-lembut);border-radius:999px;padding:1px 10px;margin-left:6px;vertical-align:middle}
+.rumi{font-style:italic;color:var(--kabur);font-size:16px;line-height:1.55;margin:6px 0 0}
+.makna{font-size:16.5px;line-height:1.62;margin:8px 0 0}
+.frasa{display:flex;flex-direction:column;gap:6px;margin:4px 0}
+.frasa .f{display:grid;grid-template-columns:1fr;gap:0;padding:8px 10px;border-radius:12px;background:var(--muka-2)}
+.frasa .f .a{font-family:var(--arab);direction:rtl;text-align:right;font-size:calc(var(--sz-d)*.92);line-height:1.9}
+.frasa .f .m{font-size:15px;line-height:1.45;color:var(--dakwat)}
+.nama{font-family:var(--ui);font-size:.62em;font-weight:700;color:var(--hijau);background:var(--hijau-lembut);border-radius:6px;padding:0 6px;unicode-bidi:isolate;direction:ltr;white-space:nowrap}
+.tambah-nama{display:inline-flex;align-items:center;gap:6px;border:1.5px dashed var(--hijau);color:var(--hijau);background:transparent;border-radius:10px;padding:6px 10px;font-weight:600;font-size:14.5px;margin:6px 0}
+.sumber{margin-top:14px;padding:12px 14px;border-radius:var(--r);background:var(--muka-2);font-size:14.5px;line-height:1.5}
+.sumber .baris{margin-bottom:6px}
+.sumber a{font-weight:600}
+.nota{margin-top:10px;font-size:14.5px;line-height:1.5;color:var(--kabur)}
+.nota .ref-q{color:var(--hijau);font-weight:600;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;cursor:pointer;background:none;border:0;padding:0;font-size:inherit}
+.tindakan{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 4px}
+.lapisan{position:sticky;top:57px;z-index:15;background:var(--kertas);padding:8px 0 8px;margin:0 0 4px}
+
+/* ------------------------------------------------ susunan / langkah */
+.langkah{display:grid;grid-template-columns:34px 1fr;gap:4px 10px;padding:14px 0 6px;border-bottom:1px solid var(--garis)}
+.langkah .n{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:var(--hijau-lembut);color:var(--hijau);font-weight:700;font-size:14px;margin-top:2px}
+.langkah .isi{min-width:0}
+.langkah h3{margin:2px 0 2px;font-size:17px;line-height:1.3}
+.langkah .lnota{font-size:14px;color:var(--kabur);margin:0 0 4px}
+.kumpulan{margin:20px 0 4px;padding:10px 12px;border-radius:12px;background:var(--hijau-lembut);color:var(--hijau);font-weight:700}
+
+/* ------------------------------------------------ majlis */
+.mj{display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--dakwat);background:var(--muka);border:1px solid var(--garis);border-radius:var(--r);padding:12px 14px;margin-bottom:9px;width:100%;text-align:left}
+.mj .ik{width:44px;height:44px;flex:none;border-radius:12px;display:grid;place-items:center;font-size:21px;background:var(--hijau-lembut);color:var(--hijau)}
+.mj .tx{flex:1;min-width:0}
+.mj b{display:block;font-size:16.5px;line-height:1.3}
+.mj span{display:block;font-size:14px;color:var(--kabur);line-height:1.35}
+.edit-l{display:flex;gap:6px;align-items:center;padding:9px 6px 9px 10px;border-bottom:1px solid var(--garis)}
+.edit-l .n{width:26px;font-weight:700;color:var(--kabur);font-size:14px;flex:none;text-align:center}
+.edit-l .tx{flex:1;min-width:0;font-size:15.5px;line-height:1.3}
+.edit-l .tx small{display:block;color:var(--kabur);font-size:13px}
+.edit-l .ib{width:38px;height:38px}
+.edit-l .ib svg{width:19px;height:19px}
+.arwah-l{display:grid;grid-template-columns:1fr 1fr auto;gap:8px;align-items:end;margin-bottom:8px}
+.arwah-l .jan{display:flex;gap:6px;grid-column:1/-1}
+.arwah-l .jan .cip{flex:1;justify-content:center}
+.qr-kotak{display:grid;place-items:center;padding:14px;background:#fff;border-radius:14px;margin:10px auto;width:max-content}
+.qr-kotak img,.qr-kotak svg{width:200px;height:200px;image-rendering:pixelated}
+
+/* ------------------------------------------------ helaian (bottom sheet) */
+.tirai{position:fixed;inset:0;z-index:60;background:rgba(8,18,16,.45);display:flex;align-items:flex-end;justify-content:center}
+.helai{width:100%;max-width:var(--lebar);max-height:86dvh;overflow:auto;background:var(--muka);border-radius:20px 20px 0 0;padding:10px 18px calc(18px + env(safe-area-inset-bottom));box-shadow:0 -10px 40px rgba(0,0,0,.25);animation:naik .2s ease-out}
+.helai .pegang{width:44px;height:5px;border-radius:3px;background:var(--garis);margin:2px auto 10px}
+.helai h3{margin:0 0 8px;font-size:18px}
+@keyframes naik{from{transform:translateY(24px);opacity:.4}to{transform:none;opacity:1}}
+.kata-besar{font-family:var(--quran);font-size:52px;line-height:1.6;text-align:center;direction:rtl;margin:4px 0}
+.kata-g{text-align:center;font-size:19px;font-weight:700}
+.kata-e{text-align:center;font-size:15px;color:var(--kabur);margin-top:2px}
+.roti{position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom));transform:translateX(-50%);z-index:70;background:var(--dakwat);color:var(--kertas);padding:10px 16px;border-radius:12px;font-size:15px;font-weight:600;box-shadow:var(--bayang);max-width:calc(100% - 32px)}
+.kemaskini{position:fixed;left:12px;right:12px;bottom:calc(84px + env(safe-area-inset-bottom));z-index:65;max-width:calc(var(--lebar) - 24px);margin:0 auto;display:flex;gap:10px;align-items:center;background:var(--hijau-dalam);color:#fff;padding:10px 12px 10px 16px;border-radius:14px;box-shadow:var(--bayang)}
+.kemaskini span{flex:1;font-size:15px}
+.kemaskini button{border:0;border-radius:10px;background:var(--emas);color:#2A1E04;font-weight:700;padding:8px 12px}
+
+/* ------------------------------------------------ pemain audio */
+.pemain{position:fixed;left:10px;right:10px;bottom:calc(70px + env(safe-area-inset-bottom));z-index:40;max-width:calc(var(--lebar) - 20px);margin:0 auto;display:flex;align-items:center;gap:8px;background:var(--muka);border:1px solid var(--garis);border-radius:16px;padding:6px 8px 6px 14px;box-shadow:var(--bayang)}
+.pemain .t{flex:1;font-size:14.5px;font-weight:600;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+
+/* ------------------------------------------------ Mod Majlis (sentiasa gelap) */
+.pentas{position:fixed;inset:0;z-index:80;background:#0B1817;color:#E9F1ED;display:flex;flex-direction:column;--sz-q:calc(38px*var(--skala-p,1));--sz-d:calc(34px*var(--skala-p,1))}
+.pentas .atas{display:flex;align-items:center;gap:6px;padding:calc(6px + env(safe-area-inset-top)) 8px 6px 14px}
+.pentas .atas .t{flex:1;min-width:0}
+.pentas .atas .t b{display:block;font-size:16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pentas .atas .t span{font-size:13.5px;color:#9DB1AA}
+.pentas .ib{color:#E9F1ED}
+.pentas .ib:hover{background:#1C3330}
+.pentas .jalur{height:4px;background:#1C3330}
+.pentas .jalur i{display:block;height:100%;background:#D9B45E;transition:width .25s}
+.pentas .isi{flex:1;overflow:auto;padding:18px 18px 30px;max-width:760px;width:100%;margin:0 auto}
+.pentas .qr,.pentas .ar{color:#F2F6F3}
+.pentas .am{color:#D9B45E}
+.pentas .makna,.pentas .terj{color:#C9D8D2;font-size:18px}
+.pentas .rumi{color:#9DB1AA}
+.pentas .nama{background:#1A3A36;color:#9ED9CF}
+.pentas .bawah{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 14px calc(12px + env(safe-area-inset-bottom));border-top:1px solid #1C3330}
+.pentas .bawah .btn{background:#152826;border-color:#27413D;color:#E9F1ED;min-width:110px}
+.pentas .bawah .btn.utama{background:#6CC2B5;border-color:#6CC2B5;color:#08201D}
+.pentas h2{font-size:20px;margin:0 0 6px;color:#9ED9CF}
+.cincin{position:relative;width:min(56vw,240px);aspect-ratio:1;margin:12px auto 4px;border:0;background:none;padding:0;display:block;color:#E9F1ED;touch-action:manipulation}
+.cincin svg{width:100%;height:100%;transform:rotate(-90deg)}
+.cincin .bil{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.cincin .bil b{font-size:56px;line-height:1;font-weight:700}
+.cincin .bil span{font-size:15px;color:#9DB1AA}
+.cincin.siap .bil b{color:#D9B45E}
+
+/* ------------------------------------------------ tetapan & nota */
+.set{display:flex;align-items:center;gap:12px;padding:12px 2px;border-bottom:1px solid var(--garis)}
+.set .tx{flex:1}
+.set .tx b{display:block;font-size:16px}
+.set .tx span{font-size:14px;color:var(--kabur)}
+.suis{appearance:none;width:52px;height:32px;border-radius:999px;background:var(--garis);position:relative;flex:none;cursor:pointer;transition:background .15s}
+.suis::after{content:"";position:absolute;top:3px;left:3px;width:26px;height:26px;border-radius:50%;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.25);transition:transform .15s}
+.suis:checked{background:var(--hijau)}
+.suis:checked::after{transform:translateX(20px)}
+input[type=range]{width:100%;accent-color:var(--hijau)}
+.prosa{font-size:16.5px;line-height:1.65}
+.prosa h2{font-size:22px;line-height:1.25;margin:4px 0 10px}
+.prosa h3{font-size:17.5px;margin:20px 0 6px}
+.prosa p{margin:0 0 12px}
+.prosa ul{padding-left:20px;margin:0 0 12px}
+.prosa li{margin-bottom:6px}
+.prosa .rujuk{font-size:14.5px;color:var(--kabur)}
+.amaran{border:1.5px solid var(--b-beza);background:color-mix(in srgb,var(--b-beza) 10%,var(--muka));border-radius:12px;padding:10px 12px;font-size:14.5px;margin:10px 0}
+
+/* ------------------------------------------------ cetak (buku kenangan) */
+.cetak-kulit{display:none}
+@media print{
+  @page{size:A5;margin:12mm 11mm}
+  body{background:#fff;color:#000;font-size:11pt}
+  .bar,.tab,.pemain,.roti,.kemaskini,.tindakan,.lapisan,.tidak-cetak,.ayat .no .ib{display:none!important}
+  .app{padding:0}
+  main.skrin{max-width:none;padding:0}
+  .cetak-kulit{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;min-height:180mm;break-after:page}
+  .cetak-kulit .kal{font-family:var(--quran);font-size:64pt;color:#7a5d17}
+  .cetak-kulit h1{font-size:18pt;margin:6mm 0 2mm}
+  .cetak-kulit p{margin:1mm 0;font-size:11pt}
+  .qr{font-size:19pt;line-height:2.1}
+  .ar{font-size:17pt;line-height:2}
+  .am{color:#7a5d17}
+  .langkah,.bah,.ayat{break-inside:avoid}
+  .kumpulan{background:none;border-top:1px solid #000;border-radius:0;color:#000;break-after:avoid}
+  .sumber{background:none;border:1px solid #bbb}
+  a{color:#000;text-decoration:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (min-width:720px){ .pintas{grid-template-columns:repeat(4,1fr)} }
+
+/* ------------------------------------------------ tambahan komponen (v1) */
+.tengah{text-align:center;justify-content:center}
+.pengenalan{margin:2px 2px 12px;line-height:1.5}
+.bar-in.ada-kembali{padding-left:4px}
+.tarikh .masa{font-variant-numeric:tabular-nums}
+.pautan-tip{display:block;text-decoration:none;color:var(--dakwat);margin-bottom:8px}
+.pautan-tip b{color:var(--hijau)}
+.helai-atas{display:flex;align-items:center;gap:8px;margin:-4px -8px 4px 0}
+.helai-atas h3{flex:1;margin:0;font-size:18px;line-height:1.3}
+.helai-atas .ib{width:40px;height:40px}
+.helai-tinggi{min-height:70dvh}
+.kecil-terj{font-size:15px;margin-top:14px;color:var(--kabur)}
+.frasa-besar{font-family:var(--arab);font-size:calc(var(--sz-d)*1.15);line-height:1.9}
+.sambung{color:var(--kabur);font-family:var(--ui);font-size:.6em}
+.senarai-tindakan{display:grid;gap:8px}
+.senarai-tindakan .btn{justify-content:flex-start}
+.ref-ayat{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:space-between;margin-top:6px;font-size:13.5px;font-weight:700;color:var(--kabur)}
+.tanda-ayat{font-style:normal;font-family:var(--ui);font-size:13.5px;font-weight:700;line-height:1.4;color:var(--emas-dakwat);background:var(--emas-lembut);border:1px solid color-mix(in srgb,var(--emas) 45%,transparent);border-radius:999px;padding:1px 9px;margin:0 2px;cursor:pointer;vertical-align:baseline}
+.anak-panah{flex:none;color:var(--kabur);display:grid}
+.anak-panah svg{width:20px;height:20px}
+.kad-nama{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0 6px;padding:12px 14px}
+.nama-senarai{flex:1;min-width:180px;margin:0;font-size:15px;line-height:1.45}
+.pautan-kecil{display:inline-block;margin:8px 0 2px;font-size:14px;font-weight:600}
+.det{margin:8px 0 2px;border:1px solid var(--garis);border-radius:12px;padding:0 12px;background:var(--muka)}
+.det > summary{cursor:pointer;padding:12px 2px;font-weight:600;color:var(--hijau);list-style-position:inside}
+.det[open] > summary{border-bottom:1px solid var(--garis);margin-bottom:6px}
+.langkah .ul,.doa-h h2 .ul,.edit-l .ul{display:inline-flex;align-items:center;font-size:13px;font-weight:700;color:var(--emas-dakwat);background:var(--emas-lembut);border-radius:999px;padding:0 9px;margin-left:8px;vertical-align:middle;line-height:1.7}
+.senarai-edit{padding:4px 4px}
+.edit-l:last-child{border-bottom:0}
+.edit-l .ib[disabled]{opacity:.3;pointer-events:none}
+.tambah-langkah{margin-top:10px}
+.btn.bahaya{color:var(--b-dhaif);border-color:color-mix(in srgb,var(--b-dhaif) 45%,var(--garis))}
+.btn.penuh.bahaya{margin-top:14px}
+.pilih-isi{display:grid;gap:6px;margin-top:8px}
+.pilih-isi .cari{margin-bottom:6px}
+.pilih-b{display:flex;flex-direction:column;align-items:flex-start;gap:1px;width:100%;text-align:left;border:1px solid var(--garis);background:var(--muka);border-radius:12px;padding:10px 12px;min-height:48px}
+.pilih-b b{font-size:15.5px;line-height:1.3}
+.pilih-b span{font-size:13px;color:var(--kabur);line-height:1.3}
+.pilih-b:active{background:var(--hijau-lembut)}
+.cip-kecil{min-height:30px;font-size:13px;padding:0 10px;text-decoration:none;font-weight:600}
+.cip svg{width:16px;height:16px}
+.btn svg.ik-isi path,.bintang svg.ik-isi path{fill:currentColor}
+.doa-k .top .bintang svg{width:18px;height:18px}
+.isi-doa{margin-top:2px}
+.nota-sumber{margin-top:4px}
+.sumber > *{margin-bottom:4px}
+.lihat{display:grid;gap:8px;margin-top:12px}
+.nota-k{display:block;text-decoration:none;color:var(--dakwat);background:var(--muka);border:1px solid var(--garis);border-left:4px solid var(--emas);border-radius:var(--r-k);padding:11px 14px;margin-bottom:8px}
+.nota-k b{display:block;font-size:16px;line-height:1.3;color:var(--hijau)}
+.nota-k span{display:block;font-size:14px;color:var(--kabur);line-height:1.4;margin-top:2px}
+.borang .medan{margin-bottom:2px}
+textarea.medan{resize:vertical;line-height:1.5}
+.medan-ar{font-family:var(--arab);font-size:22px;line-height:1.8;text-align:right}
+.bantu{margin:4px 2px 0}
+.set-blok{flex-direction:column;align-items:stretch;gap:8px}
+.contoh{margin:0;padding:6px 10px;background:var(--muka-2);border-radius:10px;text-align:center}
+.versi{margin-top:18px;text-align:center}
+.kiraan{margin:2px 2px 8px}
+.pengira{margin:0 0 10px}
+.pentas .kecil,.pentas .lnota{color:#9DB1AA}
+.pentas .lnota{font-size:15px;margin:0 0 8px}
+.pentas .bah{border-bottom-color:#27413D}
+.pentas .bah h4{color:#9ED9CF}
+.pentas .frasa .f{background:#152826}
+.pentas .frasa .f .m{color:#C9D8D2}
+.pentas .ayat{border-bottom-color:#1C3330}
+.pentas .ayat .no .ref{color:#9DB1AA}
+.pentas .ayat.main{background:linear-gradient(90deg,transparent,#2E2814 18%,#2E2814 82%,transparent)}
+.pentas .ref-ayat{color:#9DB1AA}
+.pentas .ref-ayat .btn{background:#152826;border-color:#27413D;color:#E9F1ED}
+.pentas .tanda-ayat{background:#2E2814;color:#F6E7BF;border-color:#5a4a1d}
+.pentas .ib.on{background:#1C3330;color:#D9B45E}
+.pentas .basmalah{color:#F2F6F3}
+.pentas .pk{background:#152826;border-color:#27413D}
+.pentas .bawah .kiraan{margin:0}
+.ada-pentas{overflow:hidden}
+.ada-pentas .tirai{z-index:90}
+.ada-pentas .roti{z-index:95}
+.ada-pentas .pemain{z-index:85;bottom:calc(76px + env(safe-area-inset-bottom))}
+.ada-pentas .kemaskini{display:none}
+.ib[disabled]{opacity:.35}
+.pentas .bawah .btn:disabled{opacity:.35}
+@media print{
+  .tambah-nama,.pautan-kecil,.ref-ayat .btn,.kad-nama,.det>summary,.pengira,.tip,.helai,.tirai,.pentas,#kemaskini,#roti,.btn{display:none!important}
+  .ref-ayat{color:#444}
+  .tanda-ayat{background:none;border:1px solid #999;color:#000}
+  .rumi{color:#333}
+}
+/* pembetulan selepas semakan visual */
+a.cip{text-decoration:none}
+.ayat .qr{margin:0}
+.ayat .terj{margin-top:2px}
+.bah .qr,.bah .ar{margin:4px 0}
+.frasa .f .a{line-height:2.15;padding-bottom:6px}
+.frasa .f .m{margin-top:0}
+.doa-k .ul{display:inline-flex;align-items:center;font-size:12.5px;font-weight:700;color:var(--emas-dakwat);background:var(--emas-lembut);border-radius:999px;padding:0 8px;line-height:1.7}
+.tindakan.tiga{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:8px}
+.tindakan.tiga .btn{padding:0 8px;font-size:15px;gap:6px}
+.tindakan.tiga .btn svg{width:18px;height:18px}
+.btn.utama.penuh{margin-top:4px}
+.kata-besar{line-height:1.95;padding-bottom:6px}
+.prosa p + ul{margin-top:-6px}
+#skrin:focus,#skrin:focus-visible{outline:none}
+@media print{
+  main.skrin{outline:none!important}
+  .langkah{break-inside:auto;padding-top:8pt;border-bottom:0}
+  .langkah h3{break-after:avoid}
+  .langkah .n{background:none;border:1px solid #999;color:#000}
+  .frasa .f{background:none;border-bottom:1px solid #ddd;border-radius:0;padding:4pt 0;break-inside:avoid}
+  .ayat{padding:4pt 0 6pt}
+  .bah{padding:6pt 0}
+}
+.lapisan{top:var(--tinggi-bar,57px)}
+.ayat{scroll-margin-top:calc(var(--tinggi-bar,57px) + 64px)}
+
+/* ------------------------------------------------ skrin Utama: susun atur skrin utama telefon (dinding, widget jam, grid ikon, dok) */
+:root{--dinding:#0A3F3B;--dinding-2:#0F5F57;--dinding-3:#06302C;--atas-dinding:#F2F7F4;--atas-dinding-2:rgba(242,247,244,.8);--ikon-latar:#DCEBE7;--ikon-dakwat:#0A3F3B;--dok:rgba(7,50,46,.84)}
+:root[data-tema="malam"]{--dinding:#0C2623;--dinding-2:#133F3A;--dinding-3:#071513;--ikon-latar:#1E4843;--ikon-dakwat:#BCE5DC;--dok:rgba(9,27,25,.86)}
+@media (prefers-color-scheme:dark){:root:not([data-tema="cerah"]){--dinding:#0C2623;--dinding-2:#133F3A;--dinding-3:#071513;--ikon-latar:#1E4843;--ikon-dakwat:#BCE5DC;--dok:rgba(9,27,25,.86)}}
+body[data-skrin="utama"]{background-color:var(--dinding-3);background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64' viewBox='0 0 64 64'%3E%3Cg fill='none' stroke='%23D9B45E' stroke-opacity='.12' stroke-width='1'%3E%3Crect x='20' y='20' width='24' height='24'/%3E%3Cpath d='M32 15 49 32 32 49 15 32z'/%3E%3Cpath d='M0 0l20 20M64 0 44 20M0 64l20-20M64 64 44 44'/%3E%3C/g%3E%3C/svg%3E"),radial-gradient(130% 75% at 85% -5%,var(--dinding-2) 0%,var(--dinding) 45%,var(--dinding-3) 100%);background-attachment:scroll,fixed;min-height:100dvh}
+body[data-skrin="utama"] #bar{display:none}
+body[data-skrin="utama"] main.skrin{padding:calc(18px + env(safe-area-inset-top)) 16px 24px}
+body[data-skrin="utama"] .app{padding-bottom:calc(118px + env(safe-area-inset-bottom))}
+body[data-skrin="utama"] .roti,body[data-skrin="utama"] .kemaskini{bottom:calc(122px + env(safe-area-inset-bottom))}
+.widget-jam{color:var(--atas-dinding);padding:8px 4px 2px}
+.jam{display:flex;align-items:baseline;gap:8px;font-variant-numeric:tabular-nums;line-height:1}
+.jam .jj{font-size:clamp(62px,18vw,84px);font-weight:400;letter-spacing:-.02em}
+.jam .ampm{font-size:20px;font-weight:600;color:var(--atas-dinding-2)}
+.jam-tarikh{display:flex;flex-direction:column;gap:1px;margin-top:8px;font-size:17px;font-weight:600;line-height:1.35}
+.jam-tarikh .hj{font-weight:400;color:var(--atas-dinding-2)}
+.jam-solat{display:inline-flex;align-items:center;gap:10px;margin-top:14px;padding:7px 16px 7px 7px;border-radius:999px;background:rgba(255,255,255,.12);color:var(--atas-dinding);text-decoration:none;max-width:100%}
+.jam-solat .js-ik{width:36px;height:36px;border-radius:50%;background:var(--ikon-latar);color:var(--ikon-dakwat);display:grid;place-items:center;flex:none}
+.jam-solat .js-ik svg{width:21px;height:21px}
+.jam-solat .js-tx{display:flex;flex-direction:column;min-width:0;line-height:1.3}
+.jam-solat .js-tx b{font-size:16px}
+.jam-solat .js-tx span{font-size:13.5px;color:var(--atas-dinding-2)}
+.cari-rumah{display:flex;align-items:center;gap:12px;margin:20px 0 24px;min-height:52px;padding:0 18px;border-radius:999px;background:var(--muka);color:var(--kabur);text-decoration:none;font-size:16px;box-shadow:0 2px 12px rgba(0,0,0,.2)}
+.cari-rumah svg{width:22px;height:22px;color:var(--hijau);flex:none}
+.cari-rumah span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.grid-apl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px 4px;margin:0 -6px}
+.apl{display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none;color:var(--atas-dinding);min-width:0}
+.apl-ik{width:60px;height:60px;border-radius:19px;background:var(--ikon-latar);color:var(--ikon-dakwat);display:grid;place-items:center;box-shadow:0 2px 6px rgba(0,0,0,.22);transition:transform .12s}
+.apl-ik svg{width:28px;height:28px;stroke-width:1.9}
+.apl:active .apl-ik{transform:scale(.92)}
+.apl:focus-visible{outline:none}
+.apl:focus-visible .apl-ik{outline:3px solid var(--emas);outline-offset:3px}
+.apl[data-apl="yaasin"] .apl-ik{background:#0A3F3B;color:#D9B45E;box-shadow:inset 0 0 0 1.5px rgba(217,180,94,.6),0 2px 6px rgba(0,0,0,.22)}
+.apl-ik .glif{font-family:var(--quran);font-size:27px;line-height:1;direction:rtl;margin-top:-5px}
+.apl-l{font-size:13px;font-weight:600;line-height:1.25;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);max-width:100%}
+.widget{margin:28px 0 0;background:var(--muka);color:var(--dakwat);border-radius:24px;padding:14px 16px 4px;box-shadow:0 4px 18px rgba(0,0,0,.24)}
+.widget h2{margin:0 0 10px;font-size:14px;font-weight:700;color:var(--kabur)}
+.w-sambung{display:flex;flex-direction:column;gap:7px;text-decoration:none;color:var(--dakwat);padding:0 0 12px;border-bottom:1px solid var(--garis);margin-bottom:12px}
+.w-sambung .tx b{font-size:16px}
+.w-sambung .tx span{font-size:14px;color:var(--kabur);margin-left:6px}
+.w-sambung .prog{display:block;height:5px;border-radius:5px;background:var(--muka-2);overflow:hidden}
+.w-sambung .prog i{display:block;height:100%;background:var(--emas)}
+.w-kt{padding:0 0 12px;margin-bottom:12px;border-bottom:1px solid var(--garis)}
+.w-kt:last-child{border-bottom:0;margin-bottom:0}
+.w-kt h3{margin:0 0 3px;font-size:16px;line-height:1.3;display:flex;align-items:center;gap:8px}
+.w-kt h3::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--hijau);flex:none}
+.w-kt.semasa h3::before{background:var(--b-beza)}
+.w-kt.musim h3::before{background:var(--emas)}
+.w-kt p{margin:0 0 9px;font-size:14.5px;color:var(--kabur);line-height:1.45;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.w-kt p{-webkit-line-clamp:2;line-clamp:2}
+.w-cip{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:0 -16px;padding:0 16px 2px}
+.w-cip::-webkit-scrollbar{display:none}
+.w-cip .cip{min-height:34px;font-size:14px;padding:0 11px;flex:none}
+.w-lagi{display:block;width:calc(100% + 32px);margin:-6px -16px 0;padding:6px 16px 14px;border:0;background:none;color:var(--hijau);font-weight:700;font-size:15px;text-align:left;border-radius:0 0 24px 24px}
+.jam .jj,.jam .ampm{font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+.jam .jj{font-weight:300}
+.tindakan.dua{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.tindakan.dua .btn{padding:0 10px;font-size:15.5px;gap:6px}
+.kaki-rumah{margin:22px 6px 0;font-size:13.5px;line-height:1.5;color:var(--atas-dinding-2);text-align:center}
+.kaki-rumah a{color:var(--atas-dinding)}
+.tab.dok{background:transparent;border-top:0;padding:0 12px calc(10px + env(safe-area-inset-bottom))}
+.tab.dok .tab-in{grid-template-columns:repeat(4,minmax(0,1fr));background:var(--dok);box-shadow:0 6px 24px rgba(0,0,0,.28),inset 0 0 0 1px rgba(255,255,255,.08);-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);border-radius:28px;padding:11px 4px 9px;max-width:calc(var(--lebar) - 24px)}
+.tab.dok a{min-height:0;padding:0;color:var(--atas-dinding);font-size:13px;gap:6px}
+.tab.dok .apl-ik{width:54px;height:54px;border-radius:17px}
+.tab.dok .apl-ik svg{width:26px;height:26px;stroke-width:1.9}
+.tab.dok .apl-ik .glif{font-size:25px}
+
+/* ------------------------------------------------ peringatan waktu solat (kad di atas skrin, seperti notifikasi telefon) */
+.banner-solat{position:fixed;top:calc(10px + env(safe-area-inset-top));left:10px;right:10px;z-index:96;max-width:calc(var(--lebar) - 20px);margin:0 auto;display:flex;align-items:center;gap:6px;background:var(--muka);color:var(--dakwat);border:1px solid var(--garis);border-left:5px solid var(--hijau);border-radius:18px;padding:10px 6px 10px 14px;box-shadow:0 10px 30px rgba(0,0,0,.28)}
+.banner-solat .bs-teks{flex:1;display:flex;flex-direction:column;text-decoration:none;color:inherit;min-width:0}
+.banner-solat b{font-size:16px}
+.banner-solat span{font-size:14px;color:var(--kabur)}
+
+/* ------------------------------------------------ Waktu Solat */
+.kad-solat{padding:14px 16px 10px}
+.ks-atas{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;margin-bottom:6px}
+.ks-atas b{display:block;font-size:16.5px}
+.ks-atas span{font-size:14.5px;color:var(--kabur)}
+.senarai-solat{list-style:none;margin:0;padding:0}
+.senarai-solat li{display:flex;align-items:baseline;gap:10px;padding:11px 4px;border-bottom:1px solid var(--garis);font-variant-numeric:tabular-nums}
+.senarai-solat li:last-child{border-bottom:0}
+.senarai-solat .nm{flex:1;font-size:17px}
+.senarai-solat .wk{font-size:17px;font-weight:600}
+.senarai-solat .fardu .nm{font-weight:700}
+.senarai-solat .sunat .nm,.senarai-solat .sunat .wk{font-size:15px;color:var(--kabur);font-weight:400}
+.senarai-solat .lalu{opacity:.55}
+.senarai-solat .seterus{background:var(--hijau-lembut);border-radius:12px;border-bottom-color:transparent;padding-left:10px;padding-right:10px;margin:2px -6px}
+.senarai-solat .seterus .baki{font-size:13.5px;font-weight:700;color:var(--hijau)}
+.status-solat{margin:10px 0 2px}
+.kad-tetapan{padding:2px 16px 14px}
+.kad-tetapan .set:last-of-type{border-bottom:0}
+.medan-kecil{width:auto;min-height:42px;padding:6px 10px;font-size:15.5px}
+.pilih-zon .btn{margin-top:14px}
+.jadual-wrap{overflow-x:auto;margin:0 -12px;padding:0 12px}
+.jadual{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums;font-size:14.5px}
+.jadual th,.jadual td{text-align:center;padding:7px 3px;border-bottom:1px solid var(--garis)}
+.jadual th{font-size:13px;color:var(--kabur);font-weight:700}
+.jadual th small{display:block;font-weight:400}
+.jadual tr.hari-ini td{background:var(--hijau-lembut);font-weight:700}
+
+/* ------------------------------------------------ Tasbih */
+.tasbih-teks{margin-top:4px;text-align:center}
+.tasbih-teks .ar{text-align:center;font-size:calc(var(--sz-d)*1.08);margin:2px 0}
+.tasbih-teks .rumi,.tasbih-teks .makna{text-align:center;margin:2px 0 6px}
+.tasbih-langkah{margin:0 0 2px;font-weight:600}
+.pengira-t{margin:16px 0 6px;text-align:center}
+.cincin-t{position:relative;width:min(70vw,290px);aspect-ratio:1;border:0;padding:0;display:block;margin:0 auto;color:var(--dakwat);touch-action:manipulation;border-radius:50%;-webkit-user-select:none;user-select:none;background:radial-gradient(circle,var(--muka) 0 60%,transparent 61%)}
+.cincin-t svg{width:100%;height:100%;transform:rotate(-90deg);display:block}
+.cincin-t .trek{stroke:var(--muka-2)}
+.cincin-t .maju{stroke:var(--hijau);transition:stroke-dashoffset .15s}
+.cincin-t.siap .maju{stroke:var(--emas)}
+.cincin-t .bil{position:absolute;inset:0;display:grid;place-content:center;text-align:center}
+.cincin-t .bil b{font-size:72px;line-height:1;font-weight:700;font-variant-numeric:tabular-nums}
+.cincin-t .bil span{font-size:15px;color:var(--kabur);margin-top:6px}
+.cincin-t:active{transform:scale(.985)}
+.tengah-baris{justify-content:center}
+.tasbih-jumlah{margin:10px 0 0;min-height:1.4em}
+
+/* ------------------------------------------------ Rujukan & penafian */
+.senarai-rujuk{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.senarai-rujuk > li{background:var(--muka);border:1px solid var(--garis);border-radius:var(--r-k);padding:11px 14px;display:flex;flex-direction:column;gap:2px}
+.senarai-rujuk > li > b{font-size:16px}
+.senarai-rujuk > li > span{font-size:14.5px;color:var(--kabur);line-height:1.45}
+.senarai-rujuk .kitab{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.sek-kecil{margin:16px 2px 6px;font-size:15px;font-weight:700}
+.rujuk-k > summary .kecil{margin-left:6px;font-weight:400}
+.rujuk-k .rujuk{padding-left:18px;margin:4px 0 10px}
+.rujuk-k .rujuk li{margin-bottom:9px;font-size:15px;line-height:1.45}
+.rujuk-k .hos,.rujuk-k .dlm{display:block;font-size:13px;color:var(--kabur)}
+.senarai-penafian{padding-left:20px;margin:0 0 10px}
+.senarai-penafian li{margin-bottom:7px;line-height:1.5}
+.pemain .t{display:flex;flex-direction:column;line-height:1.3}
+.pemain .t b,.pemain .t span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pemain .t span{font-size:12.5px;font-weight:400;color:var(--kabur)}
+@media print{.banner-solat,.cincin-t{display:none!important}}
+
+/* ------------------------------------------------ Hafalan */
+.prog-ng{display:block;height:6px;border-radius:6px;background:var(--muka-2);overflow:hidden;margin:8px 0 4px}
+.prog-ng i{display:block;height:100%;background:var(--hijau);border-radius:6px}
+.hf-angka{display:flex;align-items:baseline;gap:8px}
+.hf-angka b{font-size:30px;line-height:1.1;font-variant-numeric:tabular-nums}
+.hf-angka span{font-size:15px;color:var(--kabur)}
+.hf-senarai{display:grid;gap:8px}
+.hf-kad{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--dakwat);background:var(--muka);border:1px solid var(--garis);border-radius:var(--r);padding:10px 12px}
+.hf-kad .hf-ar{font-family:var(--quran);font-size:22px;line-height:1.6;color:var(--hijau-dalam);min-width:68px;text-align:center;direction:rtl}
+.hf-kad .hf-tx{flex:1;min-width:0;display:flex;flex-direction:column}
+.hf-kad .hf-tx b{font-size:16.5px;line-height:1.3}
+.hf-kad .hf-tx > span{font-size:13.5px;color:var(--kabur);line-height:1.35}
+.hf-kad .hf-tx .hf-st{font-weight:700;margin-top:2px}
+.st-sedang .hf-st{color:var(--b-hasan)} .st-hafal .hf-st{color:var(--b-sahih)} .st-perlu .hf-st{color:var(--b-beza)}
+.hf-cincin{width:34px;height:34px;border-radius:50%;flex:none;position:relative;background:conic-gradient(var(--hijau) calc(var(--p) * 1%),var(--muka-2) 0)}
+.hf-cincin::after{content:"";position:absolute;inset:5px;border-radius:50%;background:var(--muka)}
+.st-perlu{border-left:4px solid var(--b-beza)}
+.hf-status{margin-bottom:12px}
+.hf-status .hf-angka span{font-weight:600}
+.hf-pilih{margin:4px 0 10px}
+.hf-pilih > .kecil{display:block;margin:0 2px 6px;font-weight:600}
+
+/* ------------------------------------------------ Diari */
+.kalendar{padding:10px 12px 12px}
+.kal-kepala{display:flex;align-items:center;gap:4px;margin-bottom:6px}
+.kal-tajuk{flex:1;text-align:center;display:flex;flex-direction:column;line-height:1.3}
+.kal-tajuk b{font-size:17.5px}
+.kal-tajuk span{font-size:13.5px;color:var(--kabur)}
+.kal-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+.kal-hari{text-align:center;font-size:12.5px;font-weight:700;color:var(--kabur);padding:4px 0}
+.kal-hari.sunat{color:var(--hijau)}
+.kal-sel{position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:0;min-height:54px;padding:5px 0 4px;border:0;border-radius:10px;background:transparent;color:var(--dakwat);font-variant-numeric:tabular-nums}
+.kal-sel.kosong{min-height:0}
+.kal-sel .tm{font-size:16px;font-weight:700;line-height:1.2}
+.kal-sel .th{font-size:11.5px;color:var(--kabur);line-height:1.2}
+.kal-sel .th.awal{color:var(--hijau);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+.kal-sel .titik{display:flex;gap:3px;height:7px;margin-top:3px}
+.kal-sel .titik i,.kal-petunjuk i{display:inline-block;width:6px;height:6px;border-radius:50%}
+.t-puasa{background:var(--b-beza)} .t-ngaji{background:var(--hijau)} .t-hafal{background:var(--b-hasan)} .t-nota{background:var(--kabur)}
+.kal-sel.khas{background:var(--hijau-lembut)}
+.kal-sel.ramadan{background:var(--emas-lembut)}
+.kal-sel.larang{background:color-mix(in srgb,var(--b-dhaif) 13%,transparent)}
+.kal-sel.larang .tm{color:var(--b-dhaif)}
+.kal-sel.larang .th{text-decoration:line-through}
+.kal-sel.hari-ini{box-shadow:inset 0 0 0 2px var(--hijau)}
+.kal-sel:not(.kosong):active{transform:scale(.95)}
+.kal-petunjuk{display:flex;flex-wrap:wrap;gap:6px 14px;margin:10px 2px 4px;font-size:13px;color:var(--kabur)}
+.kal-petunjuk span{display:inline-flex;align-items:center;gap:6px}
+.kal-petunjuk b{display:inline-block;width:14px;height:14px;border-radius:4px}
+.p-khas{background:var(--hijau-lembut);box-shadow:inset 0 0 0 1px var(--garis)}
+.p-larang{background:color-mix(in srgb,var(--b-dhaif) 22%,transparent)}
+.kalendar > .kecil{margin:6px 2px 0}
+.kalendar > .btn{margin-top:8px}
+.kad-ngaji,.kalendar + .kad,.kad-ngaji + .kad,.kad + .kad{margin-top:12px}
+.ng-atas{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.ng-atas h2,.sek-dalam{margin:0;font-size:18px}
+.sek-dalam{margin-bottom:6px}
+.ng-pos{display:flex;flex-direction:column;margin:8px 0 2px;line-height:1.35}
+.ng-pos b{font-size:20px}
+.kad-ngaji > .kecil{margin:4px 0 8px}
+.kad-ngaji > .btn{margin-top:6px}
+.senarai-hari{list-style:none;margin:4px 0 8px;padding:0}
+.senarai-hari li{display:flex;align-items:center;gap:8px;padding:6px 0;border-bottom:1px solid var(--garis);font-size:15px;line-height:1.4}
+.senarai-hari li > span{flex:1}
+.hari-hj{margin:-4px 0 6px}
+.hari-info{margin:0 0 8px;padding:8px 12px;border-radius:10px;font-size:15px;background:var(--muka-2)}
+.hari-info.sunat{background:var(--hijau-lembut)}
+.hari-info.larang{background:color-mix(in srgb,var(--b-dhaif) 14%,transparent);color:var(--b-dhaif);font-weight:700}
+.helai .sek-kecil{margin:14px 0 6px}
+.dua-medan{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.dua-medan label.lbl{margin:10px 0 0}
+.dua-medan .medan{margin-top:6px}
+.surah-ayat{display:grid;grid-template-columns:1fr 92px;gap:8px}
+.rekod-ngaji .baris{margin:8px 0}
+.ng-pratonton{margin:10px 2px;font-weight:600;color:var(--dakwat)}
+.w-peribadi .tx b{display:inline}
+.cip-kecil[aria-pressed="true"]{background:var(--hijau);border-color:var(--hijau);color:var(--hijau-dakwat)}
+
+/* ------------------------------------------------ Keluarga: avatar dan profil */
+.avatar{--sz:40px;width:var(--sz);height:var(--sz);border-radius:50%;flex:none;display:inline-grid;place-items:center;overflow:hidden;background:var(--wa,#0E5E57);color:#fff;font-weight:700;font-size:calc(var(--sz) * .38);line-height:1;box-shadow:0 0 0 2px var(--muka)}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.avatar .awal{letter-spacing:.02em}
+.jam-atas{display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:44px;margin-bottom:6px}
+.nama-keluarga{font-size:15px;font-weight:600;color:var(--atas-dinding-2);min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ahli-tumpuk{display:flex;align-items:center;border:0;background:none;padding:2px;border-radius:999px;flex:none}
+.ahli-tumpuk .avatar{box-shadow:0 0 0 2px var(--dinding)}
+.ahli-tumpuk .avatar.kecil{margin-right:-9px;opacity:.92}
+.ahli-tumpuk .avatar.aktif{box-shadow:0 0 0 2px var(--dinding),0 0 0 4px var(--emas)}
+.pilih-ahli,.barisan-ahli{display:flex;flex-wrap:wrap;gap:14px 10px;justify-content:center;margin:6px 0 10px}
+.ahli-b{display:flex;flex-direction:column;align-items:center;gap:6px;border:0;background:none;color:var(--dakwat);font-weight:600;font-size:14.5px;min-width:72px;padding:6px 4px;border-radius:14px}
+.ahli-b span:last-child{max-width:86px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ahli-b.aktif .avatar{box-shadow:0 0 0 3px var(--muka),0 0 0 5px var(--hijau)}
+.ahli-b.aktif > span:last-child{color:var(--hijau)}
+.ahli-pratonton{display:flex;justify-content:center;margin:6px 0 8px}
+.pilih-warna{gap:10px}
+.warna-b{width:34px;height:34px;border-radius:50%;border:0;background:var(--wa);box-shadow:inset 0 0 0 2px rgba(255,255,255,.35)}
+.warna-b[aria-pressed="true"]{box-shadow:0 0 0 3px var(--muka),0 0 0 5px var(--dakwat)}
+.keluarga-atas .barisan-ahli{justify-content:flex-start}
+.senarai-ahli{display:grid;gap:10px;margin:8px 0 12px}
+.ahli-kad{padding:12px 14px}
+.ahli-kad.aktif{border-color:var(--hijau);box-shadow:inset 4px 0 0 var(--hijau),var(--bayang)}
+.ahli-atas{display:flex;align-items:center;gap:12px;margin-bottom:8px}
+.ahli-tx{flex:1;min-width:0;display:flex;flex-direction:column}
+.ahli-tx b{font-size:17px}
+.ahli-tx span{font-size:13.5px;color:var(--kabur)}
+.ahli-kad .baris{gap:6px}
+.ahli-kad > .btn{margin-top:10px}
+.cip.perlu{border-color:var(--b-beza);color:var(--b-beza)}
+
+/* ------------------------------------------------ Hafalan audio: mod, grid butang ayat, pemain */
+.seg{display:flex;gap:3px;padding:3px;border-radius:12px;background:var(--muka-2)}
+.seg button{flex:1;min-height:42px;border:0;border-radius:9px;background:transparent;font-weight:700;font-size:15.5px;color:var(--kabur)}
+.seg button[aria-pressed="true"]{background:var(--muka);color:var(--dakwat);box-shadow:0 1px 3px rgba(0,0,0,.14)}
+.seg-kecil button{min-height:36px;font-size:14.5px}
+.hf-mod{margin:12px 0 6px}
+.hf-nota{margin:10px 2px 12px;line-height:1.45}
+.hf-kereta{display:flex;gap:8px;align-items:flex-start;margin:6px 4px 0;line-height:1.45}
+.hf-kereta svg{width:20px;height:20px;flex:none;color:var(--hijau);margin-top:1px}
+.hf-sentuh{display:flex;align-items:center;gap:10px;margin:16px 2px 8px}
+.hf-sentuh > .kecil{font-weight:600;flex:none}
+.hf-sentuh .seg{flex:1}
+.ag-grid{margin:4px 0 12px}
+.ag-hal{margin:0 0 10px}
+.ag-m{display:block;margin:0 2px 5px;font-size:12.5px;font-weight:600;color:var(--kabur);font-variant-numeric:tabular-nums}
+.ag-b{display:grid;grid-template-columns:repeat(auto-fill,minmax(50px,1fr));gap:6px}
+.ag{position:relative;min-height:50px;padding:0;border-radius:12px;border:1.5px solid var(--garis);background:var(--muka);color:var(--dakwat);font-size:17px;font-weight:700;font-variant-numeric:tabular-nums;touch-action:manipulation;scroll-margin:90px 0 160px;transition:transform .1s}
+.ag:active{transform:scale(.95)}
+.ag.on{background:var(--hijau-lembut);border-color:var(--hijau);color:var(--hijau-dalam)}
+.ag.main{background:var(--hijau);border-color:var(--hijau);color:var(--hijau-dakwat);box-shadow:0 0 0 3px var(--hijau-lembut)}
+.ag.main.giliran{background:var(--muka);color:var(--hijau);border-style:dashed;animation:giliran 1.6s ease-in-out infinite}
+@keyframes giliran{50%{box-shadow:0 0 0 7px var(--hijau-lembut)}}
+.ag.rj1::after,.ag.rj2::after,.ag.rj3::after{content:"";position:absolute;top:5px;right:5px;width:7px;height:7px;border-radius:50%;background:var(--b-beza)}
+.ag.rj2::after{width:9px;height:9px}
+.ag.rj3::after{width:11px;height:11px;top:4px;right:4px}
+.mod-tanda .ag:not(.on){border-style:dashed}
+.hf-lemah{margin:0 0 12px}
+.hf-lemah:empty{display:none}
+.hf-lemah .sek-kecil{margin-top:4px}
+.hf-teks{margin-top:12px;background:var(--emas-lembut);border-color:transparent;color:var(--emas-dakwat);box-shadow:none}
+.hf-teks p{margin:0;font-size:15px;line-height:1.5}
+.hf-teks a{color:inherit;font-weight:700}
+.hf-kump > summary{display:flex;align-items:baseline;gap:8px;margin:22px 2px 10px;font-size:15px;font-weight:700;color:var(--kabur);cursor:pointer;list-style:none}
+.hf-kump > summary::-webkit-details-marker{display:none}
+.hf-kump > summary::after{content:"";width:8px;height:8px;margin-left:auto;align-self:center;border:solid var(--kabur);border-width:0 2px 2px 0;transform:rotate(45deg);transition:transform .15s}
+.hf-kump[open] > summary::after{transform:rotate(-135deg)}
+.hf-kump > summary .kecil{font-weight:400}
+.pemain.banyak{gap:2px;padding-left:12px}
+.pemain.giliran{border-color:var(--hijau);box-shadow:0 0 0 2px var(--hijau-lembut),var(--bayang)}
+.pemain.giliran .t b{color:var(--hijau)}
+@media (prefers-reduced-motion:reduce){.ag,.ag.main.giliran,.hf-kump > summary::after{animation:none;transition:none}}
+
+/* ------------------------------------------------ Pelekat watak kartun (pek avatar) */
+.pelekat{display:block;width:auto;max-width:none;user-select:none;-webkit-user-select:none;-webkit-user-drag:none;pointer-events:none}
+.widget-jam{position:relative}
+.jam-badan{position:relative}
+.pelekat-jam{position:absolute;right:-6px;bottom:-2px;height:150px}
+.widget-jam.ada-pelekat .jam-tarikh{padding-right:96px}
+.widget-jam.ada-pelekat .jam-solat{max-width:calc(100% - 96px)}
+.hf-ringkas.ada-pelekat{position:relative;padding-right:112px;min-height:140px}
+.pelekat-kad{position:absolute;right:8px;bottom:0;height:124px}
+.kad-ngaji .ng-pos{position:relative;padding-right:84px;min-height:86px}
+.pelekat-ngaji{position:absolute;right:-6px;bottom:-4px;height:90px}
+.roti.ada-pelekat{display:flex;align-items:center;gap:10px;padding:6px 16px 6px 10px}
+.pelekat-roti{height:58px;margin:-16px 0 -6px}
+.barisan-ahli{align-items:flex-end}
+.ahli-b.ada-pelekat{padding-bottom:6px}
+.pelekat-ahli{height:104px}
+.keluarga-atas .barisan-ahli{gap:12px 4px}
+.ahli-b.aktif .pelekat-ahli{filter:drop-shadow(0 0 0 var(--hijau)) drop-shadow(0 3px 0 var(--hijau-lembut))}
+.pelekat-kumpulan{max-width:100%;height:auto;max-height:220px;margin:0 auto 8px}
+.avatar.watak img{object-fit:cover;object-position:50% 35%}
+.pilih-watak{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 6px}
+.watak-baru{margin:12px 0}
+.watak-baru .btn{gap:10px;padding-left:8px}
+.watak-baru .btn .avatar{box-shadow:none}
+.hf-mula{margin-top:4px}
+.hf-mod .tindakan.dua{margin-top:8px}
+.hf-mod .tindakan.dua:has(> :only-child){grid-template-columns:1fr}
+
+/* ------------------------------------------------ Mod Selamat dan pek watak keluarga peribadi */
+.hf-smart{margin:12px 0 6px;background:var(--hijau-lembut);border-color:transparent;box-shadow:none}
+.hf-smart p{margin:4px 0 10px;font-size:15px;line-height:1.5}
+.hf-sentuh-nota{margin:14px 2px 6px;font-weight:600}
+.widget-foto{position:relative;display:flex;justify-content:center;align-items:flex-end;margin:22px 0 0;padding:14px 12px 0;min-height:150px;border-radius:22px;overflow:hidden;text-decoration:none;
+  background:radial-gradient(120% 90% at 50% 110%,var(--dinding-2) 0%,rgba(255,255,255,.06) 70%);box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
+.widget-foto .foto-kumpulan{width:min(100%,340px);height:auto;max-height:220px;object-fit:contain;object-position:bottom}
+.widget-foto .wf-nama{position:absolute;left:14px;top:10px;font-size:14px;font-weight:600;color:var(--atas-dinding-2)}
+.kumpulan-keluarga{display:block;width:100%;max-width:340px;height:auto;margin:0 auto 6px}
+.kumpulan-doa{display:block;width:100%;max-width:320px;height:auto;margin:4px auto 8px}
+.hf-ringkas.ada-kumpulan{padding-right:150px}
+.kumpulan-kad{height:132px}
+.kad-ngaji .ng-pos:has(.kumpulan-ngaji){padding-right:112px}
+.kumpulan-ngaji{height:96px}
+.avatar-roti{flex:none;box-shadow:0 0 0 2px var(--kertas)}
+.pek-kad{margin:12px 0}
+.pek-kad .tindakan.dua:has(> :only-child){grid-template-columns:1fr}
+
+/* ------------------------------------------------ Jalur waktu solat (skrin Utama) */
+.jam-waktu{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;margin-top:10px;padding:4px;border-radius:16px;background:rgba(255,255,255,.08);color:var(--atas-dinding);text-decoration:none;text-align:center;font-variant-numeric:tabular-nums}
+.jam-waktu[hidden]{display:none}
+.jam-waktu .jw{display:flex;flex-direction:column;align-items:center;gap:1px;min-width:0;padding:5px 0 6px;border-radius:12px}
+.jam-waktu .jw-n{font-size:11.5px;line-height:1.2;color:var(--atas-dinding-2);white-space:nowrap}
+.jam-waktu .jw-t{font-size:13.5px;font-weight:600;line-height:1.25;white-space:nowrap}
+.jam-waktu .jw-t small{font-size:9px;font-weight:700;margin-left:2px;letter-spacing:.02em;color:var(--atas-dinding-2)}
+.jam-waktu .jw.kini{background:rgba(255,255,255,.18);box-shadow:inset 0 0 0 1px rgba(217,180,94,.55)}
+.jam-waktu .jw.kini .jw-n{color:var(--atas-dinding)}
+.jam-waktu .jw.lalu{opacity:.55}
+@media (max-width:359px){.jam-waktu .jw-t small{display:none}}
+
+/* ------------------------------------------------ Carian pintar */
+.faham{margin:-4px 0 8px}
+.faham p{margin:2px 0}
+.faham .kabur{color:var(--kabur)}
+.hasil-cari .sek:first-child{margin-top:4px}
+.kump-hasil{margin-bottom:6px}
+.hasil-k{display:block;text-decoration:none;color:var(--dakwat);margin-bottom:10px}
+.hasil-k b{display:block;font-size:16.5px;line-height:1.35}
+.hasil-k p{margin:4px 0 2px;font-size:14.5px;line-height:1.5;color:var(--dakwat)}
+.hasil-k mark,.isi-nota mark{background:var(--emas-lembut);color:inherit;border-radius:3px;padding:0 1px}
+.jp{display:block;text-decoration:none;color:var(--dakwat);border-left:4px solid var(--hijau);margin-bottom:12px}
+.jp .jp-l{display:block;font-size:13.5px;color:var(--kabur);margin-bottom:2px}
+.jp .jp-besar{display:block;font-size:22px;line-height:1.3}
+.jp .jp-sub{display:block;font-size:14px;color:var(--kabur)}
+.jp-senarai{margin:8px 0 10px;padding-left:18px}
+.jp-senarai li{margin:2px 0}
+.jw-kad{margin-top:10px;background:var(--hijau-lembut);color:var(--dakwat)}
+.jw-kad .jw-n,.jw-kad .jw-t small{color:var(--kabur)}
+.jw-kad .jw.kini{background:var(--muka);box-shadow:inset 0 0 0 1.5px var(--hijau)}
+.jw-kad .jw.kini .jw-n{color:var(--dakwat)}
+.laman-rasmi{margin:4px 0 14px}
+.laman-rasmi .baris{gap:8px}
+.isi-nota .sorot-blok{background:var(--emas-lembut);border-radius:8px;box-shadow:0 0 0 6px var(--emas-lembut);transition:background 1.2s}
+
+/* ------------------------------------------------ Khat selawat & zikir harian (skrin Utama) */
+.widget-khat{margin:24px 0 0;padding:14px 16px 14px;border-radius:22px;color:var(--atas-dinding);
+  background:radial-gradient(120% 100% at 50% 0%,rgba(255,255,255,.11) 0%,rgba(255,255,255,.04) 75%);box-shadow:inset 0 0 0 1px rgba(217,180,94,.38)}
+.kh-atas{display:flex;align-items:baseline;justify-content:space-between;gap:4px 10px;flex-wrap:wrap}
+.kh-atas h2{margin:0;font-size:14px;font-weight:700;color:var(--atas-dinding-2)}
+.kh-sebab{font-size:12.5px;font-weight:600;color:#E3C278}
+.kh-ar{margin:8px 0 4px;font-family:"Aref Ruqaa","Amiri",serif;font-weight:700;font-size:26px;line-height:1.9;text-align:center;color:#E8C97E;text-wrap:balance}
+.kh-ar.pendek{font-size:34px;line-height:1.7}
+.kh-ar.panjang{font-size:21px;line-height:2.05}
+.kh-nama{margin:0;text-align:center;font-size:15px}
+.kh-nama span{color:var(--atas-dinding-2);font-weight:600}
+.kh-makna{margin:4px 0 0;text-align:center;font-size:14px;line-height:1.5;color:var(--atas-dinding-2);display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.kh-tindakan{display:flex;justify-content:center;gap:8px;margin-top:12px;flex-wrap:wrap}
+.kh-tindakan .btn{background:rgba(255,255,255,.12);color:var(--atas-dinding);border-color:rgba(255,255,255,.22)}
+.kh-tindakan .btn.kh-kira{background:#D9B45E;color:#2A1E05;border-color:#D9B45E}
+.kh-tindakan .btn svg{width:18px;height:18px}
+/* bunyi peringatan: slot selawat (sebelum waktu) dan takbir (masuk waktu) */
+.bunyi-panel{padding:4px 0 10px;border-bottom:1px solid var(--garis)}
+.bunyi-panel[hidden]{display:none}
+.bunyi-slot{padding:10px 0;border-bottom:1px dashed var(--garis)}
+.bunyi-slot:last-of-type{border-bottom:0}
+.bs-atas{display:flex;align-items:center;gap:10px}
+.bs-atas .tx{flex:1;min-width:0}
+.bs-atas .tx b{display:block;font-size:15.5px}
+.bs-atas .bs-status{font-size:14px;color:var(--kabur)}
+.bs-tindakan{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.bs-tindakan .btn.kecil svg{width:18px;height:18px}
+.bunyi-panel>.kecil{margin:8px 0 0}
+.banner-solat .bs-doa{flex:none;max-width:92px;font-size:13.5px;font-weight:700;line-height:1.25;text-align:center;color:var(--hijau);text-decoration:none;border:1px solid var(--garis);border-radius:10px;padding:6px 8px}
+.helai-rakam{display:grid;gap:8px}
+.rakam-panduan{background:var(--hijau-lembut);border-radius:14px;padding:10px 14px}
+.rakam-panduan .rk-l{display:block;font-size:13px;font-weight:700;color:var(--hijau)}
+.rakam-panduan .rk-ar{font-family:var(--arab);direction:rtl;text-align:right;unicode-bidi:isolate;font-size:24px;line-height:1.9;margin:4px 0 0}
+.rakam-panduan .rk-rumi{font-style:italic;margin:2px 0}
+.rakam-panduan .kecil{margin:2px 0 0}
+.rakam-status{margin:2px 0;font-weight:600;min-height:1.5em}
+.rakam-butang{margin:0}
+.rakam-butang .btn{flex:1 1 auto}
+.hari-info.nasihat{margin:8px 0 4px;background:var(--emas-lembut);color:var(--emas-dakwat);font-size:14.5px}
+.hari-info.nasihat[hidden]{display:none}
+.hari-info.nasihat a{color:inherit;font-weight:700}
+/* pelekat separuh badan di tempat tambahan: Cari, Nota, Waktu Solat, papan Keluarga */
+.cari-ilustrasi{display:flex;justify-content:center;margin:6px 0 0}
+.cari-ilustrasi .pelekat-cari{height:150px;max-height:none;max-width:100%;width:auto;margin:0}
+.nota-atas.ada-pelekat{display:flex;align-items:flex-end;gap:8px}
+.nota-atas.ada-pelekat .pengenalan{flex:1;margin-bottom:14px}
+.pelekat-nota{height:116px;flex:none;margin:0 2px -2px 0}
+.sek-pelekat{display:flex;align-items:flex-end;justify-content:space-between;gap:8px}
+.sek-pelekat .sek{margin-bottom:10px}
+.pelekat-sek{height:92px;flex:none;margin:6px 12px -6px 0;position:relative;z-index:1}
+.papan-bersama.ada-gambar{display:flex;align-items:center;gap:10px}
+.papan-bersama .kecil{flex:1}
+.papan-bersama .kumpulan-syabas{height:116px;width:auto;max-width:46%;max-height:none;margin:0;object-fit:contain;flex:none}
+@media (max-width:359px){.pelekat-nota{height:96px}.pelekat-sek{height:80px}}
+.kumpulan-doa{width:auto;max-width:min(100%,320px);max-height:180px}

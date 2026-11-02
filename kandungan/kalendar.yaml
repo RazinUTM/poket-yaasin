@@ -1,0 +1,159 @@
+# Cadangan kontekstual di skrin Utama. Syarat "bila" (semua mesti benar; senarai = mana-mana satu):
+#   hari: [0-6] (0 = Ahad) | dari/hingga: "HH:MM" (boleh melintasi tengah malam)
+#   hijri: {bulan: n, hari: [a, b]} | tarikh: ["YYYY-MM-DD", "YYYY-MM-DD"] | sentiasa: true
+# cadang: doa:id | susunan:id | majlis:id     jenis: waktu | amalan | musim | semasa
+- id: malam-jumaat
+  tajuk: Malam Jumaat
+  jenis: amalan
+  bila: [{hari: [4], dari: "19:15"}, {hari: [5], hingga: "05:45"}]
+  pesan: "Masa lazim bacaan Yaasin dan tahlil di masjid, surau dan rumah. Perbanyakkan selawat. [[yaasin-jumaat|Status amalan Yaasin malam Jumaat]]"
+  cadang: [majlis:yaasin-jumaat, majlis:tahlil-ringkas, doa:selawat-11]
+- id: hari-jumaat
+  tajuk: Hari Jumaat
+  jenis: amalan
+  bila: [{hari: [5], dari: "05:45", hingga: "19:15"}]
+  pesan: "Jumaat ialah hari raya mingguan umat Islam (Sunan Ibn Majah no. 1098). Padanya ada satu saat yang doa seorang Muslim diperkenankan (Sahih al-Bukhari no. 935). Perbanyakkan selawat (Sunan Abi Dawud no. 1047). [[waktu-mustajab|Waktu doa mustajab]], [[amalan-harian|amalan harian]]"
+  cadang: [hafalan:kahfi, doa:selawat-ibrahimiyah, doa:q-rabbana-atina, doa:sayyidul-istighfar]
+- id: pagi
+  tajuk: Zikir pagi
+  jenis: waktu
+  bila: [{dari: "05:45", hingga: "11:00"}]
+  cadang: [doa:pagi-petang-bika, doa:la-yadurru, doa:afwa-afiah, doa:afiat-badan, doa:ya-hayyu, doa:sayyidul-istighfar]
+- id: petang
+  tajuk: Zikir petang
+  jenis: waktu
+  bila: [{dari: "16:00", hingga: "19:30"}]
+  cadang: [doa:pagi-petang-amsaina, doa:kalimat-tammat, doa:la-yadurru, doa:q-tiga-qul, doa:sayyidul-istighfar]
+- id: tidur
+  tajuk: Sebelum tidur
+  jenis: waktu
+  bila: [{dari: "21:30", hingga: "02:00"}]
+  cadang: [doa:q-ayat-kursi, doa:q-la-tuakhidzna, doa:q-tiga-qul, doa:tidur-aslamtu, doa:tidur]
+- id: sepertiga-malam
+  tajuk: Sepertiga akhir malam
+  jenis: waktu
+  bila: [{dari: "03:00", hingga: "05:45"}]
+  pesan: "Allah turun ke langit dunia pada sepertiga akhir malam dan berfirman: sesiapa yang berdoa kepada-Ku, Aku perkenankan (Sahih al-Bukhari no. 1145). [[waktu-mustajab|Waktu doa mustajab]]"
+  cadang: [doa:q-ulul-albab, doa:sayyidul-istighfar, doa:q-zalamna, doa:istikharah]
+- id: esok-isnin
+  tajuk: "Puasa sunat Isnin: niat dan sahur"
+  jenis: amalan
+  bila: [{hari: [0], dari: "20:00"}, {hari: [1], hingga: "05:00"}]
+  pesan: "Bersahurlah, kerana pada sahur ada keberkatan (Sahih al-Bukhari no. 1923). Terlupa berniat? Puasa sunat boleh diniatkan pada pagi esok selagi belum makan atau minum. [[puasa-adab|Niat dan adab puasa sunat]]"
+  cadang: [doa:berbuka]
+- id: puasa-isnin
+  tajuk: Puasa sunat hari Isnin
+  jenis: amalan
+  bila: [{hari: [1], dari: "05:00", hingga: "19:30"}]
+  pesan: "Isnin ialah hari Nabi ﷺ dilahirkan dan hari wahyu mula diturunkan kepada baginda (Sahih Muslim no. 1162b). Doa orang berpuasa hingga berbuka antara doa yang tidak ditolak (Jami' at-Tirmizi no. 3598, hasan). [[puasa-nabi|Cara Nabi ﷺ berpuasa]]"
+  cadang: [doa:berbuka]
+- id: esok-khamis
+  tajuk: "Puasa sunat Khamis: niat dan sahur"
+  jenis: amalan
+  bila: [{hari: [3], dari: "20:00"}, {hari: [4], hingga: "05:00"}]
+  pesan: "Amalan dibentangkan kepada Allah pada hari Isnin dan Khamis; Nabi ﷺ suka amalannya dibentangkan ketika baginda berpuasa (Jami' at-Tirmizi no. 747, hasan). Bersahurlah, kerana pada sahur ada keberkatan (Sahih al-Bukhari no. 1923). [[puasa-adab|Niat dan adab puasa sunat]]"
+  cadang: [doa:berbuka]
+- id: puasa-khamis
+  tajuk: Puasa sunat hari Khamis
+  jenis: amalan
+  bila: [{hari: [4], dari: "05:00", hingga: "19:15"}]
+  pesan: "Amalan dibentangkan kepada Allah pada hari Isnin dan Khamis (Jami' at-Tirmizi no. 747, hasan). Mahu berpuasa hari Jumaat juga? Sambungkan dengan hari ini atau dengan hari Sabtu, kerana Nabi ﷺ melarang berpuasa pada hari Jumaat sahaja (Sahih al-Bukhari no. 1985). [[puasa-nabi|Cara Nabi ﷺ berpuasa]]"
+  cadang: [doa:berbuka]
+- id: ayyamul-bidh
+  tajuk: Hari-hari putih (13–15 Hijri)
+  jenis: amalan
+  bila: [{hijri: {hari: [13, 15]}}]
+  pesan: "Puasa tiga hari setiap bulan menyamai puasa sepanjang tahun, kerana setiap kebaikan dibalas sepuluh kali ganda (Sahih al-Bukhari no. 1975). 13, 14 dan 15 Hijri ialah antara hari yang dianjurkan. [[puasa-nabi|Cara Nabi ﷺ berpuasa]]"
+  cadang: [doa:berbuka]
+- id: anak-bulan
+  tajuk: Awal bulan Hijri
+  jenis: musim
+  bila: [{hijri: {hari: [29, 30]}}, {hijri: {hari: [1, 2]}}]
+  cadang: [doa:anak-bulan]
+- id: rejab
+  tajuk: Masuk bulan Rejab
+  jenis: musim
+  bila: [{hijri: {bulan: 7, hari: [1, 10]}}]
+  pesan: "Doa \"Allaahumma baarik lanaa fii Rajab…\" sanadnya lemah tetapi teksnya boleh dibaca sebagai doa umum (Pejabat Mufti WP, Irsyad al-Hadith 41). [[rejab|Baca nota]]"
+  cadang: [doa:rejab-syaaban]
+- id: syaaban
+  tajuk: Bulan Syaaban
+  jenis: musim
+  bila: [{hijri: {bulan: 8, hari: [1, 11]}}]
+  pesan: "Nabi ﷺ paling banyak berpuasa sunat dalam bulan Syaaban, bulan yang dilalaikan manusia antara Rejab dan Ramadan, ketika amalan diangkat kepada Allah (Sahih al-Bukhari no. 1969; Sunan an-Nasa'i no. 2357, hasan). [[puasa-nabi|Cara Nabi ﷺ berpuasa]]"
+  cadang: [doa:berbuka, doa:sayyidul-istighfar]
+- id: nisfu-syaaban
+  tajuk: Malam Nisfu Syaaban
+  jenis: musim
+  bila: [{hijri: {bulan: 8, hari: [12, 15]}}]
+  pesan: "Kelebihan malam ini sabit secara keseluruhan, tetapi tiada amalan khusus yang sabit daripada Nabi ﷺ; digalakkan zikir, istighfar, doa dan sedekah (Pejabat Mufti WP, Irsyad al-Hadith 70). [[nisfu-syaaban|Baca nota]]"
+  cadang: [majlis:nisfu-syaaban, doa:doa-nisfu-syaaban, doa:sayyidul-istighfar]
+- id: ramadan
+  tajuk: Bulan Ramadan
+  jenis: musim
+  bila: [{hijri: {bulan: 9}}]
+  cadang: [doa:berbuka, doa:lailatul-qadar, doa:qunut-subuh]
+- id: lailatul-qadar
+  tajuk: Sepuluh malam terakhir Ramadan
+  jenis: musim
+  bila: [{hijri: {bulan: 9, hari: [20, 30]}}]
+  pesan: "Carilah malam al-Qadar pada malam-malam ganjil sepuluh terakhir."
+  cadang: [doa:lailatul-qadar, doa:q-ulul-albab]
+- id: syawal
+  tajuk: Aidilfitri
+  jenis: musim
+  bila: [{hijri: {bulan: 10, hari: [1, 7]}}]
+  cadang: [doa:tahniah-raya, doa:ziarah-kubur, doa:baju-baru, majlis:ziarah-kubur]
+- id: zulhijjah
+  tajuk: Sepuluh hari Zulhijjah
+  jenis: musim
+  bila: [{hijri: {bulan: 12, hari: [1, 10]}}]
+  pesan: "Tiada hari yang amal soleh padanya lebih disukai Allah daripada sepuluh hari ini (Sahih al-Bukhari no. 969). Nabi ﷺ dilaporkan berpuasa pada sembilan hari pertamanya (Sunan Abi Dawud no. 2437); 10 Zulhijjah ialah Hari Raya, dilarang berpuasa. [[puasa-nabi|Cara Nabi ﷺ berpuasa]]"
+  cadang: [doa:arafah, doa:q-rabbana-taqabbal, doa:lepas-musafir]
+- id: akhir-tahun
+  tajuk: Akhir tahun Hijrah
+  jenis: musim
+  bila: [{hijri: {bulan: 12, hari: [27, 30]}}]
+  pesan: "Doa akhir tahun dibaca sebelum Maghrib hari terakhir Zulhijjah (amalan ulama; tiada hadis sahih khusus). [[akhir-awal-tahun|Baca nota]]"
+  cadang: [doa:doa-akhir-tahun, majlis:akhir-awal-tahun]
+- id: awal-tahun
+  tajuk: Awal tahun Hijrah
+  jenis: musim
+  bila: [{hijri: {bulan: 1, hari: [1, 3]}}]
+  cadang: [doa:doa-awal-tahun]
+- id: monsun
+  tajuk: Musim tengkujuh (Monsun Timur Laut)
+  jenis: semasa
+  bila: [{tarikh: ["2026-10-27", "2027-01-31"]}]
+  pesan: "MetMalaysia: Monsun Timur Laut bermula 27 Okt 2026 hingga Mac 2027, dengan 3–5 episod hujan lebat berterusan pada Nov 2026–Jan 2027 (Kenyataan Media 23 Okt 2026). Patuhi amaran rasmi; jauhi ritual \"tolak hujan\" (Mufti WP, Al-Kafi #1467). [[banjir-hujan|Baca nota]]"
+  cadang: [doa:hujan-lebat, doa:hujan-turun, doa:bencana-umum, majlis:hajat-bencana]
+- id: kering
+  tajuk: Musim kering & panas (El Niño)
+  jenis: semasa
+  bila: [{tarikh: ["2027-01-15", "2027-03-31"]}]
+  pesan: "MetMalaysia menjangka cuaca panas dan kering pada Jan–Mac 2027, terutamanya di utara Semenanjung dan Sabah (El Niño kuat)."
+  cadang: [doa:istisqa, majlis:hajat-jerebu]
+- id: jerebu
+  tajuk: Jerebu
+  jenis: semasa
+  bila: [{tarikh: ["2026-08-25", "2026-11-10"]}]
+  pesan: "Seruan solat hajat untuk jerebu oleh Menteri Agama dan JAKIM (Ogos & Okt 2026)."
+  cadang: [doa:istisqa, doa:afwa-afiah, majlis:hajat-jerebu]
+- id: spm
+  tajuk: SPM 2026
+  jenis: semasa
+  bila: [{tarikh: ["2026-11-16", "2026-12-17"]}]
+  pesan: "Kertas bertulis SPM 2026: 23 Nov – 17 Dis 2026 (Lembaga Peperiksaan)."
+  cadang: [majlis:peperiksaan, doa:q-rabbish-rahli, doa:sahla]
+- id: stpm
+  tajuk: STPM Semester 3
+  jenis: semasa
+  bila: [{tarikh: ["2026-11-14", "2026-11-26"]}]
+  pesan: "STPM Semester 3: 17–26 Nov 2026 (Majlis Peperiksaan Malaysia)."
+  cadang: [majlis:peperiksaan, doa:q-zidni-ilma]
+- id: palestin
+  tajuk: Palestin & Masjid al-Aqsa
+  jenis: semasa
+  bila: [{sentiasa: true}]
+  pesan: "JAKIM menyeru solat hajat dan qunut nazilah (1 Mac 2026); seruan solat hajat untuk perlindungan Masjid al-Aqsa (Okt 2026). Pejabat Mufti WP: qunut nazilah diteruskan selagi kezaliman belum berakhir. [[qunut-nazilah|Baca nota]]"
+  cadang: [doa:qunut-nazilah, doa:q-mustadhafin, majlis:hajat-palestin]

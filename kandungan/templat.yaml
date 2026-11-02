@@ -1,0 +1,59 @@
+# Templat baris yang dijana mengikut nama arwah. {NAMA} dan {BAPA} diganti oleh app.
+# Jantina: l = lelaki, p = perempuan. Bilangan untuk "arwah-ampun": l/p (seorang), d (dua orang), r (ramai), rp (ramai, semua perempuan).
+
+khusus-fatihah:
+  tajuk: Khusus untuk arwah
+  l:
+    teks: "خُصُوْصًا إِلَى رُوْحِ الْمَرْحُوْمِ {NAMA} بْنِ {BAPA} | وَأُصُوْلِهِ وَفُرُوْعِهِ | وَمَنْ يَنْتَسِبُ إِلَيْهِ أَجْمَعِيْنَ"
+    frasa: "Khususnya kepada roh Allahyarham {NAMA} bin {BAPA} | serta usul (leluhur) dan furu' (keturunan)nya | dan sesiapa yang bernasab kepadanya sekalian"
+    rumi: "Khusuusan ilaa ruuhil marhuum {NAMA} bin {BAPA}, wa usuulihii wa furuu'ihii wa man yantasibu ilaihi ajma'iin."
+    makna: "Khususnya kepada roh Allahyarham {NAMA} bin {BAPA}, serta leluhur, keturunan dan sesiapa yang bernasab kepadanya."
+  p:
+    teks: "خُصُوْصًا إِلَى رُوْحِ الْمَرْحُوْمَةِ {NAMA} بِنْتِ {BAPA} | وَأُصُوْلِهَا وَفُرُوْعِهَا | وَمَنْ يَنْتَسِبُ إِلَيْهَا أَجْمَعِيْنَ"
+    frasa: "Khususnya kepada roh Allahyarhamah {NAMA} binti {BAPA} | serta usul (leluhur) dan furu' (keturunan)nya | dan sesiapa yang bernasab kepadanya sekalian"
+    rumi: "Khusuusan ilaa ruuhil marhuumah {NAMA} binti {BAPA}, wa usuulihaa wa furuu'ihaa wa man yantasibu ilaihaa ajma'iin."
+    makna: "Khususnya kepada roh Allahyarhamah {NAMA} binti {BAPA}, serta leluhur, keturunan dan sesiapa yang bernasab kepadanya."
+
+khusus-doa:
+  tajuk: Khusus untuk arwah
+  l:
+    teks: "وَخُصُوْصًا إِلَى رُوْحِ الْمَرْحُوْمِ {NAMA} بْنِ {BAPA} | وَأُصُوْلِهِ وَفُرُوْعِهِ | وَمَنْ يَنْتَسِبُ إِلَيْهِ أَجْمَعِيْنَ"
+    frasa: "Dan khususnya kepada roh Allahyarham {NAMA} bin {BAPA} | serta usul (leluhur) dan furu' (keturunan)nya | dan sesiapa yang bernasab kepadanya sekalian"
+    rumi: "Wa khusuusan ilaa ruuhil marhuum {NAMA} bin {BAPA}, wa usuulihii wa furuu'ihii wa man yantasibu ilaihi ajma'iin."
+    makna: "Dan khususnya kepada roh Allahyarham {NAMA} bin {BAPA}, serta leluhur, keturunan dan sesiapa yang bernasab kepadanya."
+  p:
+    teks: "وَخُصُوْصًا إِلَى رُوْحِ الْمَرْحُوْمَةِ {NAMA} بِنْتِ {BAPA} | وَأُصُوْلِهَا وَفُرُوْعِهَا | وَمَنْ يَنْتَسِبُ إِلَيْهَا أَجْمَعِيْنَ"
+    frasa: "Dan khususnya kepada roh Allahyarhamah {NAMA} binti {BAPA} | serta usul (leluhur) dan furu' (keturunan)nya | dan sesiapa yang bernasab kepadanya sekalian"
+    rumi: "Wa khusuusan ilaa ruuhil marhuumah {NAMA} binti {BAPA}, wa usuulihaa wa furuu'ihaa wa man yantasibu ilaihaa ajma'iin."
+    makna: "Dan khususnya kepada roh Allahyarhamah {NAMA} binti {BAPA}, serta leluhur, keturunan dan sesiapa yang bernasab kepadanya."
+
+arwah-ampun:
+  tajuk: Doa keampunan untuk arwah
+  sumber: "Lafaz daripada doa jenazah, Sahih Muslim no. 963"
+  l:
+    teks: "اَللّٰهُمَّ اغْفِرْ لَهُ وَارْحَمْهُ | وَعَافِهِ وَاعْفُ عَنْهُ"
+    frasa: "Ya Allah, ampunilah dia (lelaki) dan rahmatilah dia | sejahterakanlah dia dan maafkanlah dia"
+    rumi: "Allaahummaghfir lahuu warhamhu wa 'aafihii wa'fu 'anh."
+    makna: "Ya Allah, ampunilah dia, rahmatilah dia, sejahterakanlah dia dan maafkanlah dia."
+  p:
+    teks: "اَللّٰهُمَّ اغْفِرْ لَهَا وَارْحَمْهَا | وَعَافِهَا وَاعْفُ عَنْهَا"
+    frasa: "Ya Allah, ampunilah dia (perempuan) dan rahmatilah dia | sejahterakanlah dia dan maafkanlah dia"
+    rumi: "Allaahummaghfir lahaa warhamhaa wa 'aafihaa wa'fu 'anhaa."
+    makna: "Ya Allah, ampunilah dia, rahmatilah dia, sejahterakanlah dia dan maafkanlah dia."
+  d:
+    teks: "اَللّٰهُمَّ اغْفِرْ لَهُمَا وَارْحَمْهُمَا | وَعَافِهِمَا وَاعْفُ عَنْهُمَا"
+    frasa: "Ya Allah, ampunilah mereka berdua dan rahmatilah mereka berdua | sejahterakanlah mereka berdua dan maafkanlah mereka berdua"
+    rumi: "Allaahummaghfir lahumaa warhamhumaa wa 'aafihimaa wa'fu 'anhumaa."
+    makna: "Ya Allah, ampunilah, rahmatilah, sejahterakanlah dan maafkanlah mereka berdua."
+    nota: "Lafaz dua orang (mutsanna) — tambahan tatabahasa; buku hanya memberi bentuk seorang dan ramai."
+  r:
+    teks: "اَللّٰهُمَّ اغْفِرْ لَهُمْ وَارْحَمْهُمْ | وَعَافِهِمْ وَاعْفُ عَنْهُمْ"
+    frasa: "Ya Allah, ampunilah mereka dan rahmatilah mereka | sejahterakanlah mereka dan maafkanlah mereka"
+    rumi: "Allaahummaghfir lahum warhamhum wa 'aafihim wa'fu 'anhum."
+    makna: "Ya Allah, ampunilah, rahmatilah, sejahterakanlah dan maafkanlah mereka."
+  rp:
+    teks: "اَللّٰهُمَّ اغْفِرْ لَهُنَّ وَارْحَمْهُنَّ | وَعَافِهِنَّ وَاعْفُ عَنْهُنَّ"
+    frasa: "Ya Allah, ampunilah mereka (perempuan) dan rahmatilah mereka | sejahterakanlah mereka dan maafkanlah mereka"
+    rumi: "Allaahummaghfir lahunna warhamhunna wa 'aafihinna wa'fu 'anhunna."
+    makna: "Ya Allah, ampunilah, rahmatilah, sejahterakanlah dan maafkanlah mereka."
+    nota: "Lafaz ramai (semua perempuan) — tambahan tatabahasa."

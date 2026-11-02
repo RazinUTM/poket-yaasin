@@ -1,0 +1,7 @@
+# Kad "Selawat hari ini" / "Zikir hari ini" di skrin Utama, dipaparkan dengan khat Riq'ah (fon Aref Ruqaa).
+# Satu bacaan sehari, bergilir: selawat dan zikir berselang hari; hari Jumaat sentiasa selawat (Nabi ﷺ menyuruh
+# memperbanyak selawat pada hari Jumaat). Bacaan yang ditanda bintang (butang Simpan) muncul dua daripada tiga giliran.
+# HANYA selawat dan zikir yang bukan petikan ayat al-Quran: fon khat bukan Rasm Uthmani (Akta 326 s.14).
+# bina.py gagal jika id tiada, jika bacaan ada rujukan ayat (quran:) atau petikan ayat dikesan (rumi.yaml: ambang).
+selawat: [selawat-ibrahimiyah, selawat-tafrijiyah, selawat-syifa, selawat-habib, selawat-pendek]
+zikir: [zikir-tasbih-100, zikir-dua-kalimah, zikir-tahlil-100, istighfar-100, zikir-hauqalah, zikir-empat-kalimah, zikir-juwairiyah]

@@ -1,0 +1,116 @@
+# Selawat dan zikir harian (juga kad khat di skrin Utama, kandungan/khat.yaml).
+# Lafaz hadis disalin daripada pangkalan sunnah.com (penomboran sunnah.com) dan disemak oleh tools/semak_hadis.py.
+# Bilangan (ulang) hanya diletakkan jika disebut dalam hadis.
+
+- id: selawat-ibrahimiyah
+  tajuk: Selawat Ibrahimiyah
+  subtajuk: Selawat yang diajar sendiri oleh Nabi ﷺ
+  kat: [selawat]
+  tag: [selawat, ibrahimiyah, tahiyat akhir, selawat nabi]
+  lihat: [selawat]
+  bila: "Bila-bila masa; juga dalam tahiyat akhir solat"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 3370; Sahih Muslim, no. 406a", darjat: Sahih, url: "https://sunnah.com/bukhari:3370", nota: "Lafaz al-Bukhari. Para sahabat bertanya cara berselawat ke atas Nabi ﷺ, lalu baginda mengajarkan lafaz ini."}
+  teks: "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ | وَعَلَى آلِ مُحَمَّدٍ | كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ | وَعَلَى آلِ إِبْرَاهِيمَ | إِنَّكَ حَمِيدٌ مَجِيدٌ | اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ | وَعَلَى آلِ مُحَمَّدٍ | كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ | وَعَلَى آلِ إِبْرَاهِيمَ | إِنَّكَ حَمِيدٌ مَجِيدٌ"
+  frasa: "Ya Allah, limpahkanlah selawat ke atas Muhammad | dan ke atas keluarga Muhammad | sebagaimana Engkau limpahkan selawat ke atas Ibrahim | dan ke atas keluarga Ibrahim | sesungguhnya Engkau Maha Terpuji lagi Maha Mulia | Ya Allah, limpahkanlah keberkatan ke atas Muhammad | dan ke atas keluarga Muhammad | sebagaimana Engkau limpahkan keberkatan ke atas Ibrahim | dan ke atas keluarga Ibrahim | sesungguhnya Engkau Maha Terpuji lagi Maha Mulia"
+  rumi: "Allaahumma salli 'alaa Muhammadin wa 'alaa aali Muhammad, kamaa sallaita 'alaa Ibraahiima wa 'alaa aali Ibraahiim, innaka hamiidum majiid. Allaahumma baarik 'alaa Muhammadin wa 'alaa aali Muhammad, kamaa baarakta 'alaa Ibraahiima wa 'alaa aali Ibraahiim, innaka hamiidum majiid."
+  makna: "Ya Allah, limpahkanlah selawat ke atas Muhammad dan keluarga Muhammad sebagaimana Engkau limpahkan selawat ke atas Ibrahim dan keluarga Ibrahim; sesungguhnya Engkau Maha Terpuji lagi Maha Mulia. Ya Allah, limpahkanlah keberkatan ke atas Muhammad dan keluarga Muhammad sebagaimana Engkau limpahkan keberkatan ke atas Ibrahim dan keluarga Ibrahim; sesungguhnya Engkau Maha Terpuji lagi Maha Mulia."
+
+- id: zikir-tasbih-100
+  tajuk: Tasbih harian
+  kat: [zikir]
+  tag: [tasbih, tahmid, zikir harian, dosa, subhanallah]
+  ulang: 100
+  bila: "Bila-bila masa dalam sehari"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6405", darjat: Sahih, url: "https://sunnah.com/bukhari:6405", nota: "Sesiapa mengucapkannya 100 kali dalam sehari, kesalahannya dihapuskan walaupun sebanyak buih di lautan."}
+  teks: "سُبْحَانَ اللَّهِ | وَبِحَمْدِهِ"
+  frasa: "Maha Suci Allah | dan dengan memuji-Nya"
+  rumi: "Subhaanallaahi wa bihamdih."
+  makna: "Maha Suci Allah dan segala puji bagi-Nya."
+
+- id: zikir-dua-kalimah
+  tajuk: Dua kalimah yang berat di timbangan
+  kat: [zikir]
+  tag: [tasbih, zikir harian, subhanallah, mizan]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6682", darjat: Sahih, url: "https://sunnah.com/bukhari:6682", nota: "Dua kalimah yang ringan di lidah, berat di timbangan dan dicintai oleh Ar-Rahman."}
+  teks: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ | سُبْحَانَ اللَّهِ الْعَظِيمِ"
+  frasa: "Maha Suci Allah dan dengan memuji-Nya | Maha Suci Allah Yang Maha Agung"
+  rumi: "Subhaanallaahi wa bihamdih, subhaanallaahil 'aziim."
+  makna: "Maha Suci Allah dan segala puji bagi-Nya; Maha Suci Allah Yang Maha Agung."
+
+- id: zikir-tahlil-100
+  tajuk: Tahlil harian
+  kat: [zikir]
+  tag: [tahlil, tauhid, zikir harian, pendinding, 100 kali]
+  ulang: 100
+  bila: "Bila-bila masa dalam sehari; pahalanya penuh jika dibaca 100 kali"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 3293; Sahih Muslim, no. 2691a", darjat: Sahih, url: "https://sunnah.com/bukhari:3293", nota: "Sesiapa mengucapkannya 100 kali sehari mendapat pahala seperti membebaskan sepuluh hamba, ditulis 100 kebaikan, dihapuskan 100 keburukan, dan menjadi pelindung daripada syaitan pada hari itu hingga petang."}
+  teks: "لاَ إِلَهَ إِلاَّ اللَّهُ | وَحْدَهُ لاَ شَرِيكَ لَهُ | لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ | وَهُوَ عَلَى كُلِّ شَىْءٍ قَدِيرٌ"
+  frasa: "Tiada tuhan melainkan Allah | Yang Esa, tiada sekutu bagi-Nya | bagi-Nya kerajaan dan bagi-Nya segala puji | dan Dia Maha Berkuasa atas segala sesuatu"
+  rumi: "Laa ilaaha illallaahu wahdahuu laa syariika lah, lahul mulku wa lahul hamdu wa huwa 'alaa kulli syai'in qadiir."
+  makna: "Tiada tuhan melainkan Allah, Yang Esa, tiada sekutu bagi-Nya; bagi-Nya kerajaan dan segala puji, dan Dia Maha Berkuasa atas segala sesuatu."
+
+- id: istighfar-100
+  tajuk: Istighfar harian Nabi ﷺ
+  kat: [zikir]
+  tag: [istighfar, taubat, zikir harian, dosa, 100 kali]
+  ulang: 100
+  bila: "Bila-bila masa dalam sehari"
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6307; Sahih Muslim, no. 2702a", darjat: Sahih, url: "https://sunnah.com/bukhari:6307", nota: "Lafaz ini daripada al-Bukhari: Nabi ﷺ beristighfar dan bertaubat lebih 70 kali sehari. Dalam Sahih Muslim, baginda beristighfar 100 kali sehari (2702a) dan bertaubat 100 kali sehari (2702b); bilangan 100 di sini mengikut riwayat itu."}
+  teks: "أَسْتَغْفِرُ اللَّهَ | وَأَتُوبُ إِلَيْهِ"
+  frasa: "Aku memohon ampun kepada Allah | dan aku bertaubat kepada-Nya"
+  rumi: "Astaghfirullaaha wa atuubu ilaih."
+  makna: "Aku memohon ampun kepada Allah dan aku bertaubat kepada-Nya."
+
+- id: zikir-hauqalah
+  tajuk: Laa hawla wa laa quwwata illaa billaah
+  kat: [zikir]
+  tag: [hauqalah, zikir harian, tawakal, perbendaharaan syurga]
+  sumber: {jenis: hadis, ruj: "Sahih al-Bukhari, no. 6384; Sahih Muslim, no. 2704a", darjat: Sahih, url: "https://sunnah.com/bukhari:6384", nota: "Nabi ﷺ menyebutnya salah satu perbendaharaan daripada perbendaharaan syurga."}
+  teks: "لاَ حَوْلَ وَلاَ قُوَّةَ | إِلاَّ بِاللَّهِ"
+  frasa: "Tiada daya dan tiada kekuatan | melainkan dengan (pertolongan) Allah"
+  rumi: "Laa hawla wa laa quwwata illaa billaah."
+  makna: "Tiada daya dan tiada kekuatan melainkan dengan pertolongan Allah."
+
+- id: zikir-empat-kalimah
+  tajuk: Empat kalimah yang paling dicintai Allah
+  kat: [zikir]
+  tag: [tasbih, tahmid, tahlil, takbir, zikir harian, baqiyat solihat]
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 2137a", darjat: Sahih, url: "https://sunnah.com/muslim:2137a", nota: "Kalimah yang paling dicintai Allah ada empat; tidak mengapa dimulakan dengan yang mana satu."}
+  teks: "سُبْحَانَ اللَّهِ | وَالْحَمْدُ لِلَّهِ | وَلاَ إِلَهَ إِلاَّ اللَّهُ | وَاللَّهُ أَكْبَرُ"
+  frasa: "Maha Suci Allah | segala puji bagi Allah | tiada tuhan melainkan Allah | Allah Maha Besar"
+  rumi: "Subhaanallaah, walhamdu lillaah, wa laa ilaaha illallaah, wallaahu akbar."
+  makna: "Maha Suci Allah, segala puji bagi Allah, tiada tuhan melainkan Allah, Allah Maha Besar."
+
+- id: zikir-juwairiyah
+  tajuk: Tasbih yang mengatasi zikir sepagi (Juwairiyah)
+  kat: [zikir]
+  tag: [tasbih, zikir pagi, zikir harian, juwairiyah]
+  ulang: 3
+  bila: "Selepas Subuh atau bila-bila masa; Nabi ﷺ mengucapkannya tiga kali"
+  sumber: {jenis: hadis, ruj: "Sahih Muslim, no. 2726a", darjat: Sahih, url: "https://sunnah.com/muslim:2726a", nota: "Nabi ﷺ memberitahu Juwairiyah bahawa empat kalimah ini, diucapkan tiga kali, lebih berat jika ditimbang dengan zikir beliau sejak pagi."}
+  teks: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ | عَدَدَ خَلْقِهِ | وَرِضَا نَفْسِهِ | وَزِنَةَ عَرْشِهِ | وَمِدَادَ كَلِمَاتِهِ"
+  frasa: "Maha Suci Allah dan dengan memuji-Nya | sebanyak bilangan makhluk-Nya | seluas keredaan diri-Nya | seberat timbangan Arasy-Nya | dan sebanyak dakwat kalimah-kalimah-Nya"
+  rumi: "Subhaanallaahi wa bihamdihii 'adada khalqihii wa ridhaa nafsihii wa zinata 'arsyihii wa midaada kalimaatih."
+  makna: "Maha Suci Allah dan segala puji bagi-Nya, sebanyak bilangan makhluk-Nya, seluas keredaan diri-Nya, seberat timbangan Arasy-Nya dan sebanyak dakwat untuk menulis kalimah-kalimah-Nya."
+
+- id: selawat-tafrijiyah
+  tajuk: Selawat Tafrijiyah (Nariyah)
+  kat: [selawat]
+  tag: [selawat, tafrijiyah, nariyah, hajat, kesusahan, susunan ulama]
+  lihat: [selawat]
+  sumber: {jenis: ulama, ruj: "Selawat susunan ulama, bukan lafaz hadis. Teks seperti yang lazim dibaca di Malaysia; teks dalam Tashih al-Mafahim #20 Pejabat Mufti WP tidak menyebut الَّذِي", darjat: ulama, url: "https://muftiwp.gov.my/ms/artikel/tashih-al-mafahim/5033-tashih-al-mafahim-20-benarkah-terdapat-unsur-syirik-dalam-selawat-tafrijiyyah", nota: "Pejabat Mufti WP (2021): harus diamalkan dan tiada unsur syirik, dengan keyakinan bahawa pemberi kesan yang hakiki hanya Allah; \"bihi\" bermaksud dengan sebab Nabi ﷺ. Bilangan khusus seperti 4444 kali tidak bersandarkan ayat atau hadis. Lihat [[selawat]]."}
+  teks: "اللَّهُمَّ صَلِّ صَلاَةً كَامِلَةً | وَسَلِّمْ سَلاَمًا تَامًّا | عَلَى سَيِّدِنَا مُحَمَّدٍ | الَّذِي تَنْحَلُّ بِهِ الْعُقَدُ | وَتَنْفَرِجُ بِهِ الْكُرَبُ | وَتُقْضَى بِهِ الْحَوَائِجُ | وَتُنَالُ بِهِ الرَّغَائِبُ | وَحُسْنُ الْخَوَاتِمِ | وَيُسْتَسْقَى الْغَمَامُ بِوَجْهِهِ الْكَرِيمِ | وَعَلَى آلِهِ وَصَحْبِهِ | فِي كُلِّ لَمْحَةٍ وَنَفَسٍ | بِعَدَدِ كُلِّ مَعْلُومٍ لَكَ"
+  frasa: "Ya Allah, limpahkanlah selawat yang sempurna | dan kesejahteraan yang lengkap | ke atas penghulu kami Muhammad | yang dengan sebabnya terungkai segala simpulan (kebuntuan) | dan terlerai segala kesusahan | dan ditunaikan segala hajat | dan dicapai segala yang diingini | serta kesudahan yang baik | dan dimohon turunnya hujan dengan berkat wajahnya yang mulia | serta ke atas keluarga dan sahabat baginda | pada setiap kerdipan mata dan hembusan nafas | sebanyak bilangan segala yang Engkau ketahui"
+  rumi: "Allaahumma salli salaatan kaamilatan wa sallim salaaman taamman 'alaa sayyidinaa Muhammadinil ladzii tanhallu bihil 'uqad, wa tanfariju bihil kurab, wa tuqdhaa bihil hawaa'ij, wa tunaalu bihir raghaa'ibu wa husnul khawaatim, wa yustasqal ghamaamu biwajhihil kariim, wa 'alaa aalihii wa sahbihii fii kulli lamhatin wa nafas, bi'adadi kulli ma'luumin lak."
+  makna: "Ya Allah, limpahkanlah selawat yang sempurna dan kesejahteraan yang lengkap ke atas penghulu kami Muhammad, yang dengan sebabnya terungkai segala kebuntuan, terlerai segala kesusahan, ditunaikan segala hajat, dicapai segala yang diingini serta kesudahan yang baik, dan dimohon hujan dengan berkat wajahnya yang mulia; serta ke atas keluarga dan sahabat baginda, pada setiap kerdipan mata dan hembusan nafas, sebanyak bilangan segala yang Engkau ketahui."
+
+- id: selawat-syifa
+  tajuk: Selawat Syifa' (Tibbil Qulub)
+  kat: [selawat]
+  tag: [selawat, syifa, tibbil qulub, sakit, kesembuhan, susunan ulama]
+  lihat: [selawat]
+  sumber: {jenis: ulama, ruj: "Selawat susunan ulama, bukan lafaz hadis; penyusunnya tidak dapat dipastikan", darjat: ulama, url: "http://e-smaf.islam.gov.my/e-smaf/index.php/main/mainv1/fatwa/pr/11103", nota: "Pandangan berbeza: Jawatankuasa Syariah Negeri Perlis (29 Januari 2007, tidak diwartakan, direkodkan dalam e-SMAF JAKIM) memutuskan selawat ini tidak bersumberkan al-Quran dan Sunnah dan kandungannya bercanggah dengan prinsip akidah. Tiada keputusan Pejabat Mufti WP atau negeri lain mengenainya ditemui. Lihat [[selawat]]."}
+  teks: "اللَّهُمَّ صَلِّ عَلَى سَيِّدِنَا مُحَمَّدٍ | طِبِّ الْقُلُوبِ وَدَوَائِهَا | وَعَافِيَةِ الْأَبْدَانِ وَشِفَائِهَا | وَنُورِ الْأَبْصَارِ وَضِيَائِهَا | وَعَلَى آلِهِ وَصَحْبِهِ وَسَلِّمْ"
+  frasa: "Ya Allah, limpahkanlah selawat ke atas penghulu kami Muhammad | penawar hati dan ubatnya | afiat badan dan penyembuhnya | cahaya penglihatan dan sinarnya | serta ke atas keluarga dan sahabat baginda, dan kurniakanlah kesejahteraan"
+  rumi: "Allaahumma salli 'alaa sayyidinaa Muhammadin, thibbil quluubi wa dawaa'ihaa, wa 'aafiyatil abdaani wa syifaa'ihaa, wa nuuril abshaari wa dhiyaa'ihaa, wa 'alaa aalihii wa sahbihii wa sallim."
+  makna: "Ya Allah, limpahkanlah selawat ke atas penghulu kami Muhammad, penawar bagi hati dan ubatnya, afiat bagi badan dan penyembuhnya, cahaya bagi penglihatan dan sinarnya, serta ke atas keluarga dan sahabat baginda, dan kurniakanlah kesejahteraan."

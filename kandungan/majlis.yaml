@@ -1,0 +1,231 @@
+# Templat majlis untuk Pembina Majlis. Pengguna boleh tambah/buang/susun semula langkah dalam app.
+# Langkah: {susunan: id} | {doa: id} | {quran: "s:a-b", tajuk} | {surah: n}
+# nama: jenis nama yang diminta (arwah | pengantin | tuan-rumah | tiada)
+
+- id: tahlil-yaasin
+  tajuk: Yaasin & Tahlil Arwah
+  ringkas: "Kenduri arwah, malam 1–7, 40 hari, 100 hari, haul"
+  ikon: "☾"
+  nama: arwah
+  langkah:
+    - {doa: istighfar-3}
+    - {doa: fatihah-hadiah}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {surah: 36}
+    - {susunan: tahlil-arwah}
+
+- id: tahlil-arwah
+  tajuk: Tahlil Arwah (lengkap)
+  ringkas: "Tahlil penuh mengikut buku, diikuti Doa Arwah"
+  ikon: "❋"
+  nama: arwah
+  langkah:
+    - {susunan: tahlil-arwah}
+
+- id: tahlil-ringkas
+  tajuk: Tahlil Ringkas
+  ringkas: "Majlis singkat: zikir, Ayat Kursi, tiga Qul, Doa Arwah"
+  ikon: "◌"
+  nama: arwah
+  langkah:
+    - {susunan: tahlil-ringkas}
+
+- id: yaasin-jumaat
+  tajuk: Yaasin Malam Jumaat
+  ringkas: "Bacaan Yaasin dengan kaifiat buku dan Doa Yaasin"
+  ikon: "۞"
+  nama: arwah
+  langkah:
+    - {susunan: yaasin}
+
+- id: doa-selamat
+  tajuk: Doa Selamat & Kesyukuran
+  ringkas: "Kenduri kesyukuran, kenderaan baharu, kejayaan, keluarga"
+  ikon: "❖"
+  nama: tiada
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: doa-selamat}
+    - {doa: q-rabbana-atina}
+    - {doa: doa-jamuan}
+    - {doa: tuan-rumah}
+
+- id: pindah-rumah
+  tajuk: Masuk Rumah Baharu
+  ringkas: "Bacaan al-Baqarah, Ayat Kursi dan doa tempat baharu"
+  ikon: "⌂"
+  nama: tiada
+  nota: "Rumah yang dibacakan surah al-Baqarah, syaitan lari daripadanya (Sahih Muslim no. 780). Ucap salam ketika masuk."
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {quran: "2:1-5", tajuk: "Al-Baqarah 1–5"}
+    - {quran: "2:255", tajuk: "Ayat Kursi"}
+    - {quran: "2:284-286", tajuk: "Al-Baqarah 284–286"}
+    - {doa: q-munzalan-mubarakan}
+    - {doa: kalimat-tammat}
+    - {doa: doa-selamat}
+
+- id: perkahwinan
+  tajuk: Majlis Perkahwinan
+  ringkas: "Doa untuk pengantin dan keluarga"
+  ikon: "✿"
+  nama: tiada
+  nota: "Pejabat Mufti WP (Irsyad Hukum 954, Apr 2026) menasihatkan agar tidak menggunakan doa pengantin yang tiada asas (cth. doa \"seperti Yusuf dan Zulaikha\"); utamakan doa Nabi ﷺ di bawah."
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: pengantin}
+    - {doa: q-qurrata-ayun}
+    - {doa: q-rabbana-atina}
+    - {doa: doa-selamat}
+    - {doa: doa-jamuan}
+
+- id: aqiqah
+  tajuk: Kelahiran & Aqiqah
+  ringkas: "Tahniah kelahiran, pendinding anak dan doa selamat"
+  ikon: "✧"
+  nama: tiada
+  langkah:
+    - {doa: tahniah-kelahiran}
+    - {doa: anak-perlindungan}
+    - {doa: q-qurrata-ayun}
+    - {doa: q-muqimas-solah}
+    - {doa: doa-selamat}
+    - {doa: doa-jamuan}
+
+- id: peperiksaan
+  tajuk: Solat Hajat Peperiksaan
+  ringkas: "SPM, STPM, peperiksaan universiti, temuduga"
+  ikon: "✎"
+  nama: tiada
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: q-rabbish-rahli}
+    - {doa: q-zidni-ilma}
+    - {doa: sahla}
+    - {doa: ilmu-rezeki-amal}
+    - {doa: q-mudkhala-sidqin}
+    - {doa: q-ashabul-kahfi}
+    - {doa: q-rabbana-atina}
+
+- id: musafir
+  tajuk: Melepaskan Musafir / Umrah / Haji
+  ringkas: "Majlis doa sebelum berangkat"
+  ikon: "➶"
+  nama: tiada
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: lepas-musafir}
+    - {doa: q-kenderaan}
+    - {doa: musafir}
+    - {doa: q-khairun-hafizan}
+    - {doa: doa-selamat}
+
+- id: ziarah-kubur
+  tajuk: Ziarah Kubur
+  ringkas: "Salam, bacaan ringkas dan doa untuk arwah"
+  ikon: "☽"
+  nama: arwah
+  langkah:
+    - {doa: ziarah-kubur}
+    - {doa: fatihah-hadiah}
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {quran: "112:1-4", tajuk: "Surah al-Ikhlas", ulang: 3}
+    - {quran: "113:1-5", tajuk: "Surah al-Falaq"}
+    - {quran: "114:1-6", tajuk: "Surah an-Nas"}
+    - {doa: q-lil-ikhwan}
+    - {doa: q-ibu-bapa}
+    - {doa: doa-jenazah}
+
+- id: kematian
+  tajuk: Takziah & Hari Kematian
+  ringkas: "Ucapan takziah, doa musibah dan doa jenazah"
+  ikon: "☾"
+  nama: arwah
+  langkah:
+    - {doa: takziah}
+    - {doa: musibah}
+    - {doa: doa-jenazah}
+    - {doa: q-lil-ikhwan}
+
+- id: pesakit
+  tajuk: Ziarah Pesakit
+  ringkas: "Di rumah atau hospital"
+  ikon: "✚"
+  nama: tiada
+  langkah:
+    - {doa: ziarah-sakit}
+    - {doa: ruqyah-rabban-nas}
+    - {doa: q-ayyub}
+    - {doa: q-tiga-qul}
+    - {doa: afiat-badan}
+
+- id: hajat-bencana
+  tajuk: "Solat Hajat: Banjir & Bencana"
+  ringkas: "Musim tengkujuh, banjir, ribut, tanah runtuh"
+  ikon: "☂"
+  nama: tiada
+  nota: "Pejabat Mufti WP (Al-Kafi #1467): berdoa supaya hujan yang memudaratkan beralih adalah harus; ritual \"tolak hujan\" (cth. menegakkan penyapu) ialah khurafat."
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: hujan-lebat}
+    - {doa: bencana-umum}
+    - {doa: q-yunus}
+    - {doa: q-negara-aman}
+    - {doa: q-majreha}
+    - {doa: q-rabbana-atina}
+
+- id: hajat-palestin
+  tajuk: "Solat Hajat: Palestin & al-Aqsa"
+  ringkas: "Qunut nazilah dan doa untuk umat yang dizalimi"
+  ikon: "✶"
+  nama: tiada
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: qunut-nazilah}
+    - {doa: q-mustadhafin}
+    - {doa: q-la-taj-alna-fitnah}
+    - {doa: q-israfana}
+    - {doa: q-hasbunallah}
+
+- id: hajat-jerebu
+  tajuk: "Solat Hajat: Jerebu & Kemarau"
+  ringkas: "Memohon hujan dan perlindungan kesihatan"
+  ikon: "☁"
+  nama: tiada
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: istisqa}
+    - {doa: hujan-turun}
+    - {doa: afwa-afiah}
+    - {doa: wabak-penyakit}
+    - {doa: q-rabbana-atina}
+
+- id: majlis-ilmu
+  tajuk: Majlis Ilmu, Kelas & Mesyuarat
+  ringkas: "Pembuka dan penutup majlis"
+  ikon: "❦"
+  nama: tiada
+  langkah:
+    - {quran: "1:1-7", tajuk: "Surah al-Fatihah"}
+    - {doa: q-rabbish-rahli}
+    - {doa: q-zidni-ilma}
+    - {doa: ilmu-rezeki-amal}
+    - {doa: kafarah-majlis}
+    - {doa: doa-perpisahan}
+
+- id: akhir-awal-tahun
+  tajuk: Akhir & Awal Tahun Hijrah
+  ringkas: "Doa akhir tahun (sebelum Maghrib) dan awal tahun (selepas Maghrib)"
+  ikon: "☪"
+  nama: tiada
+  langkah:
+    - {doa: doa-akhir-tahun}
+    - {doa: doa-awal-tahun}
+
+- id: nisfu-syaaban
+  tajuk: Malam Nisfu Syaaban
+  ringkas: "Yaasin 3 kali dengan doa (amalan buku)"
+  ikon: "◑"
+  nama: tiada
+  langkah:
+    - {susunan: nisfu-syaaban}
