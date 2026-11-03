@@ -2,7 +2,7 @@
    Data: window.PY_DATA daripada docs/data/kandungan.js (dijana oleh tools/bina.py; JANGAN edit terus).
    Storan telefon: localStorage berawalan "poket-" (tetapan, bintang, doa-saya, majlis-saya, arwah, terakhir). */
 'use strict';
-const APP_VERSION='2026-11-03b';
+const APP_VERSION='2026-11-03c';
 const REPO = 'RazinUTM/poket-yaasin';   // butang "Lapor" membuka GitHub Issues repo ini
 const D = window.PY_DATA || {doa: [], ayat: {}, surah: {}, susunan: [], majlis: [], kalendar: [], nota: [], kat: {}, templat: {}, hijri: {}};
 
@@ -101,7 +101,7 @@ const SIMPAN = {
   buang(k) { try { localStorage.removeItem('poket-' + k); } catch (e) {} },
 };
 const T = Object.assign({tema: 'auto', skala: 1, rumi: true, frasa: true, makna: true, perkata: false, qari: 'Alafasy_128kbps', hijri: 0, ikut: true,
-  zon: '', peringatan: true, minitAwal: 10, bunyi: false}, SIMPAN.baca('tetapan', {}));
+  zon: '', peringatan: true, minitAwal: 10, bunyi: false, nyala: false}, SIMPAN.baca('tetapan', {}));
 const simpanT = () => SIMPAN.tulis('tetapan', T);
 const senarai_ = v => Array.isArray(v) ? v : [];
 let BINTANG = new Set(senarai_(SIMPAN.baca('bintang', [])).filter(x => typeof x === 'string'));
@@ -1483,6 +1483,14 @@ function langkahTasbih(doaId) {
   return bs.map(b => ({ar: b.ar.join(' '), ru: b.ru || '', mk: b.mk || '', tj: b.tj || '', ul: +b.ul || (bs.length === 1 ? +d.ul : 1) || 33, ulAsli: !!(+b.ul)}));
 }
 const getar = p => { try { if (navigator.vibrate) navigator.vibrate(p); } catch (e) {} };
+const NYALA = {kunci: null};   // pilihan Tetapan: skrin tidak padam selagi app dibuka (Screen Wake Lock)
+async function kemasNyala() {
+  try {
+    if (T.nyala && 'wakeLock' in navigator && document.visibilityState === 'visible') {
+      if (!NYALA.kunci || NYALA.kunci.released) NYALA.kunci = await navigator.wakeLock.request('screen');
+    } else if (!T.nyala && NYALA.kunci) { const k = NYALA.kunci; NYALA.kunci = null; await k.release(); }
+  } catch (e) {}
+}
 function kunciSkrin() {   // skrin kekal menyala semasa berzikir; dilepaskan apabila keluar skrin
   let kunci = null, aktif = true;
   const mohon = async () => { try { if (aktif && 'wakeLock' in navigator && document.visibilityState === 'visible') kunci = await navigator.wakeLock.request('screen'); } catch (e) {} };
@@ -3504,12 +3512,15 @@ async function mulaPasang() {
   try { p.prompt(); await p.userChoice; } catch (e) {}
   kemasPasang();
 }
+const pelayarIOSLain = () => /CriOS|EdgiOS|FxiOS/.test(navigator.userAgent);   // Chrome/Edge/Firefox di iPhone (enjin WebKit juga)
 const langkahPasang = () => perantiIOS()
-  ? frag(h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Safari. Jika dibuka dari WhatsApp, tekan "Buka dalam Safari" dahulu.'),
-      h('li', null, 'Tekan butang Kongsi ', h('span', {class: 'ik-kongsi', html: ikon('kongsiIos')}), ' di bawah skrin (di atas pada iPad).'),
-      h('li', null, 'Pilih "Tambah ke Skrin Utama" (Add to Home Screen), kemudian "Tambah".')),
+  ? frag(h('ol', {class: 'langkah-pasang'}, pelayarIOSLain()
+      ? h('li', null, 'Tekan butang Kongsi ', h('span', {class: 'ik-kongsi', html: ikon('kongsiIos')}), ' di bar alamat (atas, sebelah kanan).')
+      : h('li', null, 'Buka app ini dalam Safari atau Chrome. Jika dibuka dari WhatsApp, buka dalam pelayar dahulu.'),
+      pelayarIOSLain() ? h('li', null, 'Skrol ke bawah senarai, kemudian pilih "Tambah ke Skrin Utama" (Add to Home Screen).') : h('li', null, 'Tekan butang Kongsi ', h('span', {class: 'ik-kongsi', html: ikon('kongsiIos')}), ' di bawah skrin (di atas pada iPad).'),
+      h('li', null, pelayarIOSLain() ? 'Semak nama "Poket Yaasin", kemudian tekan "Tambah".' : 'Pilih "Tambah ke Skrin Utama" (Add to Home Screen), kemudian "Tambah".')),
     // WebKit: app di skrin utama ada storan sendiri, tidak dikongsi dengan Safari (bugs.webkit.org/show_bug.cgi?id=181849)
-    h('p', {class: 'kecil nota-pasang'}, 'Di iPhone, app di skrin utama menyimpan rekod berasingan daripada Safari. Pasang dahulu, kemudian import pek watak dan isi rekod dalam app itu. Sudah ada rekod dalam Safari? Simpan sandaran (di bawah), kemudian pulihkan dalam app.'))
+    h('p', {class: 'kecil nota-pasang'}, 'Di iPhone, app di skrin utama menyimpan rekod berasingan daripada Safari dan Chrome. Pasang dahulu, kemudian import pek watak dan isi rekod dalam app itu. Sudah ada rekod dalam pelayar? Simpan sandaran (di bawah), kemudian pulihkan dalam app.'))
   : h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Chrome. Jika dibuka dari WhatsApp, pilih "Buka dalam Chrome" dahulu.'),
       h('li', null, 'Tekan menu ⋮ di penjuru kanan atas.'), h('li', null, 'Pilih "Pasang aplikasi" atau "Tambah ke skrin utama".'));
 function kadPasang() {
@@ -3547,8 +3558,8 @@ function pasangTema() {
 }
 function skrinTetapan(skrin) {
   bar({tajuk: 'Tetapan', kembali: '#/'});
-  const suis = (k, label, desc) => h('label', {class: 'set'}, h('span', {class: 'tx'}, h('b', null, label), desc ? h('span', null, desc) : null),
-    h('input', {type: 'checkbox', class: 'suis', checked: !!T[k], onchange: e => { T[k] = e.target.checked; simpanT(); }}));
+  const suis = (k, label, desc, lepas) => h('label', {class: 'set'}, h('span', {class: 'tx'}, h('b', null, label), desc ? h('span', null, desc) : null),
+    h('input', {type: 'checkbox', class: 'suis', checked: !!T[k], onchange: e => { T[k] = e.target.checked; simpanT(); if (lepas) lepas(); }}));
   const tema = h('div', {class: 'baris', role: 'group', 'aria-label': 'Tema'}, [['auto', 'Ikut telefon'], ['cerah', 'Cerah'], ['malam', 'Malam']].map(([k, l]) =>
     h('button', {class: 'cip', type: 'button', 'aria-pressed': String(T.tema === k), onclick: () => { T.tema = k; simpanT(); pasangTema(); lukisSemula(); }}, l)));
   const contoh = h('p', {class: 'ar contoh', lang: 'ar'}, 'بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ');
@@ -3571,6 +3582,7 @@ function skrinTetapan(skrin) {
     suis('frasa', 'Makna per frasa', 'Setiap frasa doa diikuti maknanya'),
     suis('rumi', 'Rumi untuk doa', 'Bantuan sebutan. Ayat al-Quran tidak diberi Rumi.'),
     suis('perkata', 'Makna perkataan', 'Grid perkataan di bawah setiap ayat'),
+    'wakeLock' in navigator ? suis('nyala', 'Skrin sentiasa menyala', 'Skrin tidak padam selagi app dibuka. Guna lebih bateri.', kemasNyala) : null,
     h('h2', {class: 'sek'}, 'Audio'),
     h('label', {class: 'lbl', for: 'qari'}, 'Qari'), qari,
     suis('ikut', 'Ikut ayat yang dibaca', 'Skrin bergerak mengikut audio'),
@@ -3626,6 +3638,7 @@ function mula() {
     d._c = normal(c);
   }
   pasangTema(); document.documentElement.style.setProperty('--skala', T.skala);
+  document.addEventListener('visibilitychange', kemasNyala); kemasNyala();
   matchMedia('(prefers-color-scheme: dark)').addEventListener?.('change', pasangTema);
   document.addEventListener('click', e => {
     const w = e.target.closest('.w[data-k], .pk[data-k]'); if (w) { bukaKata(w.dataset.k, w.dataset.i); return; }
