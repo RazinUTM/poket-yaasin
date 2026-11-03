@@ -784,6 +784,19 @@ body[data-skrin="utama"] .roti,body[data-skrin="utama"] .kemaskini{bottom:calc(1
 .jw-kad .jw.kini .jw-n{color:var(--dakwat)}
 .laman-rasmi{margin:4px 0 14px}
 .laman-rasmi .baris{gap:8px}
+.kad-ai{margin:4px 0 14px;border-left:4px solid var(--hijau)}
+.kad-ai p{line-height:1.55;margin:8px 0}
+.kad-ai .btn{margin-top:4px}
+.ai-sub{font-size:15px;margin:14px 0 4px}
+.ai-sumber{margin:0;padding-left:22px;font-size:14.5px;line-height:1.45}
+.ai-sumber li{margin:5px 0;overflow-wrap:anywhere}
+.ai-sumber a{color:var(--hijau)}
+.ruj-ai{font-size:.78em;vertical-align:super;line-height:0;margin-left:1px;color:var(--hijau);text-decoration:none;font-weight:700}
+.ai-nota{margin-top:12px!important;padding-top:10px;border-top:1px solid var(--garis)}
+.memuat-ai{animation:denyut 1.4s ease-in-out infinite}
+@keyframes denyut{50%{opacity:.45}}
+@media (prefers-reduced-motion:reduce){.memuat-ai{animation:none}}
+.ralat-ai{color:var(--b-dhaif)}
 .isi-nota .sorot-blok{background:var(--emas-lembut);border-radius:8px;box-shadow:0 0 0 6px var(--emas-lembut);transition:background 1.2s}
 
 /* ------------------------------------------------ Khat selawat & zikir harian (skrin Utama) */

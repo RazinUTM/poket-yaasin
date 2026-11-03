@@ -9,3 +9,8 @@
 # Tukar kepada false HANYA selepas jawapan bertulis LPPPQ/KDN membenarkan audio surah panjang (soalan (h) dalam
 # surat pertanyaan). Teks tetap dihadkan kepada kurang daripada satu juzuk.
 mod_selamat: true
+
+# ringkasan_ai: URL Cloudflare Worker (kod: pelayan/ringkasan-ai.js) untuk "Ringkasan AI" di skrin Cari.
+#   AI hanya meringkaskan laman mufti/JAKIM dalam laman.yaml, dengan rujukan; tiada teks ayat, hadis atau doa.
+#   Kosong = ciri disembunyikan. Kunci API dan kod keluarga disimpan dalam Worker, BUKAN di sini (repo awam).
+ringkasan_ai: ''

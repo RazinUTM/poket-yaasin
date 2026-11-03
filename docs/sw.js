@@ -1,7 +1,7 @@
 /* Service worker Poket Yaasin: simpan kerangka app supaya berfungsi tanpa internet.
    VERSI dinaikkan oleh tools/terbit.py; cache lama dibuang apabila versi baharu aktif.
    Audio (everyayah.com, quran.com) tidak disimpan: ia dimainkan terus daripada pelayan sumber. */
-const VERSI = '2026-11-03b';
+const VERSI = '2026-11-03d';
 const CACHE = 'poket-' + VERSI;
 const ASAS = ['./', 'index.html', 'manifest.webmanifest',
   'app/poket.css?v=' + VERSI, 'app/poket.js?v=' + VERSI, 'data/kandungan.js?v=' + VERSI, 'js/vendor/qrcode.js?v=' + VERSI,
