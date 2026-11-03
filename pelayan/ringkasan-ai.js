@@ -92,21 +92,37 @@ export default {
 
     const badan = {
       model: env.MODEL || 'claude-haiku-5-5',
-      max_tokens: 900,
+      max_tokens: 2000,
       system: ARAHAN + (negeri ? `\nPengguna tinggal di negeri ${negeri}; utamakan pejabat mufti negeri itu jika ada hasilnya.` : ''),
       tools: [{type: 'web_search_20250305', name: 'web_search', max_uses: 3, allowed_domains: DOMAIN,
         user_location: {type: 'approximate', country: 'MY', timezone: 'Asia/Kuala_Lumpur'}}],
       messages: [{role: 'user', content: soalan}],
     };
-    let r;
-    try {
-      r = await fetch('https://api.anthropic.com/v1/messages', {method: 'POST', body: JSON.stringify(badan), headers: {
-        'content-type': 'application/json', 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01'}});
-    } catch (e) { return jawab(502, {ralat: 'Tidak dapat menghubungi Claude.'}, asal); }
-    const data = await r.json().catch(() => ({}));
-    if (!r.ok) return jawab(502, {ralat: 'Claude menolak permintaan.', butiran: String((data.error && data.error.message) || r.status).slice(0, 300)}, asal);
-    const u = data.usage || {};
-    return jawab(200, {...olah(data), model: data.model || badan.model,
-      guna: {carian: (u.server_tool_use && u.server_tool_use.web_search_requests) || 0, masuk: u.input_tokens || 0, keluar: u.output_tokens || 0}}, asal);
+    // Giliran dengan alat pelayan (web search) boleh dijeda (stop_reason "pause_turn"): hantar semula kandungan
+    // sebagai mesej assistant untuk menyambung, paling banyak 3 kali.
+    const kandungan = [], guna = {carian: 0, masuk: 0, keluar: 0};
+    let data = {}, model = badan.model;
+    for (let i = 0; i < 4; i++) {
+      let r;
+      try {
+        r = await fetch('https://api.anthropic.com/v1/messages', {method: 'POST', body: JSON.stringify(badan), headers: {
+          'content-type': 'application/json', 'x-api-key': env.ANTHROPIC_API_KEY, 'anthropic-version': '2023-06-01'}});
+      } catch (e) { return jawab(502, {ralat: 'Tidak dapat menghubungi Claude.'}, asal); }
+      data = await r.json().catch(() => ({}));
+      if (!r.ok) return jawab(502, {ralat: 'Claude menolak permintaan.', butiran: String((data.error && data.error.message) || r.status).slice(0, 300)}, asal);
+      const u = data.usage || {};
+      guna.carian += (u.server_tool_use && u.server_tool_use.web_search_requests) || 0; guna.masuk += u.input_tokens || 0; guna.keluar += u.output_tokens || 0;
+      model = data.model || model;
+      kandungan.push(...(data.content || []));
+      if (data.stop_reason !== 'pause_turn') break;
+      badan.messages = [{role: 'user', content: soalan}, {role: 'assistant', content: kandungan.slice()}];
+    }
+    const hasil = olah({content: kandungan});
+    // Diagnosis ringkas (tiada rahsia): sebab berhenti, jenis blok, dan petikan teks mentah jika tiada ringkasan
+    const blok = {}; for (const b of kandungan) blok[b.type] = (blok[b.type] || 0) + 1;
+    const mentah = kandungan.filter(b => b.type === 'text').map(b => b.text || '').join('').replace(ARAB, '').trim();
+    const diag = {henti: data.stop_reason || '', blok, sambung: badan.messages.length > 1};
+    if (hasil.tiada) diag.mentah = mentah.slice(0, 400);
+    return jawab(200, {...hasil, model, guna, diag}, asal);
   },
 };
