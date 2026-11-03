@@ -2,7 +2,7 @@
    Data: window.PY_DATA daripada docs/data/kandungan.js (dijana oleh tools/bina.py; JANGAN edit terus).
    Storan telefon: localStorage berawalan "poket-" (tetapan, bintang, doa-saya, majlis-saya, arwah, terakhir). */
 'use strict';
-const APP_VERSION='2026-11-02d';
+const APP_VERSION='2026-11-03b';
 const REPO = 'RazinUTM/poket-yaasin';   // butang "Lapor" membuka GitHub Issues repo ini
 const D = window.PY_DATA || {doa: [], ayat: {}, surah: {}, susunan: [], majlis: [], kalendar: [], nota: [], kat: {}, templat: {}, hijri: {}};
 
@@ -85,6 +85,7 @@ const IK = {
   semak: '<path d="m5 12.6 4.4 4.4L19 7.4"/>',
   keluarga: '<circle cx="7.6" cy="7.4" r="2.5"/><circle cx="16.4" cy="7.4" r="2.5"/><circle cx="12" cy="12.6" r="2"/><path d="M3.4 18.6c.3-3.2 1.9-5.4 4.2-5.4 1 0 1.8.3 2.5.9M20.6 18.6c-.3-3.2-1.9-5.4-4.2-5.4-1 0-1.8.3-2.5.9"/><path d="M8.6 20.4c.3-2.1 1.6-3.5 3.4-3.5s3.1 1.4 3.4 3.5"/>',
   kamera: '<path d="M4 8.4h3.1l1.6-2.6h6.6l1.6 2.6H20v11H4z"/><circle cx="12" cy="13.6" r="3.3"/>',
+  kongsiIos: '<path d="M12 3.6v11M8.3 7.3 12 3.6l3.7 3.7"/><path d="M8.6 10.4H6.2v10h11.6v-10h-2.4"/>',
   mikrofon: '<rect x="9" y="3.4" width="6" height="11" rx="3"/><path d="M5.6 11.4a6.4 6.4 0 0 0 12.8 0M12 17.8v3M9 20.8h6"/>',
   muzik: '<path d="M9 17.6V5.8l10-2.2v11.6"/><circle cx="6.6" cy="17.6" r="2.4"/><circle cx="16.6" cy="15.2" r="2.4"/>',
 };
@@ -1412,6 +1413,7 @@ function skrinUtama(skrin) {
   tambah(skrin, h('div', {class: 'rumah'},
     h('section', {class: 'widget-jam' + (plJam ? ' ada-pelekat' : ''), 'aria-label': 'Masa, tarikh dan waktu solat'}, barisKeluarga(), h('div', {class: 'jam-badan'}, jam, tarikhEl, solatEl, plJam), waktuEl),
     h('a', {class: 'cari-rumah', href: '#/cari?fokus=1', html: ikon('cari') + '<span>Cari doa, zikir, amalan atau waktu solat</span>'}),
+    bannerPasang(),
     h('nav', {class: 'grid-apl', 'aria-label': 'Aplikasi'}, GRID_APL.map(aplIkon)),
     widgetKhat(),
     fotoKeluarga(),
@@ -2133,7 +2135,7 @@ const APL_CARI = [
   ['Pembina Majlis', '#/majlis', 'Susun bacaan majlis, kongsi dan cetak', 'majlis kenduri tahlil doa selamat cetak kongsi buku kecil'],
   ['Nota hukum', '#/nota', 'Nota hukum, kaedah dan sumber', 'nota hukum fatwa kaedah'],
   ['Rujukan', '#/rujukan', 'Semua laman mufti, JAKIM dan kitab yang dipetik', 'rujukan sumber mufti jakim kdn'],
-  ['Tetapan', '#/tetapan', 'Saiz huruf, tema, Rumi, zon dan sandaran', 'tetapan saiz huruf tema mod malam dark rumi makna sandaran zon'],
+  ['Tetapan', '#/tetapan', 'Saiz huruf, tema, Rumi, zon dan sandaran', 'tetapan saiz huruf tema mod malam dark rumi makna sandaran zon pasang install skrin utama homescreen ikon app'],
 ];
 let INDEKS = null;
 const FRASA_KUNCI = [['anak bulan', 'anakbulan']];   // frasa yang perkataannya tidak dipadankan secara berasingan
@@ -3485,9 +3487,58 @@ function skrinKeluarga(skrin) {
     h('p', {class: 'kecil'}, 'Profil, gambar dan rekod setiap ahli disimpan dalam telefon ini sahaja, dan termasuk dalam fail sandaran. Telefon lain mempunyai senarai keluarga sendiri; rekod tidak diselaraskan antara telefon.'));
 }
 
-/* ================================================================ Tetapan */
+/* ================================================================ pasang app (PWA) di skrin utama telefon
+   Chrome/Edge/Samsung Internet (Android) memberi acara beforeinstallprompt beberapa saat selepas laman dibuka; komponen
+   yang dipaparkan sebelum itu dikemas kini apabila acara tiba (pendengarPasang). iPhone/iPad: tiada acara, jadi tunjuk
+   langkah Kongsi > Tambah ke Skrin Utama. Dalam pelayar WhatsApp, pengguna perlu membuka dalam Chrome/Safari dahulu. */
 let pasangAcara = null;
-window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); pasangAcara = e; });
+const pendengarPasang = new Set();
+const kemasPasang = () => pendengarPasang.forEach(f => { try { f(); } catch (e) {} });
+window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); pasangAcara = e; kemasPasang(); });
+window.addEventListener('appinstalled', () => { pasangAcara = null; roti('Poket Yaasin dipasang. Buka dari ikonnya di skrin utama.'); kemasPasang(); });
+const appDipasang = () => { try { return matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch (e) { return false; } };
+const perantiIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+async function mulaPasang() {
+  const p = pasangAcara; if (!p) return;
+  pasangAcara = null;   // acara hanya boleh dipakai sekali
+  try { p.prompt(); await p.userChoice; } catch (e) {}
+  kemasPasang();
+}
+const langkahPasang = () => perantiIOS()
+  ? frag(h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Safari. Jika dibuka dari WhatsApp, tekan "Buka dalam Safari" dahulu.'),
+      h('li', null, 'Tekan butang Kongsi ', h('span', {class: 'ik-kongsi', html: ikon('kongsiIos')}), ' di bawah skrin (di atas pada iPad).'),
+      h('li', null, 'Pilih "Tambah ke Skrin Utama" (Add to Home Screen), kemudian "Tambah".')),
+    // WebKit: app di skrin utama ada storan sendiri, tidak dikongsi dengan Safari (bugs.webkit.org/show_bug.cgi?id=181849)
+    h('p', {class: 'kecil nota-pasang'}, 'Di iPhone, app di skrin utama menyimpan rekod berasingan daripada Safari. Pasang dahulu, kemudian import pek watak dan isi rekod dalam app itu. Sudah ada rekod dalam Safari? Simpan sandaran (di bawah), kemudian pulihkan dalam app.'))
+  : h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Chrome. Jika dibuka dari WhatsApp, pilih "Buka dalam Chrome" dahulu.'),
+      h('li', null, 'Tekan menu ⋮ di penjuru kanan atas.'), h('li', null, 'Pilih "Pasang aplikasi" atau "Tambah ke skrin utama".'));
+function kadPasang() {
+  const el = h('section', {class: 'kad kad-pasang'});
+  const lukis = () => {
+    const sudah = appDipasang(); el.replaceChildren();
+    tambah(el, h('div', {class: 'pasang-atas'}, h('img', {class: 'pasang-ikon', src: 'img/icon-192.png', alt: '', width: 48, height: 48}),
+      h('span', {class: 'tx'}, h('b', null, sudah ? 'App dipasang di skrin utama' : 'Pasang di skrin utama'),
+        h('span', null, sudah ? 'Anda sedang menggunakan app daripada ikonnya.' : 'Buka seperti app biasa terus dari ikon, dan guna tanpa internet.'))));
+    if (!sudah) tambah(el, pasangAcara ? h('button', {class: 'btn utama penuh', type: 'button', html: ikon('tambah') + ' Pasang app', onclick: mulaPasang}) : langkahPasang());
+  };
+  pendengarPasang.add(lukis); bersihSkrin.push(() => pendengarPasang.delete(lukis));
+  lukis(); return el;
+}
+function bannerPasang() {   // skrin Utama: cadangan pasang yang boleh ditutup (14 hari)
+  if (appDipasang() || Date.now() - (+SIMPAN.baca('pasang-nanti', 0) || 0) < 14 * 864e5) return null;
+  const el = h('div', {class: 'pasang-rumah'});
+  const lukis = () => {
+    el.hidden = appDipasang() || !(pasangAcara || perantiIOS()); el.replaceChildren(); if (el.hidden) return;
+    tambah(el, h('img', {class: 'pasang-ikon', src: 'img/icon-192.png', alt: '', width: 40, height: 40}),
+      h('span', {class: 'tx'}, h('b', null, 'Pasang app ini'), h('span', null, 'Ikon di skrin utama')),
+      pasangAcara ? h('button', {class: 'btn kecil utama', type: 'button', onclick: mulaPasang}, 'Pasang') : h('a', {class: 'btn kecil', href: '#/tetapan'}, 'Caranya'),
+      h('button', {class: 'ib', type: 'button', 'aria-label': 'Tutup cadangan pasang', html: ikon('tutup'), onclick: () => { SIMPAN.tulis('pasang-nanti', Date.now()); el.remove(); }}));
+  };
+  pendengarPasang.add(lukis); bersihSkrin.push(() => pendengarPasang.delete(lukis));
+  lukis(); return el;
+}
+
+/* ================================================================ Tetapan */
 function pasangTema() {
   const r = document.documentElement;
   if (T.tema === 'malam' || T.tema === 'cerah') r.dataset.tema = T.tema; else delete r.dataset.tema;
@@ -3512,8 +3563,7 @@ function skrinTetapan(skrin) {
   };
   const hjB = d => h('button', {class: 'btn kecil', type: 'button', onclick: () => { T.hijri = Math.max(-2, Math.min(2, (+T.hijri || 0) + d)); simpanT(); lukisHj(); }}, d > 0 ? '+1 hari' : '−1 hari');
   lukisHj();
-  const iOS = /iphone|ipad|ipod/i.test(navigator.userAgent), dipasang = matchMedia('(display-mode: standalone)').matches || navigator.standalone;
-  tambah(skrin, 
+  tambah(skrin, kadPasang(),
     h('h2', {class: 'sek'}, 'Paparan'),
     h('div', {class: 'set set-blok'}, h('span', {class: 'tx'}, h('b', null, 'Tema')), tema),
     h('div', {class: 'set set-blok'}, h('span', {class: 'tx'}, h('b', null, 'Saiz tulisan Arab'), nilai), saiz, contoh),
@@ -3530,9 +3580,6 @@ function skrinTetapan(skrin) {
     h('a', {class: 'nota-k', href: '#/solat'}, h('b', null, T.zon && ZON.has(T.zon) ? `Zon ${T.zon}, ${ZON.get(T.zon).negeri}` : 'Pilih zon waktu solat'),
       h('span', null, T.zon && ZON.has(T.zon) ? `${ZON.get(T.zon).daerah}. Peringatan ${T.peringatan ? `${+T.minitAwal || 10} minit sebelum waktu` : 'dimatikan'}.` : 'Untuk waktu solat JAKIM dan peringatan sebelum masuk waktu.')),
     h('h2', {class: 'sek'}, 'App'),
-    dipasang ? h('p', {class: 'kecil'}, 'App ini telah dipasang pada skrin utama.') :
-      pasangAcara ? h('button', {class: 'btn penuh utama', type: 'button', onclick: async () => { pasangAcara.prompt(); try { await pasangAcara.userChoice; } catch (e) {} pasangAcara = null; lukisSemula(); }}, 'Pasang pada skrin utama') :
-      h('p', {class: 'kecil'}, iOS ? 'Untuk pasang: tekan butang Kongsi dalam Safari, kemudian "Add to Home Screen".' : 'Untuk pasang: buka menu pelayar (⋮), kemudian "Tambah ke skrin utama" atau "Install app".'),
     h('div', {class: 'senarai-tindakan'},
       h('a', {class: 'nota-k', href: '#/nota/tentang'}, h('b', null, 'Tentang app ini'), h('span', null, 'Apa yang disemak dan apa yang masih draf')),
       h('a', {class: 'nota-k', href: '#/nota/sumber-lesen'}, h('b', null, 'Sumber data dan lesen'), h('span', null, 'Teks, terjemahan, audio, hadis, fon')),
