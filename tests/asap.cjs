@@ -1,4 +1,4 @@
-/* Ujian asap (smoke test) Poket Yaasin dengan Playwright.
+/* Ujian asap (smoke test) Usrati dengan Playwright.
      node tests/asap.cjs            # lebar telefon 390 px, mod cerah + gelap, luar talian
      node tests/asap.cjs --gambar   # simpan tangkapan skrin dalam tests/gambar/
    Perlu: npm i -D playwright && npx playwright install chromium (sekali sahaja).

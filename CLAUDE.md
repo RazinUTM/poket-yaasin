@@ -1,6 +1,8 @@
-# Poket Yaasin · nota untuk Claude
+# Usrati (repo poket-yaasin): nota untuk Claude
 
-App web Yaasin, Tahlil & Doa untuk Razin (pensyarah UTM) dan keluarga/komuniti. Phone-first, GitHub Pages dari `docs/` (branch `main`). Saudara kepada repo Jejak Ilmu (gaya kerja sama).
+App web **Usrati** ("keluargaku", dahulu Poket Yaasin; nama ditukar 3 Nov 2026): Yaasin, Tahlil & Doa untuk Razin (pensyarah UTM) dan keluarga/komuniti. Phone-first, GitHub Pages dari `docs/` (branch `main`). Saudara kepada repo Jejak Ilmu (gaya kerja sama).
+
+- Nama paparan sahaja yang ditukar. JANGAN tukar nama repo, URL (`razinutm.github.io/poket-yaasin`), kunci storan `poket-`, `app: 'poket-yaasin'` dalam sandaran/pek atau UID .ics: GitHub Pages tidak mengalihkan URL lama, jadi ikon terpasang dan kod QR akan rosak. Ikon app: `node tools/ikon.cjs` (أسرتي, Aref Ruqaa).
 
 ## Cara berkomunikasi
 - Chat dengan Razin: naratif Bahasa Melayu, istilah teknikal kekal English. Terus terang, nyatakan andaian, tunjuk titik paling lemah dahulu, akui kesilapan sendiri.

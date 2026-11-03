@@ -16,7 +16,7 @@ Langkah ini dibuat sekali sahaja, kira-kira 15 minit, dari komputer.
 
 1. **Hidupkan web search** untuk organisasi: buka Settings dan cari tetapan web search (privacy / capabilities),
    kemudian hidupkan. Tanpa ini, Claude menolak permintaan yang memakai alat carian.
-2. **Had belanja (disyorkan)**: jika ada pilihan Workspace, cipta workspace "Poket Yaasin" dengan had bulanan,
+2. **Had belanja (disyorkan)**: jika ada pilihan Workspace, cipta workspace "Usrati" dengan had bulanan,
    contohnya USD 10. Anggaran kos: kira-kira 1 hingga 2 sen USD setiap soalan baharu (soalan yang sama dijawab
    daripada simpanan telefon tanpa kos).
 3. **Get API key**: namakan `poket-yaasin-worker` (dalam workspace di atas jika dicipta). Salin kunci itu. Ia hanya
