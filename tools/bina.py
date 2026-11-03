@@ -382,6 +382,8 @@ def bina(tulis=True):
     dasar_y = (yaml.safe_load((KAND / 'dasar.yaml').read_text(encoding='utf-8')) if (KAND / 'dasar.yaml').exists() else None) or {}
     if not isinstance(dasar_y.get('mod_selamat', True), bool): RALAT('dasar.yaml: mod_selamat mesti true atau false')
     mod_selamat = dasar_y.get('mod_selamat', True) is not False
+    ringkasan_ai = str(dasar_y.get('ringkasan_ai') or '').strip()   # URL Worker (pelayan/ringkasan-ai.js); kosong = ciri disembunyikan
+    if ringkasan_ai and not re.fullmatch(r'https://[A-Za-z0-9.-]+(/[A-Za-z0-9._~/-]*)?', ringkasan_ai): RALAT('dasar.yaml: ringkasan_ai mesti URL https atau kosong')
     # ---------------- hafalan: AUDIO SAHAJA. Tiada ayat dimuatkan daripada senarai ini (Akta 326; lihat hafalan.yaml)
     hafalan = muat_pilihan('hafalan.yaml')
     for x in hafalan:
@@ -568,6 +570,12 @@ def bina(tulis=True):
     for x in laman:
         if not x.get('nama') or not re.fullmatch(r'[a-z0-9.-]+\.[a-z]{2,}', str(x.get('domain', ''))): RALAT(f'laman.yaml: entri tidak sah {x}')
         if x.get('negeri') and not re.fullmatch(r'[A-Z]{3}', str(x['negeri'])): RALAT(f'laman.yaml {x.get("domain")}: negeri mesti awalan zon (cth. JHR)')
+    # Worker Ringkasan AI mesti mencari dalam domain yang sama dengan laman.yaml (sumber mufti sahaja)
+    wk = ROOT / 'pelayan' / 'ringkasan-ai.js'
+    if wk.exists():
+        m_ = re.search(r'const DOMAIN = \[(.*?)\];', wk.read_text(encoding='utf-8'), re.S)
+        dw = set(re.findall(r"'([^']+)'", m_.group(1))) if m_ else set()
+        if dw != {str(x['domain']) for x in laman}: RALAT(f'pelayan/ringkasan-ai.js: DOMAIN tidak sama dengan laman.yaml (beza: {sorted(dw ^ {str(x["domain"]) for x in laman})})')
     for n_ in nota:
         if n_.get('kata') is not None and not (isinstance(n_['kata'], list) and all(isinstance(t, str) and t for t in n_['kata'])): RALAT(f'nota {n_["id"]}: kata mesti senarai teks')
     data = {
@@ -576,7 +584,7 @@ def bina(tulis=True):
         'majlis': majlis, 'kalendar': kalendar, 'nota': nota, 'kat': kat, 'hijri': hijri, 'zon': zon, 'hafalan': hafalan, 'meta': meta, 'avatar': avatar,
         'saiz': {'ayat': len(perlu | rujuk), 'perkataan': jumlah_q, 'juzuk': round(nisbah, 3), 'sejuzuk': sejuzuk,
                  'audio': {'ayat': len(perlu | rujuk | audio_sahaja), 'perkataan': jumlah_a, 'juzuk': round(nisbah_a, 3)}},
-        'dasar': {'modSelamat': mod_selamat}, 'sinonim': sinonim, 'laman': laman, 'khat': khat,
+        'dasar': {'modSelamat': mod_selamat, 'ai': ringkasan_ai}, 'sinonim': sinonim, 'laman': laman, 'khat': khat,
     }
     js = json.dumps(data, ensure_ascii=False, separators=(',', ':'), default=str)  # default=str: tarikh YAML → 'YYYY-MM-DD'
     kod = hashlib.sha256(js.encode()).hexdigest()[:12]

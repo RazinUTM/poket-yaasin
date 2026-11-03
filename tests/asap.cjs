@@ -497,6 +497,43 @@ const semak = (ok, msg) => { if (ok) console.log('  ok  ', msg); else { gagal++;
       if (pautNota) { await pg.click(`.hasil-cari a[href="${pautNota}"]`); await pg.waitForTimeout(250); semak(await pg.locator('.isi-nota .sorot-blok').count() === 1, 'Nota: perenggan hasil carian diserlahkan'); }
       await pg.evaluate(() => { location.hash = '#/doa?q=demam'; }); await pg.waitForTimeout(250);
       semak(await pg.locator('#skrin a.doa-k[href="#/doa/ziarah-sakit"]').count() === 1 && await pg.locator('.kiraan a[href^="#/cari"]').count() === 1, 'Doa: carian guna enjin yang sama dan pautan ke carian penuh');
+      // Ringkasan AI: tersembunyi tanpa URL; dengan URL: kod keluarga, Worker tiruan, rujukan, simpanan, ralat kod
+      {
+        const qAI = 'hukum puasa hari jumaat sahaja';
+        await pg.evaluate(q => { D.dasar.ai = ''; location.hash = '#/cari?q=' + encodeURIComponent(q); }, qAI); await pg.waitForTimeout(250);
+        const tiadaTanpaUrl = await pg.locator('.kad-ai').count() === 0;
+        let panggilAI = 0, statusAI = 200;
+        await pg.route('https://ujian-ai.workers.dev/**', async route => {
+          panggilAI++; const b = JSON.parse(route.request().postData() || '{}');
+          if (statusAI !== 200) return route.fulfill({status: statusAI, json: {ralat: 'Kod keluarga salah.'}, headers: {'Access-Control-Allow-Origin': '*'}});
+          return route.fulfill({json: {teks: `Makruh berpuasa sunat pada hari Jumaat sahaja [1]. Sertakan Khamis atau Sabtu [2].\n\nSoalan: ${b.soalan}; kod ${b.kod}`, tiada: false,
+            sumber: [{n: 1, url: 'https://muftiwp.gov.my/artikel/1', tajuk: 'Irsyad Al-Fatwa: Puasa Jumaat'}, {n: 2, url: 'https://muftiselangor.gov.my/x', tajuk: 'Fatwa Selangor yang tajuknya sangat panjang untuk menguji balutan baris pada skrin kecil'}],
+            bacaan: [{url: 'https://e-smaf.islam.gov.my/y', tajuk: 'e-SMAF: Puasa sunat'}]}, headers: {'Access-Control-Allow-Origin': '*'}});
+        });
+        await pg.evaluate(q => { D.dasar.ai = 'https://ujian-ai.workers.dev/'; SIMPAN.buang('ai'); SIMPAN.buang('ai-simpan'); location.hash = '#/tetapan'; }, qAI); await pg.waitForTimeout(200);
+        await pg.evaluate(q => { location.hash = '#/cari?q=' + encodeURIComponent(q); }, qAI); await pg.waitForTimeout(250);
+        const mintaKod = await pg.locator('.kad-ai a[href="#/tetapan?b=ai"]').count() === 1;
+        await pg.click('.kad-ai a[href="#/tetapan?b=ai"]'); await pg.waitForTimeout(250);
+        await pg.fill('#kod-ai', 'kod-ujian'); await pg.press('#kod-ai', 'Tab'); await pg.waitForTimeout(100);
+        const kodDisimpan = await pg.evaluate(() => SIMPAN.baca('ai', {}).kod === 'kod-ujian');
+        semak(tiadaTanpaUrl && mintaKod && kodDisimpan, 'Ringkasan AI: tersembunyi tanpa URL Worker; tanpa kod, pautan ke Tetapan; kod disimpan dalam telefon');
+        await pg.evaluate(q => { location.hash = '#/cari?q=' + encodeURIComponent(q); }, qAI); await pg.waitForTimeout(250);
+        await pg.click('.kad-ai button:has-text("Dapatkan ringkasan")'); await pg.waitForTimeout(400);
+        const tx = await pg.textContent('.kad-ai');
+        semak(panggilAI === 1 && tx.includes('Makruh berpuasa') && tx.includes('kod kod-ujian') && await pg.locator('.kad-ai a.ruj-ai[href="https://muftiwp.gov.my/artikel/1"]').count() === 1
+          && await pg.locator('.kad-ai .ai-sumber li').count() === 3 && tx.includes('Semak sumber'), 'Ringkasan AI: jawapan dengan rujukan [n], sumber, bacaan lanjut dan amaran semak sumber');
+        semak(await pg.evaluate(() => document.documentElement.scrollWidth - innerWidth) <= 0, 'Ringkasan AI: tiada limpahan mendatar (tajuk sumber panjang)');
+        await pg.evaluate(() => { location.hash = '#/'; }); await pg.waitForTimeout(150);
+        await pg.evaluate(q => { location.hash = '#/cari?q=' + encodeURIComponent(q.toUpperCase() + '  '); }, qAI); await pg.waitForTimeout(250);
+        semak(panggilAI === 1 && (await pg.textContent('.kad-ai')).includes('Makruh berpuasa'), 'Ringkasan AI: soalan sama dipaparkan daripada simpanan tanpa panggilan baharu');
+        statusAI = 401;
+        await pg.evaluate(() => { location.hash = '#/cari?q=' + encodeURIComponent('hukum zakat emas perhiasan'); }); await pg.waitForTimeout(250);
+        await pg.click('.kad-ai button:has-text("Dapatkan ringkasan")'); await pg.waitForTimeout(400);
+        semak((await pg.textContent('.kad-ai')).includes('Kod keluarga salah') && await pg.locator('.kad-ai button:has-text("Cuba lagi")').count() === 1, 'Ringkasan AI: kod salah memberi mesej jelas dan butang cuba lagi');
+        if (process.argv.includes('--gambar')) { await pg.evaluate(() => { location.hash = '#/cari?q=' + encodeURIComponent('hukum puasa hari jumaat sahaja'); }); await pg.waitForTimeout(300); await pg.screenshot({path: `tests/gambar/ai-${skema}.png`, fullPage: true}); }
+        await pg.unroute('https://ujian-ai.workers.dev/**');
+        await pg.evaluate(() => { D.dasar.ai = ''; SIMPAN.buang('ai'); SIMPAN.buang('ai-simpan'); });
+      }
       // skrin Utama: jalur waktu solat dan khat harian
       await pg.evaluate(() => { location.hash = '#/'; }); await pg.waitForTimeout(300);
       semak(await pg.locator('.jam-waktu .jw').count() === 6 && await pg.locator('.jam-waktu .jw.kini').count() === 1, 'Utama: jalur enam waktu solat, solat seterusnya ditonjolkan');

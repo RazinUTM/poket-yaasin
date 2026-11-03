@@ -2,7 +2,7 @@
    Data: window.PY_DATA daripada docs/data/kandungan.js (dijana oleh tools/bina.py; JANGAN edit terus).
    Storan telefon: localStorage berawalan "poket-" (tetapan, bintang, doa-saya, majlis-saya, arwah, terakhir). */
 'use strict';
-const APP_VERSION='2026-11-03c';
+const APP_VERSION='2026-11-03d';
 const REPO = 'RazinUTM/poket-yaasin';   // butang "Lapor" membuka GitHub Issues repo ini
 const D = window.PY_DATA || {doa: [], ayat: {}, surah: {}, susunan: [], majlis: [], kalendar: [], nota: [], kat: {}, templat: {}, hijri: {}};
 
@@ -1285,7 +1285,7 @@ function hala(opt) {
     else if (p[0] === 'nota' && p[1]) { skrinNota(skrin, p[1], q); tab = ''; }
     else if (p[0] === 'cari') { skrinCari(skrin, q); tab = ''; }
     else if (p[0] === 'nota') { skrinSenaraiNota(skrin); tab = ''; }
-    else if (p[0] === 'tetapan') { skrinTetapan(skrin); tab = ''; }
+    else if (p[0] === 'tetapan') { skrinTetapan(skrin, q); tab = ''; }
     else if (p[0] === 'solat') { skrinSolat(skrin); tab = ''; }
     else if (p[0] === 'tasbih') { skrinTasbih(skrin, q); tab = ''; }
     else if (p[0] === 'rujukan') { skrinRujukan(skrin); tab = ''; }
@@ -2344,6 +2344,64 @@ function kadHasil(r, f) {
   }
   return h('a', {class: 'kad hasil-k', href: x.href}, h('b', null, x.tajuk), x.ringkas ? h('p', null, x.ringkas) : null);
 }
+/* ================================================================ Ringkasan AI (pilihan, perlu internet)
+   Worker (pelayan/ringkasan-ai.js) bertanya Claude dengan carian web yang dihadkan kepada laman mufti/JAKIM dan
+   memulangkan ringkasan <= 150 perkataan + sumber. App TIDAK memegang kunci API; hanya kod keluarga (poket-ai).
+   Ciri tersembunyi jika dasar.yaml ringkasan_ai kosong. Jawapan disimpan (poket-ai-simpan) supaya soalan sama percuma. */
+const urlAI = () => (D.dasar && D.dasar.ai) || '';
+const tetapanAI = () => Object.assign({kod: ''}, SIMPAN.baca('ai', {}));
+const HAD_SIMPAN_AI = 40, UMUR_SIMPAN_AI = 30 * 864e5;
+const kunciAI = q => normal(q).replace(/\s+/g, ' ').trim();
+function simpananAI(q) {
+  const x = (SIMPAN.baca('ai-simpan', []) || []).find(e => e && e.k === kunciAI(q));
+  return x && Date.now() - x.t < UMUR_SIMPAN_AI ? x : null;
+}
+function simpanAI(q, j) {
+  const k = kunciAI(q), lama = (SIMPAN.baca('ai-simpan', []) || []).filter(e => e && e.k !== k && Date.now() - e.t < UMUR_SIMPAN_AI);
+  SIMPAN.tulis('ai-simpan', [{k, q, t: Date.now(), teks: j.teks, tiada: !!j.tiada, sumber: j.sumber || [], bacaan: j.bacaan || []}, ...lama].slice(0, HAD_SIMPAN_AI));
+}
+const pautAI = x => h('a', {href: x.url, target: '_blank', rel: 'noopener'}, x.tajuk || x.url, h('span', {class: 'kecil kabur'}, ' ' + (() => { try { return new URL(x.url).hostname.replace(/^www\./, ''); } catch (e) { return ''; } })()));
+function hasilAI(j) {
+  const ikut = new Map((j.sumber || []).map(x => [x.n, x]));
+  const perenggan = String(j.teks || '').split(/\n{2,}/).filter(Boolean).map(pr => h('p', null, pr.split(/(\[\d+\])/).map(c => {
+    const m = /^\[(\d+)\]$/.exec(c), x = m && ikut.get(+m[1]);
+    return x ? h('a', {class: 'ruj-ai', href: x.url, target: '_blank', rel: 'noopener', 'aria-label': `Sumber ${x.n}: ${x.tajuk}`}, `[${x.n}]`) : c;
+  })));
+  return frag(
+    j.tiada ? h('p', null, 'Tiada jawapan yang jelas dalam laman mufti untuk soalan ini. Cuba perkataan lain, atau buka bacaan di bawah.') : perenggan,
+    (j.sumber || []).length ? frag(h('h3', {class: 'ai-sub'}, 'Sumber'), h('ol', {class: 'ai-sumber'}, j.sumber.map(x => h('li', null, pautAI(x))))) : null,
+    (j.bacaan || []).length ? frag(h('h3', {class: 'ai-sub'}, 'Bacaan lanjut'), h('ul', {class: 'ai-sumber'}, j.bacaan.map(x => h('li', null, pautAI(x))))) : null,
+    h('p', {class: 'kecil ai-nota'}, 'Diringkaskan oleh AI daripada laman mufti dan JAKIM, dan boleh tersilap. Semak sumber sebelum beramal. Untuk kes peribadi, rujuk pejabat mufti negeri.'));
+}
+function kadAI(q) {   // dipanggil semula setiap kali skrin Cari dilukis; keadaan (memuat/ralat) disimpan dalam KAD_AI
+  if (!urlAI() || q.length < 6) return null;
+  const el = h('section', {class: 'kad kad-ai', 'aria-live': 'polite'}, h('h2', {class: 'sek-dalam'}, 'Ringkasan AI daripada laman mufti'));
+  const ada = simpananAI(q), st = tetapanAI();
+  if (ada) { tambah(el, hasilAI(ada)); return el; }
+  if (!st.kod) return tambah(el, h('p', {class: 'kecil'}, 'Jawapan ringkas dengan rujukan laman mufti. Masukkan kod keluarga dalam Tetapan untuk guna ciri ini.'),
+    h('a', {class: 'btn kecil', href: '#/tetapan?b=ai'}, 'Buka Tetapan'));
+  const badan = h('div', null);
+  const minta = async () => {
+    badan.replaceChildren(h('p', {class: 'kecil memuat-ai'}, 'Mencari dalam laman mufti. Biasanya 10 hingga 20 saat.'));
+    const henti = new AbortController(), pm = setTimeout(() => henti.abort(), 60000);
+    bersihSkrin.push(() => { clearTimeout(pm); henti.abort(); });
+    let mesej = '';
+    try {
+      const r = await fetch(urlAI(), {method: 'POST', headers: {'content-type': 'application/json'}, signal: henti.signal,
+        body: JSON.stringify({soalan: q, kod: st.kod, negeri: T.zon && ZON.has(T.zon) ? ZON.get(T.zon).negeri : ''})});
+      const j = await r.json().catch(() => ({}));
+      if (r.ok && typeof j.teks === 'string') { simpanAI(q, j); simpanCarian(q); badan.replaceChildren(hasilAI(j)); return; }
+      mesej = r.status === 401 ? 'Kod keluarga salah. Semak kod dalam Tetapan.' : r.status === 400 ? (j.ralat || 'Soalan tidak sah.') : 'Ringkasan tidak dapat dibuat sekarang. Cuba sebentar lagi.';
+    } catch (e) {
+      mesej = navigator.onLine === false ? 'Tiada internet. Ringkasan AI perlukan talian.' : henti.signal.aborted ? 'Terlalu lama menunggu. Cuba lagi.' : 'Tidak dapat menghubungi pelayan. Cuba lagi.';
+    } finally { clearTimeout(pm); }
+    if (!el.isConnected) return;
+    badan.replaceChildren(h('p', {class: 'kecil ralat-ai'}, mesej), h('button', {class: 'btn kecil', type: 'button', onclick: minta}, 'Cuba lagi'));
+  };
+  badan.append(h('p', {class: 'kecil'}, 'Jawapan ringkas (bawah 150 perkataan) dengan rujukan, diringkaskan oleh AI daripada laman mufti dan JAKIM. Perlu internet.'),
+    h('button', {class: 'btn kecil utama', type: 'button', onclick: minta}, 'Dapatkan ringkasan'));
+  return tambah(el, badan);
+}
 const CADANG_CARI = ['anak demam', 'solat dhuha', 'puasa sunat', 'selawat tafrijiyah', 'waktu asar', 'hujan lebat', 'tak boleh tidur', 'amalan jumaat', 'istikharah', 'balik kampung'];
 function simpanCarian(q) {
   q = String(q || '').trim(); if (q.length < 2) return;
@@ -2377,7 +2435,7 @@ function skrinCari(skrin, q) {
     const jp = jawapanPantas(f), hukum = f.mentah.some(w => HUKUM.has(w));
     if (jp.length) tambah(hasil, jp);
     if (separa) tambah(hasil, h('p', {class: 'kecil'}, 'Tiada padanan untuk semua perkataan. Hasil berikut sepadan sebahagian.'));
-    if ((hukum || r.length < 3) && qq.length > 2) tambah(hasil, lamanRasmi(qq));
+    if ((hukum || r.length < 3) && qq.length > 2) tambah(hasil, menaip ? null : kadAI(qq), lamanRasmi(qq));
     const kump = new Map();
     for (const x of r) { if (!kump.has(x.x.jenis)) kump.set(x.x.jenis, []); kump.get(x.x.jenis).push(x); }
     for (const [j, xs] of kump) {
@@ -2387,7 +2445,7 @@ function skrinCari(skrin, q) {
       tambah(hasil, sek);
     }
     if (!r.length && !jp.length) tambah(hasil, h('div', {class: 'kosong'}, 'Tiada padanan dalam app. Cuba perkataan lain, atau cari dalam laman rasmi.'));
-    if (!(hukum || r.length < 3) && qq.length > 2) tambah(hasil, lamanRasmi(qq));
+    if (!(hukum || r.length < 3) && qq.length > 2) tambah(hasil, menaip ? null : kadAI(qq), lamanRasmi(qq));
   }
   hasil.addEventListener('click', e => { if (e.target.closest('a')) simpanCarian(kata); });
   tambah(skrin, h('div', {class: 'lapisan'}, h('div', {class: 'cari'}, h('span', {html: ikon('cari')}), input)), faham, hasil);
@@ -3556,8 +3614,18 @@ function pasangTema() {
   const gelap = T.tema === 'malam' || (T.tema !== 'cerah' && matchMedia('(prefers-color-scheme: dark)').matches);
   const m = $('meta[name="theme-color"]'); if (m) m.content = gelap ? '#0F1F1D' : '#0A3F3B';
 }
-function skrinTetapan(skrin) {
+function setAI() {
+  const st = tetapanAI();
+  const kod = h('input', {class: 'medan', id: 'kod-ai', type: 'password', value: st.kod, maxlength: 80, autocomplete: 'off', placeholder: 'Kod daripada Razin',
+    onchange: () => { SIMPAN.tulis('ai', Object.assign(tetapanAI(), {kod: kod.value.trim()})); roti(kod.value.trim() ? 'Kod disimpan.' : 'Ringkasan AI dimatikan.'); }});
+  return frag(h('h2', {class: 'sek', id: 'set-ai'}, 'Ringkasan AI'),
+    h('p', {class: 'kecil'}, 'Di skrin Cari, butang "Dapatkan ringkasan" memberi jawapan ringkas dengan rujukan laman mufti dan JAKIM. Soalan dihantar ke pelayan keluarga dan Claude (Anthropic); jangan tulis maklumat peribadi. Kosongkan kod untuk mematikan.'),
+    h('label', {class: 'lbl', for: 'kod-ai'}, 'Kod keluarga'), kod,
+    (SIMPAN.baca('ai-simpan', []) || []).length ? h('button', {class: 'btn kecil', type: 'button', onclick: e => { SIMPAN.buang('ai-simpan'); e.currentTarget.remove(); roti('Jawapan tersimpan dipadam.'); }}, 'Padam jawapan tersimpan') : null);
+}
+function skrinTetapan(skrin, q) {
   bar({tajuk: 'Tetapan', kembali: '#/'});
+  if (q && q.get('b') === 'ai') setTimeout(() => { const s_ = $('#set-ai'), k_ = $('#kod-ai'); if (s_) s_.scrollIntoView({block: 'start'}); if (k_) k_.focus(); }, 80);
   const suis = (k, label, desc, lepas) => h('label', {class: 'set'}, h('span', {class: 'tx'}, h('b', null, label), desc ? h('span', null, desc) : null),
     h('input', {type: 'checkbox', class: 'suis', checked: !!T[k], onchange: e => { T[k] = e.target.checked; simpanT(); if (lepas) lepas(); }}));
   const tema = h('div', {class: 'baris', role: 'group', 'aria-label': 'Tema'}, [['auto', 'Ikut telefon'], ['cerah', 'Cerah'], ['malam', 'Malam']].map(([k, l]) =>
@@ -3591,6 +3659,7 @@ function skrinTetapan(skrin) {
     h('h2', {class: 'sek'}, 'Waktu solat'),
     h('a', {class: 'nota-k', href: '#/solat'}, h('b', null, T.zon && ZON.has(T.zon) ? `Zon ${T.zon}, ${ZON.get(T.zon).negeri}` : 'Pilih zon waktu solat'),
       h('span', null, T.zon && ZON.has(T.zon) ? `${ZON.get(T.zon).daerah}. Peringatan ${T.peringatan ? `${+T.minitAwal || 10} minit sebelum waktu` : 'dimatikan'}.` : 'Untuk waktu solat JAKIM dan peringatan sebelum masuk waktu.')),
+    urlAI() ? setAI() : null,
     h('h2', {class: 'sek'}, 'App'),
     h('div', {class: 'senarai-tindakan'},
       h('a', {class: 'nota-k', href: '#/nota/tentang'}, h('b', null, 'Tentang app ini'), h('span', null, 'Apa yang disemak dan apa yang masih draf')),
