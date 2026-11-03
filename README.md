@@ -1,4 +1,6 @@
-# Poket Yaasin, Tahlil & Doa
+# Usrati: Yaasin, Tahlil & Doa
+
+*Usrati* ("keluargaku") ialah nama baharu Poket Yaasin. Alamat app, nama repo dan pengenal dalaman (`poket-yaasin`, kunci storan `poket-`) sengaja kekal supaya ikon yang telah dipasang, pautan dan rekod dalam telefon tidak rosak.
 
 App web phone-first untuk bacaan Surah Yaasin, susunan tahlil arwah dan himpunan doa harian, hajat serta doa semasa. Setiap doa disertakan makna per frasa, sumber (ayat, hadis bernombor atau buku) dan nota hukum ringkas daripada pihak berautoriti. Berfungsi tanpa internet selepas dibuka sekali.
 

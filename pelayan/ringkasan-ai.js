@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Copyright (c) 2026 Ahmad Razin Zainal Abidin and Universiti Teknologi Malaysia
 //
-// Poket Yaasin: Ringkasan AI (Cloudflare Worker, satu fail, tiada pakej luar).
+// Usrati (dahulu Poket Yaasin): Ringkasan AI (Cloudflare Worker, satu fail, tiada pakej luar).
 // App menghantar {soalan, kod, negeri}; Worker bertanya Claude dengan web search yang DIHADKAN kepada laman mufti
 // dan JAKIM (senarai di bawah = kandungan/laman.yaml; tools/bina.py gagal jika berbeza), kemudian memulangkan
 // ringkasan <= 150 perkataan dengan nombor rujukan dan senarai sumber.
@@ -20,7 +20,7 @@ const DOMAIN = [
   'mufti.penang.gov.my', 'mufti.sabah.gov.my', 'muftiselangor.gov.my',
 ];
 
-const ARAHAN = `Anda pembantu carian dalam app Poket Yaasin untuk keluarga Muslim di Malaysia.
+const ARAHAN = `Anda pembantu carian dalam app Usrati untuk keluarga Muslim di Malaysia.
 Tugas: jawab soalan agama secara ringkas BERDASARKAN HASIL CARIAN laman mufti dan JAKIM sahaja.
 Peraturan:
 1. Sentiasa guna alat carian dahulu. Tulis hanya apa yang disokong oleh hasil carian; jangan tambah daripada ingatan sendiri.

@@ -8,7 +8,7 @@
 # Tahlil dan doa dalam app tidak terjejas; ia kekal di bawah satu juzuk.
 
 # Surah pilihan: surah panjang yang lazim dibaca dan dihafal.
-# audio: false = Mod Selamat (kandungan/dasar.yaml): surah ini dijejak sahaja dalam Poket; audionya dalam Smart Quran.
+# audio: false = Mod Selamat (kandungan/dasar.yaml): surah ini dijejak sahaja dalam app; audionya dalam Smart Quran.
 # Audio yang dibenarkan + teks dalam app mesti kurang daripada satu juzuk (bina.py menyemak).
 - {id: kahfi, s: 18, kumpulan: pilihan, audio: false}
 - {id: sajdah, s: 32, kumpulan: pilihan, audio: false}

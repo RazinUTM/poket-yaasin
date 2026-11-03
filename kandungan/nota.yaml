@@ -8,7 +8,7 @@
   ringkas: Asal kandungan, apa yang telah disemak dan apa yang masih draf.
   disemak: 2026-11-01
   isi: |
-    Poket Yaasin, Tahlil & Doa ialah app web yang berfungsi tanpa internet selepas dibuka sekali. Ia menghimpunkan Surah Yaasin, susunan tahlil arwah dan doa harian, hajat serta doa semasa, bersama makna setiap frasa dan sumber setiap doa.
+    Usrati ("keluargaku"; dahulu Poket Yaasin) ialah app web keluarga yang berfungsi tanpa internet selepas dibuka sekali. Ia menghimpunkan Surah Yaasin, susunan tahlil arwah dan doa harian, hajat serta doa semasa, bersama makna setiap frasa dan sumber setiap doa.
 
     **Asas kandungan** ialah buku *Surah Yaasiin, Tahlil & Doa* (ISBN 983-046-278-1). Susunan tahlil dan doa majlis mengikut buku itu. Di tempat lafaz buku berbeza daripada lafaz lazim, perbezaan itu dinyatakan dalam nota doa berkenaan.
 
@@ -564,9 +564,9 @@
 
     **Status app ini:** teks ayat diambil daripada Mushaf Madinah (KFGQPC) dan disemak silang secara automatik, tetapi **belum disemak atau diperakui oleh KDN**. Teks Yaasin, Tahlil dan doa berjumlah kira-kira 0.81 juzuk. Modul Hafalan tidak memuatkan teks surah; setiap surah dipaparkan sebagai butang nombor ayat. Sebelum app atau cetakannya diedarkan secara meluas, dapatkan pengesahan bertulis daripada LPPPQ/KDN.
 
-    **Mod Selamat (aktif):** kerana audio juga "dokumen" di bawah Akta, teks DAN audio al-Quran yang boleh dimainkan dalam app dikira bersama dalam had satu juzuk: kini kira-kira 0.96 juzuk. Audio dihadkan kepada ayat yang teksnya ada dalam app (Yaasin, Tahlil, doa) dan surah lazim Ad-Dhuha hingga An-Nas kecuali Al-'Alaq dan Al-Bayyinah. Surah panjang (Al-Kahfi, As-Sajdah, Ar-Rahman, Al-Waqi'ah, Al-Mulk, Al-Insan), Al-'Alaq, Al-Bayyinah dan surah yang ditambah sendiri **dijejak sahaja** dalam Poket (tanda hafal, murajaah, rekod bacaan); audionya didengar dalam aplikasi Smart Quran yang diperakui KDN dan mempunyai audio qari. Binaan app gagal jika had ini dilepasi.
+    **Mod Selamat (aktif):** kerana audio juga "dokumen" di bawah Akta, teks DAN audio al-Quran yang boleh dimainkan dalam app dikira bersama dalam had satu juzuk: kini kira-kira 0.96 juzuk. Audio dihadkan kepada ayat yang teksnya ada dalam app (Yaasin, Tahlil, doa) dan surah lazim Ad-Dhuha hingga An-Nas kecuali Al-'Alaq dan Al-Bayyinah. Surah panjang (Al-Kahfi, As-Sajdah, Ar-Rahman, Al-Waqi'ah, Al-Mulk, Al-Insan), Al-'Alaq, Al-Bayyinah dan surah yang ditambah sendiri **dijejak sahaja** dalam app (tanda hafal, murajaah, rekod bacaan); audionya didengar dalam aplikasi Smart Quran yang diperakui KDN dan mempunyai audio qari. Binaan app gagal jika had ini dilepasi.
 
-    **Audio:** app tidak menyimpan audio. Ia memainkan fail bacaan qari daripada pelayan EveryAyah (riwayat Hafs 'an 'Asim; nama qari dipaparkan). Sama ada pemain yang memainkan rakaman daripada pelayan pihak ketiga dikira "menerbitkan" teks rakaman belum jelas; soalan ini dihantar kepada LPPPQ. Audio surah panjang hanya akan dibuka semula dalam Poket jika LPPPQ membenarkannya secara bertulis.
+    **Audio:** app tidak menyimpan audio. Ia memainkan fail bacaan qari daripada pelayan EveryAyah (riwayat Hafs 'an 'Asim; nama qari dipaparkan). Sama ada pemain yang memainkan rakaman daripada pelayan pihak ketiga dikira "menerbitkan" teks rakaman belum jelas; soalan ini dihantar kepada LPPPQ. Audio surah panjang hanya akan dibuka semula dalam app jika LPPPQ membenarkannya secara bertulis.
 
     Terjemahan ayat ialah teks Abdullah Muhammad Basmeih daripada Tanzil.net, dan belum disemak dengan edisi Tafsir Pimpinan ar-Rahman terbitan JAKIM yang dirujuk oleh garis panduan KDN. Makna perkataan ialah draf yang belum disemak.
 
@@ -632,7 +632,7 @@
   ringkas: Himpunan peribadi, bukan terbitan rasmi; dari mana setiap kandungan datang.
   disemak: 2026-11-01
   isi: |
-    Poket Yaasin ialah himpunan peribadi untuk memudahkan bacaan dan rujukan. Ia **bukan terbitan rasmi** mana-mana jabatan agama, dan tidak diperakui oleh mana-mana pihak berkuasa.
+    Usrati ialah himpunan peribadi untuk memudahkan bacaan dan rujukan. Ia **bukan terbitan rasmi** mana-mana jabatan agama, dan tidak diperakui oleh mana-mana pihak berkuasa.
 
     - **Teks ayat** daripada Mushaf Madinah (Mujamma' Malik Fahd), riwayat Hafs 'an 'Asim, disemak silang secara automatik. Ia belum disemak atau diperakui oleh KDN. Untuk rujukan muktamad, gunakan mushaf bercetak yang mempunyai perakuan KDN. Lihat [[akta-326]].
     - **Doa daripada hadis** disemak dengan teks hadis bernombor (sunnah.com). Doa susunan ulama dan amalan ditandakan dengan labelnya. Lihat [[darjat]].

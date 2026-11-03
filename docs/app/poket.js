@@ -1,8 +1,8 @@
-/* Poket Yaasin, Tahlil & Doa — keseluruhan app dalam satu fail (vanilla JS, tanpa build).
+/* Usrati (dahulu Poket Yaasin): Yaasin, Tahlil & Doa — keseluruhan app dalam satu fail (vanilla JS, tanpa build).
    Data: window.PY_DATA daripada docs/data/kandungan.js (dijana oleh tools/bina.py; JANGAN edit terus).
    Storan telefon: localStorage berawalan "poket-" (tetapan, bintang, doa-saya, majlis-saya, arwah, terakhir). */
 'use strict';
-const APP_VERSION='2026-11-03d';
+const APP_VERSION='2026-11-03e';
 const REPO = 'RazinUTM/poket-yaasin';   // butang "Lapor" membuka GitHub Issues repo ini
 const D = window.PY_DATA || {doa: [], ayat: {}, surah: {}, susunan: [], majlis: [], kalendar: [], nota: [], kat: {}, templat: {}, hijri: {}};
 
@@ -625,7 +625,7 @@ async function muatTurunKalendar(hari = 30) {
   for (const [y, m] of bulan.values()) if (!bulanSimpan(T.zon, y, m)) { try { await ambilBulan(T.zon, y, m); } catch (e) { tiadaBulan++; } }
   const z = ZON.get(T.zon), stamp = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
   const utc = d => d.toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
-  const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Poket Yaasin//Waktu Solat//MS', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', `X-WR-CALNAME:Waktu Solat ${T.zon}`];
+  const L = ['BEGIN:VCALENDAR', 'VERSION:2.0', 'PRODID:-//Usrati//Waktu Solat//MS', 'CALSCALE:GREGORIAN', 'METHOD:PUBLISH', `X-WR-CALNAME:Waktu Solat ${T.zon}`];
   let n = 0, akhir = null;
   for (let i = 0; i < hari; i++) {
     const w = waktuHari(new Date(mula.getTime() + i * 864e5)); if (!w || w.sumber !== 'jakim') continue;
@@ -1060,7 +1060,7 @@ const AUD = {
     const qari = (QARI.find(q => q[0] === T.qari) || [, ''])[1];
     try {
       navigator.mediaSession.metadata = new MediaMetadata({title: x.diam ? `Giliran anda: ayat ${x.a}` : x.basmalah ? 'Bismillaah' : `${namaSurah(x.s)}, ayat ${x.a}`,
-        artist: x.diam ? namaSurah(x.s) : qari, album: this.opt.tajuk ? `Poket Yaasin: ${this.opt.tajuk}` : 'Poket Yaasin',
+        artist: x.diam ? namaSurah(x.s) : qari, album: this.opt.tajuk ? `Usrati: ${this.opt.tajuk}` : 'Usrati',
         artwork: [{src: 'img/icon-192.png', sizes: '192x192', type: 'image/png'}, {src: 'img/icon-512.png', sizes: '512x512', type: 'image/png'}]});
     } catch (e) {}
   },
@@ -1247,7 +1247,7 @@ function bar({tajuk, sub, kembali, kanan = []}) {
     h('a', {class: 'ib', href: '#/nota', 'aria-label': 'Nota hukum dan sumber', title: 'Nota', html: ikon('nota')}),
     h('a', {class: 'ib', href: '#/tetapan', 'aria-label': 'Tetapan', title: 'Tetapan', html: ikon('tetapan')})];
   $('#bar').replaceChildren(h('div', {class: 'bar-in' + (kiri ? ' ada-kembali' : '')}, kiri, h('h1', null, tajuk, sub ? h('span', {class: 'sub'}, sub) : null), kn));
-  document.title = tajuk === 'Poket Yaasin' ? 'Poket Yaasin, Tahlil & Doa' : `${tajuk} | Poket Yaasin`;
+  document.title = tajuk === 'Usrati' ? 'Usrati: Yaasin, Tahlil & Doa' : `${tajuk} | Usrati`;
   requestAnimationFrame(() => document.documentElement.style.setProperty('--tinggi-bar', $('#bar').offsetHeight + 'px'));
 }
 const sejarah = [];             // hash yang dilawati (untuk butang kembali & pulih skrol)
@@ -1375,7 +1375,7 @@ function fotoKeluarga() {   // widget foto keluarga (gambar berkumpulan konteks 
   return h('a', {class: 'widget-foto', href: '#/keluarga', 'aria-label': `${k.nama || 'Keluarga'}: buka Keluarga`}, g);
 }
 function skrinUtama(skrin) {
-  bar({tajuk: 'Poket Yaasin'});
+  bar({tajuk: 'Usrati'});
   const kini = new Date(), terakhir = SIMPAN.baca('terakhir', {}), a = +terakhir.yaasin || 0;
   const jam = h('div', {class: 'jam'}), tarikhEl = h('div', {class: 'jam-tarikh'}), solatEl = h('a', {class: 'jam-solat', href: '#/solat'});
   const waktuEl = h('a', {class: 'jam-waktu', href: '#/solat', hidden: true});
@@ -1418,7 +1418,7 @@ function skrinUtama(skrin) {
     widgetKhat(),
     fotoKeluarga(),
     widget,
-    h('p', {class: 'kaki-rumah'}, 'Poket Yaasin, Tahlil & Doa. Himpunan peribadi, bukan terbitan rasmi. ',
+    h('p', {class: 'kaki-rumah'}, 'Usrati: Yaasin, Tahlil & Doa. Himpunan peribadi, bukan terbitan rasmi. ',
       h('a', {href: '#/nota/penafian'}, 'Penafian'), ' dan ', h('a', {href: '#/rujukan'}, 'senarai rujukan'), '.')));
 }
 
@@ -1601,7 +1601,7 @@ function skrinRujukan(skrin) {
   }
   const hos = u => { try { return new URL(u).host.replace(/^www\./, ''); } catch (e) { return ''; } };
   tambah(skrin,
-    h('div', {class: 'kad'}, h('p', null, 'Poket Yaasin menghimpunkan bacaan dan doa daripada sumber yang disenaraikan di bawah. Ia himpunan peribadi, bukan terbitan rasmi, dan tidak diperakui oleh mana-mana pihak berkuasa.'),
+    h('div', {class: 'kad'}, h('p', null, 'Usrati menghimpunkan bacaan dan doa daripada sumber yang disenaraikan di bawah. Ia himpunan peribadi, bukan terbitan rasmi, dan tidak diperakui oleh mana-mana pihak berkuasa.'),
       h('div', {class: 'tindakan'}, h('button', {class: 'btn', type: 'button', html: ikon('info') + ' Baca penafian', onclick: () => bukaPenafian(false)}), h('a', {class: 'btn', href: '#/nota/akta-326'}, 'Akta 326 dan KDN'))),
     h('h2', {class: 'sek'}, 'Sumber doa dan bacaan'),
     h('ul', {class: 'senarai-rujuk'},
@@ -1625,7 +1625,7 @@ function skrinRujukan(skrin) {
 function bukaPenafian(pertama) {
   if (pertama) SIMPAN.tulis('penafian', APP_VERSION);
   bukaHelai(pertama ? 'Sebelum mula' : 'Penafian', frag(
-    h('p', null, 'Poket Yaasin ialah himpunan peribadi untuk memudahkan bacaan dan rujukan. Ia bukan terbitan rasmi, dan tidak diperakui oleh mana-mana pihak berkuasa agama.'),
+    h('p', null, 'Usrati ialah himpunan peribadi untuk memudahkan bacaan dan rujukan. Ia bukan terbitan rasmi, dan tidak diperakui oleh mana-mana pihak berkuasa agama.'),
     h('ul', {class: 'senarai-penafian'},
       h('li', null, h('b', null, 'Teks ayat: '), "Mushaf Madinah, riwayat Hafs 'an 'Asim, disemak silang secara automatik. Belum diperakui KDN."),
       h('li', null, h('b', null, 'Doa: '), 'setiap doa ada label darjat dan sumbernya. Hadis disemak dengan nombor hadis.'),
@@ -2032,7 +2032,7 @@ function kongsiMajlis(m) {
     catch (e) { tambah(isi, h('p', {class: 'kecil'}, 'Pautan terlalu panjang untuk kod QR. Gunakan butang kongsi.')); }
   }
   tambah(isi, h('div', {class: 'tindakan'},
-    h('button', {class: 'btn utama', type: 'button', html: ikon('kongsi') + ' Kongsi pautan', onclick: () => kongsi(m.tajuk, `${m.tajuk} (Poket Yaasin)`, url)}),
+    h('button', {class: 'btn utama', type: 'button', html: ikon('kongsi') + ' Kongsi pautan', onclick: () => kongsi(m.tajuk, `${m.tajuk} (Usrati)`, url)}),
     h('button', {class: 'btn', type: 'button', html: ikon('salin') + ' Salin', onclick: () => salin(url, 'Pautan disalin')})));
   bukaHelai('Kongsi majlis', isi);
 }
@@ -2987,7 +2987,7 @@ function skrinHafalanSatu(skrin, id) {
   const kereta = h('p', {class: 'kecil hf-kereta', html: ikon('kereta') + '<span>Dalam kereta: butang sebelum/seterusnya pada stereng, skrin kereta atau fon telinga Bluetooth biasanya menukar ayat. Mod Uji berjalan sendiri tanpa perlu menyentuh telefon.</span>'});
   const smartEl = bolehAudio ? null : h('section', {class: 'kad hf-smart'},
     h('h2', {class: 'sek-dalam'}, 'Dengar dalam Smart Quran'),
-    h('p', null, `Mod Selamat: Poket hanya memainkan audio yang, bersama teks dalam app, berjumlah kurang daripada satu juzuk. Dengar ${x.tajuk} dalam aplikasi Smart Quran yang diperakui KDN (muka surat ${h1}${h2 !== h1 ? ' hingga ' + h2 : ''}), kemudian tanda ayat yang sudah dihafal di bawah.`),
+    h('p', null, `Mod Selamat: Usrati hanya memainkan audio yang, bersama teks dalam app, berjumlah kurang daripada satu juzuk. Dengar ${x.tajuk} dalam aplikasi Smart Quran yang diperakui KDN (muka surat ${h1}${h2 !== h1 ? ' hingga ' + h2 : ''}), kemudian tanda ayat yang sudah dihafal di bawah.`),
     h('div', {class: 'tindakan dua'},
       h('a', {class: 'btn utama', href: SMART_QURAN, target: '_blank', rel: 'noopener', html: ikon('dengar') + ' Smart Quran'}),
       h('a', {class: 'btn', href: '#/nota/akta-326'}, 'Kenapa?')));
@@ -3202,7 +3202,7 @@ function kunciPeribadi() {   // kunci data peribadi dalam telefon ini: asas + di
   return [...out];
 }
 async function eksportSandaran() {
-  const iso = hariIniIso(), nama = `poket-yaasin-sandaran-${iso}.json`, k = keluarga();
+  const iso = hariIniIso(), nama = `usrati-sandaran-${iso}.json`, k = keluarga();
   const data = {bintang: [...BINTANG], arwah: ARWAH, tetapan: T, 'doa-saya': doaSaya(), 'majlis-saya': majlisSaya(), keluarga: k};
   for (const a of k.ahli) data[kunciDiari(a.id)] = diariAhli(a.id);      // diari aktif diambil daripada memori (terkini)
   for (const x of ['terakhir', 'tasbih']) { const v = SIMPAN.baca(x, null); if (v != null) data[x] = v; }
@@ -3212,7 +3212,7 @@ async function eksportSandaran() {
   const tanda = () => { SIMPAN.tulis('sandaran-terakhir', iso); if (kemasDiari) kemasDiari(); };
   try {
     const fail = new File([teks], nama, {type: 'application/json'});
-    if (navigator.canShare && navigator.canShare({files: [fail]})) { await navigator.share({files: [fail], title: 'Sandaran Poket Yaasin'}); tanda(); return; }
+    if (navigator.canShare && navigator.canShare({files: [fail]})) { await navigator.share({files: [fail], title: 'Sandaran Usrati'}); tanda(); return; }
   } catch (e) { if (e && e.name === 'AbortError') return; }
   const a = h('a', {href: URL.createObjectURL(new Blob([teks], {type: 'application/json'})), download: nama});
   document.body.append(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 4000);
@@ -3224,7 +3224,7 @@ function importSandaran() {
     const f = inp.files && inp.files[0]; inp.remove(); if (!f) return;
     try {
       const o = JSON.parse(await f.text());
-      if (!o || o.app !== 'poket-yaasin' || o.jenis !== 'sandaran' || !objek_(o.data)) throw new Error('ini bukan fail sandaran Poket Yaasin');
+      if (!o || o.app !== 'poket-yaasin' || o.jenis !== 'sandaran' || !objek_(o.data)) throw new Error('ini bukan fail sandaran Usrati');
       for (const [k, ok] of Object.entries(SEMAK_SANDARAN)) if (k in o.data && !ok(o.data[k])) throw new Error(`bahagian "${k}" dalam fail rosak`);
       const kunciFail = Object.keys(o.data).filter(k => KUNCI_ASAS.includes(k) || KUNCI_DIARI.test(k));
       for (const k of kunciFail) if (KUNCI_DIARI.test(k)) { if (!objek_(o.data[k])) throw new Error(`bahagian "${k}" dalam fail rosak`); o.data[k] = normalDiari(o.data[k]); }
@@ -3477,7 +3477,7 @@ function importPek() {
     try {
       if (f.size > 3 * 1024 * 1024) throw new Error('fail terlalu besar (had 3 MB)');
       const p = normalPek(JSON.parse(await f.text()));
-      if (!p) throw new Error('bukan pek watak Poket Yaasin');
+      if (!p) throw new Error('bukan pek watak Usrati');
       const kSebelum = JSON.parse(JSON.stringify(keluarga()));
       if (!SIMPAN.tulis('pek', p)) return roti('Storan telefon penuh: pek tidak dapat disimpan. Buat sandaran, kemudian kosongkan ruang.');
       PEK_P = p;
@@ -3561,7 +3561,7 @@ let pasangAcara = null;
 const pendengarPasang = new Set();
 const kemasPasang = () => pendengarPasang.forEach(f => { try { f(); } catch (e) {} });
 window.addEventListener('beforeinstallprompt', e => { e.preventDefault(); pasangAcara = e; kemasPasang(); });
-window.addEventListener('appinstalled', () => { pasangAcara = null; roti('Poket Yaasin dipasang. Buka dari ikonnya di skrin utama.'); kemasPasang(); });
+window.addEventListener('appinstalled', () => { pasangAcara = null; roti('Usrati dipasang. Buka dari ikonnya di skrin utama.'); kemasPasang(); });
 const appDipasang = () => { try { return matchMedia('(display-mode: standalone)').matches || navigator.standalone === true; } catch (e) { return false; } };
 const perantiIOS = () => /iphone|ipad|ipod/i.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
 async function mulaPasang() {
@@ -3576,7 +3576,7 @@ const langkahPasang = () => perantiIOS()
       ? h('li', null, 'Tekan butang Kongsi ', h('span', {class: 'ik-kongsi', html: ikon('kongsiIos')}), ' di bar alamat (atas, sebelah kanan).')
       : h('li', null, 'Buka app ini dalam Safari atau Chrome. Jika dibuka dari WhatsApp, buka dalam pelayar dahulu.'),
       pelayarIOSLain() ? h('li', null, 'Skrol ke bawah senarai, kemudian pilih "Tambah ke Skrin Utama" (Add to Home Screen).') : h('li', null, 'Tekan butang Kongsi ', h('span', {class: 'ik-kongsi', html: ikon('kongsiIos')}), ' di bawah skrin (di atas pada iPad).'),
-      h('li', null, pelayarIOSLain() ? 'Semak nama "Poket Yaasin", kemudian tekan "Tambah".' : 'Pilih "Tambah ke Skrin Utama" (Add to Home Screen), kemudian "Tambah".')),
+      h('li', null, pelayarIOSLain() ? 'Semak nama "Usrati", kemudian tekan "Tambah".' : 'Pilih "Tambah ke Skrin Utama" (Add to Home Screen), kemudian "Tambah".')),
     // WebKit: app di skrin utama ada storan sendiri, tidak dikongsi dengan Safari (bugs.webkit.org/show_bug.cgi?id=181849)
     h('p', {class: 'kecil nota-pasang'}, 'Di iPhone, app di skrin utama menyimpan rekod berasingan daripada Safari dan Chrome. Pasang dahulu, kemudian import pek watak dan isi rekod dalam app itu. Sudah ada rekod dalam pelayar? Simpan sandaran (di bawah), kemudian pulihkan dalam app.'))
   : h('ol', {class: 'langkah-pasang'}, h('li', null, 'Buka app ini dalam Chrome. Jika dibuka dari WhatsApp, pilih "Buka dalam Chrome" dahulu.'),
@@ -3693,7 +3693,7 @@ async function semakVersi() {
     const r = await fetch('version.json?t=' + Date.now(), {cache: 'no-store'}); if (!r.ok) return;
     const j = await r.json();
     if (j && j.v && j.v !== APP_VERSION && !$('#kemaskini')) {
-      document.body.append(h('div', {id: 'kemaskini', class: 'kemaskini', role: 'status'}, h('span', null, 'Versi baharu Poket Yaasin tersedia.'),
+      document.body.append(h('div', {id: 'kemaskini', class: 'kemaskini', role: 'status'}, h('span', null, 'Versi baharu Usrati tersedia.'),
         h('button', {type: 'button', onclick: async () => { try { const g = await navigator.serviceWorker?.getRegistration(); if (g) await g.update(); } catch (e) {} location.reload(); }}, 'Muat semula')));
     }
   } catch (e) {}
