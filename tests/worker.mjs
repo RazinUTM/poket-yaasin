@@ -54,6 +54,11 @@ semak(j.sumber.length === 1 && j.sumber[0].url.includes('muftiwp.gov.my'), 'Sumb
 semak(j.bacaan.length === 1 && j.bacaan[0].url.includes('muftiselangor'), 'Bacaan lanjut: hasil carian mufti lain yang belum dipetik');
 semak(j.guna.carian === 2 && j.guna.masuk === 5200, 'Penggunaan token dan carian dilaporkan');
 
+const tapis = olah({content: [
+  {type: 'text', text: 'Makruh berpuasa pada hari Jumaat sahaja', citations: [{url: 'https://muftiwp.gov.my/a', title: 'A'}]},
+  {type: 'text', text: '.\n\nJika hari Arafah jatuh pada hari Jumaat, menurut sebuah jabatan mufti negeri puasa itu tetap disunatkan bagi semua orang. '},
+  {type: 'text', text: 'Untuk keadaan peribadi, sila rujuk pejabat mufti negeri anda.'}]});
+semak(tapis.teks.includes('[1]') && !tapis.teks.includes('Arafah') && tapis.teks.includes('rujuk pejabat') && tapis.dibuang === 1, 'Dakwaan panjang tanpa petikan dibuang; nasihat rujuk mufti dikekalkan');
 const kosong = olah({content: [{type: 'text', text: 'TIADA_SUMBER'}]});
 semak(kosong.tiada && kosong.teks === '' && !kosong.sumber.length, 'TIADA_SUMBER: tiada ringkasan direka');
 const tanpaPetik = olah({content: [{type: 'text', text: 'Jawapan tanpa rujukan.'}]});
