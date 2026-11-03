@@ -50,7 +50,7 @@ const dibenar = url => { try { const h = new URL(url).hostname.toLowerCase(); re
 // pengendali lalai; tests/worker.mjs mendedahkan fungsi ini sendiri.)
 function olah(resp) {
   const sumber = [], indeks = new Map(), bacaan = new Map();
-  let teks = '';
+  let teks = '', dibuang = 0;
   for (const b of resp.content || []) {
     if (b.type === 'web_search_tool_result' && Array.isArray(b.content)) {
       for (const r of b.content) if (r && r.url && dibenar(r.url) && !bacaan.has(r.url)) bacaan.set(r.url, String(r.title || r.url).slice(0, 160));
@@ -63,6 +63,8 @@ function olah(resp) {
         const k = indeks.get(c.url); if (!n.includes(k)) n.push(k);
       }
       if (n.length) t = t.replace(/\s+$/, '') + ' ' + n.map(k => `[${k}]`).join('') + (/\s$/.test(t) ? ' ' : '');
+      // Blok tanpa petikan: kekalkan penyambung pendek dan nasihat "rujuk pejabat mufti"; buang dakwaan panjang tanpa sumber
+      else if (t.trim().split(/\s+/).length >= 12 && !/\brujuk\b/i.test(t)) { dibuang++; t = /\n\s*$/.test(t) ? '\n\n' : ''; }
       teks += t;
     }
   }
@@ -71,6 +73,7 @@ function olah(resp) {
   return {
     teks: tiada ? '' : teks,
     tiada,
+    dibuang,
     sumber: tiada ? [] : sumber,
     bacaan: [...bacaan].filter(([u]) => !indeks.has(u)).slice(0, 6).map(([url, tajuk]) => ({url, tajuk})),
   };
