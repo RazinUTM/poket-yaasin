@@ -64,5 +64,24 @@ r = await W.fetch(minta({soalan: 'puasa jumaat', kod: env.KOD_KELUARGA}), env);
 const e = await r.json();
 semak(r.status === 502 && e.butiran.includes('model not found'), 'Ralat API diteruskan dengan butiran');
 
+// pause_turn: Worker menyambung giliran dan menggabungkan kandungan
+{
+  let n = 0, badanKedua = null;
+  globalThis.fetch = async (url, o) => {
+    n++;
+    if (n === 1) return new Response(JSON.stringify({stop_reason: 'pause_turn', usage: {input_tokens: 100, output_tokens: 10, server_tool_use: {web_search_requests: 1}},
+      content: [{type: 'server_tool_use', id: 's1', name: 'web_search', input: {query: 'x'}}, {type: 'web_search_tool_result', tool_use_id: 's1', content: [{type: 'web_search_result', url: 'https://muftiwp.gov.my/a', title: 'A'}]}]}), {status: 200});
+    badanKedua = JSON.parse(o.body);
+    return new Response(JSON.stringify({stop_reason: 'end_turn', usage: {input_tokens: 200, output_tokens: 50},
+      content: [{type: 'text', text: 'Jawapan disambung', citations: [{type: 'web_search_result_location', url: 'https://muftiwp.gov.my/a', title: 'A'}]}]}), {status: 200});
+  };
+  const r2 = await W.fetch(minta({soalan: 'puasa jumaat', kod: env.KOD_KELUARGA}), env);
+  const j2 = await r2.json();
+  semak(n === 2 && badanKedua.messages.length === 2 && badanKedua.messages[1].role === 'assistant' && j2.teks.includes('[1]') && j2.guna.carian === 1 && j2.guna.masuk === 300 && j2.diag.sambung, 'pause_turn: giliran disambung, kandungan dan penggunaan digabung');
+  globalThis.fetch = async () => new Response(JSON.stringify({stop_reason: 'end_turn', content: [{type: 'text', text: 'Jawapan tanpa petikan langsung.'}]}), {status: 200});
+  const j3 = await (await W.fetch(minta({soalan: 'puasa jumaat', kod: env.KOD_KELUARGA}), env)).json();
+  semak(j3.tiada && j3.diag.mentah.includes('tanpa petikan') && j3.diag.henti === 'end_turn', 'Diagnosis: teks mentah dan sebab berhenti dilaporkan apabila tiada ringkasan');
+}
+
 console.log(gagal ? `\n${gagal} semakan gagal` : '\nSemua semakan Worker lulus');
 process.exit(gagal ? 1 : 0);
