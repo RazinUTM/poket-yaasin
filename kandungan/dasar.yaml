@@ -13,4 +13,4 @@ mod_selamat: true
 # ringkasan_ai: URL Cloudflare Worker (kod: pelayan/ringkasan-ai.js) untuk "Ringkasan AI" di skrin Cari.
 #   AI hanya meringkaskan laman mufti/JAKIM dalam laman.yaml, dengan rujukan; tiada teks ayat, hadis atau doa.
 #   Kosong = ciri disembunyikan. Kunci API dan kod keluarga disimpan dalam Worker, BUKAN di sini (repo awam).
-ringkasan_ai: ''
+ringkasan_ai: 'https://usrati-ai.arazin.workers.dev/'

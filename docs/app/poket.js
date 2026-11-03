@@ -2,7 +2,7 @@
    Data: window.PY_DATA daripada docs/data/kandungan.js (dijana oleh tools/bina.py; JANGAN edit terus).
    Storan telefon: localStorage berawalan "poket-" (tetapan, bintang, doa-saya, majlis-saya, arwah, terakhir). */
 'use strict';
-const APP_VERSION='2026-11-03e';
+const APP_VERSION='2026-11-03f';
 const REPO = 'RazinUTM/poket-yaasin';   // butang "Lapor" membuka GitHub Issues repo ini
 const D = window.PY_DATA || {doa: [], ayat: {}, surah: {}, susunan: [], majlis: [], kalendar: [], nota: [], kat: {}, templat: {}, hijri: {}};
 
