@@ -201,6 +201,14 @@ const semak = (ok, msg) => { if (ok) console.log('  ok  ', msg); else { gagal++;
         await pg.click('.pasang-rumah .ib'); await pg.evaluate(() => { location.hash = '#/tetapan'; }); await pg.waitForTimeout(150); await pg.evaluate(() => { location.hash = '#/'; }); await pg.waitForTimeout(300);
         semak(adaCadangan && await pg.locator('.pasang-rumah').count() === 0, 'Pasang app: cadangan di skrin Utama, tidak muncul lagi selepas ditutup');
         await pg.evaluate(() => { pasangAcara = null; SIMPAN.buang('pasang-nanti'); });
+        // pilihan skrin sentiasa menyala (Screen Wake Lock): suis di Tetapan, simpan dan lepaskan
+        await pg.evaluate(() => { location.hash = '#/tetapan'; }); await pg.waitForTimeout(200);
+        const sNyala = pg.locator('label.set:has-text("Skrin sentiasa menyala") input');
+        const adaNyala = await pg.evaluate(() => 'wakeLock' in navigator) ? await sNyala.count() === 1 : true;
+        if (await sNyala.count()) { await sNyala.check(); await pg.waitForTimeout(150); }
+        const hidup = await pg.evaluate(() => T.nyala === true && SIMPAN.baca('tetapan', {}).nyala === true);
+        if (await sNyala.count()) { await sNyala.uncheck(); await pg.waitForTimeout(150); }
+        semak(adaNyala && hidup && await pg.evaluate(() => T.nyala === false && (!NYALA.kunci || NYALA.kunci.released)), 'Skrin sentiasa menyala: suis di Tetapan disimpan, kunci dilepaskan apabila dimatikan');
       }
       // fail kalendar .ics
       await pg.evaluate(() => { SIMPAN.buang(`waktu-WLY01-${new Date().getFullYear()}-${String(new Date().getMonth() + 1).padStart(2, '0')}`); MEM_WAKTU.clear(); location.hash = '#/solat'; }); await pg.waitForTimeout(500);
